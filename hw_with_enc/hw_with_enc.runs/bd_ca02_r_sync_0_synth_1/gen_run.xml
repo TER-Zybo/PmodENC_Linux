@@ -10,7 +10,7 @@
     <File Path="$PGENDIR/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_1/bd_ca02_r_sync_0.xci">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_1/bd_ca02_r_sync_0.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_1/bd_ca02_r_sync_0.xci"/>
         <Attr Name="ImportTime" Val="1715789919"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -26,7 +26,7 @@
     <File Path="$PGENDIR/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_1/bd_ca02_r_sync_0.xci">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_1/bd_ca02_r_sync_0.xci"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_1/bd_ca02_r_sync_0.xci"/>
         <Attr Name="ImportTime" Val="1715789919"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
