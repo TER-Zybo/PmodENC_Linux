@@ -1,0 +1,3 @@
+28 errors generated.
+Error while processing /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.pp.0.cpp.
+clang-tidy applied 354 of 354 suggested fixes.

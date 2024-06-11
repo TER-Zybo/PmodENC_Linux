@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed May 15 18:47:07 2024
+# Process ID: 131197
+# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/vivado.log
+# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/impl/ip/vivado.jou
+# Running On: secil7.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 4279.380 MHz, CPU Physical cores: 8, Host memory: 16464 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/nfs/xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1560.832 ; gain = 47.023 ; free physical = 8869 ; free virtual = 21122
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2023.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed May 15 18:47:25 2024...

@@ -1,0 +1,42 @@
+<design_size title="Design Size Report">
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
+            <rows>
+                <row id="0" col0="v_frmbuf_wr" col1="v_frmbuf_wr.cpp:73" col2="2632" col3="1170" col4="783" col5="793">
+                    <row id="9" col0="FrmbufWrHlsDataFlow" col1="v_frmbuf_wr.cpp:26" col2="2527" col3="1108" col4="734" col5="719">
+                        <row id="2" col0="" col1="v_frmbuf_wr.h:197" col2="11" col3="" col4="" col5=""/>
+                        <row id="6" col0="AXIvideo2MultiPixStream" col1="v_frmbuf_wr.cpp:169" col2="890" col3="309" col4="148" col5="193">
+                            <row id="7" col0="Scalar" col1="hls_video_core.h:182" col2="21" col3="" col4="" col5=""/>
+                            <row id="3" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:248" col2="2" col2_disp="    2 (2 calls)" col3="2" col3_disp="    2 (2 calls)" col4="2" col4_disp="  2 (2 calls)" col5="8" col5_disp="  8 (2 calls)"/>
+                            <row id="5" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:69" col2="243" col2_disp="  243 (3 calls)" col3="" col4="" col5="">
+                                <row id="1" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:46" col2="225" col2_disp="  225 (3 calls)" col3="" col4="" col5=""/>
+                            </row>
+                        </row>
+                        <row id="8" col0="MultiPixStream2Bytes" col1="v_frmbuf_wr.cpp:268" col2="1427" col3="659" col4="510" col5="428">
+                            <row id="7" col0="Scalar" col1="hls_video_core.h:182" col2="21" col3="" col4="" col5=""/>
+                        </row>
+                        <row id="4" col0="Bytes2AXIMMvideo" col1="v_frmbuf_wr.cpp:1097" col2="153" col3="109" col4="61" col5="78"/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Description of Compilation Phases">
+        <table>
+            <keys size="2">Compilation Phase, Description</keys>
+            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
+            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
+            <column name="Optimizations">After high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

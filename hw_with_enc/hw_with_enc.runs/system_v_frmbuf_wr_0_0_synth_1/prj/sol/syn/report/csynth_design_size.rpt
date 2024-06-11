@@ -1,0 +1,39 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Instructions per Function for each Compilation Phase
++---------------------------------------+----------------------+-----------------+-----------------+----------------------+---------------+
+| Function                              | Location             | Compile/Link    | Unroll/Inline   | Performance/Pipeline | Optimizations |
++---------------------------------------+----------------------+-----------------+-----------------+----------------------+---------------+
+| + v_frmbuf_wr                         | v_frmbuf_wr.cpp:73   | 2,632           | 1,170           | 783                  | 793           |
+|  + FrmbufWrHlsDataFlow                | v_frmbuf_wr.cpp:26   | 2,527           | 1,108           | 734                  | 719           |
+|                                       | v_frmbuf_wr.h:197    |    11           |                 |                      |               |
+|   + AXIvideo2MultiPixStream           | v_frmbuf_wr.cpp:169  |   890           |   309           | 148                  | 193           |
+|      Scalar                           | hls_video_core.h:182 |    21           |                 |                      |               |
+|      reg<unsigned short>              | x_hls_utils.h:248    |     2 (2 calls) |     2 (2 calls) |   2 (2 calls)        |   8 (2 calls) |
+|    + AXIGetBitFields<24, ap_uint<...  | hls_axi_io.h:69      |   243 (3 calls) |                 |                      |               |
+|       AXIGetBitFields<24, ap_uint<... | hls_axi_io.h:46      |   225 (3 calls) |                 |                      |               |
+|   + MultiPixStream2Bytes              | v_frmbuf_wr.cpp:268  | 1,427           |   659           | 510                  | 428           |
+|      Scalar                           | hls_video_core.h:182 |    21           |                 |                      |               |
+|     Bytes2AXIMMvideo                  | v_frmbuf_wr.cpp:1097 |   153           |   109           |  61                  |  78           |
++---------------------------------------+----------------------+-----------------+-----------------+----------------------+---------------+
+
+* Description of Compilation Phases
++----------------------+------------------------------------------------------------+
+| Compilation Phase    | Description                                                |
++----------------------+------------------------------------------------------------+
+| Compile/Link         | All functions are compiled and linked into a single design |
+| Unroll/Inline        | After user unroll and inline pragmas are applied           |
+| Performance/Pipeline | After performance and pipeline pragmas are applied         |
+| Optimizations        | After high level synthesis optimizations                   |
++----------------------+------------------------------------------------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+
