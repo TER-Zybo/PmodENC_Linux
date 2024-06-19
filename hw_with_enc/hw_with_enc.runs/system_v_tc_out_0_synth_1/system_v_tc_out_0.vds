@@ -1,35 +1,103 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed May 15 18:44:00 2024
-# Process ID: 129359
-# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_tc_out_0_synth_1
-# Command line: vivado -log system_v_tc_out_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_v_tc_out_0.tcl
-# Log file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_tc_out_0_synth_1/system_v_tc_out_0.vds
-# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_tc_out_0_synth_1/vivado.jou
-# Running On: secil7.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 3800.081 MHz, CPU Physical cores: 8, Host memory: 16464 MB
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Jun 19 16:37:44 2024
+# Process ID: 940
+# Current directory: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_tc_out_0_synth_1
+# Command line: vivado.exe -log system_v_tc_out_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_v_tc_out_0.tcl
+# Log file: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_tc_out_0_synth_1/system_v_tc_out_0.vds
+# Journal file: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_tc_out_0_synth_1\vivado.jou
+# Running On: LAPTOP-DWAYNE, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 25520 MB
 #-----------------------------------------------------------
-Sourcing tcl script '/nfs/xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
 source system_v_tc_out_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:31 . Memory (MB): peak = 1529.652 ; gain = 39.023 ; free physical = 2228 ; free virtual = 14236
+create_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 474.047 ; gain = 182.816
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/TER/PetaENC_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:AXI_DPTI:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/AXI_DPTI_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/AXI_DPTI_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:axi_dynclk:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_dynclk' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_dynclk
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:axi_i2s_adi:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_i2s_adi_1.2' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_i2s_adi_1.2
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:axi_ps2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_ps2_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_ps2_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:clock_forwarder:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/clock_forwarder' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/clock_forwarder
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:dvi2rgb:2.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/dvi2rgb' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/dvi2rgb
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_contrast_stretch:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_contrast_stretch_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_contrast_stretch_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_gamma_correction:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_gamma_correction_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_gamma_correction_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_saturation_enhance:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_saturation_enhance_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_saturation_enhance_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:MIPI_CSI_2_RX:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MIPI_CSI_2_RX' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MIPI_CSI_2_RX
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:MIPI_D_PHY_RX:1.3'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MIPI_D_PHY_RX' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MIPI_D_PHY_RX
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:MotorFeedback:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MotorFeedback_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MotorFeedback_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodACL2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodACL2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodACL_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodACL_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD5:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD5_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD5_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodALS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodALS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodALS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAMP2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAMP2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAMP2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAQS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAQS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAQS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBLE:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodBLE_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodBLE_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBT2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodBT2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodBT2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCAN:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCAN_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCAN_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCLS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCLS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCLS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCMPS2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCMPS2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCMPS2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCOLOR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCOLOR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCOLOR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDA1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDA1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDA1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDHB1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDHB1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDHB1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDPG1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDPG1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDPG1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodENC:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodENC_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodENC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:PmodESP32:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodESP32_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodESP32_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPIO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGPIO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGPIO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPS:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGPS_v1_1' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGPS_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGYRO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGYRO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGYRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodHYGRO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodHYGRO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodHYGRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodJSTK2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodJSTK2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodJSTK_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodJSTK_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodKYPD:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodKYPD_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodKYPD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMAXSONAR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodMAXSONAR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodMAXSONAR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMTDS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodMTDS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodMTDS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodNAV:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodNAV_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodNAV_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLEDrgb:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLED:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodOLED_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodOLED_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodPIR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodPIR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodPIR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodR2R:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodR2R_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodR2R_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodRTCC:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodRTCC_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodRTCC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSD:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodSD_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodSD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSF3:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodSF3_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodSF3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTC1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodTC1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodTC1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTMP3:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodTMP3_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodTMP3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodWIFI:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodWIFI_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodWIFI_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/Pmod_Bridge_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_1' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/Pmod_Bridge_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:2.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_2.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_2.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM_Analyzer:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_Analyzer_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_Analyzer_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dpvid:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dpvid_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dpvid_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.4'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dvi' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dvi
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2vga:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2vga_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2vga_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:Sync:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Sync_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Sync_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:usb2device:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/usb2device_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/usb2device_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:video:video_scaler:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/video_scaler' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/video_scaler
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'c:/Users/hdway/Documents/vivado/vivado-library/if/pmod_v1_0/pmod.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:tmds:1.0'. The one found in location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/if/tmds_v1_0/tmds.xml' will take precedence over the same Interface in location 'c:/Users/hdway/Documents/vivado/vivado-library/if/tmds_v1_0/tmds.xml'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 485.301 ; gain = 11.254
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_v_tc_out_0
 Command: synth_design -top system_v_tc_out_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 129900
+INFO: [Synth 8-7075] Helper process launched with PID 16316
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2294.996 ; gain = 376.676 ; free physical = 1268 ; free virtual = 12882
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1371.742 ; gain = 438.637
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'system_v_tc_out_0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_tc_out_0/synth/system_v_tc_out_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'system_v_tc_out_0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_tc_out_0/synth/system_v_tc_out_0.vhd:97]
 	Parameter C_HAS_AXI4_LITE bound to: 1 - type: integer 
 	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
 	Parameter C_ARBITRARY_RES_EN bound to: 0 - type: integer 
@@ -117,21 +185,21 @@ INFO: [Synth 8-638] synthesizing module 'system_v_tc_out_0' [/nfs/home/m1info3/D
 	Parameter C_GEN_ACHROMA_EN bound to: 0 - type: integer 
 	Parameter C_GEN_FIELDID_EN bound to: 0 - type: integer 
 	Parameter C_DET_FIELDID_EN bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'v_tc' declared at '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/0350/hdl/v_tc_v6_2_vh_rfs.vhd:9698' bound to instance 'U0' of component 'v_tc' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_tc_out_0/synth/system_v_tc_out_0.vhd:293]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-638] synthesizing module 'address_decoder' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-638] synthesizing module 'pselect_f' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
-INFO: [Synth 8-226] default block is never used [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-256] done synthesizing module 'system_v_tc_out_0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_tc_out_0/synth/system_v_tc_out_0.vhd:97]
+INFO: [Synth 8-3491] module 'v_tc' declared at 'c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/0e63/hdl/v_tc_v6_2_vh_rfs.vhd:9570' bound to instance 'U0' of component 'v_tc' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_tc_out_0/synth/system_v_tc_out_0.vhd:293]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-226] default block is never used [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'system_v_tc_out_0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_tc_out_0/synth/system_v_tc_out_0.vhd:97]
 WARNING: [Synth 8-7129] Port gen_v0chroma_start[11] in module tc_generator is either unconnected or has no load
 WARNING: [Synth 8-7129] Port gen_v0chroma_start[10] in module tc_generator is either unconnected or has no load
 WARNING: [Synth 8-7129] Port gen_v0chroma_start[9] in module tc_generator is either unconnected or has no load
@@ -234,58 +302,58 @@ WARNING: [Synth 8-7129] Port gen_v1sync_start_hori[9] in module tc_generator is 
 WARNING: [Synth 8-7129] Port gen_v1sync_start_hori[8] in module tc_generator is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2422.902 ; gain = 504.582 ; free physical = 4818 ; free virtual = 16488
+Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 1546.230 ; gain = 613.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2437.746 ; gain = 519.426 ; free physical = 4789 ; free virtual = 16485
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1546.230 ; gain = 613.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 2437.746 ; gain = 519.426 ; free physical = 4787 ; free virtual = 16484
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1546.230 ; gain = 613.125
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2437.746 ; gain = 0.000 ; free physical = 4761 ; free virtual = 16472
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.466 . Memory (MB): peak = 1546.230 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_tc_out_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_tc_out_0_synth_1/dont_touch.xdc]
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_clocks.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_v_tc_out_0_propImpl.xdc].
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_tc_out_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_tc_out_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_clocks.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_tc_out_0/system_v_tc_out_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_v_tc_out_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_v_tc_out_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_v_tc_out_0_propImpl.xdc].
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_v_tc_out_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_v_tc_out_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2576.527 ; gain = 0.000 ; free physical = 4092 ; free virtual = 15906
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1636.789 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2576.527 ; gain = 0.000 ; free physical = 4075 ; free virtual = 15884
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 1637.102 ; gain = 0.312
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4703 ; free virtual = 16586
+Finished Constraint Validation : Time (s): cpu = 00:01:10 ; elapsed = 00:01:26 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4768 ; free virtual = 16652
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:10 ; elapsed = 00:01:26 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_tc_out_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_tc_out_0_synth_1/dont_touch.xdc, line 9).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/xpm_cdc_single_inst. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4766 ; free virtual = 16650
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:26 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 ---------------------------------------------------------------------------------------------------
@@ -298,7 +366,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4551 ; free virtual = 16466
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:16 ; elapsed = 00:01:33 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -362,25 +430,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:36 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4313 ; free virtual = 16254
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:54 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4552 ; free virtual = 16522
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:53 ; elapsed = 00:02:13 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:42 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4391 ; free virtual = 16362
+Finished Timing Optimization : Time (s): cpu = 00:01:59 ; elapsed = 00:02:19 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4304 ; free virtual = 16274
+Finished Technology Mapping : Time (s): cpu = 00:02:03 ; elapsed = 00:02:23 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -398,37 +466,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4177 ; free virtual = 16194
+Finished IO Insertion : Time (s): cpu = 00:02:19 ; elapsed = 00:02:41 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4177 ; free virtual = 16194
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:19 ; elapsed = 00:02:41 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4099 ; free virtual = 16118
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:20 ; elapsed = 00:02:42 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4094 ; free virtual = 16114
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:20 ; elapsed = 00:02:42 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4086 ; free virtual = 16106
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:21 ; elapsed = 00:02:42 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4084 ; free virtual = 16104
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:21 ; elapsed = 00:02:42 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -475,31 +543,31 @@ Report Cell Usage:
 |11    |FDSE   |   203|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4084 ; free virtual = 16104
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:21 ; elapsed = 00:02:43 . Memory (MB): peak = 1637.102 ; gain = 703.996
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 922 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 2576.527 ; gain = 519.426 ; free physical = 4074 ; free virtual = 16101
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 2576.527 ; gain = 658.207 ; free physical = 4070 ; free virtual = 16100
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:31 ; elapsed = 00:02:30 . Memory (MB): peak = 1637.102 ; gain = 613.125
+Synthesis Optimization Complete : Time (s): cpu = 00:02:21 ; elapsed = 00:02:43 . Memory (MB): peak = 1637.102 ; gain = 703.996
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2576.527 ; gain = 0.000 ; free physical = 5157 ; free virtual = 17200
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.238 . Memory (MB): peak = 1637.102 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 205 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2576.527 ; gain = 0.000 ; free physical = 5189 ; free virtual = 17234
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1637.102 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: 321bdb26
 INFO: [Common 17-83] Releasing license: Synthesis
-41 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+43 Infos, 166 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 2576.527 ; gain = 1001.250 ; free physical = 5175 ; free virtual = 17223
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1717.013; main = 1422.926; forked = 315.466
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4147.324; main = 2576.531; forked = 1602.809
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_tc_out_0_synth_1/system_v_tc_out_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_v_tc_out_0, cache-ID = 2f31eab1f69ad93e
+synth_design: Time (s): cpu = 00:02:36 ; elapsed = 00:03:05 . Memory (MB): peak = 1637.102 ; gain = 1123.777
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1637.102 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_tc_out_0_synth_1/system_v_tc_out_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_v_tc_out_0, cache-ID = ca894cebe7c493fa
 INFO: [Coretcl 2-1174] Renamed 12 cell refs.
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_tc_out_0_synth_1/system_v_tc_out_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1637.102 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_tc_out_0_synth_1/system_v_tc_out_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_v_tc_out_0_utilization_synth.rpt -pb system_v_tc_out_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 15 18:45:36 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 19 16:41:45 2024...

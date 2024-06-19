@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Wed May 15 18:43:48 2024
-// Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+// Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+// Date        : Wed Jun 19 16:38:09 2024
+// Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0_sim_netlist.v
+//               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0_sim_netlist.v
 // Design      : system_rgb2dvi_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_rgb2dvi_1_0,rgb2dvi,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "rgb2dvi,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "system_rgb2dvi_1_0,rgb2dvi,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "rgb2dvi,Vivado 2023.2.2" *) 
 (* NotValidForBitStream *)
 module system_rgb2dvi_1_0
    (TMDS_Clk_p,
@@ -27,8 +27,8 @@ module system_rgb2dvi_1_0
     vid_pVSync,
     PixelClk,
     SerialClk);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK, digilentinc.com:interface:tmds:1.0 TMDS CLK_P" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE, XIL_INTERFACENAME TMDS_Clk_p, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output TMDS_Clk_p;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK, digilentinc.com:interface:tmds:1.0 TMDS CLK_N" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output TMDS_Clk_n;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_P, xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE, XIL_INTERFACENAME TMDS_Clk_p, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output TMDS_Clk_p;
+  (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS CLK_N, xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0" *) output TMDS_Clk_n;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_P" *) output [2:0]TMDS_Data_p;
   (* x_interface_info = "digilentinc.com:interface:tmds:1.0 TMDS DATA_N" *) output [2:0]TMDS_Data_n;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 AsyncRst_n RST" *) (* x_interface_parameter = "XIL_INTERFACENAME AsyncRst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input aRst_n;
@@ -829,16 +829,16 @@ module system_rgb2dvi_1_0_TMDS_Encoder
   wire \pDataOut_1_reg_n_0_[0] ;
   wire pVde_1;
   wire p_0_in;
-  wire p_0_in6_in;
-  wire p_0_in7_in;
-  wire p_0_in8_in;
-  wire p_0_in9_in;
   wire p_1_in;
-  wire p_1_in12_in;
+  wire p_1_in6_in;
   wire p_2_in;
+  wire p_2_in1_in;
   wire p_3_in;
+  wire p_3_in2_in;
+  wire p_4_in3_in;
   wire p_4_in5_in;
   wire p_5_in;
+  wire p_5_in4_in;
   wire p_6_in8_in;
   wire [8:8]q_m_2;
   wire \q_m_2[1]_i_1__0_n_0 ;
@@ -1653,7 +1653,7 @@ module system_rgb2dvi_1_0_TMDS_Encoder
        (.I0(\pDataOut_1_reg_n_0_[0] ),
         .I1(p_0_in),
         .I2(p_1_in),
-        .O(p_0_in9_in));
+        .O(p_5_in4_in));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT5 #(
     .INIT(32'h69969669)) 
@@ -1663,7 +1663,7 @@ module system_rgb2dvi_1_0_TMDS_Encoder
         .I2(p_0_in),
         .I3(\pDataOut_1_reg_n_0_[0] ),
         .I4(p_2_in),
-        .O(p_0_in8_in));
+        .O(p_4_in3_in));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'h96696996)) 
@@ -1673,7 +1673,7 @@ module system_rgb2dvi_1_0_TMDS_Encoder
         .I2(p_0_in),
         .I3(p_1_in),
         .I4(p_3_in),
-        .O(p_0_in7_in));
+        .O(p_3_in2_in));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'h96)) 
@@ -1681,7 +1681,7 @@ module system_rgb2dvi_1_0_TMDS_Encoder
        (.I0(\q_m_2[8]_i_1_n_0 ),
         .I1(\q_m_2[7]_i_2_n_0 ),
         .I2(p_4_in5_in),
-        .O(p_0_in6_in));
+        .O(p_2_in1_in));
   (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'h69)) 
@@ -1699,7 +1699,7 @@ module system_rgb2dvi_1_0_TMDS_Encoder
         .I2(p_4_in5_in),
         .I3(p_6_in8_in),
         .I4(p_5_in),
-        .O(p_1_in12_in));
+        .O(p_1_in6_in));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT5 #(
     .INIT(32'h69969669)) 
@@ -1734,25 +1734,25 @@ module system_rgb2dvi_1_0_TMDS_Encoder
   FDRE \q_m_2_reg[2] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(p_0_in9_in),
+        .D(p_5_in4_in),
         .Q(\q_m_2_reg_n_0_[2] ),
         .R(1'b0));
   FDRE \q_m_2_reg[3] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(p_0_in8_in),
+        .D(p_4_in3_in),
         .Q(\q_m_2_reg_n_0_[3] ),
         .R(1'b0));
   FDRE \q_m_2_reg[4] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(p_0_in7_in),
+        .D(p_3_in2_in),
         .Q(\q_m_2_reg_n_0_[4] ),
         .R(1'b0));
   FDRE \q_m_2_reg[5] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(p_0_in6_in),
+        .D(p_2_in1_in),
         .Q(\q_m_2_reg_n_0_[5] ),
         .R(1'b0));
   FDRE \q_m_2_reg[6] 
@@ -1764,7 +1764,7 @@ module system_rgb2dvi_1_0_TMDS_Encoder
   FDRE \q_m_2_reg[7] 
        (.C(PixelClk),
         .CE(1'b1),
-        .D(p_1_in12_in),
+        .D(p_1_in6_in),
         .Q(\q_m_2_reg_n_0_[7] ),
         .R(1'b0));
   FDRE \q_m_2_reg[8] 

@@ -591,18 +591,18 @@
         <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
         <spirit:displayName>Simulation</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
-        <spirit:modelName>vfb_v1_0_22_top</spirit:modelName>
+        <spirit:modelName>vfb_v1_0_24_top</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:27 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:eb548e1b</spirit:value>
+            <spirit:value>9:4663067d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -617,11 +617,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:27 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:eb548e1b</spirit:value>
+            <spirit:value>9:4663067d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -629,18 +629,18 @@
         <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
         <spirit:displayName>Synthesis</spirit:displayName>
         <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
-        <spirit:modelName>vfb_v1_0_22</spirit:modelName>
+        <spirit:modelName>vfb_v1_0_24</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:27 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bd6e4d54</spirit:value>
+            <spirit:value>9:1059c532</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -655,11 +655,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:27 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bd6e4d54</spirit:value>
+            <spirit:value>9:1059c532</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -673,11 +673,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:18:27 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:18:26 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7ba7d207</spirit:value>
+            <spirit:value>9:c7fe8fc0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -691,11 +691,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:37:55 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:25:27 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bd6e4d54</spirit:value>
+            <spirit:value>9:1059c532</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -709,11 +709,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:27 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:bd6e4d54</spirit:value>
+            <spirit:value>9:1059c532</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1348,10 +1348,10 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/c9b0/hdl/vfb_v1_0_rfs.v</spirit:name>
+        <spirit:name>../../../../../ipshared/4efc/hdl/vfb_v1_0_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>vfb_v1_0_22</spirit:logicalName>
+        <spirit:logicalName>vfb_v1_0_24</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>bd_ca02_vfb_0_0_core.v</spirit:name>
@@ -1416,9 +1416,9 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../ipshared/c9b0/hdl/vfb_v1_0_syn_rfs.v</spirit:name>
+        <spirit:name>../../../../../ipshared/4efc/hdl/vfb_v1_0_syn_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>vfb_v1_0_22</spirit:logicalName>
+        <spirit:logicalName>vfb_v1_0_24</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>bd_ca02_vfb_0_0_core.v</spirit:name>
@@ -1439,32 +1439,16 @@
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ip_0/bd_ca02_vfb_0_0_axis_converter.xml</spirit:name>
-        <spirit:userFileType>xml</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>ip_1/bd_ca02_vfb_0_0_axisswitch.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>ip_1/bd_ca02_vfb_0_0_axisswitch.xml</spirit:name>
-        <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>ip_2/bd_ca02_vfb_0_0_sli.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>ip_2/bd_ca02_vfb_0_0_sli.xml</spirit:name>
-        <spirit:userFileType>xml</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>ip_3/bd_ca02_vfb_0_0_slo.xci</spirit:name>
         <spirit:userFileType>xci</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>ip_3/bd_ca02_vfb_0_0_slo.xml</spirit:name>
-        <spirit:userFileType>xml</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1640,7 +1624,7 @@
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_CDC</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>22</xilinx:coreRevision>
+      <xilinx:coreRevision>24</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_VFB.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_VFB.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
@@ -1696,9 +1680,9 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2023.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2023.2.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="cd690191"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="df6f0eb4"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7bb234be"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="a54e731d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="03243158"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="40ce2dc7"/>

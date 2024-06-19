@@ -3,164 +3,260 @@
     with args -log bd_ca02_rx_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ca02_rx_0.tcl
 
 
-****** Vivado v2023.1 (64-bit)
-  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
-  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+Commande ECHO d‚sactiv‚e.
+Commande ECHO d‚sactiv‚e.
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
-Sourcing tcl script '/nfs/xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
 source bd_ca02_rx_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1539.262 ; gain = 0.023 ; free physical = 227 ; free virtual = 20906
+create_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 476.637 ; gain = 182.734
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/TER/PetaENC_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:AXI_DPTI:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/AXI_DPTI_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/AXI_DPTI_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:axi_dynclk:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_dynclk' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_dynclk
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:axi_i2s_adi:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_i2s_adi_1.2' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_i2s_adi_1.2
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:axi_ps2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_ps2_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_ps2_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:clock_forwarder:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/clock_forwarder' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/clock_forwarder
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:dvi2rgb:2.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/dvi2rgb' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/dvi2rgb
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_contrast_stretch:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_contrast_stretch_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_contrast_stretch_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_gamma_correction:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_gamma_correction_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_gamma_correction_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_saturation_enhance:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_saturation_enhance_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_saturation_enhance_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:MIPI_CSI_2_RX:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MIPI_CSI_2_RX' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MIPI_CSI_2_RX
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:MIPI_D_PHY_RX:1.3'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MIPI_D_PHY_RX' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MIPI_D_PHY_RX
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:MotorFeedback:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MotorFeedback_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MotorFeedback_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodACL2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodACL2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodACL_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodACL_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD5:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD5_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD5_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodALS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodALS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodALS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAMP2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAMP2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAMP2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAQS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAQS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAQS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBLE:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodBLE_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodBLE_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBT2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodBT2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodBT2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCAN:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCAN_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCAN_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCLS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCLS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCLS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCMPS2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCMPS2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCMPS2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCOLOR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCOLOR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCOLOR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDA1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDA1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDA1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDHB1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDHB1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDHB1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDPG1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDPG1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDPG1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodENC:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodENC_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodENC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:PmodESP32:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodESP32_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodESP32_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPIO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGPIO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGPIO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPS:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGPS_v1_1' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGPS_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGYRO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGYRO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGYRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodHYGRO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodHYGRO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodHYGRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodJSTK2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodJSTK2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodJSTK_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodJSTK_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodKYPD:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodKYPD_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodKYPD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMAXSONAR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodMAXSONAR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodMAXSONAR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMTDS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodMTDS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodMTDS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodNAV:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodNAV_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodNAV_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLEDrgb:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLED:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodOLED_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodOLED_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodPIR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodPIR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodPIR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodR2R:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodR2R_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodR2R_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodRTCC:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodRTCC_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodRTCC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSD:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodSD_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodSD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSF3:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodSF3_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodSF3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTC1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodTC1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodTC1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTMP3:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodTMP3_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodTMP3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodWIFI:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodWIFI_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodWIFI_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/Pmod_Bridge_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_1' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/Pmod_Bridge_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:2.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_2.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_2.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM_Analyzer:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_Analyzer_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_Analyzer_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dpvid:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dpvid_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dpvid_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.4'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dvi' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dvi
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2vga:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2vga_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2vga_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:Sync:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Sync_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Sync_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:usb2device:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/usb2device_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/usb2device_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:video:video_scaler:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/video_scaler' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/video_scaler
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'c:/Users/hdway/Documents/vivado/vivado-library/if/pmod_v1_0/pmod.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:tmds:1.0'. The one found in location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/if/tmds_v1_0/tmds.xml' will take precedence over the same Interface in location 'c:/Users/hdway/Documents/vivado/vivado-library/if/tmds_v1_0/tmds.xml'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 485.840 ; gain = 9.203
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_ca02_rx_0
 Command: synth_design -top bd_ca02_rx_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 122034
-INFO: [Synth 8-11241] undeclared symbol 'isr_38_vld_out', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:1563]
-INFO: [Synth 8-11241] undeclared symbol 'isr_39_vld_out', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:1568]
-INFO: [Synth 8-11241] undeclared symbol 'isr_40_vld_out', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:1573]
-INFO: [Synth 8-11241] undeclared symbol 'isr_41_vld_out', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:1579]
-INFO: [Synth 8-11241] undeclared symbol 'isr_53', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:1602]
-INFO: [Synth 8-11241] undeclared symbol 'pkt_last_data', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:6440]
-INFO: [Synth 8-11241] undeclared symbol 'vc_err', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:10241]
-INFO: [Synth 8-11241] undeclared symbol 'di_not_supported', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:10242]
-INFO: [Synth 8-11241] undeclared symbol 'di_null_blank', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/116e/hdl/mipi_csi2_rx_ctrl_v1_0_rfs.v:10243]
+INFO: [Synth 8-7075] Helper process launched with PID 16592
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 2295.637 ; gain = 377.676 ; free physical = 246 ; free virtual = 10632
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:43 . Memory (MB): peak = 1373.020 ; gain = 438.863
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'bd_ca02_rx_0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/synth/bd_ca02_rx_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
-INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
-INFO: [Synth 8-226] default block is never used [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
-INFO: [Synth 8-226] default block is never used [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
-INFO: [Synth 8-226] default block is never used [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1907]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1907]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
-INFO: [Synth 8-226] default block is never used [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1207]
-INFO: [Synth 8-226] default block is never used [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1274]
-INFO: [Synth 8-226] default block is never used [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1296]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_pulse' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_pulse' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized1' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized1' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2151]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
-INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1885]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1885]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1885]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1885]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1619]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized8' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized8' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized9' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized9' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2151]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized0' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2151]
-INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized2' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
-INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized2' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized0' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2151]
-INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized2' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
-INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized2' (0#1) [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:902]
-INFO: [Synth 8-6155] done synthesizing module 'bd_ca02_rx_0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/synth/bd_ca02_rx_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3071]
-WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
-WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3071]
-WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:969]
-WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
-WARNING: [Synth 8-6014] Unused sequential element dest_pulse_ff_reg was removed.  [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:860]
-WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
-WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
-WARNING: [Synth 8-7129] Port crc_data_en[3] in module mipi_csi2_rx_ctrl_v1_0_8_crc0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port crc_data_en[2] in module mipi_csi2_rx_ctrl_v1_0_8_crc0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port crc_data_en[1] in module mipi_csi2_rx_ctrl_v1_0_8_crc0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port crc_data_en[0] in module mipi_csi2_rx_ctrl_v1_0_8_crc0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port crclockresult in module mipi_csi2_rx_ctrl_v1_0_8_crc0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port vc_fixed[3] in module mipi_csi2_rx_ctrl_v1_0_8_stream is either unconnected or has no load
-WARNING: [Synth 8-7129] Port vc_fixed[2] in module mipi_csi2_rx_ctrl_v1_0_8_stream is either unconnected or has no load
-WARNING: [Synth 8-7129] Port vc_fixed[1] in module mipi_csi2_rx_ctrl_v1_0_8_stream is either unconnected or has no load
-WARNING: [Synth 8-7129] Port vc_fixed[0] in module mipi_csi2_rx_ctrl_v1_0_8_stream is either unconnected or has no load
-WARNING: [Synth 8-7129] Port diwc_valid in module mipi_csi2_rx_ctrl_v1_0_8_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port byt_cnt_lte4 in module mipi_csi2_rx_ctrl_v1_0_8_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port state_sel[1] in module mipi_csi2_rx_ctrl_v1_0_8_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port state_sel[0] in module mipi_csi2_rx_ctrl_v1_0_8_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port di_not_supported in module mipi_csi2_rx_ctrl_v1_0_8_phecc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port di_null_blank in module mipi_csi2_rx_ctrl_v1_0_8_phecc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port pkt_data[31] in module mipi_csi2_rx_ctrl_v1_0_8_phecc is either unconnected or has no load
-WARNING: [Synth 8-7129] Port pkt_data[30] in module mipi_csi2_rx_ctrl_v1_0_8_phecc is either unconnected or has no load
+INFO: [Synth 8-6157] synthesizing module 'bd_ca02_rx_0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/synth/bd_ca02_rx_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1962]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1214]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1281]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1303]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_bit' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1914]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_bit' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1914]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1626]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1626]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized2' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized2' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1962]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1962]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized4' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1214]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1281]
+INFO: [Synth 8-226] default block is never used [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1303]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized5' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized5' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized6' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized6' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1962]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_pulse' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_pulse' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:714]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2158]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1892]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1892]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_reg_vec__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1892]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_reg_vec__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1892]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_rst__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1626]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_rst__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1626]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized8' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized8' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized9' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized9' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1866]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized1' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2158]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_async__parameterized0' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2158]
+INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized2' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized2' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_async__parameterized0' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2158]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized2' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized2' (0#1) [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ca02_rx_0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/synth/bd_ca02_rx_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3069]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1398]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3069]
+WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:976]
+WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1398]
+WARNING: [Synth 8-6014] Unused sequential element dest_pulse_ff_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:860]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data_en[3] in module mipi_csi2_rx_ctrl_v1_0_9_crc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data_en[2] in module mipi_csi2_rx_ctrl_v1_0_9_crc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data_en[1] in module mipi_csi2_rx_ctrl_v1_0_9_crc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crc_data_en[0] in module mipi_csi2_rx_ctrl_v1_0_9_crc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port crclockresult in module mipi_csi2_rx_ctrl_v1_0_9_crc0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vc_fixed[3] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vc_fixed[2] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vc_fixed[1] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vc_fixed[0] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[31] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[30] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[29] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[28] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[27] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[26] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[25] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[24] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[23] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[22] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[21] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[20] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[19] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[18] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[17] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[16] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[15] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[14] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[13] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[12] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[11] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[10] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[9] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[8] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[7] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[6] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[5] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[4] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[3] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[2] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[1] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_data[0] in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port header_valid in module mipi_csi2_rx_ctrl_v1_0_9_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port diwc_valid in module mipi_csi2_rx_ctrl_v1_0_9_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byt_cnt_lte4 in module mipi_csi2_rx_ctrl_v1_0_9_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state_sel[1] in module mipi_csi2_rx_ctrl_v1_0_9_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state_sel[0] in module mipi_csi2_rx_ctrl_v1_0_9_data is either unconnected or has no load
+WARNING: [Synth 8-7129] Port di_not_supported in module mipi_csi2_rx_ctrl_v1_0_9_phecc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port di_null_blank in module mipi_csi2_rx_ctrl_v1_0_9_phecc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[31] in module mipi_csi2_rx_ctrl_v1_0_9_phecc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_data[30] in module mipi_csi2_rx_ctrl_v1_0_9_phecc is either unconnected or has no load
 WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_array_single__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port pkt_fifo_rdata[39] in module mipi_csi2_rx_ctrl_v1_0_8_control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port pkt_fifo_rdata[38] in module mipi_csi2_rx_ctrl_v1_0_8_control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port pkt_fifo_rdata[29] in module mipi_csi2_rx_ctrl_v1_0_8_control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port pkt_fifo_rdata[28] in module mipi_csi2_rx_ctrl_v1_0_8_control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port reg_control[1] in module mipi_csi2_rx_ctrl_v1_0_8_control is either unconnected or has no load
-WARNING: [Synth 8-7129] Port data_status in module mipi_csi2_rx_ctrl_v1_0_8_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_fifo_rdata[39] in module mipi_csi2_rx_ctrl_v1_0_9_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_fifo_rdata[38] in module mipi_csi2_rx_ctrl_v1_0_9_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_fifo_rdata[29] in module mipi_csi2_rx_ctrl_v1_0_9_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pkt_fifo_rdata[28] in module mipi_csi2_rx_ctrl_v1_0_9_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reg_control[1] in module mipi_csi2_rx_ctrl_v1_0_9_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data_status in module mipi_csi2_rx_ctrl_v1_0_9_control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized2 is either unconnected or has no load
@@ -203,122 +299,89 @@ WARNING: [Synth 8-7129] Port dinb[10] in module xpm_memory_base__parameterized2 
 WARNING: [Synth 8-7129] Port dinb[9] in module xpm_memory_base__parameterized2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port dinb[8] in module xpm_memory_base__parameterized2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port dinb[7] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[6] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[5] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[4] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[3] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[2] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[1] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[0] in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port injectsbiterrb in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port injectdbiterrb in module xpm_memory_base__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
-WARNING: [Synth 8-7129] Port active_lanes[1] in module mipi_csi2_rx_ctrl_v1_0_8_lane_merger is either unconnected or has no load
-WARNING: [Synth 8-7129] Port active_lanes[0] in module mipi_csi2_rx_ctrl_v1_0_8_lane_merger is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[25] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[24] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[22] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[21] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[20] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[19] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[18] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[17] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[16] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[15] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[14] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[13] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[12] in module xpm_memory_base__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port dinb[11] in module xpm_memory_base__parameterized1 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2441.543 ; gain = 523.582 ; free physical = 204 ; free virtual = 8986
+Finished RTL Elaboration : Time (s): cpu = 00:00:36 ; elapsed = 00:01:04 . Memory (MB): peak = 1567.062 ; gain = 632.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2456.387 ; gain = 538.426 ; free physical = 198 ; free virtual = 8904
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:06 . Memory (MB): peak = 1567.062 ; gain = 632.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 2456.387 ; gain = 538.426 ; free physical = 198 ; free virtual = 8904
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:37 ; elapsed = 00:01:06 . Memory (MB): peak = 1567.062 ; gain = 632.906
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2462.324 ; gain = 0.000 ; free physical = 186 ; free virtual = 8777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.526 . Memory (MB): peak = 1567.062 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0_fixed_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0_fixed_ooc.xdc] for cell 'inst'
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0.xdc] for cell 'inst'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0.xdc] for cell 'inst'
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_rx_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_rx_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0_fixed_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0_fixed_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_2/bd_ca02_rx_0.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_rx_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_rx_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ca02_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ca02_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ca02_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_18' of design 'preSynthElab_1' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_18' of design 'preSynthElab_1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
 WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
      Instance: inst/AXI_LITE.reg_inf/xpm_single_18 
   This will add unnecessary latency to the design. Please check the design for the following: 
- 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
- 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
- [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
-INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_19' of design 'preSynthElab_1' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_19' of design 'preSynthElab_1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
 WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
      Instance: inst/AXI_LITE.reg_inf/xpm_single_19 
   This will add unnecessary latency to the design. Please check the design for the following: 
- 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
- 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
- [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
-INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_20' of design 'preSynthElab_1' [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Vivado 12-3272] Current instance is the top level cell 'inst/AXI_LITE.reg_inf/xpm_single_20' of design 'preSynthElab_1' [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
 WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
      Instance: inst/AXI_LITE.reg_inf/xpm_single_20 
   This will add unnecessary latency to the design. Please check the design for the following: 
- 1) Manually instantiated XPM_CDC modules: Xilinx recommends that you remove these modules. 
- 2) Xilinx IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
- [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ca02_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ca02_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/xilinx/Vivado/2023.1/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2023.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ca02_rx_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ca02_rx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-1714] 211 XPM XDC files have been applied to the design.
+INFO: [Project 1-1714] 213 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2597.137 ; gain = 0.000 ; free physical = 341 ; free virtual = 8533
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1659.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2597.137 ; gain = 0.000 ; free physical = 339 ; free virtual = 8534
+Le chemin d'accŠs sp‚cifi‚ est introuvable.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.504 . Memory (MB): peak = 1659.047 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 272 ; free virtual = 8524
+Finished Constraint Validation : Time (s): cpu = 00:01:12 ; elapsed = 00:01:55 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 272 ; free virtual = 8524
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:12 ; elapsed = 00:01:55 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_rx_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_rx_0_synth_1/dont_touch.xdc, line 6).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_array_single_02. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_array_single_03. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_array_single_04. (constraint file  auto generated constraint).
@@ -330,6 +393,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_arst_01. (constraint fil
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/xpm_arst_03. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_arst_04. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_arst_05. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_arst_vid1500. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/gen_pkt_fifo/pkt_fifo/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.rd_pntr_cdc_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /gen_spkt_fifo/generic_pkt/\gnuram_async_fifo.xpm_fifo_base_inst /\gen_cdc_pntr.wr_pntr_cdc_inst . (constraint file  auto generated constraint).
@@ -518,6 +582,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_frst_c2p. (constr
 Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_frst_p2c. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_vfb_02. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.isr_cdc /xpm_single_w2b4w1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xpm_single_wr2_ss. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_02. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_05. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\AXI_LITE.reg_inf /xpm_single_vfb_01. (constraint file  auto generated constraint).
@@ -531,7 +596,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/\LANE_1.ppi_fifo0 /\CSI_OPT3
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\LANE_2.ppi_fifo1 /\CSI_OPT3_OFF.ppi_fifo . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/\RX_1500M.line_buffer /line_buf. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 259 ; free virtual = 8522
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:02:00 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base__parameterized0'
@@ -539,7 +604,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__parameterized0__xdcDup__1'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_wrst_state_reg' in module 'xpm_fifo_rst__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'gen_rst_ic.curr_rrst_state_reg' in module 'xpm_fifo_rst__parameterized0'
-INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'mipi_csi2_rx_ctrl_v1_0_8_control'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'mipi_csi2_rx_ctrl_v1_0_9_control'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -614,9 +679,9 @@ INFO: [Synth 8-3354] encoded FSM with state register 'gen_rst_ic.curr_rrst_state
                  iSTATE0 |                              011 |                              100
                  iSTATE2 |                              001 |                              011
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'sequential' in module 'mipi_csi2_rx_ctrl_v1_0_8_control'
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'sequential' in module 'mipi_csi2_rx_ctrl_v1_0_9_control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:38 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 249 ; free virtual = 8478
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:27 ; elapsed = 00:02:14 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -647,7 +712,7 @@ Detailed RTL Component Info :
 	   2 Input      8 Bit         XORs := 1     
 	   2 Input      6 Bit         XORs := 4     
 	   2 Input      5 Bit         XORs := 4     
-	   2 Input      1 Bit         XORs := 125   
+	   2 Input      1 Bit         XORs := 126   
 	   3 Input      1 Bit         XORs := 21    
 	   4 Input      1 Bit         XORs := 13    
 	   7 Input      1 Bit         XORs := 6     
@@ -675,9 +740,9 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 48    
 	                5 Bit    Registers := 34    
 	                4 Bit    Registers := 15    
-	                3 Bit    Registers := 147   
+	                3 Bit    Registers := 149   
 	                2 Bit    Registers := 32    
-	                1 Bit    Registers := 720   
+	                1 Bit    Registers := 721   
 +---RAMs : 
 	             272K Bit	(4096 X 68 bit)          RAMs := 1     
 +---Muxes : 
@@ -686,14 +751,17 @@ Detailed RTL Component Info :
 	   3 Input   56 Bit        Muxes := 1     
 	   2 Input   56 Bit        Muxes := 2     
 	  12 Input   40 Bit        Muxes := 2     
+	   2 Input   33 Bit        Muxes := 1     
 	   2 Input   32 Bit        Muxes := 24    
 	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
 	  28 Input   26 Bit        Muxes := 1     
 	   2 Input   24 Bit        Muxes := 2     
 	   2 Input   16 Bit        Muxes := 9     
 	   4 Input   16 Bit        Muxes := 2     
 	  10 Input   16 Bit        Muxes := 1     
 	   3 Input   16 Bit        Muxes := 1     
+	   4 Input   15 Bit        Muxes := 1     
 	   2 Input   10 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 5     
 	   2 Input    6 Bit        Muxes := 6     
@@ -741,7 +809,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:57 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 3547 ; free virtual = 13609
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:34 ; elapsed = 00:03:33 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
@@ -778,14 +846,14 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/AXI_LITE.reg_inf/gen
 INFO: [Synth 8-5578] Moved timing constraint from pin 'inst/xpm_arst_05/src_arst' to pin 'inst/rstn_i1_inferred/i_0/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:12 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5851 ; free virtual = 17644
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:57 ; elapsed = 00:04:00 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:14 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5471 ; free virtual = 17308
+Finished Timing Optimization : Time (s): cpu = 00:03:02 ; elapsed = 00:04:05 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -816,7 +884,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:17 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 4428 ; free virtual = 16412
+Finished Technology Mapping : Time (s): cpu = 00:03:13 ; elapsed = 00:04:19 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -837,37 +905,37 @@ INFO: [Synth 8-3295] tying undriven pin RX_1500M.line_buffer/line_buf:sleep to c
 INFO: [Synth 8-3295] tying undriven pin AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt:sleep to constant 0
 INFO: [Synth 8-3295] tying undriven pin gen_pkt_fifo/pkt_fifo:sleep to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:21 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5485 ; free virtual = 17753
+Finished IO Insertion : Time (s): cpu = 00:03:33 ; elapsed = 00:04:41 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:21 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5483 ; free virtual = 17751
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:33 ; elapsed = 00:04:41 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:22 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5450 ; free virtual = 17712
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:34 ; elapsed = 00:04:43 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:22 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5452 ; free virtual = 17711
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:34 ; elapsed = 00:04:43 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:29 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5393 ; free virtual = 17655
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:35 ; elapsed = 00:04:44 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:29 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5393 ; free virtual = 17656
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:35 ; elapsed = 00:04:44 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -877,7 +945,7 @@ Static Shift Register Report:
 +-----------------------------+-------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 |Module Name                  | RTL Name    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
 +-----------------------------+-------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|mipi_csi2_rx_ctrl_v1_0_8_top | frst_d3_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|mipi_csi2_rx_ctrl_v1_0_9_top | frst_d3_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
 +-----------------------------+-------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
 
 ---------------------------------------------------------------------------------
@@ -898,51 +966,53 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |CARRY4   |    95|
-|2     |LUT1     |    70|
+|2     |LUT1     |    71|
 |3     |LUT2     |   403|
 |4     |LUT3     |   261|
 |5     |LUT4     |   482|
 |6     |LUT5     |   364|
-|7     |LUT6     |   917|
+|7     |LUT6     |   918|
 |8     |MUXF7    |    41|
 |9     |MUXF8    |    19|
 |10    |RAM32M   |    15|
 |11    |RAM32X1D |     2|
 |12    |RAMB36E1 |     8|
 |13    |SRL16E   |     1|
-|14    |FDCE     |    46|
+|14    |FDCE     |    49|
 |15    |FDPE     |    33|
-|16    |FDRE     |  3691|
+|16    |FDRE     |  3695|
 |17    |FDSE     |    81|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:29 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5393 ; free virtual = 17656
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:35 ; elapsed = 00:04:44 . Memory (MB): peak = 1659.047 ; gain = 724.891
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 382 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:23 . Memory (MB): peak = 2597.137 ; gain = 538.426 ; free physical = 5353 ; free virtual = 17627
-Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:29 . Memory (MB): peak = 2597.137 ; gain = 679.176 ; free physical = 5353 ; free virtual = 17627
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:45 ; elapsed = 00:04:24 . Memory (MB): peak = 1659.047 ; gain = 632.906
+Synthesis Optimization Complete : Time (s): cpu = 00:03:36 ; elapsed = 00:04:45 . Memory (MB): peak = 1659.047 ; gain = 724.891
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2597.137 ; gain = 0.000 ; free physical = 5749 ; free virtual = 18046
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.290 . Memory (MB): peak = 1659.047 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 180 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2597.137 ; gain = 0.000 ; free physical = 5673 ; free virtual = 17988
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1659.047 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 17 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 15 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
 
-Synth Design complete | Checksum: 34c7e1fe
+Le chemin d'accŠs sp‚cifi‚ est introuvable.
+Synth Design complete | Checksum: ce60a304
 INFO: [Common 17-83] Releasing license: Synthesis
-164 Infos, 112 Warnings, 0 Critical Warnings and 0 Errors encountered.
+157 Infos, 177 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:44 . Memory (MB): peak = 2597.137 ; gain = 1021.219 ; free physical = 5604 ; free virtual = 17919
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1283.771; main = 1074.428; forked = 310.596
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4155.258; main = 2597.141; forked = 1590.133
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_rx_0_synth_1/bd_ca02_rx_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ca02_rx_0, cache-ID = fb50c903ebb11544
-INFO: [Coretcl 2-1174] Renamed 284 cell refs.
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_rx_0_synth_1/bd_ca02_rx_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:03:56 ; elapsed = 00:05:12 . Memory (MB): peak = 1659.047 ; gain = 1145.836
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1659.047 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_rx_0_synth_1/bd_ca02_rx_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ca02_rx_0, cache-ID = f1e58cf6641f5756
+INFO: [Coretcl 2-1174] Renamed 286 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1659.047 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_rx_0_synth_1/bd_ca02_rx_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1659.047 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file bd_ca02_rx_0_utilization_synth.rpt -pb bd_ca02_rx_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 15 18:38:43 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 19 16:28:01 2024...

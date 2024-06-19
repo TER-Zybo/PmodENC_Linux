@@ -3,8 +3,8 @@
   "ip_inst": {
     "xci_name": "system_mipi_csi2_rx_subsystem_0_0",
     "cell_name": "mipi_csi2_rx_subsystem_0",
-    "component_reference": "xilinx.com:ip:mipi_csi2_rx_subsystem:5.3",
-    "ip_revision": "0",
+    "component_reference": "xilinx.com:ip:mipi_csi2_rx_subsystem:5.4",
+    "ip_revision": "1",
     "gen_directory": "../../../../../../hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0",
     "parameters": {
       "component_parameters": {
@@ -113,7 +113,7 @@
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
-        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zybo-z7-20:part0:1.2" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zybo-z7-20:part0:1.1" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7z020" } ],
         "PACKAGE": [ { "value": "clg400" } ],
@@ -126,12 +126,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "0" } ],
+        "IPREVISION": [ { "value": "1" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1" } ],
+        "SWVERSION": [ { "value": "2023.2.2" } ],
         "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
       }
     },
@@ -146,6 +146,7 @@
         "csirxss_csi_irq": [ { "direction": "out" } ],
         "video_aclk": [ { "direction": "in" } ],
         "video_aresetn": [ { "direction": "in" } ],
+        "frame_rcvd_pulse_out": [ { "direction": "out" } ],
         "csirxss_s_axi_awaddr": [ { "direction": "in", "size_left": "12", "size_right": "0", "driver_value": "0" } ],
         "csirxss_s_axi_awprot": [ { "direction": "in", "size_left": "2", "size_right": "0", "driver_value": "0" } ],
         "csirxss_s_axi_awvalid": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],

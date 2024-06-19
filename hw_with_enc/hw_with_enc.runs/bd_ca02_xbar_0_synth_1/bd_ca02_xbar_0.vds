@@ -1,199 +1,267 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed May 15 18:36:10 2024
-# Process ID: 121612
-# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1
-# Command line: vivado -log bd_ca02_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ca02_xbar_0.tcl
-# Log file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/bd_ca02_xbar_0.vds
-# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/vivado.jou
-# Running On: secil7.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 3997.503 MHz, CPU Physical cores: 8, Host memory: 16464 MB
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Jun 19 16:21:00 2024
+# Process ID: 4464
+# Current directory: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1
+# Command line: vivado.exe -log bd_ca02_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ca02_xbar_0.tcl
+# Log file: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1/bd_ca02_xbar_0.vds
+# Journal file: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1\vivado.jou
+# Running On: LAPTOP-DWAYNE, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 25520 MB
 #-----------------------------------------------------------
-Sourcing tcl script '/nfs/xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
 source bd_ca02_xbar_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1528.695 ; gain = 47.023 ; free physical = 241 ; free virtual = 20920
+create_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 476.355 ; gain = 182.430
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/TER/PetaENC_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:AXI_DPTI:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/AXI_DPTI_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/AXI_DPTI_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:axi_dynclk:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_dynclk' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_dynclk
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:axi_i2s_adi:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_i2s_adi_1.2' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_i2s_adi_1.2
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:axi_ps2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_ps2_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_ps2_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:clock_forwarder:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/clock_forwarder' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/clock_forwarder
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:dvi2rgb:2.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/dvi2rgb' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/dvi2rgb
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_contrast_stretch:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_contrast_stretch_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_contrast_stretch_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_gamma_correction:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_gamma_correction_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_gamma_correction_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_saturation_enhance:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_saturation_enhance_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_saturation_enhance_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:MIPI_CSI_2_RX:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MIPI_CSI_2_RX' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MIPI_CSI_2_RX
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:MIPI_D_PHY_RX:1.3'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MIPI_D_PHY_RX' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MIPI_D_PHY_RX
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:MotorFeedback:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MotorFeedback_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MotorFeedback_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodACL2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodACL2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodACL_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodACL_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD5:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD5_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD5_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodALS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodALS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodALS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAMP2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAMP2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAMP2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAQS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAQS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAQS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBLE:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodBLE_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodBLE_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBT2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodBT2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodBT2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCAN:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCAN_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCAN_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCLS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCLS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCLS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCMPS2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCMPS2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCMPS2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCOLOR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCOLOR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCOLOR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDA1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDA1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDA1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDHB1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDHB1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDHB1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDPG1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDPG1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDPG1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodENC:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodENC_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodENC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:PmodESP32:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodESP32_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodESP32_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPIO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGPIO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGPIO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPS:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGPS_v1_1' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGPS_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGYRO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGYRO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGYRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodHYGRO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodHYGRO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodHYGRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodJSTK2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodJSTK2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodJSTK_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodJSTK_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodKYPD:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodKYPD_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodKYPD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMAXSONAR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodMAXSONAR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodMAXSONAR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMTDS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodMTDS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodMTDS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodNAV:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodNAV_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodNAV_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLEDrgb:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLED:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodOLED_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodOLED_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodPIR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodPIR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodPIR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodR2R:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodR2R_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodR2R_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodRTCC:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodRTCC_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodRTCC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSD:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodSD_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodSD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSF3:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodSF3_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodSF3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTC1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodTC1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodTC1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTMP3:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodTMP3_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodTMP3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodWIFI:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodWIFI_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodWIFI_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/Pmod_Bridge_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_1' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/Pmod_Bridge_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:2.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_2.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_2.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM_Analyzer:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_Analyzer_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_Analyzer_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dpvid:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dpvid_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dpvid_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.4'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dvi' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dvi
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2vga:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2vga_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2vga_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:Sync:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Sync_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Sync_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:usb2device:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/usb2device_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/usb2device_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:video:video_scaler:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/video_scaler' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/video_scaler
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'c:/Users/hdway/Documents/vivado/vivado-library/if/pmod_v1_0/pmod.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:tmds:1.0'. The one found in location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/if/tmds_v1_0/tmds.xml' will take precedence over the same Interface in location 'c:/Users/hdway/Documents/vivado/vivado-library/if/tmds_v1_0/tmds.xml'
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 486.281 ; gain = 9.926
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_ca02_xbar_0
 Command: synth_design -top bd_ca02_xbar_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 122031
+INFO: [Synth 8-7075] Helper process launched with PID 13064
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 2304.945 ; gain = 378.645 ; free physical = 234 ; free virtual = 9587
+Starting RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:00:53 . Memory (MB): peak = 1381.086 ; gain = 438.520
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'bd_ca02_xbar_0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_0/synth/bd_ca02_xbar_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_crossbar_sasd' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_addr_decoder' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_addr_decoder' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_decerr_slave' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_decerr_slave' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_addr_arbiter_sasd' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_addr_arbiter_sasd' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:64]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_splitter' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_splitter' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_splitter__parameterized0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_splitter__parameterized0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_crossbar_sasd' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1239]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
-INFO: [Synth 8-6155] done synthesizing module 'bd_ca02_xbar_0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_0/synth/bd_ca02_xbar_0.v:53]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
-WARNING: [Synth 8-7129] Port S[0] in module generic_baseblocks_v2_1_0_mux_enc__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARLEN[7] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARLEN[6] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARLEN[5] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARLEN[4] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARLEN[3] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARLEN[2] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_29_decerr_slave is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_29_addr_decoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_29_addr_decoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_29_crossbar_sasd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_29_crossbar_sasd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_29_crossbar_sasd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_29_crossbar_sasd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_RID[1] in module axi_crossbar_v2_1_29_crossbar_sasd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_29_crossbar_sasd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wlast[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_bid[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rid[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rlast[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_rlast[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-6157] synthesizing module 'bd_ca02_xbar_0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_0/synth/bd_ca02_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_31_axi_crossbar' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_31_crossbar_sasd' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_31_addr_decoder' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_carry_and' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_carry_and' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_comparator_static__parameterized0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_31_addr_decoder' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_31_decerr_slave' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_31_decerr_slave' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_31_addr_arbiter_sasd' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_31_addr_arbiter_sasd' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_31_splitter' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_31_splitter' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_31_splitter__parameterized0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_31_splitter__parameterized0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_mux_enc' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_mux_enc' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_mux_enc__parameterized0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_mux_enc__parameterized0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_mux_enc__parameterized1' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_mux_enc__parameterized1' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_30_axic_register_slice' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/85f1/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_30_axic_register_slice' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/85f1/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_1_mux_enc__parameterized2' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_1_mux_enc__parameterized2' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/10ab/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_31_crossbar_sasd' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_31_axi_crossbar' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ca02_xbar_0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_0/synth/bd_ca02_xbar_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:2051]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:2062]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:2073]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/ba70/hdl/axi_crossbar_v2_1_vl_rfs.v:2086]
+WARNING: [Synth 8-7129] Port S[0] in module generic_baseblocks_v2_1_1_mux_enc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WLAST in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[7] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[6] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[5] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[4] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[3] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[2] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[1] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[0] in module axi_crossbar_v2_1_31_decerr_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_31_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_31_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_31_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_31_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[1] in module axi_crossbar_v2_1_31_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_BID[0] in module axi_crossbar_v2_1_31_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[1] in module axi_crossbar_v2_1_31_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXI_RID[0] in module axi_crossbar_v2_1_31_crossbar_sasd is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 2489.820 ; gain = 563.520 ; free physical = 183 ; free virtual = 8623
+Finished RTL Elaboration : Time (s): cpu = 00:00:52 ; elapsed = 00:01:27 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 2489.820 ; gain = 563.520 ; free physical = 205 ; free virtual = 8595
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:27 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 2489.820 ; gain = 563.520 ; free physical = 206 ; free virtual = 8594
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:52 ; elapsed = 00:01:27 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2489.820 ; gain = 0.000 ; free physical = 377 ; free virtual = 8520
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1627.109 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_0/bd_ca02_xbar_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_0/bd_ca02_xbar_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_0/bd_ca02_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/bd_0/ip/ip_0/bd_ca02_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2573.664 ; gain = 0.000 ; free physical = 313 ; free virtual = 8526
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1627.109 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2573.664 ; gain = 0.000 ; free physical = 312 ; free virtual = 8525
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1627.109 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 272 ; free virtual = 8524
+Finished Constraint Validation : Time (s): cpu = 00:01:21 ; elapsed = 00:02:10 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 272 ; free virtual = 8524
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:21 ; elapsed = 00:02:10 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1/dont_touch.xdc, line 6).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 272 ; free virtual = 8525
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:21 ; elapsed = 00:02:10 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 266 ; free virtual = 8521
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:23 ; elapsed = 00:02:12 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -227,47 +295,47 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
-WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/85f1/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_crossbar_v2_1_31_axi_crossbar is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 251 ; free virtual = 8497
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:02:20 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 493 ; free virtual = 8738
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:51 ; elapsed = 00:02:43 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 486 ; free virtual = 8733
+Finished Timing Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:44 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 478 ; free virtual = 8726
+Finished Technology Mapping : Time (s): cpu = 00:01:52 ; elapsed = 00:02:44 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -285,37 +353,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 515 ; free virtual = 8878
+Finished IO Insertion : Time (s): cpu = 00:02:11 ; elapsed = 00:03:07 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 515 ; free virtual = 8877
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:11 ; elapsed = 00:03:07 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 515 ; free virtual = 8877
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:11 ; elapsed = 00:03:07 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 515 ; free virtual = 8877
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:11 ; elapsed = 00:03:07 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 515 ; free virtual = 8877
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:11 ; elapsed = 00:03:07 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 515 ; free virtual = 8877
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:11 ; elapsed = 00:03:07 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -340,29 +408,30 @@ Report Cell Usage:
 |7     |FDRE |   105|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 515 ; free virtual = 8877
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:11 ; elapsed = 00:03:07 . Memory (MB): peak = 1627.109 ; gain = 684.543
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 2573.664 ; gain = 563.520 ; free physical = 503 ; free virtual = 8869
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.664 ; gain = 647.363 ; free physical = 503 ; free virtual = 8869
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:11 ; elapsed = 00:02:53 . Memory (MB): peak = 1627.109 ; gain = 684.543
+Synthesis Optimization Complete : Time (s): cpu = 00:02:11 ; elapsed = 00:03:07 . Memory (MB): peak = 1627.109 ; gain = 684.543
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2573.664 ; gain = 0.000 ; free physical = 780 ; free virtual = 9149
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1627.109 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2581.672 ; gain = 0.000 ; free physical = 735 ; free virtual = 9144
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1627.109 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: dee19c60
+Synth Design complete | Checksum: f2b20b01
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+53 Infos, 170 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:59 . Memory (MB): peak = 2581.672 ; gain = 1000.414 ; free physical = 721 ; free virtual = 9140
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1200.285; main = 1012.032; forked = 277.006
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4131.785; main = 2581.676; forked = 1590.133
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/bd_ca02_xbar_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ca02_xbar_0, cache-ID = 774464a2d7aed505
+synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:03:33 . Memory (MB): peak = 1627.109 ; gain = 1106.312
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1627.109 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1/bd_ca02_xbar_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1627.109 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ca02_xbar_0, cache-ID = 4c13bf6ba9214316
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/bd_ca02_xbar_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1627.109 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1/bd_ca02_xbar_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file bd_ca02_xbar_0_utilization_synth.rpt -pb bd_ca02_xbar_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 15 18:37:56 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 19 16:25:55 2024...

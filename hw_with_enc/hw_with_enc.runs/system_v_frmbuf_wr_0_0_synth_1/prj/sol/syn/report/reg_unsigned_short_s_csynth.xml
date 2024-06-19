@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.1</Version>
+<Version>2023.2.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -34,6 +34,11 @@
 <Interval-min>1</Interval-min>
 <Interval-max>1</Interval-max>
 </SummaryOfOverallLatency>
+<SummaryOfViolations>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\utils/x_hls_utils.h:224</SourceLocation>
+</SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>

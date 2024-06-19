@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:39:53 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+-- Date        : Wed Jun 19 16:29:57 2024
+-- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_axi_i2s_adi_1_0/system_axi_i2s_adi_1_0_stub.vhdl
+--               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_axi_i2s_adi_1_0/system_axi_i2s_adi_1_0_stub.vhdl
 -- Design      : system_axi_i2s_adi_1_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
@@ -70,6 +70,6 @@ attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "DATA_CLK_I,BCLK_O[0:0],LRCLK_O[0:0],SDATA_O[0:0],SDATA_I[0:0],MUTEN_O,DMA_REQ_TX_ACLK,DMA_REQ_TX_RSTN,DMA_REQ_TX_DAVALID,DMA_REQ_TX_DATYPE[1:0],DMA_REQ_TX_DAREADY,DMA_REQ_TX_DRVALID,DMA_REQ_TX_DRTYPE[1:0],DMA_REQ_TX_DRLAST,DMA_REQ_TX_DRREADY,DMA_REQ_RX_ACLK,DMA_REQ_RX_RSTN,DMA_REQ_RX_DAVALID,DMA_REQ_RX_DATYPE[1:0],DMA_REQ_RX_DAREADY,DMA_REQ_RX_DRVALID,DMA_REQ_RX_DRTYPE[1:0],DMA_REQ_RX_DRLAST,DMA_REQ_RX_DRREADY,s00_axi_awaddr[5:0],s00_axi_awprot[2:0],s00_axi_awvalid,s00_axi_awready,s00_axi_wdata[31:0],s00_axi_wstrb[3:0],s00_axi_wvalid,s00_axi_wready,s00_axi_bresp[1:0],s00_axi_bvalid,s00_axi_bready,s00_axi_araddr[5:0],s00_axi_arprot[2:0],s00_axi_arvalid,s00_axi_arready,s00_axi_rdata[31:0],s00_axi_rresp[1:0],s00_axi_rvalid,s00_axi_rready,s00_axi_aclk,s00_axi_aresetn";
 attribute x_core_info : string;
-attribute x_core_info of stub : architecture is "axi_i2s_adi_v1_2,Vivado 2023.1";
+attribute x_core_info of stub : architecture is "axi_i2s_adi_v1_2,Vivado 2023.2.2";
 begin
 end;

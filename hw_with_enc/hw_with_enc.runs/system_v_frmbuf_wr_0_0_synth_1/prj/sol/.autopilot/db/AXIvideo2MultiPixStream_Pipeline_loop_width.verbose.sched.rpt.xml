@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_width'" level="0">
-<item name = "Date">Wed May 15 18:45:58 2024
+<item name = "Date">Wed Jun 19 16:40:49 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 5.132 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.882 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3, 3842, 30.000 ns, 38.420 us, 3, 3842, no</column>
+<column name="">2, 3842, 20.000 ns, 38.420 us, 2, 3842, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_width">1, 3840, 2, 1, 1, 1 ~ 3840, yes</column>
+<column name="- loop_width">0, 3840, 2, 1, 1, 0 ~ 3840, yes</column>
 </table>
 </item>
 </section>

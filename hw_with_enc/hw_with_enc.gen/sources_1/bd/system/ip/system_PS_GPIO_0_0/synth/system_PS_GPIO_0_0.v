@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:xlslice:1.0
-// IP Revision: 2
+// IP Revision: 3
 
-(* X_CORE_INFO = "xlslice_v1_0_2_xlslice,Vivado 2023.1" *)
-(* CHECK_LICENSE_TYPE = "system_PS_GPIO_0_0,xlslice_v1_0_2_xlslice,{}" *)
-(* CORE_GENERATION_INFO = "system_PS_GPIO_0_0,xlslice_v1_0_2_xlslice,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DIN_WIDTH=64,DIN_FROM=0,DIN_TO=0}" *)
+(* X_CORE_INFO = "xlslice_v1_0_3_xlslice,Vivado 2023.2.2" *)
+(* CHECK_LICENSE_TYPE = "system_PS_GPIO_0_0,xlslice_v1_0_3_xlslice,{}" *)
+(* CORE_GENERATION_INFO = "system_PS_GPIO_0_0,xlslice_v1_0_3_xlslice,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlslice,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,DIN_WIDTH=64,DIN_FROM=0,DIN_TO=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_PS_GPIO_0_0 (
   Din,
@@ -62,7 +62,7 @@ module system_PS_GPIO_0_0 (
 input wire [63 : 0] Din;
 output wire [0 : 0] Dout;
 
-  xlslice_v1_0_2_xlslice #(
+  xlslice_v1_0_3_xlslice #(
     .DIN_WIDTH(64),
     .DIN_FROM(0),
     .DIN_TO(0)

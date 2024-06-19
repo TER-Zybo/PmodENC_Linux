@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:axis_register_slice:1.1
-// IP Revision: 28
+// IP Revision: 30
 
 `timescale 1ns/1ps
 
@@ -109,7 +109,7 @@ output wire [3 : 0] m_axis_tdest;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *)
 output wire [95 : 0] m_axis_tuser;
 
-  axis_register_slice_v1_1_28_axis_register_slice #(
+  axis_register_slice_v1_1_30_axis_register_slice #(
     .C_FAMILY("zynq"),
     .C_AXIS_TDATA_WIDTH(64),
     .C_AXIS_TID_WIDTH(1),

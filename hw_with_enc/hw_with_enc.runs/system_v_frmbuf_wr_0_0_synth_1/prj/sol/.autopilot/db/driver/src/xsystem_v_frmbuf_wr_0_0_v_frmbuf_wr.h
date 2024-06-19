@@ -1,8 +1,8 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
-// Tool Version Limit: 2023.05
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+// Tool Version Limit: 2024.02
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
 #ifndef XSYSTEM_V_FRMBUF_WR_0_0_V_FRMBUF_WR_H
@@ -40,7 +40,11 @@ typedef uint32_t u32;
 typedef uint64_t u64;
 #else
 typedef struct {
+#ifdef SDT
+    char *Name;
+#else
     u16 DeviceId;
+#endif
     u32 System_v_frmbuf_wr_0_0_ctrl_BaseAddress;
 } XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_Config;
 #endif
@@ -75,8 +79,13 @@ typedef u32 word_type;
 
 /************************** Function Prototypes *****************************/
 #ifndef __linux__
+#ifdef SDT
+int XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_Initialize(XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr *InstancePtr, UINTPTR BaseAddress);
+XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_Config* XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_LookupConfig(UINTPTR BaseAddress);
+#else
 int XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_Initialize(XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr *InstancePtr, u16 DeviceId);
 XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_Config* XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_LookupConfig(u16 DeviceId);
+#endif
 int XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_CfgInitialize(XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr *InstancePtr, XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_Config *ConfigPtr);
 #else
 int XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr_Initialize(XSystem_v_frmbuf_wr_0_0_v_frmbuf_wr *InstancePtr, const char* InstanceName);

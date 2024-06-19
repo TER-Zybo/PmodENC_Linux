@@ -1,10 +1,10 @@
 /*----------------------------------------------------------------------------
- * Copyright (c) 2008 Xilinx, Inc.
- * This design is confidential and proprietary of Xilinx, All Rights Reserved.
+ * Copyright (c) 2008 AMD, Inc.
+ * This design is confidential and proprietary of AMD, All Rights Reserved.
  *-----------------------------------------------------------------------------
  *   ____  ____
  *  /   /\/   /
- * /___/  \  /   Vendor: Xilinx
+ * /___/  \  /   Vendor: AMD
  * \   \   \/    Date Created: 2008/08/18
  *  \   \        
  *  /   /        

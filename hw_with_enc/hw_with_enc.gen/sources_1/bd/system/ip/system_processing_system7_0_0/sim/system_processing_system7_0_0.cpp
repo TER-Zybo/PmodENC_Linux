@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -195,7 +195,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA0_REQ' transactor sockets
 
-    mp_impl->DMA0_REQ_socket->bind(*(mp_DMA0_REQ_transactor->socket));
   }
   else
   {
@@ -238,7 +237,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA0_ACK' transactor sockets
 
-    mp_impl->DMA0_ACK_socket->bind(*(mp_DMA0_ACK_transactor->socket));
   }
   else
   {
@@ -282,7 +280,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA1_REQ' transactor sockets
 
-    mp_impl->DMA1_REQ_socket->bind(*(mp_DMA1_REQ_transactor->socket));
   }
   else
   {
@@ -325,7 +322,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA1_ACK' transactor sockets
 
-    mp_impl->DMA1_ACK_socket->bind(*(mp_DMA1_ACK_transactor->socket));
   }
   else
   {
@@ -794,7 +790,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA0_REQ' transactor sockets
 
-    mp_impl->DMA0_REQ_socket->bind(*(mp_DMA0_REQ_transactor->socket));
   }
   else
   {
@@ -837,7 +832,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA0_ACK' transactor sockets
 
-    mp_impl->DMA0_ACK_socket->bind(*(mp_DMA0_ACK_transactor->socket));
   }
   else
   {
@@ -881,7 +875,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA1_REQ' transactor sockets
 
-    mp_impl->DMA1_REQ_socket->bind(*(mp_DMA1_REQ_transactor->socket));
   }
   else
   {
@@ -924,7 +917,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA1_ACK' transactor sockets
 
-    mp_impl->DMA1_ACK_socket->bind(*(mp_DMA1_ACK_transactor->socket));
   }
   else
   {
@@ -1393,7 +1385,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA0_REQ' transactor sockets
 
-    mp_impl->DMA0_REQ_socket->bind(*(mp_DMA0_REQ_transactor->socket));
   }
   else
   {
@@ -1436,7 +1427,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA0_ACK' transactor sockets
 
-    mp_impl->DMA0_ACK_socket->bind(*(mp_DMA0_ACK_transactor->socket));
   }
   else
   {
@@ -1480,7 +1470,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA1_REQ' transactor sockets
 
-    mp_impl->DMA1_REQ_socket->bind(*(mp_DMA1_REQ_transactor->socket));
   }
   else
   {
@@ -1523,7 +1512,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
 
     // DMA1_ACK' transactor sockets
 
-    mp_impl->DMA1_ACK_socket->bind(*(mp_DMA1_ACK_transactor->socket));
   }
   else
   {
@@ -2335,7 +2323,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
   // configure 'DMA0_REQ' transactor
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("system_processing_system7_0_0", "DMA0_REQ_TLM_MODE") != 1)
   {
-    mp_impl->DMA0_REQ_socket->bind(*(mp_DMA0_REQ_transactor->socket));
   
   }
   else
@@ -2348,7 +2335,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
   // configure 'DMA0_ACK' transactor
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("system_processing_system7_0_0", "DMA0_ACK_TLM_MODE") != 1)
   {
-    mp_impl->DMA0_ACK_socket->bind(*(mp_DMA0_ACK_transactor->socket));
   
   }
   else
@@ -2361,7 +2347,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
   // configure 'DMA1_REQ' transactor
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("system_processing_system7_0_0", "DMA1_REQ_TLM_MODE") != 1)
   {
-    mp_impl->DMA1_REQ_socket->bind(*(mp_DMA1_REQ_transactor->socket));
   
   }
   else
@@ -2374,7 +2359,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
   // configure 'DMA1_ACK' transactor
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("system_processing_system7_0_0", "DMA1_ACK_TLM_MODE") != 1)
   {
-    mp_impl->DMA1_ACK_socket->bind(*(mp_DMA1_ACK_transactor->socket));
   
   }
   else
@@ -2917,7 +2901,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
   // configure 'DMA0_REQ' transactor
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("system_processing_system7_0_0", "DMA0_REQ_TLM_MODE") != 1)
   {
-    mp_impl->DMA0_REQ_socket->bind(*(mp_DMA0_REQ_transactor->socket));
   
   }
   else
@@ -2930,7 +2913,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
   // configure 'DMA0_ACK' transactor
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("system_processing_system7_0_0", "DMA0_ACK_TLM_MODE") != 1)
   {
-    mp_impl->DMA0_ACK_socket->bind(*(mp_DMA0_ACK_transactor->socket));
   
   }
   else
@@ -2943,7 +2925,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
   // configure 'DMA1_REQ' transactor
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("system_processing_system7_0_0", "DMA1_REQ_TLM_MODE") != 1)
   {
-    mp_impl->DMA1_REQ_socket->bind(*(mp_DMA1_REQ_transactor->socket));
   
   }
   else
@@ -2956,7 +2937,6 @@ void system_processing_system7_0_0::before_end_of_elaboration()
   // configure 'DMA1_ACK' transactor
   if (xsc::utils::xsc_sim_manager::getInstanceParameterInt("system_processing_system7_0_0", "DMA1_ACK_TLM_MODE") != 1)
   {
-    mp_impl->DMA1_ACK_socket->bind(*(mp_DMA1_ACK_transactor->socket));
   
   }
   else

@@ -7,10 +7,14 @@
 # Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/nfs/xilinx/Vitis/2023.1/bin:/nfs/xilinx/Vivado/2023.1/ids_lite/ISE/bin/lin64:/nfs/xilinx/Vivado/2023.1/bin
+  PATH=C:/Xilinx/Vitis/2023.2/bin;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2023.2/bin
 else
-  PATH=/nfs/xilinx/Vitis/2023.1/bin:/nfs/xilinx/Vivado/2023.1/ids_lite/ISE/bin/lin64:/nfs/xilinx/Vivado/2023.1/bin:$PATH
+  PATH=C:/Xilinx/Vitis/2023.2/bin;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2023.2/bin:$PATH
 fi
 export PATH
 
@@ -21,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1'
+HD_PWD='C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

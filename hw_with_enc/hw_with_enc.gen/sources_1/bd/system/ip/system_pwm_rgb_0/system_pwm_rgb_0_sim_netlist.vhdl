@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:43:41 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+-- Date        : Wed Jun 19 16:37:24 2024
+-- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_pwm_rgb_0/system_pwm_rgb_0_sim_netlist.vhdl
+--               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_pwm_rgb_0/system_pwm_rgb_0_sim_netlist.vhdl
 -- Design      : system_pwm_rgb_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -11391,7 +11391,7 @@ entity system_pwm_rgb_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of system_pwm_rgb_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of system_pwm_rgb_0 : entity is "PWM_v2_0,Vivado 2023.1";
+  attribute X_CORE_INFO of system_pwm_rgb_0 : entity is "PWM_v2_0,Vivado 2023.2.2";
 end system_pwm_rgb_0;
 
 architecture STRUCTURE of system_pwm_rgb_0 is

@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.1</Version>
+<Version>2023.2.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -43,6 +43,19 @@
 </InstanceList>
 </loop_wait_for_eol>
 </SummaryOfLoopLatency>
+<SummaryOfViolations>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:226</SourceLocation>
+<SummaryOfLoopViolations>
+<loop_wait_for_eol>
+<Name>loop_wait_for_eol</Name>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:306</SourceLocation>
+</loop_wait_for_eol>
+</SummaryOfLoopViolations>
+</SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
@@ -152,8 +165,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>axi_data_2_lcssa</name>
-<Object>axi_data_2_lcssa</Object>
+<name>axi_data_3_reload</name>
+<Object>axi_data_3_reload</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -163,8 +176,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>axi_last_2_lcssa</name>
-<Object>axi_last_2_lcssa</Object>
+<name>select_ln306</name>
+<Object>select_ln306</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -174,8 +187,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>eol_0_lcssa</name>
-<Object>eol_0_lcssa</Object>
+<name>eol_reload</name>
+<Object>eol_reload</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

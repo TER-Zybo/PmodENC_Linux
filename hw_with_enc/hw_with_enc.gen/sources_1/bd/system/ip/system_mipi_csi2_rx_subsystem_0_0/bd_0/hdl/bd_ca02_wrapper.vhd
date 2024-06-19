@@ -33,6 +33,7 @@ entity bd_ca02_wrapper is
     csirxss_s_axi_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     dlyctrl_rdy_out : out STD_LOGIC;
     dphy_clk_200M : in STD_LOGIC;
+    frame_rcvd_pulse_out : out STD_LOGIC;
     lite_aclk : in STD_LOGIC;
     lite_aresetn : in STD_LOGIC;
     mipi_phy_if_clk_hs_n : in STD_LOGIC;
@@ -68,6 +69,7 @@ architecture STRUCTURE of bd_ca02_wrapper is
     csirxss_csi_irq : out STD_LOGIC;
     video_aclk : in STD_LOGIC;
     video_aresetn : in STD_LOGIC;
+    frame_rcvd_pulse_out : out STD_LOGIC;
     csirxss_s_axi_awaddr : in STD_LOGIC_VECTOR ( 12 downto 0 );
     csirxss_s_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     csirxss_s_axi_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -87,6 +89,12 @@ architecture STRUCTURE of bd_ca02_wrapper is
     csirxss_s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     csirxss_s_axi_rvalid : out STD_LOGIC_VECTOR ( 0 to 0 );
     csirxss_s_axi_rready : in STD_LOGIC_VECTOR ( 0 to 0 );
+    video_out_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    video_out_tdest : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    video_out_tlast : out STD_LOGIC;
+    video_out_tready : in STD_LOGIC;
+    video_out_tuser : out STD_LOGIC_VECTOR ( 0 to 0 );
+    video_out_tvalid : out STD_LOGIC;
     mipi_phy_if_clk_hs_n : in STD_LOGIC;
     mipi_phy_if_clk_hs_p : in STD_LOGIC;
     mipi_phy_if_clk_lp_n : in STD_LOGIC;
@@ -94,13 +102,7 @@ architecture STRUCTURE of bd_ca02_wrapper is
     mipi_phy_if_data_hs_n : in STD_LOGIC_VECTOR ( 1 downto 0 );
     mipi_phy_if_data_hs_p : in STD_LOGIC_VECTOR ( 1 downto 0 );
     mipi_phy_if_data_lp_n : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    mipi_phy_if_data_lp_p : in STD_LOGIC_VECTOR ( 1 downto 0 );
-    video_out_tdata : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    video_out_tdest : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    video_out_tlast : out STD_LOGIC;
-    video_out_tready : in STD_LOGIC;
-    video_out_tuser : out STD_LOGIC_VECTOR ( 0 to 0 );
-    video_out_tvalid : out STD_LOGIC
+    mipi_phy_if_data_lp_p : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component bd_ca02;
 begin
@@ -128,6 +130,7 @@ bd_ca02_i: component bd_ca02
       csirxss_s_axi_wvalid(0) => csirxss_s_axi_wvalid(0),
       dlyctrl_rdy_out => dlyctrl_rdy_out,
       dphy_clk_200M => dphy_clk_200M,
+      frame_rcvd_pulse_out => frame_rcvd_pulse_out,
       lite_aclk => lite_aclk,
       lite_aresetn => lite_aresetn,
       mipi_phy_if_clk_hs_n => mipi_phy_if_clk_hs_n,

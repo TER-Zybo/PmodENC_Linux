@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.1</Version>
+<Version>2023.2.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -43,12 +43,25 @@
 </InstanceList>
 </loop_wait_for_start>
 </SummaryOfLoopLatency>
+<SummaryOfViolations>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:226</SourceLocation>
+<SummaryOfLoopViolations>
+<loop_wait_for_start>
+<Name>loop_wait_for_start</Name>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:241</SourceLocation>
+</loop_wait_for_start>
+</SummaryOfLoopViolations>
+</SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <FF>4</FF>
-<LUT>43</LUT>
+<LUT>38</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>

@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:xlconcat:2.1
-// IP Revision: 4
+// IP Revision: 5
 
 `timescale 1ns/1ps
 
@@ -77,7 +77,7 @@ input wire [0 : 0] In7;
 input wire [0 : 0] In8;
 output wire [8 : 0] dout;
 
-  xlconcat_v2_1_4_xlconcat #(
+  xlconcat_v2_1_5_xlconcat #(
     .IN0_WIDTH(1),
     .IN1_WIDTH(1),
     .IN2_WIDTH(1),

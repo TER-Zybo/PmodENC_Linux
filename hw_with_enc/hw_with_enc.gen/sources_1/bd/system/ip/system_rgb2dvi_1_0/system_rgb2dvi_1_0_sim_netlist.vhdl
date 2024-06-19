@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:43:52 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+-- Date        : Wed Jun 19 16:38:09 2024
+-- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0_sim_netlist.vhdl
+--               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0_sim_netlist.vhdl
 -- Design      : system_rgb2dvi_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -780,16 +780,16 @@ architecture STRUCTURE of system_rgb2dvi_1_0_TMDS_Encoder is
   signal \pDataOut_1_reg_n_0_[0]\ : STD_LOGIC;
   signal pVde_1 : STD_LOGIC;
   signal p_0_in : STD_LOGIC;
-  signal p_0_in6_in : STD_LOGIC;
-  signal p_0_in7_in : STD_LOGIC;
-  signal p_0_in8_in : STD_LOGIC;
-  signal p_0_in9_in : STD_LOGIC;
   signal p_1_in : STD_LOGIC;
-  signal p_1_in12_in : STD_LOGIC;
+  signal p_1_in6_in : STD_LOGIC;
   signal p_2_in : STD_LOGIC;
+  signal p_2_in1_in : STD_LOGIC;
   signal p_3_in : STD_LOGIC;
+  signal p_3_in2_in : STD_LOGIC;
+  signal p_4_in3_in : STD_LOGIC;
   signal p_4_in5_in : STD_LOGIC;
   signal p_5_in : STD_LOGIC;
+  signal p_5_in4_in : STD_LOGIC;
   signal p_6_in8_in : STD_LOGIC;
   signal q_m_2 : STD_LOGIC_VECTOR ( 8 to 8 );
   signal \q_m_2[1]_i_1__0_n_0\ : STD_LOGIC;
@@ -1872,7 +1872,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
       I0 => \pDataOut_1_reg_n_0_[0]\,
       I1 => p_0_in,
       I2 => p_1_in,
-      O => p_0_in9_in
+      O => p_5_in4_in
     );
 \q_m_2[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1884,7 +1884,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
       I2 => p_0_in,
       I3 => \pDataOut_1_reg_n_0_[0]\,
       I4 => p_2_in,
-      O => p_0_in8_in
+      O => p_4_in3_in
     );
 \q_m_2[4]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -1896,7 +1896,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
       I2 => p_0_in,
       I3 => p_1_in,
       I4 => p_3_in,
-      O => p_0_in7_in
+      O => p_3_in2_in
     );
 \q_m_2[5]_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -1906,7 +1906,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
       I0 => \q_m_2[8]_i_1_n_0\,
       I1 => \q_m_2[7]_i_2_n_0\,
       I2 => p_4_in5_in,
-      O => p_0_in6_in
+      O => p_2_in1_in
     );
 \q_m_2[6]_i_1__0\: unisim.vcomponents.LUT3
     generic map(
@@ -1928,7 +1928,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
       I2 => p_4_in5_in,
       I3 => p_6_in8_in,
       I4 => p_5_in,
-      O => p_1_in12_in
+      O => p_1_in6_in
     );
 \q_m_2[7]_i_2\: unisim.vcomponents.LUT5
     generic map(
@@ -1974,7 +1974,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk,
       CE => '1',
-      D => p_0_in9_in,
+      D => p_5_in4_in,
       Q => \q_m_2_reg_n_0_[2]\,
       R => '0'
     );
@@ -1982,7 +1982,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk,
       CE => '1',
-      D => p_0_in8_in,
+      D => p_4_in3_in,
       Q => \q_m_2_reg_n_0_[3]\,
       R => '0'
     );
@@ -1990,7 +1990,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk,
       CE => '1',
-      D => p_0_in7_in,
+      D => p_3_in2_in,
       Q => \q_m_2_reg_n_0_[4]\,
       R => '0'
     );
@@ -1998,7 +1998,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk,
       CE => '1',
-      D => p_0_in6_in,
+      D => p_2_in1_in,
       Q => \q_m_2_reg_n_0_[5]\,
       R => '0'
     );
@@ -2014,7 +2014,7 @@ pVde_2_reg: unisim.vcomponents.FDRE
      port map (
       C => PixelClk,
       CE => '1',
-      D => p_1_in12_in,
+      D => p_1_in6_in,
       Q => \q_m_2_reg_n_0_[7]\,
       R => '0'
     );
@@ -4656,7 +4656,7 @@ entity system_rgb2dvi_1_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_rgb2dvi_1_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_rgb2dvi_1_0 : entity is "rgb2dvi,Vivado 2023.1";
+  attribute x_core_info of system_rgb2dvi_1_0 : entity is "rgb2dvi,Vivado 2023.2.2";
 end system_rgb2dvi_1_0;
 
 architecture STRUCTURE of system_rgb2dvi_1_0 is
@@ -4682,9 +4682,9 @@ architecture STRUCTURE of system_rgb2dvi_1_0 is
   attribute x_interface_parameter of PixelClk : signal is "XIL_INTERFACENAME PixelClk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_axi_dynclk_0_0_PXL_CLK_O, INSERT_VIP 0";
   attribute x_interface_info of SerialClk : signal is "xilinx.com:signal:clock:1.0 SerialClk CLK";
   attribute x_interface_parameter of SerialClk : signal is "XIL_INTERFACENAME SerialClk, ASSOCIATED_RESET aRst:aRst_n:pRst:pRst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_axi_dynclk_0_0_PXL_CLK_5X_O, INSERT_VIP 0";
-  attribute x_interface_info of TMDS_Clk_n : signal is "xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK, digilentinc.com:interface:tmds:1.0 TMDS CLK_N";
+  attribute x_interface_info of TMDS_Clk_n : signal is "digilentinc.com:interface:tmds:1.0 TMDS CLK_N, xilinx.com:signal:clock:1.0 TMDS_Clk_n CLK";
   attribute x_interface_parameter of TMDS_Clk_n : signal is "XIL_INTERFACENAME TMDS_Clk_n, ASSOCIATED_RESET aRst_n, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
-  attribute x_interface_info of TMDS_Clk_p : signal is "xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK, digilentinc.com:interface:tmds:1.0 TMDS CLK_P";
+  attribute x_interface_info of TMDS_Clk_p : signal is "digilentinc.com:interface:tmds:1.0 TMDS CLK_P, xilinx.com:signal:clock:1.0 TMDS_Clk_p CLK";
   attribute x_interface_parameter of TMDS_Clk_p : signal is "XIL_INTERFACENAME TMDS, BOARD.ASSOCIATED_PARAM TMDS_BOARD_INTERFACE, XIL_INTERFACENAME TMDS_Clk_p, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, INSERT_VIP 0";
   attribute x_interface_info of aRst_n : signal is "xilinx.com:signal:reset:1.0 AsyncRst_n RST";
   attribute x_interface_parameter of aRst_n : signal is "XIL_INTERFACENAME AsyncRst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0";

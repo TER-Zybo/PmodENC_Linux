@@ -1,36 +1,56 @@
 <design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 2358, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 1261, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   811, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   815, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   708, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,   596, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   596, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,   613, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   934, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   944, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 1047, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   832, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   776, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   776, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,   743, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   707, high level synthesis optimizations</column>
+        </table>
+    </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
-            <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="v_frmbuf_wr" col1="v_frmbuf_wr.cpp:73" col2="2632" col3="1170" col4="783" col5="793">
-                    <row id="9" col0="FrmbufWrHlsDataFlow" col1="v_frmbuf_wr.cpp:26" col2="2527" col3="1108" col4="734" col5="719">
-                        <row id="2" col0="" col1="v_frmbuf_wr.h:197" col2="11" col3="" col4="" col5=""/>
-                        <row id="6" col0="AXIvideo2MultiPixStream" col1="v_frmbuf_wr.cpp:169" col2="890" col3="309" col4="148" col5="193">
-                            <row id="7" col0="Scalar" col1="hls_video_core.h:182" col2="21" col3="" col4="" col5=""/>
-                            <row id="3" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:248" col2="2" col2_disp="    2 (2 calls)" col3="2" col3_disp="    2 (2 calls)" col4="2" col4_disp="  2 (2 calls)" col5="8" col5_disp="  8 (2 calls)"/>
-                            <row id="5" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:69" col2="243" col2_disp="  243 (3 calls)" col3="" col4="" col5="">
-                                <row id="1" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:46" col2="225" col2_disp="  225 (3 calls)" col3="" col4="" col5=""/>
+                <row id="0" col0="v_frmbuf_wr" col1="v_frmbuf_wr.cpp:115" col2="2358" col3="708" col4="944" col5="776" col6="707">
+                    <row id="7" col0="FrmbufWrHlsDataFlow" col1="v_frmbuf_wr.cpp:69" col2="2253" col3="651" col4="888" col5="732" col6="651">
+                        <row id="1" col0="" col1="v_frmbuf_wr.h:250" col2="7" col3="" col4="" col5="" col6=""/>
+                        <row id="8" col0="AXIvideo2MultiPixStream" col1="v_frmbuf_wr.cpp:213" col2="617" col3="209" col4="215" col5="147" col6="126">
+                            <row id="5" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
+                            <row id="3" col0="reg&lt;unsigned short&gt;" col1="x_hls_utils.h:222" col2="2" col2_disp="   2 (2 calls)" col3="2" col3_disp="  2 (2 calls)" col4="2" col4_disp="  2 (2 calls)" col5="2" col5_disp="  2 (2 calls)" col6="8" col6_disp="  8 (2 calls)"/>
+                            <row id="6" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:83" col2="222" col2_disp=" 222 (3 calls)" col3="" col4="" col5="" col6="">
+                                <row id="2" col0="AXIGetBitFields&lt;24, ap_uint&lt;8&gt; &gt;" col1="hls_axi_io.h:60" col2="204" col2_disp=" 204 (3 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
                         </row>
-                        <row id="8" col0="MultiPixStream2Bytes" col1="v_frmbuf_wr.cpp:268" col2="1427" col3="659" col4="510" col5="428">
-                            <row id="7" col0="Scalar" col1="hls_video_core.h:182" col2="21" col3="" col4="" col5=""/>
+                        <row id="4" col0="MultiPixStream2Bytes" col1="v_frmbuf_wr.cpp:326" col2="1421" col3="341" col4="587" col5="504" col6="422">
+                            <row id="5" col0="Scalar" col1="hls_video_core.h:196" col2="5" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="4" col0="Bytes2AXIMMvideo" col1="v_frmbuf_wr.cpp:1097" col2="153" col3="109" col4="61" col5="78"/>
+                        <row id="9" col0="Bytes2AXIMMvideo" col1="v_frmbuf_wr.cpp:1296" col2="164" col3="71" col4="72" col5="67" col6="84"/>
                     </row>
                 </row>
             </rows>
             <notes/>
         </hiertable>
-    </item>
-    <item name="Description of Compilation Phases">
-        <table>
-            <keys size="2">Compilation Phase, Description</keys>
-            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
-            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
-            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
-            <column name="Optimizations">After high level synthesis optimizations</column>
-        </table>
     </item>
     <item name="Design Size Message Settings">
         <table>

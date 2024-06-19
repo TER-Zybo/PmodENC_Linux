@@ -11,7 +11,7 @@
 -- otherwise provided in a valid license issued to you by
 -- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:ip:mipi_csi2_rx_subsystem:5.3
--- IP Revision: 0
+-- IP VLNV: xilinx.com:ip:mipi_csi2_rx_subsystem:5.4
+-- IP Revision: 1
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -64,6 +64,7 @@ ENTITY system_mipi_csi2_rx_subsystem_0_0 IS
     csirxss_csi_irq : OUT STD_LOGIC;
     video_aclk : IN STD_LOGIC;
     video_aresetn : IN STD_LOGIC;
+    frame_rcvd_pulse_out : OUT STD_LOGIC;
     csirxss_s_axi_awaddr : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
     csirxss_s_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
     csirxss_s_axi_awvalid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -114,6 +115,7 @@ ARCHITECTURE system_mipi_csi2_rx_subsystem_0_0_arch OF system_mipi_csi2_rx_subsy
       csirxss_csi_irq : OUT STD_LOGIC;
       video_aclk : IN STD_LOGIC;
       video_aresetn : IN STD_LOGIC;
+      frame_rcvd_pulse_out : OUT STD_LOGIC;
       csirxss_s_axi_awaddr : IN STD_LOGIC_VECTOR(12 DOWNTO 0);
       csirxss_s_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       csirxss_s_axi_awvalid : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -215,6 +217,7 @@ BEGIN
       csirxss_csi_irq => csirxss_csi_irq,
       video_aclk => video_aclk,
       video_aresetn => video_aresetn,
+      frame_rcvd_pulse_out => frame_rcvd_pulse_out,
       csirxss_s_axi_awaddr => csirxss_s_axi_awaddr,
       csirxss_s_axi_awprot => csirxss_s_axi_awprot,
       csirxss_s_axi_awvalid => csirxss_s_axi_awvalid,

@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Tue Jun 11 12:44:05 2024
-| Host         : secil10.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+| Date         : Wed Jun 19 17:08:57 2024
+| Host         : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 | Command      : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
 | Design       : system_wrapper
 | Device       : xc7z020clg400-1
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 49
+             Violations found: 47
 +-----------+----------+------------------------------------------------------+------------+
 | Rule      | Severity | Description                                          | Violations |
 +-----------+----------+------------------------------------------------------+------------+
@@ -31,7 +31,7 @@ Table of Contents
 | LUTAR-1   | Warning  | LUT drives async reset alert                         | 7          |
 | TIMING-9  | Warning  | Unknown CDC Logic                                    | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer                     | 1          |
-| TIMING-18 | Warning  | Missing input or output delay                        | 35         |
+| TIMING-18 | Warning  | Missing input or output delay                        | 33         |
 | TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint | 2          |
 | XDCB-5    | Warning  | Runtime inefficient way to find pin objects          | 2          |
 +-----------+----------+------------------------------------------------------+------------+
@@ -229,130 +229,120 @@ Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An input delay is missing on dphy_data_hs_n[0] relative to the rising and/or falling clock edge(s) of dphy_clk_hs_p.
+An input delay is missing on dphy_data_hs_p[0] relative to the rising and/or falling clock edge(s) of dphy_clk_hs_p.
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An input delay is missing on dphy_data_hs_n[1] relative to the rising and/or falling clock edge(s) of dphy_clk_hs_p.
+An input delay is missing on dphy_data_hs_p[1] relative to the rising and/or falling clock edge(s) of dphy_clk_hs_p.
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An input delay is missing on dphy_data_hs_p[0] relative to the rising and/or falling clock edge(s) of dphy_clk_hs_p.
+An input delay is missing on eth_rst_b_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An input delay is missing on dphy_data_hs_p[1] relative to the rising and/or falling clock edge(s) of dphy_clk_hs_p.
+An input delay is missing on hdmi_in_ddc_scl_io relative to the rising and/or falling clock edge(s) of clk_fpga_2.
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An input delay is missing on eth_rst_b_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An input delay is missing on hdmi_in_ddc_sda_io relative to the rising and/or falling clock edge(s) of clk_fpga_2.
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An input delay is missing on hdmi_in_ddc_scl_io relative to the rising and/or falling clock edge(s) of clk_fpga_2.
+An input delay is missing on sws_4bits_tri_i[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An input delay is missing on hdmi_in_ddc_sda_io relative to the rising and/or falling clock edge(s) of clk_fpga_2.
+An input delay is missing on sws_4bits_tri_i[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An input delay is missing on sws_4bits_tri_i[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An input delay is missing on sws_4bits_tri_i[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An input delay is missing on sws_4bits_tri_i[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An input delay is missing on sws_4bits_tri_i[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An input delay is missing on sws_4bits_tri_i[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on cam_iic_scl_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An input delay is missing on sws_4bits_tri_i[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on cam_iic_sda_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
-An output delay is missing on cam_iic_scl_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on eth_rst_b_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#22 Warning
 Missing input or output delay  
-An output delay is missing on cam_iic_sda_io relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on hdmi_in_ddc_sda_io relative to the rising and/or falling clock edge(s) of clk_fpga_2.
 Related violations: <none>
 
 TIMING-18#23 Warning
 Missing input or output delay  
-An output delay is missing on eth_rst_b_tri_io[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on hdmi_in_hpd[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#24 Warning
 Missing input or output delay  
-An output delay is missing on hdmi_in_ddc_sda_io relative to the rising and/or falling clock edge(s) of clk_fpga_2.
+An output delay is missing on leds_4bits_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#25 Warning
 Missing input or output delay  
-An output delay is missing on hdmi_in_hpd[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on leds_4bits_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#26 Warning
 Missing input or output delay  
-An output delay is missing on leds_4bits_tri_o[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on leds_4bits_tri_o[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#27 Warning
 Missing input or output delay  
-An output delay is missing on leds_4bits_tri_o[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on leds_4bits_tri_o[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#28 Warning
 Missing input or output delay  
-An output delay is missing on leds_4bits_tri_o[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on pwm_rgb[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#29 Warning
 Missing input or output delay  
-An output delay is missing on leds_4bits_tri_o[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on pwm_rgb[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#30 Warning
 Missing input or output delay  
-An output delay is missing on pwm_rgb[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on pwm_rgb[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#31 Warning
 Missing input or output delay  
-An output delay is missing on pwm_rgb[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+An output delay is missing on pwm_rgb[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
 TIMING-18#32 Warning
 Missing input or output delay  
-An output delay is missing on pwm_rgb[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
-Related violations: <none>
-
-TIMING-18#33 Warning
-Missing input or output delay  
-An output delay is missing on pwm_rgb[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
-Related violations: <none>
-
-TIMING-18#34 Warning
-Missing input or output delay  
 An output delay is missing on pwm_rgb[4] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
 
-TIMING-18#35 Warning
+TIMING-18#33 Warning
 Missing input or output delay  
 An output delay is missing on pwm_rgb[5] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
 Related violations: <none>
@@ -369,14 +359,14 @@ Related violations: <none>
 
 XDCB-5#1 Warning
 Runtime inefficient way to find pin objects  
-The option '-through : [get_pins -filter {NAME =~ */*SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '29' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: /nfs/home/m1info3/Documents/TER_FPGA/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb.xdc (Line: 13)
+The option '-through : [get_pins -filter {NAME =~ */*SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '12' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb.xdc (Line: 13)
 Related violations: <none>
 
 XDCB-5#2 Warning
 Runtime inefficient way to find pin objects  
-The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '14' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
-Current XDC: /nfs/home/m1info3/Documents/TER_FPGA/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_rgb2dvi_1_0/src/rgb2dvi.xdc (Line: 5)
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '27' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_rgb2dvi_1_0/src/rgb2dvi.xdc (Line: 5)
 Related violations: <none>
 
 

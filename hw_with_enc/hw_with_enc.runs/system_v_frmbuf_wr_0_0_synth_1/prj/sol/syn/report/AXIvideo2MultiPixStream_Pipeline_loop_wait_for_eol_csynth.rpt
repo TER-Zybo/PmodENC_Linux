@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol'
 ================================================================
-* Date:           Wed May 15 18:46:05 2024
+* Date:           Wed Jun 19 16:40:56 2024
 
-* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
 * Project:        prj
 * Solution:       sol (Vivado IP Flow Target)
 * Product family: zynq
@@ -132,9 +132,9 @@
 |ap_ready               |  out|    1|  ap_ctrl_hs|  AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol|  return value|
 |s_axis_video_TVALID    |   in|    1|        axis|                               s_axis_video_V_data_V|       pointer|
 |s_axis_video_TDATA     |   in|   24|        axis|                               s_axis_video_V_data_V|       pointer|
-|axi_data_2_lcssa       |   in|   24|     ap_none|                                    axi_data_2_lcssa|        scalar|
-|axi_last_2_lcssa       |   in|    1|     ap_none|                                    axi_last_2_lcssa|        scalar|
-|eol_0_lcssa            |   in|    1|     ap_none|                                         eol_0_lcssa|        scalar|
+|axi_data_3_reload      |   in|   24|     ap_none|                                   axi_data_3_reload|        scalar|
+|select_ln306           |   in|    1|     ap_none|                                        select_ln306|        scalar|
+|eol_reload             |   in|    1|     ap_none|                                          eol_reload|        scalar|
 |s_axis_video_TREADY    |  out|    1|        axis|                               s_axis_video_V_dest_V|       pointer|
 |s_axis_video_TDEST     |   in|    1|        axis|                               s_axis_video_V_dest_V|       pointer|
 |s_axis_video_TKEEP     |   in|    3|        axis|                               s_axis_video_V_keep_V|       pointer|

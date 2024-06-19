@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start'" level="0">
-<item name = "Date">Wed May 15 18:45:58 2024
+<item name = "Date">Wed Jun 19 16:40:49 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>

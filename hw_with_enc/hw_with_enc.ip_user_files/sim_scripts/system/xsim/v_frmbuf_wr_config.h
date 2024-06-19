@@ -37,6 +37,7 @@
 #define HAS_Y12                 0
 #define HAS_Y16                 0
 #define HAS_Y_U_V8              0
+#define HAS_Y_U_V8_420          0
 #define HAS_Y_U_V10             0
 
 #define HAS_INTERLACED          0

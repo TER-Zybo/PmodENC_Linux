@@ -3,148 +3,208 @@
     with args -log system_dvi2rgb_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_dvi2rgb_1_0.tcl
 
 
-****** Vivado v2023.1 (64-bit)
-  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
-  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+Commande ECHO d‚sactiv‚e.
+Commande ECHO d‚sactiv‚e.
+
+****** Vivado v2023.2.2 (64-bit)
+  **** SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+  **** IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+  **** SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
-Sourcing tcl script '/nfs/xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
 source system_dvi2rgb_1_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:32 . Memory (MB): peak = 1528.836 ; gain = 5.023 ; free physical = 6250 ; free virtual = 17701
+create_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 477.215 ; gain = 180.094
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2023.1/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:07 . Memory (MB): peak = 1552.648 ; gain = 23.812 ; free physical = 7446 ; free virtual = 19257
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/TER/PetaENC_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/hdway/Documents/vivado/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:AXI_DPTI:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/AXI_DPTI_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/AXI_DPTI_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:axi_dynclk:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_dynclk' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_dynclk
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:axi_i2s_adi:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_i2s_adi_1.2' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_i2s_adi_1.2
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:axi_ps2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/axi_ps2_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/axi_ps2_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:clock_forwarder:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/clock_forwarder' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/clock_forwarder
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:dvi2rgb:2.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/dvi2rgb' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/dvi2rgb
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_contrast_stretch:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_contrast_stretch_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_contrast_stretch_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_gamma_correction:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_gamma_correction_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_gamma_correction_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:hls_saturation_enhance:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/hls_saturation_enhance_1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/hls_saturation_enhance_1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:MIPI_CSI_2_RX:1.2'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MIPI_CSI_2_RX' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MIPI_CSI_2_RX
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:MIPI_D_PHY_RX:1.3'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MIPI_D_PHY_RX' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MIPI_D_PHY_RX
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:MotorFeedback:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/MotorFeedback_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/MotorFeedback_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodACL2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodACL2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodACL:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodACL_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodACL_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAD5:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAD5_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAD5_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodALS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodALS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodALS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAMP2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAMP2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAMP2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodAQS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodAQS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodAQS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBLE:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodBLE_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodBLE_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodBT2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodBT2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodBT2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCAN:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCAN_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCAN_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCLS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCLS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCLS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCMPS2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCMPS2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCMPS2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodCOLOR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodCOLOR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodCOLOR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDA1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDA1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDA1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDHB1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDHB1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDHB1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodDPG1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodDPG1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodDPG1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodENC:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodENC_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodENC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:user:PmodESP32:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodESP32_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodESP32_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPIO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGPIO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGPIO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGPS:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGPS_v1_1' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGPS_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodGYRO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodGYRO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodGYRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodHYGRO:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodHYGRO_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodHYGRO_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK2:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodJSTK2_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodJSTK2_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodJSTK:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodJSTK_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodJSTK_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodKYPD:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodKYPD_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodKYPD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMAXSONAR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodMAXSONAR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodMAXSONAR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodMTDS:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodMTDS_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodMTDS_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodNAV:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodNAV_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodNAV_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLEDrgb:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/pmodOLEDrgb_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodOLED:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodOLED_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodOLED_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodPIR:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodPIR_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodPIR_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodR2R:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodR2R_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodR2R_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodRTCC:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodRTCC_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodRTCC_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSD:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodSD_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodSD_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodSF3:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodSF3_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodSF3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTC1:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodTC1_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodTC1_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodTMP3:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodTMP3_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodTMP3_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PmodWIFI:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/PmodWIFI_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/PmodWIFI_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/Pmod_Bridge_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:pmod_bridge:1.1'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Pmods/Pmod_Bridge_v1_1' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Pmods/Pmod_Bridge_v1_1
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM:2.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_2.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_2.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:IP:PWM_Analyzer:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/PWM_Analyzer_1.0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/PWM_Analyzer_1.0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dpvid:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dpvid_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dpvid_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2dvi:1.4'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dvi' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dvi
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:rgb2vga:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2vga_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2vga_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:Sync:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/Sync_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/Sync_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:ip:usb2device:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/usb2device_v1_0' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/usb2device_v1_0
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'digilentinc.com:video:video_scaler:1.0'. The one found in IP location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/video_scaler' will take precedence over the same IP in location c:/Users/hdway/Documents/vivado/vivado-library/ip/video_scaler
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:pmod:1.0'. The one found in location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/if/pmod_v1_0/pmod.xml' will take precedence over the same Interface in location 'c:/Users/hdway/Documents/vivado/vivado-library/if/pmod_v1_0/pmod.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'digilentinc.com:interface:tmds:1.0'. The one found in location 'c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/if/tmds_v1_0/tmds.xml' will take precedence over the same Interface in location 'c:/Users/hdway/Documents/vivado/vivado-library/if/tmds_v1_0/tmds.xml'
+update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 486.285 ; gain = 9.070
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: system_dvi2rgb_1_0
 Command: synth_design -top system_dvi2rgb_1_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 127727
-INFO: [Synth 8-11241] undeclared symbol 'rddata_rst_i', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:2188]
-INFO: [Synth 8-11241] undeclared symbol 'datard_overflow', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:2235]
-INFO: [Synth 8-11241] undeclared symbol 'datard_underflow', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:2236]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6379]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6381]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6412]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6414]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6447]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6449]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:69]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:71]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:109]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:111]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:150]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:152]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:192]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:194]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:235]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:237]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:279]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:281]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:324]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:326]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:370]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:372]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:417]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:419]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:465]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:467]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:514]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:516]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:564]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:566]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:615]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:617]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6554]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6556]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6589]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:6591]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:69]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:71]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:109]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:111]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:150]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:152]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:192]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:194]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:235]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:237]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:279]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:281]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:324]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:326]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:370]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:372]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:417]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:419]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:465]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:467]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:514]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:516]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:564]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:566]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:615]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:617]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:10347]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:10349]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:10380]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:10382]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:10413]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/xsdbm_v3_0_vl_rfs.v:10415]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:30]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:32]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:65]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:67]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:100]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:102]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:135]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:137]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:170]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:172]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:205]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:207]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:240]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:242]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:275]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:277]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:310]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:312]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:345]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:347]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:380]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:382]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:415]
-INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:417]
-INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:450]
+INFO: [Synth 8-7075] Helper process launched with PID 14920
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:41 ; elapsed = 00:00:56 . Memory (MB): peak = 1403.262 ; gain = 439.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:69]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:71]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:109]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:111]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:150]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:152]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:192]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:194]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:235]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:237]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:279]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:281]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:324]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:326]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:370]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:372]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:419]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:465]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:467]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:514]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:516]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:564]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:566]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:615]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core.vh:617]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:277]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:310]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:312]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:345]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:347]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:380]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:382]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:415]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:417]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:450]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:452]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:485]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:487]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:30]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:32]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:65]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:67]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:100]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:102]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:135]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:137]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:170]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:172]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:205]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:207]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:240]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:242]
+INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:275]
+INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh:277]
 INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4527]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4528]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4529]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4530]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4531]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4532]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4586]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4587]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:4588]
-WARNING: [Synth 8-10294] parameter declaration is not allowed here in this mode of Verilog [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/hdl/ila_v6_2_syn_rfs.v:5486]
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 2330.719 ; gain = 384.645 ; free physical = 388 ; free virtual = 12168
----------------------------------------------------------------------------------
-WARNING: [Synth 8-9112] actual for formal port 'arst' is neither a static name nor a globally static expression [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:135]
-WARNING: [Synth 8-9112] actual for formal port 'arst' is neither a static name nor a globally static expression [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:212]
-WARNING: [Synth 8-9112] actual for formal port 'potherchrdy' is neither a static name nor a globally static expression [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:244]
-WARNING: [Synth 8-9112] actual for formal port 'potherchvld' is neither a static name nor a globally static expression [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:245]
-INFO: [Synth 8-638] synthesizing module 'system_dvi2rgb_1_0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/synth/system_dvi2rgb_1_0.vhd:81]
+WARNING: [Synth 8-9112] actual for formal port 'arst' is neither a static name nor a globally static expression [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:135]
+WARNING: [Synth 8-9112] actual for formal port 'arst' is neither a static name nor a globally static expression [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:212]
+WARNING: [Synth 8-9112] actual for formal port 'potherchrdy' is neither a static name nor a globally static expression [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:244]
+WARNING: [Synth 8-9112] actual for formal port 'potherchvld' is neither a static name nor a globally static expression [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'system_dvi2rgb_1_0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/synth/system_dvi2rgb_1_0.vhd:81]
 	Parameter kEmulateDDC bound to: 1 - type: bool 
 	Parameter kRstActiveHigh bound to: 0 - type: bool 
 	Parameter kClkRange bound to: 2 - type: integer 
@@ -153,18 +213,18 @@ INFO: [Synth 8-638] synthesizing module 'system_dvi2rgb_1_0' [/nfs/home/m1info3/
 	Parameter kAddBUFG bound to: 1 - type: bool 
 	Parameter kEdidFileName bound to: dgl_720p_cea.data - type: string 
 	Parameter kDebug bound to: 0 - type: bool 
-INFO: [Synth 8-3491] module 'dvi2rgb' declared at '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:64' bound to instance 'U0' of component 'dvi2rgb' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/synth/system_dvi2rgb_1_0.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:112]
-INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:82]
-INFO: [Synth 8-638] synthesizing module 'ResetBridge' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsyncReset.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsyncReset.vhd:72]
-INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:125]
+INFO: [Synth 8-3491] module 'dvi2rgb' declared at 'c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:64' bound to instance 'U0' of component 'dvi2rgb' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/synth/system_dvi2rgb_1_0.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'dvi2rgb' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Clocking' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-113] binding component instance 'IDelayCtrlX' to cell 'IDELAYCTRL' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:125]
 	Parameter DIFF_TERM bound to: 0 - type: bool 
 	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
 	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
-INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:139]
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:139]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
@@ -179,23 +239,23 @@ INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [/
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
 	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
 	Parameter STARTUP_WAIT bound to: 0 - type: bool 
-INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:180]
-INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:239]
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:180]
+INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:239]
 	Parameter BUFR_DIVIDE bound to: 5 - type: string 
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:245]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:82]
-INFO: [Synth 8-638] synthesizing module 'ResetBridge__parameterized0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsyncReset.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
-INFO: [Synth 8-256] done synthesizing module 'ResetBridge__parameterized0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsyncReset.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Decoder.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'InputSERDES' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:85]
+INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Clocking' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Clocking.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge__parameterized0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge__parameterized0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Decoder' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Decoder.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'InputSERDES' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:85]
 	Parameter DIFF_TERM bound to: 0 - type: bool 
 	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
-INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:92]
+INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:92]
 	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
 	Parameter DELAY_SRC bound to: IDATAIN - type: string 
 	Parameter HIGH_PERFORMANCE_MODE bound to: TRUE - type: string 
@@ -204,7 +264,7 @@ INFO: [Synth 8-113] binding component instance 'InputBuffer' to cell 'IBUFDS' [/
 	Parameter PIPE_SEL bound to: FALSE - type: string 
 	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: double 
 	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
-INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:102]
+INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:102]
 	Parameter DATA_RATE bound to: DDR - type: string 
 	Parameter DATA_WIDTH bound to: 10 - type: integer 
 	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
@@ -214,7 +274,7 @@ INFO: [Synth 8-113] binding component instance 'InputDelay' to cell 'IDELAYE2' [
 	Parameter NUM_CE bound to: 2 - type: integer 
 	Parameter OFB_USED bound to: FALSE - type: string 
 	Parameter SERDES_MODE bound to: MASTER - type: string 
-INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:130]
+INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISERDESE2' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:130]
 	Parameter DATA_RATE bound to: DDR - type: string 
 	Parameter DATA_WIDTH bound to: 10 - type: integer 
 	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
@@ -224,108 +284,109 @@ INFO: [Synth 8-113] binding component instance 'DeserializerMaster' to cell 'ISE
 	Parameter NUM_CE bound to: 2 - type: integer 
 	Parameter OFB_USED bound to: FALSE - type: string 
 	Parameter SERDES_MODE bound to: SLAVE - type: string 
-INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:172]
-INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'SyncBase' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncBase.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'SyncBase' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncBase.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncBase.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/SyncBase.vhd:74]
-INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:95]
-INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:95]
-INFO: [Synth 8-638] synthesizing module 'ChannelBond' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/ChannelBond.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/ChannelBond.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Decoder.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'ResyncToBUFG' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/ResyncToBUFG.vhd:78]
-INFO: [Synth 8-113] binding component instance 'InstBUFG' to cell 'BUFG' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/ResyncToBUFG.vhd:84]
-INFO: [Synth 8-256] done synthesizing module 'ResyncToBUFG' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/ResyncToBUFG.vhd:78]
-INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/EEPROM_8b.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TWI_SlaveCtl.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/GlitchFilter.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/GlitchFilter.vhd:69]
-INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/TWI_SlaveCtl.vhd:87]
-INFO: [Synth 8-226] default block is never used [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/EEPROM_8b.vhd:201]
-INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/EEPROM_8b.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:112]
-INFO: [Synth 8-256] done synthesizing module 'system_dvi2rgb_1_0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/synth/system_dvi2rgb_1_0.vhd:81]
-WARNING: [Synth 8-6014] Unused sequential element pTkn0FlagQ_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:172]
-WARNING: [Synth 8-6014] Unused sequential element pTkn1FlagQ_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:173]
-WARNING: [Synth 8-6014] Unused sequential element pTkn2FlagQ_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:174]
-WARNING: [Synth 8-6014] Unused sequential element pTkn3FlagQ_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:175]
-WARNING: [Synth 8-6014] Unused sequential element pDelayFastOvf_reg was removed.  [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:209]
+INFO: [Synth 8-113] binding component instance 'DeserializerSlave' to cell 'ISERDESE2' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'InputSERDES' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/InputSERDES.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SyncBase' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncBase.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'SyncBase__parameterized0' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncBase.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'SyncBase__parameterized0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/SyncBase.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'PhaseAlign' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'PhaseAlign' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'ChannelBond' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'ChannelBond' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/ChannelBond.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Decoder' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TMDS_Decoder.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'ResyncToBUFG' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-113] binding component instance 'InstBUFG' to cell 'BUFG' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/ResyncToBUFG.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'ResyncToBUFG' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/ResyncToBUFG.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'EEPROM_8b' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'TWI_SlaveCtl' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'GlitchFilter' [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'GlitchFilter' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/GlitchFilter.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'TWI_SlaveCtl' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/TWI_SlaveCtl.vhd:87]
+INFO: [Synth 8-226] default block is never used [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/EEPROM_8b.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'EEPROM_8b' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/EEPROM_8b.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'dvi2rgb' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/dvi2rgb.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'system_dvi2rgb_1_0' (0#1) [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/synth/system_dvi2rgb_1_0.vhd:81]
+WARNING: [Synth 8-6014] Unused sequential element pTkn0FlagQ_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element pTkn1FlagQ_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:173]
+WARNING: [Synth 8-6014] Unused sequential element pTkn2FlagQ_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element pTkn3FlagQ_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element pDelayFastOvf_reg was removed.  [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ipshared/f99d/src/PhaseAlign.vhd:209]
 WARNING: [Synth 8-7129] Port aRst in module dvi2rgb is either unconnected or has no load
 WARNING: [Synth 8-7129] Port pRst in module dvi2rgb is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 2624.500 ; gain = 678.426 ; free physical = 179 ; free virtual = 10534
+Finished RTL Elaboration : Time (s): cpu = 00:01:21 ; elapsed = 00:01:43 . Memory (MB): peak = 1788.328 ; gain = 824.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 2624.500 ; gain = 678.426 ; free physical = 173 ; free virtual = 10533
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:44 . Memory (MB): peak = 1788.328 ; gain = 824.352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 2624.500 ; gain = 678.426 ; free physical = 173 ; free virtual = 10533
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:44 . Memory (MB): peak = 1788.328 ; gain = 824.352
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2624.500 ; gain = 0.000 ; free physical = 146 ; free virtual = 10483
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1788.328 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb_ooc.xdc] for cell 'U0'
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_refclk'. The XDC file /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
-CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_pixclk'. The XDC file /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb.xdc] for cell 'U0'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb.xdc] for cell 'U0'
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_dvi2rgb_1_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_dvi2rgb_1_0_synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_dvi2rgb_1_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_dvi2rgb_1_0_propImpl.xdc].
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb_ooc.xdc] for cell 'U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_refclk'. The XDC file c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_refclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'ila_pixclk'. The XDC file c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_pixclk/ila_v6_2/constraints/ila.xdc will not be read for any cell of this module.
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/dvi2rgb.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_dvi2rgb_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_dvi2rgb_1_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_dvi2rgb_1_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_dvi2rgb_1_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_dvi2rgb_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc] for cell 'U0'
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:10]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp_q*" && IS_SEQUENTIAL }'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:10]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:10]
+Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc] for cell 'U0'
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:10]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp_q*" && IS_SEQUENTIAL }'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:10]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_lcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:10]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:11]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp_q*" && IS_SEQUENTIAL }'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:11]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:11]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:11]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp_q*" && IS_SEQUENTIAL }'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:11]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_window_counter/u_wcnt_hcmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:11]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:12]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp_q*" && IS_SEQUENTIAL }'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:12]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:12]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:12]
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp_q*" && IS_SEQUENTIAL }'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:12]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*ila_core_inst/u_ila_cap_ctrl/u_cap_addrgen/u_cap_sample_counter/u_scnt_cmp/allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK*"}]'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:12]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK"}'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:13]
-WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D"}'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:13]
-CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK"}]'. [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:13]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter { NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK"}'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:13]
+WARNING: [Vivado 12-508] No pins matched 'get_pins -hierarchical -filter {NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/I_IS_TERMINATION_SLICE_W_OUTPUT_REG.DOUT_O_reg/D"}'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:13]
+CRITICAL WARNING: [Vivado 12-4739] set_false_path:No valid object(s) found for '-from [get_pins -hierarchical -filter { NAME =~  "*allx_typeA_match_detection.ltlib_v1_0_0_allx_typeA_inst/DUT/I_WHOLE_SLICE.G_SLICE_IDX[*].U_ALL_SRL_SLICE/u_srl*/S*/CLK"}]'. [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc:13]
 Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_dvi2rgb_1_0/src/ila_timing_workaround.xdc] for cell 'U0'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2688.531 ; gain = 0.000 ; free physical = 952 ; free virtual = 10409
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1862.105 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2688.531 ; gain = 0.000 ; free physical = 943 ; free virtual = 10401
+Le chemin d'accŠs sp‚cifi‚ est introuvable.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1862.105 ; gain = 0.000
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 2262 ; free virtual = 12553
+Finished Constraint Validation : Time (s): cpu = 00:01:51 ; elapsed = 00:02:17 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 2262 ; free virtual = 12553
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:51 ; elapsed = 00:02:17 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_dvi2rgb_1_0_synth_1/dont_touch.xdc, line 20).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_dvi2rgb_1_0_synth_1/dont_touch.xdc, line 20).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 2244 ; free virtual = 12537
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:51 ; elapsed = 00:02:17 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'PhaseAlign'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWI_SlaveCtl'
@@ -352,11 +413,11 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'pState_reg' in module '
 ---------------------------------------------------------------------------------------------------
                   stidle |                              000 |                              000
                staddress |                              011 |                              001
-            stturnaround |                              110 |                              110
-                  stsack |                              100 |                              100
+            stturnaround |                              111 |                              110
+                  stsack |                              101 |                              100
                   stread |                              001 |                              010
                   stmack |                              010 |                              101
-                 stwrite |                              111 |                              011
+                 stwrite |                              110 |                              011
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'gray' in module 'TWI_SlaveCtl'
 ---------------------------------------------------------------------------------------------------
@@ -369,7 +430,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'sState_reg' using encoding 'one-hot' in module 'EEPROM_8b'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:49 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 2149 ; free virtual = 12451
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:53 ; elapsed = 00:02:20 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -393,25 +454,25 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port aRst in module dvi2rgb is either unconnected or has no load
 WARNING: [Synth 8-7129] Port pRst in module dvi2rgb is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:58 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 3830 ; free virtual = 14799
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:40 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:07 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4216 ; free virtual = 15524
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:30 ; elapsed = 00:03:01 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:01:07 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4451 ; free virtual = 15768
+Finished Timing Optimization : Time (s): cpu = 00:02:32 ; elapsed = 00:03:03 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:01:07 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4370 ; free virtual = 15690
+Finished Technology Mapping : Time (s): cpu = 00:02:33 ; elapsed = 00:03:04 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -429,37 +490,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4346 ; free virtual = 15684
+Finished IO Insertion : Time (s): cpu = 00:02:51 ; elapsed = 00:03:23 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4346 ; free virtual = 15684
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:51 ; elapsed = 00:03:23 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4353 ; free virtual = 15684
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:51 ; elapsed = 00:03:24 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4353 ; free virtual = 15684
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:51 ; elapsed = 00:03:24 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4353 ; free virtual = 15684
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:51 ; elapsed = 00:03:24 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4353 ; free virtual = 15684
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:51 ; elapsed = 00:03:24 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -483,11 +544,11 @@ Report Cell Usage:
 |6     |IDELAYE2   |     3|
 |7     |ISERDESE2  |     6|
 |9     |LUT1       |    25|
-|10    |LUT2       |    58|
-|11    |LUT3       |    77|
-|12    |LUT4       |    74|
-|13    |LUT5       |   100|
-|14    |LUT6       |   156|
+|10    |LUT2       |    56|
+|11    |LUT3       |    86|
+|12    |LUT4       |    68|
+|13    |LUT5       |   107|
+|14    |LUT6       |   163|
 |15    |MMCME2_ADV |     1|
 |16    |MUXF7      |    16|
 |17    |MUXF8      |     8|
@@ -499,32 +560,33 @@ Report Cell Usage:
 |23    |IBUFDS     |     4|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4353 ; free virtual = 15684
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:51 ; elapsed = 00:03:24 . Memory (MB): peak = 1862.105 ; gain = 898.129
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:01:05 . Memory (MB): peak = 2688.531 ; gain = 678.426 ; free physical = 4349 ; free virtual = 15683
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:01:11 . Memory (MB): peak = 2688.531 ; gain = 742.457 ; free physical = 4349 ; free virtual = 15683
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:20 ; elapsed = 00:03:13 . Memory (MB): peak = 1862.105 ; gain = 824.352
+Synthesis Optimization Complete : Time (s): cpu = 00:02:51 ; elapsed = 00:03:24 . Memory (MB): peak = 1862.105 ; gain = 898.129
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2688.531 ; gain = 0.000 ; free physical = 4631 ; free virtual = 15966
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1862.105 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 6 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2688.531 ; gain = 0.000 ; free physical = 4623 ; free virtual = 15960
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1862.105 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
 
-Synth Design complete | Checksum: b2a69a7d
+Le chemin d'accŠs sp‚cifi‚ est introuvable.
+Synth Design complete | Checksum: 31352f1
 INFO: [Common 17-83] Releasing license: Synthesis
-178 Infos, 32 Warnings, 6 Critical Warnings and 0 Errors encountered.
+180 Infos, 87 Warnings, 6 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:01:24 . Memory (MB): peak = 2688.531 ; gain = 1080.531 ; free physical = 4584 ; free virtual = 15927
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1640.188; main = 1338.067; forked = 312.557
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4259.281; main = 2688.535; forked = 1602.762
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_dvi2rgb_1_0_synth_1/system_dvi2rgb_1_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:03:07 ; elapsed = 00:03:45 . Memory (MB): peak = 1862.105 ; gain = 1308.766
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1862.105 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_dvi2rgb_1_0_synth_1/system_dvi2rgb_1_0.dcp' has been generated.
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Coretcl 2-1174] Renamed 42 cell refs.
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_dvi2rgb_1_0_synth_1/system_dvi2rgb_1_0.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1862.105 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_dvi2rgb_1_0_synth_1/system_dvi2rgb_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_dvi2rgb_1_0_utilization_synth.rpt -pb system_dvi2rgb_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 15 18:43:48 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 19 16:36:34 2024...

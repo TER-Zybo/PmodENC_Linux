@@ -1,23 +1,26 @@
 {
     "1": {
-        "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "26",
-        "total_instructions": "26",
-        "calls": "",
-        "basicblocks": "4",
+        "name": "Bytes2AXIMMvideo",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "1306",
+        "instructions": "94",
+        "total_instructions": "138",
+        "calls": "2 5",
+        "basicblocks": "8",
+        "loads": {
+            "L": "3"
+        },
         "stores": {
-            "L": "2"
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
     "2": {
-        "name": "Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1117_1",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
+        "name": "Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "1316",
         "instructions": "22",
         "total_instructions": "22",
         "calls": "",
@@ -33,24 +36,33 @@
         }
     },
     "3": {
-        "name": "reg<unsigned short>",
-        "file": "x_hls_utils.h",
-        "fileloc": "248",
-        "instructions": "4",
-        "total_instructions": "4",
+        "name": "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "709",
+        "instructions": "71",
+        "total_instructions": "71",
         "calls": "",
-        "basicblocks": "1"
+        "basicblocks": "12",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
     },
     "4": {
-        "name": "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_549_5",
+        "name": "AXIvideo2MultiPixStream",
         "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "53",
-        "total_instructions": "53",
-        "calls": "",
-        "basicblocks": "10",
+        "fileloc": "213",
+        "instructions": "47",
+        "total_instructions": "163",
+        "calls": "7 7 10 13 14",
+        "basicblocks": "4",
         "loads": {
-            "L": "1"
+            "L": "6"
         },
         "stores": {
             "L": "2"
@@ -60,102 +72,84 @@
         }
     },
     "5": {
-        "name": "MultiPixStream2Bytes",
+        "name": "Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "1326",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "entry_proc",
         "file": "v_frmbuf_wr.cpp",
         "fileloc": "0",
-        "instructions": "107",
-        "total_instructions": "312",
-        "calls": "7 4 8",
-        "basicblocks": "21",
+        "instructions": "10",
+        "total_instructions": "10",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "reg<unsigned short>",
+        "file": "C:\/Xilinx\/Vitis_HLS\/2023.2\/common\/technology\/autopilot\\utils\/x_hls_utils.h",
+        "fileloc": "222",
+        "instructions": "5",
+        "total_instructions": "5",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "FrmbufWrHlsDataFlow",
+        "file": "v_frmbuf_wr.cpp",
+        "fileloc": "69",
+        "instructions": "44",
+        "total_instructions": "734",
+        "calls": "6 4 11 1",
+        "basicblocks": "1"
+    },
+    "9": {
+        "name": "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "749",
+        "instructions": "118",
+        "total_instructions": "118",
+        "calls": "",
+        "basicblocks": "22",
         "loads": {
             "L": "3"
         },
         "stores": {
-            "L": "6"
+            "L": "8"
         },
         "loops": {
-            "L": "3"
+            "L": "1"
         }
-    },
-    "6": {
-        "name": "FrmbufWrHlsDataFlow",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "56",
-        "total_instructions": "691",
-        "calls": "12 9 5 13",
-        "basicblocks": "1"
     },
     "0": {
         "name": "v_frmbuf_wr",
         "file": "v_frmbuf_wr.cpp",
-        "fileloc": "73",
+        "fileloc": "115",
         "instructions": "54",
-        "total_instructions": "745",
-        "calls": "6",
+        "total_instructions": "788",
+        "calls": "8",
         "basicblocks": "1",
         "loads": {
             "G": "2"
         }
     },
-    "7": {
-        "name": "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_511_1",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "53",
-        "total_instructions": "53",
-        "calls": "",
-        "basicblocks": "10",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "8": {
-        "name": "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_586_8",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "99",
-        "total_instructions": "99",
-        "calls": "",
-        "basicblocks": "20",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "9": {
-        "name": "AXIvideo2MultiPixStream",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "52",
-        "total_instructions": "166",
-        "calls": "3 3 10 11 1",
-        "basicblocks": "6",
-        "loads": {
-            "L": "7"
-        },
-        "stores": {
-            "L": "4"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
     "10": {
         "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "226",
         "instructions": "26",
         "total_instructions": "26",
         "calls": "",
@@ -171,9 +165,45 @@
         }
     },
     "11": {
+        "name": "MultiPixStream2Bytes",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "330",
+        "instructions": "119",
+        "total_instructions": "379",
+        "calls": "12 3 9",
+        "basicblocks": "22",
+        "loads": {
+            "L": "9"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "3"
+        }
+    },
+    "12": {
+        "name": "MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "667",
+        "instructions": "71",
+        "total_instructions": "71",
+        "calls": "",
+        "basicblocks": "12",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
         "name": "AXIvideo2MultiPixStream_Pipeline_loop_width",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "226",
         "instructions": "54",
         "total_instructions": "54",
         "calls": "",
@@ -188,44 +218,14 @@
             "L": "1"
         }
     },
-    "12": {
-        "name": "entry_proc",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "17",
-        "total_instructions": "17",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "13": {
-        "name": "Bytes2AXIMMvideo",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "96",
-        "total_instructions": "140",
-        "calls": "2 14",
-        "basicblocks": "9",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
     "14": {
-        "name": "Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1127_2",
-        "file": "v_frmbuf_wr.cpp",
-        "fileloc": "0",
-        "instructions": "22",
-        "total_instructions": "22",
+        "name": "AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol",
+        "file": "C:\/Users\/hdway\/Documents\/vivado\/TER\/PmodENC_Linux\/hw_with_enc\/hw_with_enc.runs\/system_v_frmbuf_wr_0_0_synth_1\/prj\/sol\/.autopilot\/db\/v_frmbuf_wr.cpp",
+        "fileloc": "226",
+        "instructions": "26",
+        "total_instructions": "26",
         "calls": "",
         "basicblocks": "4",
-        "loads": {
-            "L": "1"
-        },
         "stores": {
             "L": "2"
         },

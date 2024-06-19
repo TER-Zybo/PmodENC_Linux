@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 88 \
+    id 98 \
     name img \
     type fifo \
     dir I \
@@ -18,14 +18,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_img \
     op interface \
-    ports { img_dout { I 24 vector } img_num_data_valid { I 2 vector } img_fifo_cap { I 2 vector } img_empty_n { I 1 bit } img_read { O 1 bit } } \
+    ports { img_dout { I 24 vector } img_num_data_valid { I 3 vector } img_fifo_cap { I 3 vector } img_empty_n { I 1 bit } img_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 89 \
+    id 99 \
     name bytePlanes_plane0 \
     type fifo \
     dir O \
@@ -40,7 +40,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 90 \
+    id 100 \
     name bytePlanes_plane1 \
     type fifo \
     dir O \
@@ -55,90 +55,60 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 91 \
-    name Height \
+    id 101 \
+    name Height_val \
+    type other \
+    dir I \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_Height_val \
+    op interface \
+    ports { Height_val { I 12 vector } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 102 \
+    name WidthInBytes_val \
     type fifo \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_Height \
+    corename dc_WidthInBytes_val \
     op interface \
-    ports { Height_dout { I 12 vector } Height_num_data_valid { I 2 vector } Height_fifo_cap { I 2 vector } Height_empty_n { I 1 bit } Height_read { O 1 bit } } \
+    ports { WidthInBytes_val_dout { I 15 vector } WidthInBytes_val_num_data_valid { I 3 vector } WidthInBytes_val_fifo_cap { I 3 vector } WidthInBytes_val_empty_n { I 1 bit } WidthInBytes_val_read { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 92 \
-    name WidthInBytes \
-    type fifo \
+    id 103 \
+    name VideoFormat_val \
+    type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_WidthInBytes \
+    corename dc_VideoFormat_val \
     op interface \
-    ports { WidthInBytes_dout { I 15 vector } WidthInBytes_num_data_valid { I 3 vector } WidthInBytes_fifo_cap { I 3 vector } WidthInBytes_empty_n { I 1 bit } WidthInBytes_read { O 1 bit } } \
+    ports { VideoFormat_val { I 6 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 93 \
-    name VideoFormat \
-    type fifo \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_VideoFormat \
-    op interface \
-    ports { VideoFormat_dout { I 6 vector } VideoFormat_num_data_valid { I 3 vector } VideoFormat_fifo_cap { I 3 vector } VideoFormat_empty_n { I 1 bit } VideoFormat_read { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 94 \
-    name WidthInBytes_c \
+    id 104 \
+    name WidthInBytes_val2_c \
     type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_WidthInBytes_c \
+    corename dc_WidthInBytes_val2_c \
     op interface \
-    ports { WidthInBytes_c_din { O 15 vector } WidthInBytes_c_num_data_valid { I 2 vector } WidthInBytes_c_fifo_cap { I 2 vector } WidthInBytes_c_full_n { I 1 bit } WidthInBytes_c_write { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 95 \
-    name height_c \
-    type fifo \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_height_c \
-    op interface \
-    ports { height_c_din { O 12 vector } height_c_num_data_valid { I 2 vector } height_c_fifo_cap { I 2 vector } height_c_full_n { I 1 bit } height_c_write { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 96 \
-    name video_format_c \
-    type fifo \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_video_format_c \
-    op interface \
-    ports { video_format_c_din { O 6 vector } video_format_c_num_data_valid { I 2 vector } video_format_c_fifo_cap { I 2 vector } video_format_c_full_n { I 1 bit } video_format_c_write { O 1 bit } } \
+    ports { WidthInBytes_val2_c_din { O 15 vector } WidthInBytes_val2_c_num_data_valid { I 3 vector } WidthInBytes_val2_c_fifo_cap { I 3 vector } WidthInBytes_val2_c_full_n { I 1 bit } WidthInBytes_val2_c_write { O 1 bit } } \
 } "
 }
 

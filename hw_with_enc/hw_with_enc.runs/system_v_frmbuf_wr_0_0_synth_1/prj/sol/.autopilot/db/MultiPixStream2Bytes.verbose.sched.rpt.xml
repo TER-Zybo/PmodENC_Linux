@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'MultiPixStream2Bytes'" level="0">
-<item name = "Date">Wed May 15 18:45:59 2024
+<item name = "Date">Wed Jun 19 16:40:52 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 283137122, 10.000 ns, 2.831 sec, 1, 283137122, no</column>
+<column name="">2, 141588002, 20.000 ns, 1.416 sec, 2, 141588002, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,9 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_YUYV8">0, 141579360, 4 ~ 32773, -, -, 0 ~ 4320, no</column>
-<column name="- loop_UYVY8">0, 141579360, 4 ~ 32773, -, -, 0 ~ 4320, no</column>
-<column name="- loop_Y_UV8_Y_UV8_420">0, 283137120, 4 ~ 65541, -, -, 0 ~ 4320, no</column>
+<column name="- loop_YUYV8">0, 70809120, 7 ~ 16391, -, -, 0 ~ 4320, no</column>
+<column name="- loop_UYVY8">0, 70809120, 7 ~ 16391, -, -, 0 ~ 4320, no</column>
+<column name="- loop_Y_UV8_Y_UV8_420">0, 141588000, 7 ~ 32775, -, -, 0 ~ 4320, no</column>
 </table>
 </item>
 </section>

@@ -15,9 +15,9 @@ set DLRegItemOffset 0
 set C_modelName {AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ axi_data_2_lcssa int 24 regular  }
-	{ axi_last_2_lcssa int 1 regular  }
-	{ eol_0_lcssa int 1 regular  }
+	{ axi_data_3_reload int 24 regular  }
+	{ select_ln306 int 1 regular  }
+	{ eol_reload int 1 regular  }
 	{ s_axis_video_V_data_V int 24 regular {axi_s 0 volatile  { s_axis_video Data } }  }
 	{ s_axis_video_V_keep_V int 3 regular {axi_s 0 volatile  { s_axis_video Keep } }  }
 	{ s_axis_video_V_strb_V int 3 regular {axi_s 0 volatile  { s_axis_video Strb } }  }
@@ -29,10 +29,11 @@ set C_modelArgList {
 	{ axi_last_4_out int 1 regular {pointer 1}  }
 }
 set hasAXIMCache 0
+set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
-	{ "Name" : "axi_data_2_lcssa", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
- 	{ "Name" : "axi_last_2_lcssa", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "eol_0_lcssa", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
+	{ "Name" : "axi_data_3_reload", "interface" : "wire", "bitwidth" : 24, "direction" : "READONLY"} , 
+ 	{ "Name" : "select_ln306", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
+ 	{ "Name" : "eol_reload", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "s_axis_video_V_data_V", "interface" : "axis", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "s_axis_video_V_keep_V", "interface" : "axis", "bitwidth" : 3, "direction" : "READONLY"} , 
  	{ "Name" : "s_axis_video_V_strb_V", "interface" : "axis", "bitwidth" : 3, "direction" : "READONLY"} , 
@@ -52,9 +53,9 @@ set portList {
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ s_axis_video_TVALID sc_in sc_logic 1 invld 3 } 
-	{ axi_data_2_lcssa sc_in sc_lv 24 signal 0 } 
-	{ axi_last_2_lcssa sc_in sc_lv 1 signal 1 } 
-	{ eol_0_lcssa sc_in sc_lv 1 signal 2 } 
+	{ axi_data_3_reload sc_in sc_lv 24 signal 0 } 
+	{ select_ln306 sc_in sc_lv 1 signal 1 } 
+	{ eol_reload sc_in sc_lv 1 signal 2 } 
 	{ s_axis_video_TDATA sc_in sc_lv 24 signal 3 } 
 	{ s_axis_video_TREADY sc_out sc_logic 1 inacc 9 } 
 	{ s_axis_video_TKEEP sc_in sc_lv 3 signal 4 } 
@@ -76,9 +77,9 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "s_axis_video_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "s_axis_video_V_data_V", "role": "default" }} , 
- 	{ "name": "axi_data_2_lcssa", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "axi_data_2_lcssa", "role": "default" }} , 
- 	{ "name": "axi_last_2_lcssa", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "axi_last_2_lcssa", "role": "default" }} , 
- 	{ "name": "eol_0_lcssa", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "eol_0_lcssa", "role": "default" }} , 
+ 	{ "name": "axi_data_3_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "axi_data_3_reload", "role": "default" }} , 
+ 	{ "name": "select_ln306", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "select_ln306", "role": "default" }} , 
+ 	{ "name": "eol_reload", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "eol_reload", "role": "default" }} , 
  	{ "name": "s_axis_video_TDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "s_axis_video_V_data_V", "role": "default" }} , 
  	{ "name": "s_axis_video_TREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "inacc", "bundle":{"name": "s_axis_video_V_dest_V", "role": "default" }} , 
  	{ "name": "s_axis_video_TKEEP", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "s_axis_video_V_keep_V", "role": "default" }} , 
@@ -108,9 +109,9 @@ set RtlHierarchyInfo {[
 		"HasNonBlockingOperation" : "0",
 		"IsBlackBox" : "0",
 		"Port" : [
-			{"Name" : "axi_data_2_lcssa", "Type" : "None", "Direction" : "I"},
-			{"Name" : "axi_last_2_lcssa", "Type" : "None", "Direction" : "I"},
-			{"Name" : "eol_0_lcssa", "Type" : "None", "Direction" : "I"},
+			{"Name" : "axi_data_3_reload", "Type" : "None", "Direction" : "I"},
+			{"Name" : "select_ln306", "Type" : "None", "Direction" : "I"},
+			{"Name" : "eol_reload", "Type" : "None", "Direction" : "I"},
 			{"Name" : "s_axis_video_V_data_V", "Type" : "Axis", "Direction" : "I", "BaseName" : "s_axis_video",
 				"BlockSignal" : [
 					{"Name" : "s_axis_video_TDATA_blk_n", "Type" : "RtlSignal"}]},
@@ -130,9 +131,9 @@ set RtlHierarchyInfo {[
 
 set ArgLastReadFirstWriteLatency {
 	AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol {
-		axi_data_2_lcssa {Type I LastRead 0 FirstWrite -1}
-		axi_last_2_lcssa {Type I LastRead 0 FirstWrite -1}
-		eol_0_lcssa {Type I LastRead 0 FirstWrite -1}
+		axi_data_3_reload {Type I LastRead 0 FirstWrite -1}
+		select_ln306 {Type I LastRead 0 FirstWrite -1}
+		eol_reload {Type I LastRead 0 FirstWrite -1}
 		s_axis_video_V_data_V {Type I LastRead 0 FirstWrite -1}
 		s_axis_video_V_keep_V {Type I LastRead 0 FirstWrite -1}
 		s_axis_video_V_strb_V {Type I LastRead 0 FirstWrite -1}
@@ -154,9 +155,9 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	axi_data_2_lcssa { ap_none {  { axi_data_2_lcssa in_data 0 24 } } }
-	axi_last_2_lcssa { ap_none {  { axi_last_2_lcssa in_data 0 1 } } }
-	eol_0_lcssa { ap_none {  { eol_0_lcssa in_data 0 1 } } }
+	axi_data_3_reload { ap_none {  { axi_data_3_reload in_data 0 24 } } }
+	select_ln306 { ap_none {  { select_ln306 in_data 0 1 } } }
+	eol_reload { ap_none {  { eol_reload in_data 0 1 } } }
 	s_axis_video_V_data_V { axis {  { s_axis_video_TVALID in_vld 0 1 }  { s_axis_video_TDATA in_data 0 24 } } }
 	s_axis_video_V_keep_V { axis {  { s_axis_video_TKEEP in_data 0 3 } } }
 	s_axis_video_V_strb_V { axis {  { s_axis_video_TSTRB in_data 0 3 } } }

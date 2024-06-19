@@ -9038,38 +9038,6 @@
         </spirit:portMap>
       </spirit:portMaps>
     </spirit:busInterface>
-    <spirit:busInterface>
-      <spirit:name>S_AXI_CTRL_tlm</spirit:name>
-      <spirit:displayName>S_AXI_CTRL</spirit:displayName>
-      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
-      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_tlm" spirit:version="1.0"/>
-      <spirit:slave/>
-      <spirit:portMaps>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>AXIMM_WRITE_SOCKET</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>S_AXI_CTRL_wr_socket</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-        <spirit:portMap>
-          <spirit:logicalPort>
-            <spirit:name>AXIMM_READ_SOCKET</spirit:name>
-          </spirit:logicalPort>
-          <spirit:physicalPort>
-            <spirit:name>S_AXI_CTRL_rd_socket</spirit:name>
-          </spirit:physicalPort>
-        </spirit:portMap>
-      </spirit:portMaps>
-      <spirit:vendorExtensions>
-        <xilinx:busInterfaceInfo>
-          <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="BUSIF_ENABLEMENT.S_AXI_CTRL_tlm" xilinx:dependency="(spirit:decode(id(&apos;PARAM_VALUE.ROUTING_MODE&apos;)) = 1)">false</xilinx:isEnabled>
-          </xilinx:enablement>
-        </xilinx:busInterfaceInfo>
-      </spirit:vendorExtensions>
-    </spirit:busInterface>
   </spirit:busInterfaces>
   <spirit:memoryMaps>
     <spirit:memoryMap>
@@ -9100,7 +9068,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:72508444</spirit:value>
+            <spirit:value>9:bebe1483</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -9116,11 +9084,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:28 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7cb96f56</spirit:value>
+            <spirit:value>9:b057ff91</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -9144,11 +9112,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:28 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:7cb96f56</spirit:value>
+            <spirit:value>9:b057ff91</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -9161,7 +9129,7 @@
         <spirit:displayName>Verilog Simulation</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
         <spirit:language>verilog</spirit:language>
-        <spirit:modelName>axis_switch_v1_1_28_axis_switch</spirit:modelName>
+        <spirit:modelName>axis_switch_v1_1_30_axis_switch</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogbehavioralsimulation_xilinx_com_ip_axis_infrastructure_1_1__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -9174,11 +9142,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:28 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b62fcdff</spirit:value>
+            <spirit:value>9:7ac15d38</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -9194,11 +9162,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:28 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:b62fcdff</spirit:value>
+            <spirit:value>9:7ac15d38</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -9207,7 +9175,7 @@
         <spirit:displayName>Verilog Synthesis</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
         <spirit:language>verilog</spirit:language>
-        <spirit:modelName>axis_switch_v1_1_28_axis_switch</spirit:modelName>
+        <spirit:modelName>axis_switch_v1_1_30_axis_switch</spirit:modelName>
         <spirit:fileSetRef>
           <spirit:localName>xilinx_verilogsynthesis_xilinx_com_ip_axis_infrastructure_1_1__ref_view_fileset</spirit:localName>
         </spirit:fileSetRef>
@@ -9220,11 +9188,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:28 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:72508444</spirit:value>
+            <spirit:value>9:bebe1483</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -9240,11 +9208,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 15 16:34:28 UTC 2024</spirit:value>
+            <spirit:value>Wed Jun 19 14:19:33 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:72508444</spirit:value>
+            <spirit:value>9:bebe1483</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -11445,68 +11413,6 @@
           </spirit:connection>
         </spirit:transactional>
       </spirit:port>
-      <spirit:port>
-        <spirit:name>S_AXI_CTRL_wr_socket</spirit:name>
-        <spirit:transactional>
-          <spirit:transTypeDef>
-            <spirit:typeName>xtlm::xtlm_aximm_target_socket</spirit:typeName>
-            <spirit:typeDefinition>xtlm.h</spirit:typeDefinition>
-          </spirit:transTypeDef>
-          <spirit:service>
-            <spirit:initiative>provides</spirit:initiative>
-            <spirit:serviceTypeDefs>
-              <spirit:serviceTypeDef>
-                <spirit:typeName>tlm</spirit:typeName>
-                <spirit:typeDefinition>xtlm.h</spirit:typeDefinition>
-                <spirit:parameters>
-                  <spirit:parameter>
-                    <spirit:name>name</spirit:name>
-                    <spirit:value>wr_socket</spirit:value>
-                  </spirit:parameter>
-                  <spirit:parameter>
-                    <spirit:name>width</spirit:name>
-                    <spirit:value>32</spirit:value>
-                  </spirit:parameter>
-                </spirit:parameters>
-              </spirit:serviceTypeDef>
-            </spirit:serviceTypeDefs>
-          </spirit:service>
-          <spirit:connection>
-            <spirit:maxConnections>0</spirit:maxConnections>
-          </spirit:connection>
-        </spirit:transactional>
-      </spirit:port>
-      <spirit:port>
-        <spirit:name>S_AXI_CTRL_rd_socket</spirit:name>
-        <spirit:transactional>
-          <spirit:transTypeDef>
-            <spirit:typeName>xtlm::xtlm_aximm_target_socket</spirit:typeName>
-            <spirit:typeDefinition>xtlm.h</spirit:typeDefinition>
-          </spirit:transTypeDef>
-          <spirit:service>
-            <spirit:initiative>provides</spirit:initiative>
-            <spirit:serviceTypeDefs>
-              <spirit:serviceTypeDef>
-                <spirit:typeName>tlm</spirit:typeName>
-                <spirit:typeDefinition>xtlm.h</spirit:typeDefinition>
-                <spirit:parameters>
-                  <spirit:parameter>
-                    <spirit:name>name</spirit:name>
-                    <spirit:value>rd_socket</spirit:value>
-                  </spirit:parameter>
-                  <spirit:parameter>
-                    <spirit:name>width</spirit:name>
-                    <spirit:value>32</spirit:value>
-                  </spirit:parameter>
-                </spirit:parameters>
-              </spirit:serviceTypeDef>
-            </spirit:serviceTypeDefs>
-          </spirit:service>
-          <spirit:connection>
-            <spirit:maxConnections>0</spirit:maxConnections>
-          </spirit:connection>
-        </spirit:transactional>
-      </spirit:port>
     </spirit:ports>
     <spirit:modelParameters>
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="string">
@@ -11664,21 +11570,21 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_axis_infrastructure_1_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../../ipshared/8713/hdl/axis_infrastructure_v1_1_0.vh</spirit:name>
+        <spirit:name>../../../../../../ipshared/434f/hdl/axis_infrastructure_v1_1_1.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>axis_infrastructure_v1_1_0</spirit:logicalName>
+        <spirit:logicalName>axis_infrastructure_v1_1_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v</spirit:name>
+        <spirit:name>../../../../../../ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axis_infrastructure_v1_1_0</spirit:logicalName>
+        <spirit:logicalName>axis_infrastructure_v1_1_1</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_infrastructure" xilinx:version="1.1" xilinx:isGenerated="true" xilinx:checksum="ea44fec2">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_infrastructure" xilinx:version="1.1" xilinx:isGenerated="true" xilinx:checksum="793e142a">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -11687,14 +11593,14 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_axis_register_slice_1_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../../ipshared/eb9f/hdl/axis_register_slice_v1_1_vl_rfs.v</spirit:name>
+        <spirit:name>../../../../../../ipshared/12b0/hdl/axis_register_slice_v1_1_vl_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axis_register_slice_v1_1_28</spirit:logicalName>
+        <spirit:logicalName>axis_register_slice_v1_1_30</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_register_slice" xilinx:version="1.1" xilinx:isGenerated="true" xilinx:checksum="884be088">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_register_slice" xilinx:version="1.1" xilinx:isGenerated="true" xilinx:checksum="745f7b8e">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -11703,10 +11609,10 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../../ipshared/2f0f/hdl/axis_switch_v1_1_vl_rfs.v</spirit:name>
+        <spirit:name>../../../../../../ipshared/0dfa/hdl/axis_switch_v1_1_vl_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axis_switch_v1_1_28</spirit:logicalName>
+        <spirit:logicalName>axis_switch_v1_1_30</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -11720,19 +11626,19 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_xilinx_com_ip_axis_infrastructure_1_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../../ipshared/8713/hdl/axis_infrastructure_v1_1_0.vh</spirit:name>
+        <spirit:name>../../../../../../ipshared/434f/hdl/axis_infrastructure_v1_1_1.vh</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
-        <spirit:logicalName>axis_infrastructure_v1_1_0</spirit:logicalName>
+        <spirit:logicalName>axis_infrastructure_v1_1_1</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../../../../../ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v</spirit:name>
+        <spirit:name>../../../../../../ipshared/434f/hdl/axis_infrastructure_v1_1_vl_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axis_infrastructure_v1_1_0</spirit:logicalName>
+        <spirit:logicalName>axis_infrastructure_v1_1_1</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_infrastructure" xilinx:version="1.1" xilinx:isGenerated="true" xilinx:checksum="ea44fec2">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_infrastructure" xilinx:version="1.1" xilinx:isGenerated="true" xilinx:checksum="793e142a">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -11741,13 +11647,13 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_xilinx_com_ip_axis_register_slice_1_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../../ipshared/eb9f/hdl/axis_register_slice_v1_1_vl_rfs.v</spirit:name>
+        <spirit:name>../../../../../../ipshared/12b0/hdl/axis_register_slice_v1_1_vl_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axis_register_slice_v1_1_28</spirit:logicalName>
+        <spirit:logicalName>axis_register_slice_v1_1_30</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_register_slice" xilinx:version="1.1" xilinx:isGenerated="true" xilinx:checksum="884be088">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axis_register_slice" xilinx:version="1.1" xilinx:isGenerated="true" xilinx:checksum="745f7b8e">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -11756,9 +11662,9 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../../../../../ipshared/2f0f/hdl/axis_switch_v1_1_vl_rfs.v</spirit:name>
+        <spirit:name>../../../../../../ipshared/0dfa/hdl/axis_switch_v1_1_vl_rfs.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axis_switch_v1_1_28</spirit:logicalName>
+        <spirit:logicalName>axis_switch_v1_1_30</spirit:logicalName>
       </spirit:file>
       <spirit:file>
         <spirit:name>bd_ca02_vfb_0_0_axisswitch_ooc.xdc</spirit:name>
@@ -11773,7 +11679,7 @@
       <spirit:file>
         <spirit:name>synth/bd_ca02_vfb_0_0_axisswitch.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>axis_switch_v1_1_28</spirit:logicalName>
+        <spirit:logicalName>axis_switch_v1_1_30</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
@@ -15479,7 +15385,7 @@
         <xilinx:systemCLibrary>xtlm</xilinx:systemCLibrary>
         <xilinx:systemCLibrary>axis_switch_sc_v1_1</xilinx:systemCLibrary>
       </xilinx:systemCLibraries>
-      <xilinx:coreRevision>28</xilinx:coreRevision>
+      <xilinx:coreRevision>30</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.DECODER_REG" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.HAS_TKEEP" xilinx:valueSource="propagated"/>
@@ -15492,10 +15398,10 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2023.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2023.2.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4a1343ac"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="0de992c9"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="77ce5bfb"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e8fcfcbc"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="12001b75"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="c3161e86"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="16f5c517"/>

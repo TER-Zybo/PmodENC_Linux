@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:v_axi4s_vid_out:4.0
-// IP Revision: 16
+// IP Revision: 17
 
 `timescale 1ns/1ps
 
@@ -152,7 +152,7 @@ output wire [12 : 0] fifo_read_level;
 output wire [31 : 0] status;
 output wire sof_state_out;
 
-  v_axi4s_vid_out_v4_0_16 #(
+  v_axi4s_vid_out_v4_0_17 #(
     .C_FAMILY("zynq"),
     .C_PIXELS_PER_CLOCK(1),
     .C_COMPONENTS_PER_PIXEL(3),

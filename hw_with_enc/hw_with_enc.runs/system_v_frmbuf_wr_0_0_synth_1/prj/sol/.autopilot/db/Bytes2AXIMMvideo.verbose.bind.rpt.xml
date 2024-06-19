@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'Bytes2AXIMMvideo'" level="0">
-<item name = "Date">Wed May 15 18:46:03 2024
+<item name = "Date">Wed Jun 19 16:40:53 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2, 71733602, 20.000 ns, 0.717 sec, 2, 71733602, no</column>
+<column name="">1, 71733601, 10.000 ns, 0.717 sec, 1, 71733601, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1117_1_fu_200">Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1117_1, 3, 8195, 30.000 ns, 81.950 us, 3, 8195, no</column>
-<column name="grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1127_2_fu_210">Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1127_2, 3, 8195, 30.000 ns, 81.950 us, 3, 8195, no</column>
+<column name="grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1_fu_202">Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1, 2, 8195, 20.000 ns, 81.950 us, 2, 8195, no</column>
+<column name="grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2_fu_212">Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2, 2, 8195, 20.000 ns, 81.950 us, 2, 8195, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_Bytes2AXIMMvideo_2planes">0, 71733600, 112 ~ 16605, -, -, 0 ~ 4320, no</column>
+<column name="- loop_Bytes2AXIMMvideo_2planes">0, 71733600, 111 ~ 16605, -, -, 0 ~ 4320, no</column>
 </table>
 </item>
 </section>

@@ -11,7 +11,7 @@
 -- otherwise provided in a valid license issued to you by
 -- AMD, and to the maximum extent permitted by applicable
 -- law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
--- WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+-- WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 -- AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 -- BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 -- INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:axi_iic:2.1
--- IP Revision: 4
+-- IP Revision: 6
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY axi_iic_v2_1_4;
-USE axi_iic_v2_1_4.axi_iic;
+LIBRARY axi_iic_v2_1_6;
+USE axi_iic_v2_1_6.axi_iic;
 
 ENTITY system_axi_iic_0_0 IS
   PORT (

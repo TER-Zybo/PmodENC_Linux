@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'v_frmbuf_wr'
 ================================================================
-* Date:           Wed May 15 18:46:04 2024
+* Date:           Wed Jun 19 16:40:54 2024
 
-* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
 * Project:        prj
 * Solution:       sol (Vivado IP Flow Target)
 * Product family: zynq
@@ -29,7 +29,7 @@
     |   Latency (cycles)  |  Latency (absolute)  |     Interval    | Pipeline|
     |   min   |    max    |    min   |    max    | min |    max    |   Type  |
     +---------+-----------+----------+-----------+-----+-----------+---------+
-    |       16|  283137129|  0.160 us|  2.831 sec|   17|  283137130|       no|
+    |       16|  141588008|  0.160 us|  1.416 sec|   17|  141588009|       no|
     +---------+-----------+----------+-----------+-----+-----------+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                |                     |   Latency (cycles)  |  Latency (absolute)  |     Interval    | Pipeline |
         |            Instance            |        Module       |   min   |    max    |    min   |    max    | min |    max    |   Type   |
         +--------------------------------+---------------------+---------+-----------+----------+-----------+-----+-----------+----------+
-        |grp_FrmbufWrHlsDataFlow_fu_166  |FrmbufWrHlsDataFlow  |       12|  283137125|  0.120 us|  2.831 sec|    7|  283137123|  dataflow|
+        |grp_FrmbufWrHlsDataFlow_fu_166  |FrmbufWrHlsDataFlow  |       12|  141588004|  0.120 us|  1.416 sec|    7|  141588003|  dataflow|
         +--------------------------------+---------------------+---------+-----------+----------+-----------+-----+-----------+----------+
 
         * Loop: 
@@ -90,50 +90,50 @@ ST_1 : Operation 8 [1/1] (1.00ns)   --->   "%video_format_read = read i16 @_ssdm
 ST_1 : Operation 9 [1/1] (1.00ns)   --->   "%stride_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %stride"   --->   Operation 9 'read' 'stride_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 ST_1 : Operation 10 [1/1] (1.00ns)   --->   "%height_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %height"   --->   Operation 10 'read' 'height_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 ST_1 : Operation 11 [1/1] (1.00ns)   --->   "%width_read = read i16 @_ssdm_op_Read.s_axilite.i16, i16 %width"   --->   Operation 11 'read' 'width_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 114 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = trunc i16 %width_read"   --->   Operation 12 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_56 = trunc i16 %video_format_read"   --->   Operation 13 'trunc' 'empty_56' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%empty_57 = trunc i16 %height_read"   --->   Operation 14 'trunc' 'empty_57' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln150 = zext i16 %video_format_read" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:150]   --->   Operation 15 'zext' 'zext_ln150' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%BYTES_PER_PIXEL_addr = getelementptr i3 %BYTES_PER_PIXEL, i32 0, i32 %zext_ln150" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:150]   --->   Operation 16 'getelementptr' 'BYTES_PER_PIXEL_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [2/2] (2.32ns)   --->   "%BYTES_PER_PIXEL_load = load i6 %BYTES_PER_PIXEL_addr" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:150]   --->   Operation 17 'load' 'BYTES_PER_PIXEL_load' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%MEMORY2LIVE_addr = getelementptr i3 %MEMORY2LIVE, i32 0, i32 %zext_ln150" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:153]   --->   Operation 18 'getelementptr' 'MEMORY2LIVE_addr' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [2/2] (2.32ns)   --->   "%colorFormat = load i6 %MEMORY2LIVE_addr" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:153]   --->   Operation 19 'load' 'colorFormat' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty = trunc i16 %video_format_read"   --->   Operation 12 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_51 = trunc i16 %height_read"   --->   Operation 13 'trunc' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%empty_52 = trunc i16 %width_read"   --->   Operation 14 'trunc' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%empty_53 = trunc i16 %width_read"   --->   Operation 15 'trunc' 'empty_53' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln194 = zext i16 %video_format_read" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 16 'zext' 'zext_ln194' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%BYTES_PER_PIXEL_addr = getelementptr i3 %BYTES_PER_PIXEL, i32 0, i32 %zext_ln194" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 17 'getelementptr' 'BYTES_PER_PIXEL_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [2/2] (2.32ns)   --->   "%BYTES_PER_PIXEL_load = load i6 %BYTES_PER_PIXEL_addr" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 18 'load' 'BYTES_PER_PIXEL_load' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%MEMORY2LIVE_addr = getelementptr i3 %MEMORY2LIVE, i32 0, i32 %zext_ln194" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:197]   --->   Operation 19 'getelementptr' 'MEMORY2LIVE_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (2.32ns)   --->   "%colorFormat = load i6 %MEMORY2LIVE_addr" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:197]   --->   Operation 20 'load' 'colorFormat' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
 
 State 2 <SV = 1> <Delay = 2.32>
-ST_2 : Operation 20 [1/2] (2.32ns)   --->   "%BYTES_PER_PIXEL_load = load i6 %BYTES_PER_PIXEL_addr" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:150]   --->   Operation 20 'load' 'BYTES_PER_PIXEL_load' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
-ST_2 : Operation 21 [1/2] (2.32ns)   --->   "%colorFormat = load i6 %MEMORY2LIVE_addr" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:153]   --->   Operation 21 'load' 'colorFormat' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
+ST_2 : Operation 21 [1/2] (2.32ns)   --->   "%BYTES_PER_PIXEL_load = load i6 %BYTES_PER_PIXEL_addr" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 21 'load' 'BYTES_PER_PIXEL_load' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
+ST_2 : Operation 22 [1/2] (2.32ns)   --->   "%colorFormat = load i6 %MEMORY2LIVE_addr" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:197]   --->   Operation 22 'load' 'colorFormat' <Predicate = true> <Delay = 2.32> <CoreInst = "ROM">   --->   Core 95 'ROM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 3> <Depth = 44> <ROM>
 
-State 3 <SV = 2> <Delay = 5.62>
-ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%width_cast1_cast = zext i12 %empty"   --->   Operation 22 'zext' 'width_cast1_cast' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln150_1 = zext i3 %BYTES_PER_PIXEL_load" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:150]   --->   Operation 23 'zext' 'zext_ln150_1' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (5.62ns)   --->   "%WidthInBytes = mul i15 %width_cast1_cast, i15 %zext_ln150_1" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:150]   --->   Operation 24 'mul' 'WidthInBytes' <Predicate = true> <Delay = 5.62> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.62> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+State 3 <SV = 2> <Delay = 5.59>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln194_1 = zext i3 %BYTES_PER_PIXEL_load" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 23 'zext' 'zext_ln194_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (5.59ns)   --->   "%WidthInBytes = mul i15 %empty_53, i15 %zext_ln194_1" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:194]   --->   Operation 24 'mul' 'WidthInBytes' <Predicate = true> <Delay = 5.59> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 5.59> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
 
-State 4 <SV = 3> <Delay = 3.63>
-ST_4 : Operation 25 [2/2] (3.63ns)   --->   "%call_ln154 = call void @FrmbufWrHlsDataFlow, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i64 %mm_video, i32 %frm_buffer_read, i32 %frm_buffer2_read, i15 %WidthInBytes, i3 %colorFormat, i12 %empty, i12 %empty_57, i16 %stride_read, i6 %empty_56" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:154]   --->   Operation 25 'call' 'call_ln154' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+State 4 <SV = 3> <Delay = 4.71>
+ST_4 : Operation 25 [2/2] (4.71ns)   --->   "%call_ln198 = call void @FrmbufWrHlsDataFlow, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i64 %mm_video, i32 %frm_buffer_read, i32 %frm_buffer2_read, i15 %WidthInBytes, i3 %colorFormat, i12 %empty_52, i12 %empty_51, i16 %stride_read, i6 %empty" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:198]   --->   Operation 25 'call' 'call_ln198' <Predicate = true> <Delay = 4.71> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%spectopmodule_ln73 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_10" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:73]   --->   Operation 26 'spectopmodule' 'spectopmodule_ln73' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %mm_video, void @empty_25, i32 0, i32 0, void @empty_26, i32 100, i32 2073600, void @empty_27, void @empty_28, void @empty_26, i32 16, i32 4, i32 16, i32 16, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 26 [1/1] (0.00ns)   --->   "%spectopmodule_ln115 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_6" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:115]   --->   Operation 26 'spectopmodule' 'spectopmodule_ln115' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %mm_video, void @empty_20, i32 0, i32 0, void @empty_21, i32 100, i32 2073600, void @empty_22, void @empty_18, void @empty_21, i32 16, i32 4, i32 16, i32 16, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i64 %mm_video"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %width"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width, void @empty_29, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_30, void @empty_31, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width, void @empty_23, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 30 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width, void @empty_23, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_24, void @empty_25, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 30 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %width, void @empty_27, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %height"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height, void @empty_29, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_30, void @empty_5, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height, void @empty_23, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height, void @empty_23, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_24, void @empty_8, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %height, void @empty_27, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %stride"   --->   Operation 35 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %stride, void @empty_29, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_30, void @empty_4, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %stride, void @empty_23, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %stride, void @empty_23, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_24, void @empty_29, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %stride, void @empty_27, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %video_format"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %video_format, void @empty_29, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_30, void @empty_3, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %video_format, void @empty_23, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer, void @empty_29, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_30, void @empty_2, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_1, i32 4294967295, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer, void @empty_23, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_1, i32 4294967295, i32 0"   --->   Operation 42 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer2, void @empty_29, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_30, void @empty_0, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_1, i32 4294967295, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer2, void @empty_23, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_1, i32 4294967295, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer3, void @empty_29, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_30, void @empty, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_1, i32 4294967295, i32 0"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer3, void @empty_23, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_1, i32 4294967295, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_6, i32 1, i32 1, void @empty_20, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %video_format, void @empty_23, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_24, void @empty_30, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 39 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %video_format, void @empty_27, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 40 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer, void @empty_23, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_24, void @empty_31, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty, i32 4294967295, i32 0"   --->   Operation 41 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer, void @empty_27, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty, i32 4294967295, i32 0"   --->   Operation 42 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer2, void @empty_23, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_24, void @empty_0, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty, i32 4294967295, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer2, void @empty_27, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty, i32 4294967295, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer3, void @empty_23, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_24, void @empty_1, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty, i32 4294967295, i32 0"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frm_buffer3, void @empty_27, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty, i32 4294967295, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_2, i32 1, i32 1, void @empty_3, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 48 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i24 %s_axis_video_V_data_V"   --->   Operation 48 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %s_axis_video_V_keep_V"   --->   Operation 49 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %s_axis_video_V_strb_V"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
@@ -141,14 +141,14 @@ ST_5 : Operation 51 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void
 ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_last_V"   --->   Operation 52 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 53 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_id_V"   --->   Operation 53 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_dest_V"   --->   Operation 54 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_29, i32 0, i32 0, void @empty_26, i32 0, i32 0, void @empty_30, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%specstablecontent_ln99 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %width, void " [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:99]   --->   Operation 56 'specstablecontent' 'specstablecontent_ln99' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%specstablecontent_ln101 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %height, void " [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:101]   --->   Operation 57 'specstablecontent' 'specstablecontent_ln101' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%specstablecontent_ln103 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %stride, void " [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:103]   --->   Operation 58 'specstablecontent' 'specstablecontent_ln103' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%specstablecontent_ln105 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %video_format, void " [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:105]   --->   Operation 59 'specstablecontent' 'specstablecontent_ln105' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 60 [1/2] (0.00ns)   --->   "%call_ln154 = call void @FrmbufWrHlsDataFlow, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i64 %mm_video, i32 %frm_buffer_read, i32 %frm_buffer2_read, i15 %WidthInBytes, i3 %colorFormat, i12 %empty, i12 %empty_57, i16 %stride_read, i6 %empty_56" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:154]   --->   Operation 60 'call' 'call_ln154' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln160 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_8" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:160]   --->   Operation 61 'specaxissidechannel' 'specaxissidechannel_ln160' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%ret_ln160 = ret" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:160]   --->   Operation 62 'ret' 'ret_ln160' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_23, i32 0, i32 0, void @empty_21, i32 0, i32 0, void @empty_24, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%specstablecontent_ln141 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %width, void " [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:141]   --->   Operation 56 'specstablecontent' 'specstablecontent_ln141' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%specstablecontent_ln143 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %height, void " [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:143]   --->   Operation 57 'specstablecontent' 'specstablecontent_ln143' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%specstablecontent_ln145 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %stride, void " [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:145]   --->   Operation 58 'specstablecontent' 'specstablecontent_ln145' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%specstablecontent_ln147 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %video_format, void " [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:147]   --->   Operation 59 'specstablecontent' 'specstablecontent_ln147' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 60 [1/2] (0.00ns)   --->   "%call_ln198 = call void @FrmbufWrHlsDataFlow, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i64 %mm_video, i32 %frm_buffer_read, i32 %frm_buffer2_read, i15 %WidthInBytes, i3 %colorFormat, i12 %empty_52, i12 %empty_51, i16 %stride_read, i6 %empty" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:198]   --->   Operation 60 'call' 'call_ln198' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln204 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_4" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:204]   --->   Operation 61 'specaxissidechannel' 'specaxissidechannel_ln204' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (0.00ns)   --->   "%ret_ln204 = ret" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:204]   --->   Operation 62 'ret' 'ret_ln204' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -192,17 +192,17 @@ stride_read               (read               ) [ 001111]
 height_read               (read               ) [ 000000]
 width_read                (read               ) [ 000000]
 empty                     (trunc              ) [ 001111]
-empty_56                  (trunc              ) [ 001111]
-empty_57                  (trunc              ) [ 001111]
-zext_ln150                (zext               ) [ 000000]
+empty_51                  (trunc              ) [ 001111]
+empty_52                  (trunc              ) [ 001111]
+empty_53                  (trunc              ) [ 001100]
+zext_ln194                (zext               ) [ 000000]
 BYTES_PER_PIXEL_addr      (getelementptr      ) [ 001000]
 MEMORY2LIVE_addr          (getelementptr      ) [ 001000]
 BYTES_PER_PIXEL_load      (load               ) [ 000100]
 colorFormat               (load               ) [ 000111]
-width_cast1_cast          (zext               ) [ 000000]
-zext_ln150_1              (zext               ) [ 000000]
+zext_ln194_1              (zext               ) [ 000000]
 WidthInBytes              (mul                ) [ 000011]
-spectopmodule_ln73        (spectopmodule      ) [ 000000]
+spectopmodule_ln115       (spectopmodule      ) [ 000000]
 specinterface_ln0         (specinterface      ) [ 000000]
 specbitsmap_ln0           (specbitsmap        ) [ 000000]
 specbitsmap_ln0           (specbitsmap        ) [ 000000]
@@ -232,13 +232,13 @@ specbitsmap_ln0           (specbitsmap        ) [ 000000]
 specbitsmap_ln0           (specbitsmap        ) [ 000000]
 specbitsmap_ln0           (specbitsmap        ) [ 000000]
 specinterface_ln0         (specinterface      ) [ 000000]
-specstablecontent_ln99    (specstablecontent  ) [ 000000]
-specstablecontent_ln101   (specstablecontent  ) [ 000000]
-specstablecontent_ln103   (specstablecontent  ) [ 000000]
-specstablecontent_ln105   (specstablecontent  ) [ 000000]
-call_ln154                (call               ) [ 000000]
-specaxissidechannel_ln160 (specaxissidechannel) [ 000000]
-ret_ln160                 (ret                ) [ 000000]
+specstablecontent_ln141   (specstablecontent  ) [ 000000]
+specstablecontent_ln143   (specstablecontent  ) [ 000000]
+specstablecontent_ln145   (specstablecontent  ) [ 000000]
+specstablecontent_ln147   (specstablecontent  ) [ 000000]
+call_ln198                (call               ) [ 000000]
+specaxissidechannel_ln204 (specaxissidechannel) [ 000000]
+ret_ln204                 (ret                ) [ 000000]
 </LifeTime>
 
 <model>
@@ -449,7 +449,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 
@@ -467,7 +467,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_25"/></StgValue>
+<StgValue><ssdm name="empty_20"/></StgValue>
 </bind>
 </comp>
 
@@ -476,7 +476,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_26"/></StgValue>
+<StgValue><ssdm name="empty_21"/></StgValue>
 </bind>
 </comp>
 
@@ -503,7 +503,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_27"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -512,7 +512,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_28"/></StgValue>
+<StgValue><ssdm name="empty_18"/></StgValue>
 </bind>
 </comp>
 
@@ -557,7 +557,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="69" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_29"/></StgValue>
+<StgValue><ssdm name="empty_23"/></StgValue>
 </bind>
 </comp>
 
@@ -566,7 +566,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="71" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_30"/></StgValue>
+<StgValue><ssdm name="empty_24"/></StgValue>
 </bind>
 </comp>
 
@@ -575,7 +575,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="73" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_31"/></StgValue>
+<StgValue><ssdm name="empty_25"/></StgValue>
 </bind>
 </comp>
 
@@ -584,7 +584,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_23"/></StgValue>
+<StgValue><ssdm name="empty_27"/></StgValue>
 </bind>
 </comp>
 
@@ -593,7 +593,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="77" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_5"/></StgValue>
+<StgValue><ssdm name="empty_8"/></StgValue>
 </bind>
 </comp>
 
@@ -602,7 +602,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="79" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_4"/></StgValue>
+<StgValue><ssdm name="empty_29"/></StgValue>
 </bind>
 </comp>
 
@@ -611,7 +611,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="81" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty_30"/></StgValue>
 </bind>
 </comp>
 
@@ -620,7 +620,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="83" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_2"/></StgValue>
+<StgValue><ssdm name="empty_31"/></StgValue>
 </bind>
 </comp>
 
@@ -629,7 +629,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="85" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_1"/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </bind>
 </comp>
 
@@ -647,7 +647,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="89" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name="empty_1"/></StgValue>
 </bind>
 </comp>
 
@@ -656,7 +656,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="91" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_6"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
@@ -674,7 +674,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="95" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_20"/></StgValue>
+<StgValue><ssdm name="empty_3"/></StgValue>
 </bind>
 </comp>
 
@@ -710,7 +710,7 @@ ret_ln160                 (ret                ) [ 000000]
 <pin id="103" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_4"/></StgValue>
 </bind>
 </comp>
 
@@ -861,14 +861,14 @@ ret_ln160                 (ret                ) [ 000000]
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln154/4 "/>
+<opset="call_ln198/4 "/>
 </bind>
 </comp>
 
 <comp id="194" class="1004" name="empty_fu_194">
 <pin_list>
 <pin id="195" dir="0" index="0" bw="16" slack="0"/>
-<pin id="196" dir="1" index="1" bw="12" slack="2"/>
+<pin id="196" dir="1" index="1" bw="6" slack="3"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
@@ -876,66 +876,66 @@ ret_ln160                 (ret                ) [ 000000]
 </bind>
 </comp>
 
-<comp id="198" class="1004" name="empty_56_fu_198">
+<comp id="198" class="1004" name="empty_51_fu_198">
 <pin_list>
 <pin id="199" dir="0" index="0" bw="16" slack="0"/>
-<pin id="200" dir="1" index="1" bw="6" slack="3"/>
+<pin id="200" dir="1" index="1" bw="12" slack="3"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_56/1 "/>
+<opset="empty_51/1 "/>
 </bind>
 </comp>
 
-<comp id="202" class="1004" name="empty_57_fu_202">
+<comp id="202" class="1004" name="empty_52_fu_202">
 <pin_list>
 <pin id="203" dir="0" index="0" bw="16" slack="0"/>
 <pin id="204" dir="1" index="1" bw="12" slack="3"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="empty_57/1 "/>
+<opset="empty_52/1 "/>
 </bind>
 </comp>
 
-<comp id="206" class="1004" name="zext_ln150_fu_206">
+<comp id="206" class="1004" name="empty_53_fu_206">
 <pin_list>
 <pin id="207" dir="0" index="0" bw="16" slack="0"/>
-<pin id="208" dir="1" index="1" bw="32" slack="0"/>
+<pin id="208" dir="1" index="1" bw="15" slack="2"/>
 </pin_list>
 <bind>
-<opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln150/1 "/>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="empty_53/1 "/>
 </bind>
 </comp>
 
-<comp id="212" class="1004" name="width_cast1_cast_fu_212">
+<comp id="210" class="1004" name="zext_ln194_fu_210">
 <pin_list>
-<pin id="213" dir="0" index="0" bw="12" slack="2"/>
-<pin id="214" dir="1" index="1" bw="15" slack="0"/>
+<pin id="211" dir="0" index="0" bw="16" slack="0"/>
+<pin id="212" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="width_cast1_cast/3 "/>
+<opset="zext_ln194/1 "/>
 </bind>
 </comp>
 
-<comp id="215" class="1004" name="zext_ln150_1_fu_215">
+<comp id="216" class="1004" name="zext_ln194_1_fu_216">
 <pin_list>
-<pin id="216" dir="0" index="0" bw="3" slack="1"/>
-<pin id="217" dir="1" index="1" bw="15" slack="0"/>
+<pin id="217" dir="0" index="0" bw="3" slack="1"/>
+<pin id="218" dir="1" index="1" bw="15" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln150_1/3 "/>
+<opset="zext_ln194_1/3 "/>
 </bind>
 </comp>
 
-<comp id="218" class="1004" name="WidthInBytes_fu_218">
+<comp id="219" class="1004" name="WidthInBytes_fu_219">
 <pin_list>
-<pin id="219" dir="0" index="0" bw="12" slack="0"/>
-<pin id="220" dir="0" index="1" bw="3" slack="0"/>
-<pin id="221" dir="1" index="2" bw="15" slack="1"/>
+<pin id="220" dir="0" index="0" bw="15" slack="2"/>
+<pin id="221" dir="0" index="1" bw="3" slack="0"/>
+<pin id="222" dir="1" index="2" bw="15" slack="1"/>
 </pin_list>
 <bind>
 <opcode="mul(12) " fcode="mul"/>
@@ -975,78 +975,88 @@ ret_ln160                 (ret                ) [ 000000]
 
 <comp id="239" class="1005" name="empty_reg_239">
 <pin_list>
-<pin id="240" dir="0" index="0" bw="12" slack="2"/>
-<pin id="241" dir="1" index="1" bw="12" slack="2"/>
+<pin id="240" dir="0" index="0" bw="6" slack="3"/>
+<pin id="241" dir="1" index="1" bw="6" slack="3"/>
 </pin_list>
 <bind>
 <opset="empty "/>
 </bind>
 </comp>
 
-<comp id="245" class="1005" name="empty_56_reg_245">
+<comp id="244" class="1005" name="empty_51_reg_244">
 <pin_list>
-<pin id="246" dir="0" index="0" bw="6" slack="3"/>
-<pin id="247" dir="1" index="1" bw="6" slack="3"/>
+<pin id="245" dir="0" index="0" bw="12" slack="3"/>
+<pin id="246" dir="1" index="1" bw="12" slack="3"/>
 </pin_list>
 <bind>
-<opset="empty_56 "/>
+<opset="empty_51 "/>
 </bind>
 </comp>
 
-<comp id="250" class="1005" name="empty_57_reg_250">
+<comp id="249" class="1005" name="empty_52_reg_249">
 <pin_list>
-<pin id="251" dir="0" index="0" bw="12" slack="3"/>
-<pin id="252" dir="1" index="1" bw="12" slack="3"/>
+<pin id="250" dir="0" index="0" bw="12" slack="3"/>
+<pin id="251" dir="1" index="1" bw="12" slack="3"/>
 </pin_list>
 <bind>
-<opset="empty_57 "/>
+<opset="empty_52 "/>
 </bind>
 </comp>
 
-<comp id="255" class="1005" name="BYTES_PER_PIXEL_addr_reg_255">
+<comp id="254" class="1005" name="empty_53_reg_254">
 <pin_list>
-<pin id="256" dir="0" index="0" bw="6" slack="1"/>
-<pin id="257" dir="1" index="1" bw="6" slack="1"/>
+<pin id="255" dir="0" index="0" bw="15" slack="2"/>
+<pin id="256" dir="1" index="1" bw="15" slack="2"/>
+</pin_list>
+<bind>
+<opset="empty_53 "/>
+</bind>
+</comp>
+
+<comp id="259" class="1005" name="BYTES_PER_PIXEL_addr_reg_259">
+<pin_list>
+<pin id="260" dir="0" index="0" bw="6" slack="1"/>
+<pin id="261" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
 <opset="BYTES_PER_PIXEL_addr "/>
 </bind>
 </comp>
 
-<comp id="260" class="1005" name="MEMORY2LIVE_addr_reg_260">
+<comp id="264" class="1005" name="MEMORY2LIVE_addr_reg_264">
 <pin_list>
-<pin id="261" dir="0" index="0" bw="6" slack="1"/>
-<pin id="262" dir="1" index="1" bw="6" slack="1"/>
+<pin id="265" dir="0" index="0" bw="6" slack="1"/>
+<pin id="266" dir="1" index="1" bw="6" slack="1"/>
 </pin_list>
 <bind>
 <opset="MEMORY2LIVE_addr "/>
 </bind>
 </comp>
 
-<comp id="265" class="1005" name="BYTES_PER_PIXEL_load_reg_265">
+<comp id="269" class="1005" name="BYTES_PER_PIXEL_load_reg_269">
 <pin_list>
-<pin id="266" dir="0" index="0" bw="3" slack="1"/>
-<pin id="267" dir="1" index="1" bw="3" slack="1"/>
+<pin id="270" dir="0" index="0" bw="3" slack="1"/>
+<pin id="271" dir="1" index="1" bw="3" slack="1"/>
 </pin_list>
 <bind>
 <opset="BYTES_PER_PIXEL_load "/>
 </bind>
 </comp>
 
-<comp id="270" class="1005" name="colorFormat_reg_270">
+<comp id="274" class="1005" name="colorFormat_reg_274">
 <pin_list>
-<pin id="271" dir="0" index="0" bw="3" slack="2"/>
-<pin id="272" dir="1" index="1" bw="3" slack="2"/>
+<pin id="275" dir="0" index="0" bw="3" slack="2"/>
+<pin id="276" dir="1" index="1" bw="3" slack="2"/>
 </pin_list>
 <bind>
 <opset="colorFormat "/>
 </bind>
 </comp>
 
-<comp id="275" class="1005" name="WidthInBytes_reg_275">
+<comp id="279" class="1005" name="WidthInBytes_reg_279">
 <pin_list>
-<pin id="276" dir="0" index="0" bw="15" slack="1"/>
-<pin id="277" dir="1" index="1" bw="15" slack="1"/>
+<pin id="280" dir="0" index="0" bw="15" slack="1"/>
+<pin id="281" dir="1" index="1" bw="15" slack="1"/>
 </pin_list>
 <bind>
 <opset="WidthInBytes "/>
@@ -1110,21 +1120,21 @@ ret_ln160                 (ret                ) [ 000000]
 
 <net id="193"><net_src comp="0" pin="0"/><net_sink comp="166" pin=8"/></net>
 
-<net id="197"><net_src comp="134" pin="2"/><net_sink comp="194" pin=0"/></net>
+<net id="197"><net_src comp="116" pin="2"/><net_sink comp="194" pin=0"/></net>
 
-<net id="201"><net_src comp="116" pin="2"/><net_sink comp="198" pin=0"/></net>
+<net id="201"><net_src comp="128" pin="2"/><net_sink comp="198" pin=0"/></net>
 
-<net id="205"><net_src comp="128" pin="2"/><net_sink comp="202" pin=0"/></net>
+<net id="205"><net_src comp="134" pin="2"/><net_sink comp="202" pin=0"/></net>
 
-<net id="209"><net_src comp="116" pin="2"/><net_sink comp="206" pin=0"/></net>
+<net id="209"><net_src comp="134" pin="2"/><net_sink comp="206" pin=0"/></net>
 
-<net id="210"><net_src comp="206" pin="1"/><net_sink comp="140" pin=2"/></net>
+<net id="213"><net_src comp="116" pin="2"/><net_sink comp="210" pin=0"/></net>
 
-<net id="211"><net_src comp="206" pin="1"/><net_sink comp="153" pin=2"/></net>
+<net id="214"><net_src comp="210" pin="1"/><net_sink comp="140" pin=2"/></net>
 
-<net id="222"><net_src comp="212" pin="1"/><net_sink comp="218" pin=0"/></net>
+<net id="215"><net_src comp="210" pin="1"/><net_sink comp="153" pin=2"/></net>
 
-<net id="223"><net_src comp="215" pin="1"/><net_sink comp="218" pin=1"/></net>
+<net id="223"><net_src comp="216" pin="1"/><net_sink comp="219" pin=1"/></net>
 
 <net id="227"><net_src comp="104" pin="2"/><net_sink comp="224" pin=0"/></net>
 
@@ -1140,37 +1150,39 @@ ret_ln160                 (ret                ) [ 000000]
 
 <net id="242"><net_src comp="194" pin="1"/><net_sink comp="239" pin=0"/></net>
 
-<net id="243"><net_src comp="239" pin="1"/><net_sink comp="212" pin=0"/></net>
+<net id="243"><net_src comp="239" pin="1"/><net_sink comp="166" pin=16"/></net>
 
-<net id="244"><net_src comp="239" pin="1"/><net_sink comp="166" pin=13"/></net>
+<net id="247"><net_src comp="198" pin="1"/><net_sink comp="244" pin=0"/></net>
 
-<net id="248"><net_src comp="198" pin="1"/><net_sink comp="245" pin=0"/></net>
+<net id="248"><net_src comp="244" pin="1"/><net_sink comp="166" pin=14"/></net>
 
-<net id="249"><net_src comp="245" pin="1"/><net_sink comp="166" pin=16"/></net>
+<net id="252"><net_src comp="202" pin="1"/><net_sink comp="249" pin=0"/></net>
 
-<net id="253"><net_src comp="202" pin="1"/><net_sink comp="250" pin=0"/></net>
+<net id="253"><net_src comp="249" pin="1"/><net_sink comp="166" pin=13"/></net>
 
-<net id="254"><net_src comp="250" pin="1"/><net_sink comp="166" pin=14"/></net>
+<net id="257"><net_src comp="206" pin="1"/><net_sink comp="254" pin=0"/></net>
 
-<net id="258"><net_src comp="140" pin="3"/><net_sink comp="255" pin=0"/></net>
+<net id="258"><net_src comp="254" pin="1"/><net_sink comp="219" pin=0"/></net>
 
-<net id="259"><net_src comp="255" pin="1"/><net_sink comp="147" pin=0"/></net>
+<net id="262"><net_src comp="140" pin="3"/><net_sink comp="259" pin=0"/></net>
 
-<net id="263"><net_src comp="153" pin="3"/><net_sink comp="260" pin=0"/></net>
+<net id="263"><net_src comp="259" pin="1"/><net_sink comp="147" pin=0"/></net>
 
-<net id="264"><net_src comp="260" pin="1"/><net_sink comp="160" pin=0"/></net>
+<net id="267"><net_src comp="153" pin="3"/><net_sink comp="264" pin=0"/></net>
 
-<net id="268"><net_src comp="147" pin="3"/><net_sink comp="265" pin=0"/></net>
+<net id="268"><net_src comp="264" pin="1"/><net_sink comp="160" pin=0"/></net>
 
-<net id="269"><net_src comp="265" pin="1"/><net_sink comp="215" pin=0"/></net>
+<net id="272"><net_src comp="147" pin="3"/><net_sink comp="269" pin=0"/></net>
 
-<net id="273"><net_src comp="160" pin="3"/><net_sink comp="270" pin=0"/></net>
+<net id="273"><net_src comp="269" pin="1"/><net_sink comp="216" pin=0"/></net>
 
-<net id="274"><net_src comp="270" pin="1"/><net_sink comp="166" pin=12"/></net>
+<net id="277"><net_src comp="160" pin="3"/><net_sink comp="274" pin=0"/></net>
 
-<net id="278"><net_src comp="218" pin="2"/><net_sink comp="275" pin=0"/></net>
+<net id="278"><net_src comp="274" pin="1"/><net_sink comp="166" pin=12"/></net>
 
-<net id="279"><net_src comp="275" pin="1"/><net_sink comp="166" pin=11"/></net>
+<net id="282"><net_src comp="219" pin="2"/><net_sink comp="279" pin=0"/></net>
+
+<net id="283"><net_src comp="279" pin="1"/><net_sink comp="166" pin=11"/></net>
 
 </net_list>
 
@@ -1217,9 +1229,9 @@ ret_ln160                 (ret                ) [ 000000]
 |----------|--------------------------------|---------|---------|---------|---------|
 | Operation|         Functional Unit        |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------|---------|---------|---------|---------|
-|   call   | grp_FrmbufWrHlsDataFlow_fu_166 |    0    |  14.292 |   2128  |   1097  |
+|   call   | grp_FrmbufWrHlsDataFlow_fu_166 |    0    |  17.468 |   2096  |   1134  |
 |----------|--------------------------------|---------|---------|---------|---------|
-|    mul   |       WidthInBytes_fu_218      |    0    |    0    |    0    |    6    |
+|    mul   |       WidthInBytes_fu_219      |    0    |    0    |    0    |    6    |
 |----------|--------------------------------|---------|---------|---------|---------|
 |          |  frm_buffer2_read_read_fu_104  |    0    |    0    |    0    |    0    |
 |          |   frm_buffer_read_read_fu_110  |    0    |    0    |    0    |    0    |
@@ -1229,14 +1241,14 @@ ret_ln160                 (ret                ) [ 000000]
 |          |     width_read_read_fu_134     |    0    |    0    |    0    |    0    |
 |----------|--------------------------------|---------|---------|---------|---------|
 |          |          empty_fu_194          |    0    |    0    |    0    |    0    |
-|   trunc  |         empty_56_fu_198        |    0    |    0    |    0    |    0    |
-|          |         empty_57_fu_202        |    0    |    0    |    0    |    0    |
+|   trunc  |         empty_51_fu_198        |    0    |    0    |    0    |    0    |
+|          |         empty_52_fu_202        |    0    |    0    |    0    |    0    |
+|          |         empty_53_fu_206        |    0    |    0    |    0    |    0    |
 |----------|--------------------------------|---------|---------|---------|---------|
-|          |        zext_ln150_fu_206       |    0    |    0    |    0    |    0    |
-|   zext   |     width_cast1_cast_fu_212    |    0    |    0    |    0    |    0    |
-|          |       zext_ln150_1_fu_215      |    0    |    0    |    0    |    0    |
+|   zext   |        zext_ln194_fu_210       |    0    |    0    |    0    |    0    |
+|          |       zext_ln194_1_fu_216      |    0    |    0    |    0    |    0    |
 |----------|--------------------------------|---------|---------|---------|---------|
-|   Total  |                                |    0    |  14.292 |   2128  |   1103  |
+|   Total  |                                |    0    |  17.468 |   2096  |   1140  |
 |----------|--------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -1253,19 +1265,20 @@ Memories:
 +----------------------------+--------+
 |                            |   FF   |
 +----------------------------+--------+
-|BYTES_PER_PIXEL_addr_reg_255|    6   |
-|BYTES_PER_PIXEL_load_reg_265|    3   |
-|  MEMORY2LIVE_addr_reg_260  |    6   |
-|    WidthInBytes_reg_275    |   15   |
-|     colorFormat_reg_270    |    3   |
-|      empty_56_reg_245      |    6   |
-|      empty_57_reg_250      |   12   |
-|        empty_reg_239       |   12   |
+|BYTES_PER_PIXEL_addr_reg_259|    6   |
+|BYTES_PER_PIXEL_load_reg_269|    3   |
+|  MEMORY2LIVE_addr_reg_264  |    6   |
+|    WidthInBytes_reg_279    |   15   |
+|     colorFormat_reg_274    |    3   |
+|      empty_51_reg_244      |   12   |
+|      empty_52_reg_249      |   12   |
+|      empty_53_reg_254      |   15   |
+|        empty_reg_239       |    6   |
 |  frm_buffer2_read_reg_224  |   32   |
 |   frm_buffer_read_reg_229  |   32   |
 |     stride_read_reg_234    |   16   |
 +----------------------------+--------+
-|            Total           |   143  |
+|            Total           |   158  |
 +----------------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -1284,10 +1297,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |    0   |   14   |  2128  |  1103  |
+|  Function |    -   |    0   |   17   |  2096  |  1140  |
 |   Memory  |    0   |    -   |    -   |    6   |    6   |
 |Multiplexer|    -   |    -   |    3   |    -   |   18   |
-|  Register |    -   |    -   |    -   |   143  |    -   |
+|  Register |    -   |    -   |    -   |   158  |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    0   |    0   |   17   |  2277  |  1127  |
+|   Total   |    0   |    0   |   20   |  2260  |  1164  |
 +-----------+--------+--------+--------+--------+--------+

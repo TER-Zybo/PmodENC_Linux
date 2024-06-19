@@ -18,7 +18,7 @@
     <config>
         <config_interface m_axi_flush_mode="1" m_axi_conservative_mode="1" m_axi_addr64="0"/>
         <config_rtl module_prefix="system_v_frmbuf_wr_0_0_"/>
-        <config_export library="ip" vendor="xilinx.com" version="2.4" format="ip_catalog"/>
+        <config_export library="ip" vendor="xilinx.com" version="2.5" format="ip_catalog"/>
     </config>
 </AutoPilot:solution>
 

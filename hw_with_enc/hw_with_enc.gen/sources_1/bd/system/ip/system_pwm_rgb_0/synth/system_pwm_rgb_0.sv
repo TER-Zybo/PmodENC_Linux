@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -50,7 +50,7 @@
 // IP VLNV: digilentinc.com:IP:PWM:2.0
 // IP Revision: 12
 
-(* X_CORE_INFO = "PWM_v2_0,Vivado 2023.1" *)
+(* X_CORE_INFO = "PWM_v2_0,Vivado 2023.2.2" *)
 (* CHECK_LICENSE_TYPE = "system_pwm_rgb_0,PWM_v2_0,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_pwm_rgb_0 (

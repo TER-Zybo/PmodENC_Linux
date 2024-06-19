@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'FrmbufWrHlsDataFlow'" level="0">
-<item name = "Date">Wed May 15 18:46:27 2024
+<item name = "Date">Wed Jun 19 16:41:02 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -24,17 +24,17 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">12, 283137125, 0.120 us, 2.831 sec, 7, 283137123, dataflow</column>
+<column name="">12, 141588004, 0.120 us, 1.416 sec, 7, 141588003, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="AXIvideo2MultiPixStream_U0">AXIvideo2MultiPixStream, 6, 8316006, 60.000 ns, 83.160 ms, 6, 8316006, no</column>
 <column name="entry_proc_U0">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="MultiPixStream2Bytes_U0">MultiPixStream2Bytes, 1, 283137122, 10.000 ns, 2.831 sec, 1, 283137122, no</column>
-<column name="Bytes2AXIMMvideo_U0">Bytes2AXIMMvideo, 2, 71733602, 20.000 ns, 0.717 sec, 2, 71733602, no</column>
+<column name="AXIvideo2MultiPixStream_U0">AXIvideo2MultiPixStream, 6, 8316006, 60.000 ns, 83.160 ms, 6, 8316006, no</column>
+<column name="MultiPixStream2Bytes_U0">MultiPixStream2Bytes, 2, 141588002, 20.000 ns, 1.416 sec, 2, 141588002, no</column>
+<column name="Bytes2AXIMMvideo_U0">Bytes2AXIMMvideo, 1, 71733601, 10.000 ns, 0.717 sec, 1, 71733601, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -52,8 +52,8 @@
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 14, -</column>
-<column name="FIFO">8, -, 1318, 862, -</column>
-<column name="Instance">-, -, 1633, 4133, -</column>
+<column name="FIFO">8, -, 823, 522, -</column>
+<column name="Instance">-, -, 1710, 4243, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 18, -</column>
 <column name="Register">-, -, 2, -, -</column>
@@ -65,10 +65,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="AXIvideo2MultiPixStream_U0">AXIvideo2MultiPixStream, 0, 0, 217, 502, 0</column>
-<column name="Bytes2AXIMMvideo_U0">Bytes2AXIMMvideo, 0, 0, 701, 2164, 0</column>
-<column name="MultiPixStream2Bytes_U0">MultiPixStream2Bytes, 0, 0, 712, 1402, 0</column>
-<column name="entry_proc_U0">entry_proc, 0, 0, 3, 65, 0</column>
+<column name="AXIvideo2MultiPixStream_U0">AXIvideo2MultiPixStream, 0, 0, 182, 476, 0</column>
+<column name="Bytes2AXIMMvideo_U0">Bytes2AXIMMvideo, 0, 0, 667, 2111, 0</column>
+<column name="MultiPixStream2Bytes_U0">MultiPixStream2Bytes, 0, 0, 858, 1609, 0</column>
+<column name="entry_proc_U0">entry_proc, 0, 0, 3, 47, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -83,16 +83,11 @@
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
 <column name="HwReg_frm_buffer2_c_U">0, 99, 0, -, 4, 32, 128</column>
 <column name="HwReg_frm_buffer_c_U">0, 99, 0, -, 4, 32, 128</column>
-<column name="WidthInBytes_c9_U">0, 99, 0, -, 3, 15, 45</column>
-<column name="WidthInBytes_c_U">0, 99, 0, -, 2, 15, 30</column>
+<column name="WidthInBytes_val2_c9_U">0, 99, 0, -, 3, 15, 45</column>
+<column name="WidthInBytes_val2_c_U">0, 99, 0, -, 2, 15, 30</column>
 <column name="bytePlanes_plane0_U">4, 164, 0, -, 960, 64, 61440</column>
 <column name="bytePlanes_plane1_U">4, 164, 0, -, 960, 64, 61440</column>
-<column name="height_c10_U">0, 99, 0, -, 2, 12, 24</column>
-<column name="height_c_U">0, 99, 0, -, 2, 12, 24</column>
 <column name="img_U">0, 99, 0, -, 2, 24, 48</column>
-<column name="stride_c_U">0, 99, 0, -, 4, 16, 64</column>
-<column name="video_format_c11_U">0, 99, 0, -, 3, 6, 18</column>
-<column name="video_format_c_U">0, 99, 0, -, 2, 6, 12</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
@@ -184,18 +179,18 @@
 <column name="HwReg_frm_buffer_ap_vld">in, 1, ap_none, HwReg_frm_buffer, scalar</column>
 <column name="HwReg_frm_buffer2">in, 32, ap_none, HwReg_frm_buffer2, scalar</column>
 <column name="HwReg_frm_buffer2_ap_vld">in, 1, ap_none, HwReg_frm_buffer2, scalar</column>
-<column name="p_read">in, 15, ap_none, p_read, scalar</column>
-<column name="p_read_ap_vld">in, 1, ap_none, p_read, scalar</column>
-<column name="p_read1">in, 3, ap_none, p_read1, scalar</column>
-<column name="p_read1_ap_vld">in, 1, ap_none, p_read1, scalar</column>
-<column name="p_read2">in, 12, ap_none, p_read2, scalar</column>
-<column name="p_read2_ap_vld">in, 1, ap_none, p_read2, scalar</column>
-<column name="p_read3">in, 12, ap_none, p_read3, scalar</column>
-<column name="p_read3_ap_vld">in, 1, ap_none, p_read3, scalar</column>
-<column name="p_read14">in, 16, ap_none, p_read14, scalar</column>
-<column name="p_read14_ap_vld">in, 1, ap_none, p_read14, scalar</column>
-<column name="p_read25">in, 6, ap_none, p_read25, scalar</column>
-<column name="p_read25_ap_vld">in, 1, ap_none, p_read25, scalar</column>
+<column name="WidthInBytes_val2">in, 15, ap_none, WidthInBytes_val2, scalar</column>
+<column name="WidthInBytes_val2_ap_vld">in, 1, ap_none, WidthInBytes_val2, scalar</column>
+<column name="colorFormat_val3">in, 3, ap_none, colorFormat_val3, scalar</column>
+<column name="colorFormat_val3_ap_vld">in, 1, ap_none, colorFormat_val3, scalar</column>
+<column name="width_val4">in, 12, ap_none, width_val4, scalar</column>
+<column name="width_val4_ap_vld">in, 1, ap_none, width_val4, scalar</column>
+<column name="height_val7">in, 12, ap_none, height_val7, scalar</column>
+<column name="height_val7_ap_vld">in, 1, ap_none, height_val7, scalar</column>
+<column name="stride_val8">in, 16, ap_none, stride_val8, scalar</column>
+<column name="stride_val8_ap_vld">in, 1, ap_none, stride_val8, scalar</column>
+<column name="video_format_val10">in, 6, ap_none, video_format_val10, scalar</column>
+<column name="video_format_val10_ap_vld">in, 1, ap_none, video_format_val10, scalar</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, FrmbufWrHlsDataFlow, return value</column>
 <column name="ap_rst">in, 1, ap_ctrl_hs, FrmbufWrHlsDataFlow, return value</column>
 <column name="ap_start">in, 1, ap_ctrl_hs, FrmbufWrHlsDataFlow, return value</column>

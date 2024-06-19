@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_width'" level="0">
-<item name = "Date">Wed May 15 18:46:05 2024
+<item name = "Date">Wed Jun 19 16:40:55 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 5.132 ns, 2.70 ns</column>
+<column name="ap_clk">10.00 ns, 4.882 ns, 2.70 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3, 3842, 30.000 ns, 38.420 us, 3, 3842, no</column>
+<column name="">2, 3842, 20.000 ns, 38.420 us, 2, 3842, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- loop_width">1, 3840, 2, 1, 1, 1 ~ 3840, yes</column>
+<column name="- loop_width">0, 3840, 2, 1, 1, 0 ~ 3840, yes</column>
 </table>
 </item>
 </section>
@@ -78,19 +78,19 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="j_2_fu_223_p2">+, 0, 0, 12, 12, 1</column>
+<column name="j_2_fu_221_p2">+, 0, 0, 12, 12, 1</column>
 <column name="ap_block_state1_pp0_stage0_iter0">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state2_pp0_stage0_iter1">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_259">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_262">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_266">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_269">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_274">and, 0, 0, 2, 1, 1</column>
 <column name="ap_predicate_op37_read_state1">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln207_fu_217_p2">icmp, 0, 0, 12, 12, 12</column>
+<column name="icmp_ln257_fu_215_p2">icmp, 0, 0, 12, 12, 12</column>
 <column name="ap_block_pp0_stage0_01001">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln210_fu_229_p2">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln235_1_fu_295_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln235_2_fu_302_p3">select, 0, 0, 8, 1, 8</column>
-<column name="select_ln235_fu_278_p3">select, 0, 0, 8, 1, 8</column>
+<column name="or_ln261_fu_227_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln290_1_fu_293_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln290_2_fu_300_p3">select, 0, 0, 8, 1, 8</column>
+<column name="select_ln290_fu_276_p3">select, 0, 0, 8, 1, 8</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
@@ -98,14 +98,14 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_phi_mux_eol_phi_fu_180_p4">14, 3, 1, 3</column>
-<column name="ap_phi_mux_sof_phi_fu_191_p4">9, 2, 1, 2</column>
+<column name="ap_phi_mux_eol_phi_fu_178_p4">14, 3, 1, 3</column>
+<column name="ap_phi_mux_sof_phi_fu_189_p4">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_j_1">9, 2, 12, 24</column>
-<column name="axi_data_fu_100">9, 2, 24, 48</column>
-<column name="axi_last_fu_104">9, 2, 1, 2</column>
-<column name="eol_reg_177">9, 2, 1, 2</column>
+<column name="axi_data_fu_98">9, 2, 24, 48</column>
+<column name="axi_last_fu_102">9, 2, 1, 2</column>
+<column name="eol_reg_175">9, 2, 1, 2</column>
 <column name="img_blk_n">9, 2, 1, 2</column>
-<column name="j_fu_96">9, 2, 12, 24</column>
+<column name="j_fu_94">9, 2, 12, 24</column>
 <column name="s_axis_video_TDATA_blk_n">9, 2, 1, 2</column>
 </table>
 </item>
@@ -114,11 +114,11 @@
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="axi_data_fu_100">24, 0, 24, 0</column>
-<column name="axi_last_fu_104">1, 0, 1, 0</column>
-<column name="eol_reg_177">1, 0, 1, 0</column>
-<column name="icmp_ln207_reg_353">1, 0, 1, 0</column>
-<column name="j_fu_96">12, 0, 12, 0</column>
+<column name="axi_data_fu_98">24, 0, 24, 0</column>
+<column name="axi_last_fu_102">1, 0, 1, 0</column>
+<column name="eol_reg_175">1, 0, 1, 0</column>
+<column name="icmp_ln257_reg_351">1, 0, 1, 0</column>
+<column name="j_fu_94">12, 0, 12, 0</column>
 </table>
 </item>
 </section>
@@ -137,8 +137,8 @@
 <column name="s_axis_video_TVALID">in, 1, axis, s_axis_video_V_data_V, pointer</column>
 <column name="s_axis_video_TDATA">in, 24, axis, s_axis_video_V_data_V, pointer</column>
 <column name="img_din">out, 24, ap_fifo, img, pointer</column>
-<column name="img_num_data_valid">in, 2, ap_fifo, img, pointer</column>
-<column name="img_fifo_cap">in, 2, ap_fifo, img, pointer</column>
+<column name="img_num_data_valid">in, 3, ap_fifo, img, pointer</column>
+<column name="img_fifo_cap">in, 3, ap_fifo, img, pointer</column>
 <column name="img_full_n">in, 1, ap_fifo, img, pointer</column>
 <column name="img_write">out, 1, ap_fifo, img, pointer</column>
 <column name="sof_2">in, 1, ap_none, sof_2, scalar</column>

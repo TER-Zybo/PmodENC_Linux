@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Wed May 15 18:41:15 2024
-// Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+// Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+// Date        : Wed Jun 19 16:34:52 2024
+// Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_sim_netlist.v
+//               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_sim_netlist.v
 // Design      : system_axi_vdma_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_axi_vdma_0_0,axi_vdma,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_vdma,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "system_axi_vdma_0_0,axi_vdma,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_vdma,Vivado 2023.2.2" *) 
 (* NotValidForBitStream *)
 module system_axi_vdma_0_0
    (s_axi_lite_aclk,
@@ -30774,7 +30774,7 @@ module system_axi_vdma_0_0_axi_vdma_s2mm_axis_dwidth_converter
   wire [12:1]vsize_counter_dwidth;
   wire [3:3]\NLW_GEN_DWIDTH_FLUSH_SOF.vsize_counter_dwidth_reg[12]_i_8_CO_UNCONNECTED ;
 
-  system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter \GEN_DWIDTH_FLUSH_SOF.S2MM_AXIS_DWIDTH_CONVERTER_I 
+  system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter \GEN_DWIDTH_FLUSH_SOF.S2MM_AXIS_DWIDTH_CONVERTER_I 
        (.E(s_axis_s2mm_tready_i_axis_dw_conv),
         .\FSM_onehot_state_reg[2] (s2mm_chnl_ready),
         .\GEN_SPRT_FOR_S2MM.GEN_FLUSH_SOF_TREADY.s2mm_dummy_tready_fsync_src_sel_10 (\GEN_SPRT_FOR_S2MM.GEN_FLUSH_SOF_TREADY.s2mm_dummy_tready_fsync_src_sel_10 ),
@@ -32201,9 +32201,9 @@ module system_axi_vdma_0_0_axi_vdma_sfifo
         .O(\gen_wr_a.gen_word_narrow.mem_reg_1 [1]));
   (* CASCADE_HEIGHT = "0" *) 
   (* DOUT_RESET_VALUE = "0" *) 
-  (* ECC_MODE = "no_ecc" *) 
+  (* ECC_MODE = "0" *) 
   (* EN_ADV_FEATURE_SYNC = "16'b0001011100010111" *) 
-  (* FIFO_MEMORY_TYPE = "auto" *) 
+  (* FIFO_MEMORY_TYPE = "0" *) 
   (* FIFO_READ_LATENCY = "0" *) 
   (* FIFO_WRITE_DEPTH = "2048" *) 
   (* FULL_RESET_VALUE = "0" *) 
@@ -32216,7 +32216,7 @@ module system_axi_vdma_0_0_axi_vdma_sfifo
   (* P_WAKEUP_TIME = "2" *) 
   (* RD_DATA_COUNT_WIDTH = "12" *) 
   (* READ_DATA_WIDTH = "37" *) 
-  (* READ_MODE = "fwft" *) 
+  (* READ_MODE = "0" *) 
   (* SIM_ASSERT_CHK = "0" *) 
   (* USE_ADV_FEATURES = "1717" *) 
   (* WAKEUP_TIME = "0" *) 
@@ -35598,8 +35598,8 @@ module system_axi_vdma_0_0_axi_vdma_sts_mngr
         .R(regdir_idle_i1));
 endmodule
 
-(* ORIG_REF_NAME = "axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter" *) 
-module system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter
+(* ORIG_REF_NAME = "axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter" *) 
+module system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter
    (E,
     \state_reg[1] ,
     \r0_is_null_r_reg[1] ,
@@ -35714,7 +35714,7 @@ module system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwid
         .D(areset_r_reg_0),
         .Q(areset_r),
         .R(1'b0));
-  system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer \gen_downsizer_conversion.axisc_downsizer_0 
+  system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer \gen_downsizer_conversion.axisc_downsizer_0 
        (.D({\gen_upsizer_conversion.axisc_upsizer_0_n_5 ,\gen_upsizer_conversion.axisc_upsizer_0_n_6 ,\gen_upsizer_conversion.axisc_upsizer_0_n_7 ,\gen_data_accumulator[2].acc_keep_reg ,\gen_data_accumulator[1].acc_keep_reg ,acc_keep_reg}),
         .acc_last(acc_last),
         .areset_r(areset_r),
@@ -35732,7 +35732,7 @@ module system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwid
         .s_valid0(s_valid0),
         .\state_reg[0]_0 (\state_reg[0] ),
         .\state_reg[1]_0 (\state_reg[1] ));
-  system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer \gen_upsizer_conversion.axisc_upsizer_0 
+  system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer \gen_upsizer_conversion.axisc_upsizer_0 
        (.D({\gen_upsizer_conversion.axisc_upsizer_0_n_5 ,\gen_upsizer_conversion.axisc_upsizer_0_n_6 ,\gen_upsizer_conversion.axisc_upsizer_0_n_7 ,\gen_data_accumulator[2].acc_keep_reg ,\gen_data_accumulator[1].acc_keep_reg ,acc_keep_reg}),
         .\FSM_onehot_state_reg[2]_0 (\FSM_onehot_state_reg[2] ),
         .\GEN_SPRT_FOR_S2MM.GEN_FLUSH_SOF_TREADY.s2mm_dummy_tready_fsync_src_sel_10 (\GEN_SPRT_FOR_S2MM.GEN_FLUSH_SOF_TREADY.s2mm_dummy_tready_fsync_src_sel_10 ),
@@ -35753,8 +35753,8 @@ module system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwid
         .\state_reg[0]_0 (E));
 endmodule
 
-(* ORIG_REF_NAME = "axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer" *) 
-module system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer
+(* ORIG_REF_NAME = "axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer" *) 
+module system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer
    (\state_reg[1]_0 ,
     d2_ready,
     \r0_is_null_r_reg[1]_0 ,
@@ -37621,8 +37621,8 @@ module system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_dow
         .O(din[29]));
 endmodule
 
-(* ORIG_REF_NAME = "axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer" *) 
-module system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer
+(* ORIG_REF_NAME = "axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer" *) 
+module system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer
    (\state_reg[0]_0 ,
     acc_last,
     d2_valid,
@@ -49277,9 +49277,9 @@ module system_axi_vdma_0_0_sync_fifo_fg
         .O(sig_child_qual_first_of_2_reg));
   (* CASCADE_HEIGHT = "0" *) 
   (* DOUT_RESET_VALUE = "0" *) 
-  (* ECC_MODE = "no_ecc" *) 
+  (* ECC_MODE = "0" *) 
   (* EN_ADV_FEATURE_SYNC = "16'b0001111100011111" *) 
-  (* FIFO_MEMORY_TYPE = "auto" *) 
+  (* FIFO_MEMORY_TYPE = "0" *) 
   (* FIFO_READ_LATENCY = "0" *) 
   (* FIFO_WRITE_DEPTH = "16" *) 
   (* FULL_RESET_VALUE = "1" *) 
@@ -49292,7 +49292,7 @@ module system_axi_vdma_0_0_sync_fifo_fg
   (* P_WAKEUP_TIME = "2" *) 
   (* RD_DATA_COUNT_WIDTH = "4" *) 
   (* READ_DATA_WIDTH = "11" *) 
-  (* READ_MODE = "fwft" *) 
+  (* READ_MODE = "0" *) 
   (* SIM_ASSERT_CHK = "0" *) 
   (* USE_ADV_FEATURES = "1F1F" *) 
   (* WAKEUP_TIME = "0" *) 
@@ -49559,9 +49559,9 @@ module system_axi_vdma_0_0_sync_fifo_fg__parameterized0
         .O(\sig_data_skid_reg[67]_i_3_n_0 ));
   (* CASCADE_HEIGHT = "0" *) 
   (* DOUT_RESET_VALUE = "0" *) 
-  (* ECC_MODE = "no_ecc" *) 
+  (* ECC_MODE = "0" *) 
   (* EN_ADV_FEATURE_SYNC = "16'b0001111100011111" *) 
-  (* FIFO_MEMORY_TYPE = "block" *) 
+  (* FIFO_MEMORY_TYPE = "0" *) 
   (* FIFO_READ_LATENCY = "0" *) 
   (* FIFO_WRITE_DEPTH = "256" *) 
   (* FULL_RESET_VALUE = "1" *) 
@@ -49574,7 +49574,7 @@ module system_axi_vdma_0_0_sync_fifo_fg__parameterized0
   (* P_WAKEUP_TIME = "2" *) 
   (* RD_DATA_COUNT_WIDTH = "4" *) 
   (* READ_DATA_WIDTH = "74" *) 
-  (* READ_MODE = "fwft" *) 
+  (* READ_MODE = "0" *) 
   (* SIM_ASSERT_CHK = "0" *) 
   (* USE_ADV_FEATURES = "1F1F" *) 
   (* WAKEUP_TIME = "0" *) 
@@ -54327,7 +54327,7 @@ endmodule
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "0" *) (* MEMORY_SIZE = "75776" *) (* MEMORY_TYPE = "1" *) 
 (* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
-(* P_ECC_MODE = "no_ecc" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
+(* P_ECC_MODE = "0" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
 (* P_MAX_DEPTH_DATA = "2048" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) 
 (* P_MIN_WIDTH_DATA = "37" *) (* P_MIN_WIDTH_DATA_A = "37" *) (* P_MIN_WIDTH_DATA_B = "37" *) 
 (* P_MIN_WIDTH_DATA_ECC = "37" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "37" *) 
@@ -55060,7 +55060,7 @@ endmodule
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "0" *) (* MEMORY_SIZE = "176" *) (* MEMORY_TYPE = "1" *) 
 (* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
-(* P_ECC_MODE = "no_ecc" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
+(* P_ECC_MODE = "0" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
 (* P_MAX_DEPTH_DATA = "16" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) 
 (* P_MIN_WIDTH_DATA = "11" *) (* P_MIN_WIDTH_DATA_A = "11" *) (* P_MIN_WIDTH_DATA_B = "11" *) 
 (* P_MIN_WIDTH_DATA_ECC = "11" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "11" *) 
@@ -55418,7 +55418,7 @@ endmodule
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "2" *) (* MEMORY_SIZE = "18944" *) (* MEMORY_TYPE = "1" *) 
 (* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
-(* P_ECC_MODE = "no_ecc" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
+(* P_ECC_MODE = "0" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
 (* P_MAX_DEPTH_DATA = "256" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "block" *) 
 (* P_MIN_WIDTH_DATA = "74" *) (* P_MIN_WIDTH_DATA_A = "74" *) (* P_MIN_WIDTH_DATA_B = "74" *) 
 (* P_MIN_WIDTH_DATA_ECC = "74" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "74" *) 

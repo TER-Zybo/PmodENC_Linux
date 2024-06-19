@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:41:15 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+-- Date        : Wed Jun 19 16:34:53 2024
+-- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_sim_netlist.vhdl
+--               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_sim_netlist.vhdl
 -- Design      : system_axi_vdma_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22792,7 +22792,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer is
+entity system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer is
   port (
     \state_reg[1]_0\ : out STD_LOGIC;
     d2_ready : out STD_LOGIC;
@@ -22813,10 +22813,10 @@ entity system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_dow
     \r0_data_reg[95]_0\ : in STD_LOGIC_VECTOR ( 95 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer : entity is "axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer";
-end system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer;
+  attribute ORIG_REF_NAME of system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer : entity is "axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer";
+end system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer;
 
-architecture STRUCTURE of system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer is
+architecture STRUCTURE of system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer is
   signal A : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \^d2_ready\ : STD_LOGIC;
   signal p_0_in : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -25223,7 +25223,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer is
+entity system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer is
   port (
     \state_reg[0]_0\ : out STD_LOGIC;
     acc_last : out STD_LOGIC;
@@ -25245,10 +25245,10 @@ entity system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_ups
     \r0_data_reg[23]_0\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer : entity is "axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer";
-end system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer;
+  attribute ORIG_REF_NAME of system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer : entity is "axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer";
+end system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer;
 
-architecture STRUCTURE of system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer is
+architecture STRUCTURE of system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer is
   signal \^d\ : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal \FSM_onehot_state[0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[0]_i_2_n_0\ : STD_LOGIC;
@@ -39687,8 +39687,8 @@ entity system_axi_vdma_0_0_xpm_memory_base is
   attribute NUM_CHAR_LOC of system_axi_vdma_0_0_xpm_memory_base : entity is 0;
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of system_axi_vdma_0_0_xpm_memory_base : entity is "xpm_memory_base";
-  attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of system_axi_vdma_0_0_xpm_memory_base : entity is "no_ecc";
+  attribute P_ECC_MODE : integer;
+  attribute P_ECC_MODE of system_axi_vdma_0_0_xpm_memory_base : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_A : integer;
   attribute P_ENABLE_BYTE_WRITE_A of system_axi_vdma_0_0_xpm_memory_base : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
@@ -40570,8 +40570,8 @@ entity \system_axi_vdma_0_0_xpm_memory_base__parameterized0\ is
   attribute NUM_CHAR_LOC of \system_axi_vdma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \system_axi_vdma_0_0_xpm_memory_base__parameterized0\ : entity is "xpm_memory_base";
-  attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of \system_axi_vdma_0_0_xpm_memory_base__parameterized0\ : entity is "no_ecc";
+  attribute P_ECC_MODE : integer;
+  attribute P_ECC_MODE of \system_axi_vdma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_A : integer;
   attribute P_ENABLE_BYTE_WRITE_A of \system_axi_vdma_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
@@ -41117,8 +41117,8 @@ entity \system_axi_vdma_0_0_xpm_memory_base__parameterized1\ is
   attribute NUM_CHAR_LOC of \system_axi_vdma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \system_axi_vdma_0_0_xpm_memory_base__parameterized1\ : entity is "xpm_memory_base";
-  attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of \system_axi_vdma_0_0_xpm_memory_base__parameterized1\ : entity is "no_ecc";
+  attribute P_ECC_MODE : integer;
+  attribute P_ECC_MODE of \system_axi_vdma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_A : integer;
   attribute P_ENABLE_BYTE_WRITE_A of \system_axi_vdma_0_0_xpm_memory_base__parameterized1\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
@@ -47671,7 +47671,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter is
+entity system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter is
   port (
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     \state_reg[1]\ : out STD_LOGIC;
@@ -47698,10 +47698,10 @@ entity system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwid
     \r0_data_reg[23]\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter : entity is "axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter";
-end system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter;
+  attribute ORIG_REF_NAME of system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter : entity is "axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter";
+end system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter;
 
-architecture STRUCTURE of system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter is
+architecture STRUCTURE of system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter is
   signal acc_data_reg : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal acc_keep_reg : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal acc_last : STD_LOGIC;
@@ -47748,7 +47748,7 @@ areset_r_reg: unisim.vcomponents.FDRE
       Q => areset_r,
       R => '0'
     );
-\gen_downsizer_conversion.axisc_downsizer_0\: entity work.system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_downsizer
+\gen_downsizer_conversion.axisc_downsizer_0\: entity work.system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_downsizer
      port map (
       D(11) => \gen_upsizer_conversion.axisc_upsizer_0_n_5\,
       D(10) => \gen_upsizer_conversion.axisc_upsizer_0_n_6\,
@@ -47799,7 +47799,7 @@ areset_r_reg: unisim.vcomponents.FDRE
       \state_reg[0]_0\ => \state_reg[0]\,
       \state_reg[1]_0\ => \state_reg[1]\
     );
-\gen_upsizer_conversion.axisc_upsizer_0\: entity work.system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axisc_upsizer
+\gen_upsizer_conversion.axisc_upsizer_0\: entity work.system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axisc_upsizer
      port map (
       D(11) => \gen_upsizer_conversion.axisc_upsizer_0_n_5\,
       D(10) => \gen_upsizer_conversion.axisc_upsizer_0_n_6\,
@@ -52620,7 +52620,7 @@ begin
   \GEN_SPRT_FOR_S2MM.GEN_FLUSH_SOF_TREADY.s2mm_dummy_tready_fsync_src_sel_10\ <= \^gen_sprt_for_s2mm.gen_flush_sof_tready.s2mm_dummy_tready_fsync_src_sel_10\;
   Q(0) <= \^q\(0);
   s2mm_chnl_ready <= \^s2mm_chnl_ready\;
-\GEN_DWIDTH_FLUSH_SOF.S2MM_AXIS_DWIDTH_CONVERTER_I\: entity work.system_axi_vdma_0_0_axi_vdma_v6_3_16_axis_dwidth_converter_v1_0_axis_dwidth_converter
+\GEN_DWIDTH_FLUSH_SOF.S2MM_AXIS_DWIDTH_CONVERTER_I\: entity work.system_axi_vdma_0_0_axi_vdma_v6_3_18_axis_dwidth_converter_v1_0_axis_dwidth_converter
      port map (
       E(0) => s_axis_s2mm_tready_i_axis_dw_conv,
       \FSM_onehot_state_reg[2]\ => \^s2mm_chnl_ready\,
@@ -55438,12 +55438,12 @@ architecture STRUCTURE of system_axi_vdma_0_0_axi_vdma_sfifo is
   attribute CASCADE_HEIGHT of xpm_fifo_sync_inst : label is 0;
   attribute DOUT_RESET_VALUE : string;
   attribute DOUT_RESET_VALUE of xpm_fifo_sync_inst : label is "0";
-  attribute ECC_MODE : string;
-  attribute ECC_MODE of xpm_fifo_sync_inst : label is "no_ecc";
+  attribute ECC_MODE : integer;
+  attribute ECC_MODE of xpm_fifo_sync_inst : label is 0;
   attribute EN_ADV_FEATURE_SYNC : string;
   attribute EN_ADV_FEATURE_SYNC of xpm_fifo_sync_inst : label is "16'b0001011100010111";
-  attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of xpm_fifo_sync_inst : label is "auto";
+  attribute FIFO_MEMORY_TYPE : integer;
+  attribute FIFO_MEMORY_TYPE of xpm_fifo_sync_inst : label is 0;
   attribute FIFO_READ_LATENCY : integer;
   attribute FIFO_READ_LATENCY of xpm_fifo_sync_inst : label is 0;
   attribute FIFO_WRITE_DEPTH : integer;
@@ -55468,8 +55468,8 @@ architecture STRUCTURE of system_axi_vdma_0_0_axi_vdma_sfifo is
   attribute RD_DATA_COUNT_WIDTH of xpm_fifo_sync_inst : label is 12;
   attribute READ_DATA_WIDTH : integer;
   attribute READ_DATA_WIDTH of xpm_fifo_sync_inst : label is 37;
-  attribute READ_MODE : string;
-  attribute READ_MODE of xpm_fifo_sync_inst : label is "fwft";
+  attribute READ_MODE : integer;
+  attribute READ_MODE of xpm_fifo_sync_inst : label is 0;
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of xpm_fifo_sync_inst : label is 0;
   attribute USE_ADV_FEATURES : string;
@@ -55863,12 +55863,12 @@ architecture STRUCTURE of system_axi_vdma_0_0_sync_fifo_fg is
   attribute CASCADE_HEIGHT of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute DOUT_RESET_VALUE : string;
   attribute DOUT_RESET_VALUE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "0";
-  attribute ECC_MODE : string;
-  attribute ECC_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "no_ecc";
+  attribute ECC_MODE : integer;
+  attribute ECC_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute EN_ADV_FEATURE_SYNC : string;
   attribute EN_ADV_FEATURE_SYNC of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "16'b0001111100011111";
-  attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "auto";
+  attribute FIFO_MEMORY_TYPE : integer;
+  attribute FIFO_MEMORY_TYPE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute FIFO_READ_LATENCY : integer;
   attribute FIFO_READ_LATENCY of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute FIFO_WRITE_DEPTH : integer;
@@ -55893,8 +55893,8 @@ architecture STRUCTURE of system_axi_vdma_0_0_sync_fifo_fg is
   attribute RD_DATA_COUNT_WIDTH of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 4;
   attribute READ_DATA_WIDTH : integer;
   attribute READ_DATA_WIDTH of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 11;
-  attribute READ_MODE : string;
-  attribute READ_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "fwft";
+  attribute READ_MODE : integer;
+  attribute READ_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute USE_ADV_FEATURES : string;
@@ -56867,12 +56867,12 @@ architecture STRUCTURE of \system_axi_vdma_0_0_sync_fifo_fg__parameterized0\ is
   attribute CASCADE_HEIGHT of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute DOUT_RESET_VALUE : string;
   attribute DOUT_RESET_VALUE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "0";
-  attribute ECC_MODE : string;
-  attribute ECC_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "no_ecc";
+  attribute ECC_MODE : integer;
+  attribute ECC_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute EN_ADV_FEATURE_SYNC : string;
   attribute EN_ADV_FEATURE_SYNC of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "16'b0001111100011111";
-  attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "block";
+  attribute FIFO_MEMORY_TYPE : integer;
+  attribute FIFO_MEMORY_TYPE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute FIFO_READ_LATENCY : integer;
   attribute FIFO_READ_LATENCY of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute FIFO_WRITE_DEPTH : integer;
@@ -56897,8 +56897,8 @@ architecture STRUCTURE of \system_axi_vdma_0_0_sync_fifo_fg__parameterized0\ is
   attribute RD_DATA_COUNT_WIDTH of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 4;
   attribute READ_DATA_WIDTH : integer;
   attribute READ_DATA_WIDTH of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 74;
-  attribute READ_MODE : string;
-  attribute READ_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "fwft";
+  attribute READ_MODE : integer;
+  attribute READ_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute USE_ADV_FEATURES : string;
@@ -67458,7 +67458,7 @@ entity system_axi_vdma_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_vdma_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_axi_vdma_0_0 : entity is "axi_vdma,Vivado 2023.1";
+  attribute x_core_info of system_axi_vdma_0_0 : entity is "axi_vdma,Vivado 2023.2.2";
 end system_axi_vdma_0_0;
 
 architecture STRUCTURE of system_axi_vdma_0_0 is

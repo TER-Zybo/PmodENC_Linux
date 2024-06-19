@@ -33,6 +33,7 @@ entity bd_ca02 is
     csirxss_s_axi_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     dlyctrl_rdy_out : out STD_LOGIC;
     dphy_clk_200M : in STD_LOGIC;
+    frame_rcvd_pulse_out : out STD_LOGIC;
     lite_aclk : in STD_LOGIC;
     lite_aresetn : in STD_LOGIC;
     mipi_phy_if_clk_hs_n : in STD_LOGIC;
@@ -55,7 +56,7 @@ entity bd_ca02 is
     video_out_tvalid : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of bd_ca02 : entity is "bd_ca02,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_ca02,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of bd_ca02 : entity is "bd_ca02,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=bd_ca02,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=SBD,synth_mode=Hierarchical}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of bd_ca02 : entity is "system_mipi_csi2_rx_subsystem_0_0.hwdef";
 end bd_ca02;
@@ -121,6 +122,7 @@ architecture STRUCTURE of bd_ca02 is
   end component bd_ca02_r_sync_0;
   component bd_ca02_rx_0 is
   port (
+    core_clk : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -187,6 +189,7 @@ architecture STRUCTURE of bd_ca02 is
     sdt_tr : in STD_LOGIC;
     vfb_tv : in STD_LOGIC;
     vfb_tr : in STD_LOGIC;
+    frame_rcvd_pulse_out : out STD_LOGIC;
     interrupt : out STD_LOGIC
   );
   end component bd_ca02_rx_0;
@@ -361,6 +364,7 @@ architecture STRUCTURE of bd_ca02 is
   signal phy_system_rst_out : STD_LOGIC;
   signal r_sync_peripheral_reset : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rx_core_men_vfb : STD_LOGIC;
+  signal rx_frame_rcvd_pulse_out : STD_LOGIC;
   signal rx_interrupt : STD_LOGIC;
   signal rx_m_axis_TDATA : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal rx_m_axis_TDEST : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -519,6 +523,7 @@ begin
   csirxss_s_axi_wready(0) <= csirxss_s_axi_1_WREADY(0);
   dlyctrl_rdy_out <= phy_dlyctrl_rdy_out;
   dphy_clk_200M_1 <= dphy_clk_200M;
+  frame_rcvd_pulse_out <= rx_frame_rcvd_pulse_out;
   lite_aclk_1 <= lite_aclk;
   lite_aresetn_1 <= lite_aresetn;
   mipi_phy_if_1_CLK_HS_N <= mipi_phy_if_clk_hs_n;
@@ -636,6 +641,7 @@ rx: component bd_ca02_rx_0
       cl_enable => phy_rx_mipi_ppi_if_CL_ENABLE,
       cl_rxulpsclknot => phy_rx_mipi_ppi_if_CL_RXULPSCLKNOT,
       cl_stopstate => phy_rx_mipi_ppi_if_CL_STOPSTATE,
+      core_clk => dphy_clk_200M_1,
       core_men_ack_vfb => vfb_0_core_men_ack_vfb,
       core_men_vfb => rx_core_men_vfb,
       dl0_errcontrol => phy_rx_mipi_ppi_if_DL0_ERRCONTROL,
@@ -662,6 +668,7 @@ rx: component bd_ca02_rx_0
       dl1_rxvalidhs => phy_rx_mipi_ppi_if_DL1_RXVALIDHS,
       dl1_shutdown => phy_rx_mipi_ppi_if_DL1_ENABLE,
       dl1_stopstate => phy_rx_mipi_ppi_if_DL1_STOPSTATE,
+      frame_rcvd_pulse_out => rx_frame_rcvd_pulse_out,
       interrupt => rx_interrupt,
       m_axis_aclk => video_aclk_1,
       m_axis_aresetn => video_aresetn_1,

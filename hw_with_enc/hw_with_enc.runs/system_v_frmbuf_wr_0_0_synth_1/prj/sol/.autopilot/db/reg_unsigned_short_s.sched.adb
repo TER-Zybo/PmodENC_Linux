@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>19</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -55,27 +55,27 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>4</id>
+						<id>5</id>
 						<name>d_read</name>
-						<fileName>/nfs/xilinx/Vitis_HLS/2023.1/common/technology/autopilot/utils/x_hls_utils.h</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>248</lineNumber>
+						<fileName>C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\utils/x_hls_utils.h</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>222</lineNumber>
 						<contextFuncName>reg&amp;lt;unsigned short&amp;gt;</contextFuncName>
 						<contextNormFuncName>reg_unsigned_short_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>/nfs/xilinx/Vitis_HLS/2023.1/common/technology/autopilot/utils/x_hls_utils.h</first>
+											<first>C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\utils/x_hls_utils.h</first>
 											<second>reg&amp;lt;unsigned short&amp;gt;</second>
 										</first>
-										<second>248</second>
+										<second>222</second>
 									</item>
 								</second>
 							</item>
@@ -88,7 +88,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869098867</coreId>
+						<coreId>5</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -96,8 +96,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>8</item>
 					<item>9</item>
+					<item>10</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -112,27 +112,27 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>5</id>
-						<name>_ln253</name>
-						<fileName>/nfs/xilinx/Vitis_HLS/2023.1/common/technology/autopilot/utils/x_hls_utils.h</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>253</lineNumber>
+						<id>6</id>
+						<name>_ln227</name>
+						<fileName>C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\utils/x_hls_utils.h</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>227</lineNumber>
 						<contextFuncName>reg&amp;lt;unsigned short&amp;gt;</contextFuncName>
 						<contextNormFuncName>reg_unsigned_short_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/nfs/xilinx/Vitis_HLS/2023.1/common/technology/autopilot/utils/x_hls_utils.h</first>
+											<first>C:/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot\utils/x_hls_utils.h</first>
 											<second>reg&amp;lt;unsigned short&amp;gt;</second>
 										</first>
-										<second>253</second>
+										<second>227</second>
 									</item>
 								</second>
 							</item>
@@ -145,7 +145,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853280272</coreId>
+						<coreId>544433524</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -153,7 +153,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>10</item>
+					<item>11</item>
 				</oprand_edges>
 				<opcode>ret</opcode>
 				<m_Display>0</m_Display>
@@ -175,7 +175,7 @@
 			<item class_id="17" tracking_level="1" version="0" object_id="_4">
 				<Obj>
 					<type>3</type>
-					<id>6</id>
+					<id>7</id>
 					<name>reg&lt;unsigned short&gt;</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -194,14 +194,14 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>1393488000</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>4</item>
 					<item>5</item>
+					<item>6</item>
 				</node_objs>
 			</item>
 		</blocks>
@@ -209,17 +209,17 @@
 			<count>2</count>
 			<item_version>0</item_version>
 			<item class_id="19" tracking_level="1" version="0" object_id="_5">
-				<id>9</id>
+				<id>10</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
-				<sink_obj>4</sink_obj>
+				<sink_obj>5</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="19" object_id="_6">
-				<id>10</id>
+				<id>11</id>
 				<edge_type>1</edge_type>
-				<source_obj>4</source_obj>
-				<sink_obj>5</sink_obj>
+				<source_obj>5</source_obj>
+				<sink_obj>6</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -239,7 +239,7 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>6</item>
+				<item>7</item>
 			</basic_blocks>
 			<mII>1</mII>
 			<mDepth>2</mDepth>
@@ -257,14 +257,14 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item class_id="26" tracking_level="0" version="0">
-			<first>4</first>
+			<first>5</first>
 			<second class_id="27" tracking_level="0" version="0">
 				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>5</first>
+			<first>6</first>
 			<second>
 				<first>1</first>
 				<second>0</second>
@@ -275,7 +275,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="29" tracking_level="0" version="0">
-			<first>6</first>
+			<first>7</first>
 			<second class_id="30" tracking_level="0" version="0">
 				<first>0</first>
 				<second>1</second>
@@ -290,15 +290,16 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>6</item>
+				<item>7</item>
 			</basic_blocks>
 			<nodes>
-				<count>4</count>
+				<count>5</count>
 				<item_version>0</item_version>
 				<item>2</item>
 				<item>3</item>
 				<item>4</item>
 				<item>5</item>
+				<item>6</item>
 			</nodes>
 			<anchor_node>-1</anchor_node>
 			<region_type>2</region_type>
@@ -314,7 +315,7 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>6</item>
+				<item>7</item>
 			</basic_blocks>
 			<nodes>
 				<count>0</count>

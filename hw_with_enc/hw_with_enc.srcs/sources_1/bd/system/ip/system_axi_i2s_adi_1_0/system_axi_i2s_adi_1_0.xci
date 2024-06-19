@@ -48,7 +48,7 @@
         "OUTPUTDIR": [ { "value": "../../../../../../hw_with_enc.gen/sources_1/bd/system/ip/system_axi_i2s_adi_1_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1" } ],
+        "SWVERSION": [ { "value": "2023.2.2" } ],
         "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },

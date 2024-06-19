@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:42:02 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+-- Date        : Wed Jun 19 16:34:29 2024
+-- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0_sim_netlist.vhdl
+--               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_axi_vdma_1_0/system_axi_vdma_1_0_sim_netlist.vhdl
 -- Design      : system_axi_vdma_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25753,8 +25753,8 @@ entity system_axi_vdma_1_0_xpm_memory_base is
   attribute NUM_CHAR_LOC of system_axi_vdma_1_0_xpm_memory_base : entity is 0;
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of system_axi_vdma_1_0_xpm_memory_base : entity is "xpm_memory_base";
-  attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of system_axi_vdma_1_0_xpm_memory_base : entity is "no_ecc";
+  attribute P_ECC_MODE : integer;
+  attribute P_ECC_MODE of system_axi_vdma_1_0_xpm_memory_base : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_A : integer;
   attribute P_ENABLE_BYTE_WRITE_A of system_axi_vdma_1_0_xpm_memory_base : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
@@ -26637,8 +26637,8 @@ entity \system_axi_vdma_1_0_xpm_memory_base__parameterized0\ is
   attribute NUM_CHAR_LOC of \system_axi_vdma_1_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \system_axi_vdma_1_0_xpm_memory_base__parameterized0\ : entity is "xpm_memory_base";
-  attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of \system_axi_vdma_1_0_xpm_memory_base__parameterized0\ : entity is "no_ecc";
+  attribute P_ECC_MODE : integer;
+  attribute P_ECC_MODE of \system_axi_vdma_1_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_A : integer;
   attribute P_ENABLE_BYTE_WRITE_A of \system_axi_vdma_1_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
@@ -38352,12 +38352,12 @@ architecture STRUCTURE of system_axi_vdma_1_0_axi_vdma_sfifo is
   attribute CASCADE_HEIGHT of xpm_fifo_sync_inst : label is 0;
   attribute DOUT_RESET_VALUE : string;
   attribute DOUT_RESET_VALUE of xpm_fifo_sync_inst : label is "0";
-  attribute ECC_MODE : string;
-  attribute ECC_MODE of xpm_fifo_sync_inst : label is "no_ecc";
+  attribute ECC_MODE : integer;
+  attribute ECC_MODE of xpm_fifo_sync_inst : label is 0;
   attribute EN_ADV_FEATURE_SYNC : string;
   attribute EN_ADV_FEATURE_SYNC of xpm_fifo_sync_inst : label is "16'b0001011100010111";
-  attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of xpm_fifo_sync_inst : label is "auto";
+  attribute FIFO_MEMORY_TYPE : integer;
+  attribute FIFO_MEMORY_TYPE of xpm_fifo_sync_inst : label is 0;
   attribute FIFO_READ_LATENCY : integer;
   attribute FIFO_READ_LATENCY of xpm_fifo_sync_inst : label is 0;
   attribute FIFO_WRITE_DEPTH : integer;
@@ -38382,8 +38382,8 @@ architecture STRUCTURE of system_axi_vdma_1_0_axi_vdma_sfifo is
   attribute RD_DATA_COUNT_WIDTH of xpm_fifo_sync_inst : label is 12;
   attribute READ_DATA_WIDTH : integer;
   attribute READ_DATA_WIDTH of xpm_fifo_sync_inst : label is 38;
-  attribute READ_MODE : string;
-  attribute READ_MODE of xpm_fifo_sync_inst : label is "fwft";
+  attribute READ_MODE : integer;
+  attribute READ_MODE of xpm_fifo_sync_inst : label is 0;
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of xpm_fifo_sync_inst : label is 0;
   attribute USE_ADV_FEATURES : string;
@@ -38572,12 +38572,12 @@ architecture STRUCTURE of system_axi_vdma_1_0_sync_fifo_fg is
   attribute CASCADE_HEIGHT of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute DOUT_RESET_VALUE : string;
   attribute DOUT_RESET_VALUE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "0";
-  attribute ECC_MODE : string;
-  attribute ECC_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "no_ecc";
+  attribute ECC_MODE : integer;
+  attribute ECC_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute EN_ADV_FEATURE_SYNC : string;
   attribute EN_ADV_FEATURE_SYNC of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "16'b0001111100011111";
-  attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "block";
+  attribute FIFO_MEMORY_TYPE : integer;
+  attribute FIFO_MEMORY_TYPE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute FIFO_READ_LATENCY : integer;
   attribute FIFO_READ_LATENCY of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute FIFO_WRITE_DEPTH : integer;
@@ -38602,8 +38602,8 @@ architecture STRUCTURE of system_axi_vdma_1_0_sync_fifo_fg is
   attribute RD_DATA_COUNT_WIDTH of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 4;
   attribute READ_DATA_WIDTH : integer;
   attribute READ_DATA_WIDTH of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 75;
-  attribute READ_MODE : string;
-  attribute READ_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is "fwft";
+  attribute READ_MODE : integer;
+  attribute READ_MODE of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of \xpm_fifo_instance.xpm_fifo_sync_inst\ : label is 0;
   attribute USE_ADV_FEATURES : string;
@@ -44382,7 +44382,7 @@ entity system_axi_vdma_1_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_vdma_1_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_axi_vdma_1_0 : entity is "axi_vdma,Vivado 2023.1";
+  attribute x_core_info of system_axi_vdma_1_0 : entity is "axi_vdma,Vivado 2023.2.2";
 end system_axi_vdma_1_0;
 
 architecture STRUCTURE of system_axi_vdma_1_0 is

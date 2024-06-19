@@ -1,9 +1,9 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Mon Jun  3 17:57:17 2024
-// Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+// Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+// Date        : Wed Jun 19 16:35:34 2024
+// Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top system_m00_regslice_0 -prefix
 //               system_m00_regslice_0_ system_m00_regslice_0_sim_netlist.v
 // Design      : system_m00_regslice_0
@@ -51,7 +51,7 @@
 (* G_AXI_WPAYLOAD_WIDTH = "74" *) (* G_AXI_WSTRB_INDEX = "64" *) (* G_AXI_WSTRB_WIDTH = "8" *) 
 (* G_AXI_WUSER_INDEX = "74" *) (* G_AXI_WUSER_WIDTH = "0" *) (* P_FORWARD = "0" *) 
 (* P_RESPONSE = "1" *) 
-module system_m00_regslice_0_axi_register_slice_v2_1_28_axi_register_slice
+module system_m00_regslice_0_axi_register_slice_v2_1_30_axi_register_slice
    (aclk,
     aclk2x,
     aresetn,
@@ -338,7 +338,7 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axi_register_slice
   assign s_axi_ruser[0] = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice \ar.ar_pipe 
+  system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice \ar.ar_pipe 
        (.D({s_axi_arqos,s_axi_arid,s_axi_arlock,s_axi_arlen,s_axi_arcache,s_axi_arburst,s_axi_arsize,s_axi_arprot,s_axi_araddr}),
         .Q({m_axi_arqos,m_axi_arid,m_axi_arlock,m_axi_arlen,m_axi_arcache,m_axi_arburst,m_axi_arsize,m_axi_arprot,m_axi_araddr}),
         .aclk(aclk),
@@ -349,7 +349,7 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axi_register_slice
         .s_axi_arready(s_axi_arready),
         .s_axi_arvalid(s_axi_arvalid),
         .s_ready_i_reg_0(\w.w_pipe_n_3 ));
-  system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice_0 \aw.aw_pipe 
+  system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice_0 \aw.aw_pipe 
        (.D({s_axi_awqos,s_axi_awid,s_axi_awlock,s_axi_awlen,s_axi_awcache,s_axi_awburst,s_axi_awsize,s_axi_awprot,s_axi_awaddr}),
         .Q({m_axi_awqos,m_axi_awid,m_axi_awlock,m_axi_awlen,m_axi_awcache,m_axi_awburst,m_axi_awsize,m_axi_awprot,m_axi_awaddr}),
         .aclk(aclk),
@@ -362,7 +362,7 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axi_register_slice
         .s_axi_awready(s_axi_awready),
         .s_axi_awvalid(s_axi_awvalid),
         .s_ready_i_reg_0(\w.w_pipe_n_3 ));
-  system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__parameterized1 \b.b_pipe 
+  system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice__parameterized1 \b.b_pipe 
        (.aclk(aclk),
         .m_axi_bid(m_axi_bid),
         .m_axi_bready(m_axi_bready),
@@ -375,7 +375,7 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axi_register_slice
         .s_axi_bready(s_axi_bready),
         .s_axi_bresp(s_axi_bresp),
         .s_ready_i_reg_0(\w.w_pipe_n_3 ));
-  system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__parameterized2 \r.r_pipe 
+  system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice__parameterized2 \r.r_pipe 
        (.Q({s_axi_rid,s_axi_rlast,s_axi_rresp,s_axi_rdata}),
         .aclk(aclk),
         .m_axi_rdata(m_axi_rdata),
@@ -388,7 +388,7 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axi_register_slice
         .p_1_in(p_1_in),
         .s_axi_rready(s_axi_rready),
         .s_ready_i_reg_0(m_axi_rready));
-  system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__parameterized0 \w.w_pipe 
+  system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice__parameterized0 \w.w_pipe 
        (.Q({m_axi_wid,m_axi_wlast,m_axi_wstrb,m_axi_wdata}),
         .aclk(aclk),
         .\aresetn_d_reg[1]_0 (\w.w_pipe_n_3 ),
@@ -405,7 +405,7 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axi_register_slice
         .s_ready_i_reg_0(s_axi_wready));
 endmodule
 
-module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice
+module system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice
    (m_axi_arvalid,
     s_axi_arready,
     Q,
@@ -809,8 +809,8 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice
         .R(p_1_in));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_28_axic_register_slice" *) 
-module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice_0
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_30_axic_register_slice" *) 
+module system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice_0
    (m_axi_awvalid,
     s_axi_awready,
     p_1_in,
@@ -1240,8 +1240,8 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice_0
         .R(p_1_in));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_28_axic_register_slice" *) 
-module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__parameterized0
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_30_axic_register_slice" *) 
+module system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice__parameterized0
    (m_valid_i_reg_0,
     p_0_in,
     s_ready_i_reg_0,
@@ -2897,8 +2897,8 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__par
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_28_axic_register_slice" *) 
-module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__parameterized1
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_30_axic_register_slice" *) 
+module system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice__parameterized1
    (m_valid_i_reg_0,
     m_axi_bready,
     s_axi_bid,
@@ -3016,8 +3016,8 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__par
         .R(p_1_in));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_28_axic_register_slice" *) 
-module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__parameterized2
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_30_axic_register_slice" *) 
+module system_m00_regslice_0_axi_register_slice_v2_1_30_axic_register_slice__parameterized2
    (m_valid_i_reg_0,
     s_ready_i_reg_0,
     Q,
@@ -4595,7 +4595,7 @@ module system_m00_regslice_0_axi_register_slice_v2_1_28_axic_register_slice__par
         .R(1'b0));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "system_m00_regslice_0,axi_register_slice_v2_1_28_axi_register_slice,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_register_slice_v2_1_28_axi_register_slice,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "system_m00_regslice_0,axi_register_slice_v2_1_30_axi_register_slice,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_register_slice_v2_1_30_axi_register_slice,Vivado 2023.2.2" *) 
 (* NotValidForBitStream *)
 module system_m00_regslice_0
    (aclk,
@@ -4953,7 +4953,7 @@ module system_m00_regslice_0
   (* G_AXI_WUSER_WIDTH = "0" *) 
   (* P_FORWARD = "0" *) 
   (* P_RESPONSE = "1" *) 
-  system_m00_regslice_0_axi_register_slice_v2_1_28_axi_register_slice inst
+  system_m00_regslice_0_axi_register_slice_v2_1_30_axi_register_slice inst
        (.aclk(aclk),
         .aclk2x(1'b0),
         .aresetn(aresetn),

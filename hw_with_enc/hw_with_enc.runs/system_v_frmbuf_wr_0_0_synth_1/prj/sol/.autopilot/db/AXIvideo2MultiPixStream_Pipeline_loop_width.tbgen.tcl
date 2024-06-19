@@ -32,6 +32,7 @@ set C_modelArgList {
 	{ axi_data_3_out int 24 regular {pointer 1}  }
 }
 set hasAXIMCache 0
+set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
 	{ "Name" : "sof_2", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
  	{ "Name" : "axi_last_2", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
@@ -59,8 +60,8 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ s_axis_video_TVALID sc_in sc_logic 1 invld 6 } 
 	{ img_din sc_out sc_lv 24 signal 5 } 
-	{ img_num_data_valid sc_in sc_lv 2 signal 5 } 
-	{ img_fifo_cap sc_in sc_lv 2 signal 5 } 
+	{ img_num_data_valid sc_in sc_lv 3 signal 5 } 
+	{ img_fifo_cap sc_in sc_lv 3 signal 5 } 
 	{ img_full_n sc_in sc_logic 1 signal 5 } 
 	{ img_write sc_out sc_logic 1 signal 5 } 
 	{ sof_2 sc_in sc_lv 1 signal 0 } 
@@ -90,8 +91,8 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "s_axis_video_TVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "s_axis_video_V_data_V", "role": "default" }} , 
  	{ "name": "img_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "img", "role": "din" }} , 
- 	{ "name": "img_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "img", "role": "num_data_valid" }} , 
- 	{ "name": "img_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "img", "role": "fifo_cap" }} , 
+ 	{ "name": "img_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "img", "role": "num_data_valid" }} , 
+ 	{ "name": "img_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "img", "role": "fifo_cap" }} , 
  	{ "name": "img_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "img", "role": "full_n" }} , 
  	{ "name": "img_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "img", "role": "write" }} , 
  	{ "name": "sof_2", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "sof_2", "role": "default" }} , 
@@ -119,7 +120,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1", "real_start" : "0",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "3", "EstimateLatencyMax" : "3842",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "2", "EstimateLatencyMax" : "3842",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -174,8 +175,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "3", "Max" : "3842"}
-	, {"Name" : "Interval", "Min" : "3", "Max" : "3842"}
+	{"Name" : "Latency", "Min" : "2", "Max" : "3842"}
+	, {"Name" : "Interval", "Min" : "2", "Max" : "3842"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -188,7 +189,7 @@ set Spec2ImplPortList {
 	axi_data_2 { ap_none {  { axi_data_2 in_data 0 24 } } }
 	cols { ap_none {  { cols in_data 0 12 } } }
 	cond { ap_none {  { cond in_data 0 1 } } }
-	img { ap_fifo {  { img_din fifo_port_we 1 24 }  { img_num_data_valid fifo_status_num_data_valid 0 2 }  { img_fifo_cap fifo_update 0 2 }  { img_full_n fifo_status 0 1 }  { img_write fifo_data 1 1 } } }
+	img { ap_fifo {  { img_din fifo_data_in 1 24 }  { img_num_data_valid fifo_status_num_data_valid 0 3 }  { img_fifo_cap fifo_update 0 3 }  { img_full_n fifo_status 0 1 }  { img_write fifo_port_we 1 1 } } }
 	s_axis_video_V_data_V { axis {  { s_axis_video_TVALID in_vld 0 1 }  { s_axis_video_TDATA in_data 0 24 } } }
 	s_axis_video_V_keep_V { axis {  { s_axis_video_TKEEP in_data 0 3 } } }
 	s_axis_video_V_strb_V { axis {  { s_axis_video_TSTRB in_data 0 3 } } }

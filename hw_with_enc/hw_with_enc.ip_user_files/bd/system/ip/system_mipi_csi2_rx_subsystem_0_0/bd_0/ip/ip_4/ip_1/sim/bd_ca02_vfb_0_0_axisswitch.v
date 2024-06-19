@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:axis_switch:1.1
-// IP Revision: 28
+// IP Revision: 30
 
 `timescale 1ns/1ps
 
@@ -112,7 +112,7 @@ ER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1000000
 output wire [383 : 0] m_axis_tuser;
 output wire [0 : 0] s_decode_err;
 
-  axis_switch_v1_1_28_axis_switch #(
+  axis_switch_v1_1_30_axis_switch #(
     .C_FAMILY("zynq"),
     .C_NUM_SI_SLOTS(1),
     .C_LOG_SI_SLOTS(1),

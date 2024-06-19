@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'v_frmbuf_wr'" level="0">
-<item name = "Date">Wed May 15 18:46:04 2024
+<item name = "Date">Wed Jun 19 16:40:54 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">16, 283137129, 0.160 us, 2.831 sec, 17, 283137130, no</column>
+<column name="">16, 141588008, 0.160 us, 1.416 sec, 17, 141588009, no</column>
 </table>
 </item>
 <item name = "Detail">

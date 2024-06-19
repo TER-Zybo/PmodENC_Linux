@@ -42,8 +42,8 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7z020:-clg400:-1
-set SourceFiles {sc {} c /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp}
-set SourceFlags {sc {} c {{-I/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -I/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src}}}
+set SourceFiles {sc {} c c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/v_frmbuf_wr.cpp}
+set SourceFlags {sc {} c {{-Ic:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src/hls -Ic:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/src}}}
 set DirectiveFile {}
 set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set SpecLanguage C

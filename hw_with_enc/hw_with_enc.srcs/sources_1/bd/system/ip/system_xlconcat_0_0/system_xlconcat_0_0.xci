@@ -4,7 +4,7 @@
     "xci_name": "system_xlconcat_0_0",
     "cell_name": "xlconcat_0",
     "component_reference": "xilinx.com:ip:xlconcat:2.1",
-    "ip_revision": "4",
+    "ip_revision": "5",
     "gen_directory": "../../../../../../hw_with_enc.gen/sources_1/bd/system/ip/system_xlconcat_0_0",
     "parameters": {
       "component_parameters": {
@@ -138,7 +138,7 @@
         "IN125_WIDTH": [ { "value": "1", "value_permission": "bd_and_user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "IN126_WIDTH": [ { "value": "1", "value_permission": "bd_and_user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "IN127_WIDTH": [ { "value": "1", "value_permission": "bd_and_user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "dout_width": [ { "value": "9", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ]
+        "dout_width": [ { "value": "9", "value_src": "user", "value_permission": "bd", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "IN0_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -274,7 +274,7 @@
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
-        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zybo-z7-20:part0:1.2" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zybo-z7-20:part0:1.1" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7z020" } ],
         "PACKAGE": [ { "value": "clg400" } ],
@@ -287,12 +287,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "5" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../hw_with_enc.gen/sources_1/bd/system/ip/system_xlconcat_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
-        "SWVERSION": [ { "value": "2023.1" } ],
+        "SWVERSION": [ { "value": "2023.2.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

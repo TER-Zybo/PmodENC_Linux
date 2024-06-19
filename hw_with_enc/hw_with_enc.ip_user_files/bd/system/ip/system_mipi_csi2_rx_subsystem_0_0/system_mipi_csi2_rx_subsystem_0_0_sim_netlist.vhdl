@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:43:10 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+-- Date        : Wed Jun 19 16:36:30 2024
+-- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/system_mipi_csi2_rx_subsystem_0_0_sim_netlist.vhdl
+--               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/system_mipi_csi2_rx_subsystem_0_0_sim_netlist.vhdl
 -- Design      : system_mipi_csi2_rx_subsystem_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,6 +39,7 @@ entity system_mipi_csi2_rx_subsystem_0_0_bd_ca02 is
     csirxss_s_axi_wvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     dlyctrl_rdy_out : out STD_LOGIC;
     dphy_clk_200M : in STD_LOGIC;
+    frame_rcvd_pulse_out : out STD_LOGIC;
     lite_aclk : in STD_LOGIC;
     lite_aresetn : in STD_LOGIC;
     mipi_phy_if_clk_hs_n : in STD_LOGIC;
@@ -163,6 +164,7 @@ architecture STRUCTURE of system_mipi_csi2_rx_subsystem_0_0_bd_ca02 is
   end component system_mipi_csi2_rx_subsystem_0_0_bd_ca02_r_sync_0;
   component system_mipi_csi2_rx_subsystem_0_0_bd_ca02_rx_0 is
   port (
+    core_clk : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -229,6 +231,7 @@ architecture STRUCTURE of system_mipi_csi2_rx_subsystem_0_0_bd_ca02 is
     sdt_tr : in STD_LOGIC;
     vfb_tv : in STD_LOGIC;
     vfb_tr : in STD_LOGIC;
+    frame_rcvd_pulse_out : out STD_LOGIC;
     interrupt : out STD_LOGIC
   );
   end component system_mipi_csi2_rx_subsystem_0_0_bd_ca02_rx_0;
@@ -414,12 +417,12 @@ architecture STRUCTURE of system_mipi_csi2_rx_subsystem_0_0_bd_ca02 is
   attribute syn_black_box of phy : label is "TRUE";
   attribute syn_black_box of r_sync : label is "TRUE";
   attribute x_core_info : string;
-  attribute x_core_info of r_sync : label is "proc_sys_reset,Vivado 2023.1";
+  attribute x_core_info of r_sync : label is "proc_sys_reset,Vivado 2023.2.2";
   attribute syn_black_box of rx : label is "TRUE";
-  attribute x_core_info of rx : label is "mipi_csi2_rx_ctrl_v1_0_8_top,Vivado 2023.1";
+  attribute x_core_info of rx : label is "mipi_csi2_rx_ctrl_v1_0_9_top,Vivado 2023.2.2";
   attribute syn_black_box of vfb_0 : label is "TRUE";
   attribute syn_black_box of xbar : label is "TRUE";
-  attribute x_core_info of xbar : label is "axi_crossbar_v2_1_29_axi_crossbar,Vivado 2023.1";
+  attribute x_core_info of xbar : label is "axi_crossbar_v2_1_31_axi_crossbar,Vivado 2023.2.2";
   attribute x_interface_info : string;
   attribute x_interface_info of csirxss_csi_irq : signal is "xilinx.com:signal:interrupt:1.0 INTR.CSIRXSS_CSI_IRQ INTERRUPT";
   attribute x_interface_parameter : string;
@@ -572,6 +575,7 @@ rx: component system_mipi_csi2_rx_subsystem_0_0_bd_ca02_rx_0
       cl_enable => phy_rx_mipi_ppi_if_CL_ENABLE,
       cl_rxulpsclknot => phy_rx_mipi_ppi_if_CL_RXULPSCLKNOT,
       cl_stopstate => phy_rx_mipi_ppi_if_CL_STOPSTATE,
+      core_clk => dphy_clk_200M,
       core_men_ack_vfb => vfb_0_core_men_ack_vfb,
       core_men_vfb => rx_core_men_vfb,
       dl0_errcontrol => phy_rx_mipi_ppi_if_DL0_ERRCONTROL,
@@ -598,6 +602,7 @@ rx: component system_mipi_csi2_rx_subsystem_0_0_bd_ca02_rx_0
       dl1_rxvalidhs => phy_rx_mipi_ppi_if_DL1_RXVALIDHS,
       dl1_shutdown => phy_rx_mipi_ppi_if_DL1_ENABLE,
       dl1_stopstate => phy_rx_mipi_ppi_if_DL1_STOPSTATE,
+      frame_rcvd_pulse_out => frame_rcvd_pulse_out,
       interrupt => csirxss_csi_irq,
       m_axis_aclk => video_aclk,
       m_axis_aresetn => video_aresetn,
@@ -747,6 +752,7 @@ entity system_mipi_csi2_rx_subsystem_0_0 is
     csirxss_csi_irq : out STD_LOGIC;
     video_aclk : in STD_LOGIC;
     video_aresetn : in STD_LOGIC;
+    frame_rcvd_pulse_out : out STD_LOGIC;
     csirxss_s_axi_awaddr : in STD_LOGIC_VECTOR ( 12 downto 0 );
     csirxss_s_axi_awprot : in STD_LOGIC_VECTOR ( 2 downto 0 );
     csirxss_s_axi_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -788,7 +794,7 @@ entity system_mipi_csi2_rx_subsystem_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_mipi_csi2_rx_subsystem_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_mipi_csi2_rx_subsystem_0_0 : entity is "bd_ca02,Vivado 2023.1";
+  attribute x_core_info of system_mipi_csi2_rx_subsystem_0_0 : entity is "bd_ca02,Vivado 2023.2.2";
 end system_mipi_csi2_rx_subsystem_0_0;
 
 architecture STRUCTURE of system_mipi_csi2_rx_subsystem_0_0 is
@@ -872,6 +878,7 @@ U0: entity work.system_mipi_csi2_rx_subsystem_0_0_bd_ca02
       csirxss_s_axi_wvalid(0) => csirxss_s_axi_wvalid(0),
       dlyctrl_rdy_out => dlyctrl_rdy_out,
       dphy_clk_200M => dphy_clk_200M,
+      frame_rcvd_pulse_out => frame_rcvd_pulse_out,
       lite_aclk => lite_aclk,
       lite_aresetn => lite_aresetn,
       mipi_phy_if_clk_hs_n => mipi_phy_if_clk_hs_n,

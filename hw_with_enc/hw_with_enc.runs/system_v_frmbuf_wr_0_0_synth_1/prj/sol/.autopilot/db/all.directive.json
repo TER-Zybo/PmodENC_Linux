@@ -16,7 +16,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/runhls.tcl",
+    "sourceFile": "C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/runhls.tcl",
     "sourceLine": 41,
     "success": true
   }

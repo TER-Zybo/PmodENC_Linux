@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2023.1 (64-bit)
-# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
-# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed May 15 18:36:10 2024
-# Process ID: 121612
-# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1
-# Command line: vivado -log bd_ca02_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ca02_xbar_0.tcl
-# Log file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/bd_ca02_xbar_0.vds
-# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/bd_ca02_xbar_0_synth_1/vivado.jou
-# Running On: secil7.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 3997.503 MHz, CPU Physical cores: 8, Host memory: 16464 MB
+# Vivado v2023.2.2 (64-bit)
+# SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+# IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
+# SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
+# Start of session at: Wed Jun 19 16:21:00 2024
+# Process ID: 4464
+# Current directory: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1
+# Command line: vivado.exe -log bd_ca02_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ca02_xbar_0.tcl
+# Log file: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1/bd_ca02_xbar_0.vds
+# Journal file: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/bd_ca02_xbar_0_synth_1\vivado.jou
+# Running On: LAPTOP-DWAYNE, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 25520 MB
 #-----------------------------------------------------------
 source bd_ca02_xbar_0.tcl -notrace

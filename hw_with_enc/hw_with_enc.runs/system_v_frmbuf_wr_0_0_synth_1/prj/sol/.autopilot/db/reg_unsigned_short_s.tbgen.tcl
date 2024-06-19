@@ -15,9 +15,10 @@ set DLRegItemOffset 0
 set C_modelName {reg<unsigned short>}
 set C_modelType { int 12 }
 set C_modelArgList {
-	{ d uint 12 regular  }
+	{ d uint 12 regular {ap_stable 0} }
 }
 set hasAXIMCache 0
+set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
 	{ "Name" : "d", "interface" : "wire", "bitwidth" : 12, "direction" : "READONLY"} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 12} ]}

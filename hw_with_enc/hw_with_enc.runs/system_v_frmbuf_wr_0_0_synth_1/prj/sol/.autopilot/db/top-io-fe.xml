@@ -48,7 +48,7 @@
           <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="84"/>
         </hw>
       </arg>
-      <arg id="7" access_type="r" src_name="s_axis_video" src_type="stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1, 1, 1&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
+      <arg id="7" access_type="r" src_name="s_axis_video" src_type="stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1, 1, 1, &apos;8&apos;, false&gt;, 0&gt;&amp;" src_isptr="1" src_bitwidth="96" src_size_or_depth="1">
         <hw hw_usage="data" hw_interface="AXI-Stream" hw_name="s_axis_video" hw_bitwidth="24" hw_size_or_depth="1" hw_kernel_support="true">
           <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both"/>
         </hw>

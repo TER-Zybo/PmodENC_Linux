@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,12 +48,13 @@
 
 
 // IP VLNV: xilinx.com:ip:mipi_csi2_rx_ctrl:1.0
-// IP Revision: 8
+// IP Revision: 9
 
 `timescale 1ns/1ps
 
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_ca02_rx_0 (
+  core_clk,
   s_axi_aclk,
   s_axi_aresetn,
   s_axi_awaddr,
@@ -120,9 +121,13 @@ module bd_ca02_rx_0 (
   sdt_tr,
   vfb_tv,
   vfb_tr,
+  frame_rcvd_pulse_out,
   interrupt
 );
 
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME core_clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 core_clk CLK" *)
+input wire core_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_signal_clock, ASSOCIATED_BUSIF s_axi, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 s_axi_signal_clock CLK" *)
 input wire s_axi_aclk;
@@ -255,11 +260,12 @@ input wire sdt_tv;
 input wire sdt_tr;
 input wire vfb_tv;
 input wire vfb_tr;
+output wire frame_rcvd_pulse_out;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME signal_interrupt, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 signal_interrupt INTERRUPT" *)
 output wire interrupt;
 
-  mipi_csi2_rx_ctrl_v1_0_8_top #(
+  mipi_csi2_rx_ctrl_v1_0_9_top #(
     .C_HS_LINE_RATE(800),
     .C_RCVE_DESKEW_SEQ("false"),
     .C_FAMILY("zynq"),
@@ -302,6 +308,7 @@ output wire interrupt;
     .AXIS_TUSER_WIDTH(96),
     .AXIS_TDEST_WIDTH(4)
   ) inst (
+    .core_clk(core_clk),
     .s_axi_aclk(s_axi_aclk),
     .s_axi_aresetn(s_axi_aresetn),
     .s_axi_awaddr(s_axi_awaddr),
@@ -410,7 +417,7 @@ output wire interrupt;
     .crc_status_intr(),
     .errsotsynchs_intr(),
     .errsoths_intr(),
-    .frame_rcvd_pulse_out(),
+    .frame_rcvd_pulse_out(frame_rcvd_pulse_out),
     .linebuffer_full(),
     .cl_stopstate_intr(),
     .dl0_stopstate_intr(),

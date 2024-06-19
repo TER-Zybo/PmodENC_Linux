@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:39:53 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+-- Date        : Wed Jun 19 16:29:57 2024
+-- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_axi_i2s_adi_1_0/system_axi_i2s_adi_1_0_sim_netlist.vhdl
+--               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_axi_i2s_adi_1_0/system_axi_i2s_adi_1_0_sim_netlist.vhdl
 -- Design      : system_axi_i2s_adi_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -1160,14 +1160,16 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity system_axi_i2s_adi_1_0_dma_fifo is
   port (
-    Q : out STD_LOGIC_VECTOR ( 0 to 0 );
+    ADDRD : out STD_LOGIC_VECTOR ( 0 to 0 );
     empty_reg_0 : out STD_LOGIC;
     full : out STD_LOGIC;
-    \fifo.free_cnt_reg[0]_0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \I2S_CONTROL_REG_reg[0]\ : out STD_LOGIC;
     out_data : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    Q : out STD_LOGIC_VECTOR ( 0 to 0 );
+    \I2S_CONTROL_REG_reg[0]\ : out STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     \wr_addr_reg[0]_0\ : in STD_LOGIC;
+    \p_0_in__1\ : in STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
     \fifo.free_cnt_reg[2]_0\ : in STD_LOGIC;
     \fifo.free_cnt_reg[2]_1\ : in STD_LOGIC;
     channel_sync_int_d1 : in STD_LOGIC;
@@ -1178,19 +1180,17 @@ entity system_axi_i2s_adi_1_0_dma_fifo is
     \state[0]_i_2_0\ : in STD_LOGIC;
     \state[0]_i_2_1\ : in STD_LOGIC;
     DMA_REQ_TX_DRREADY : in STD_LOGIC;
-    D : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \p_0_in__1\ : in STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 23 downto 0 )
+    D : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of system_axi_i2s_adi_1_0_dma_fifo : entity is "dma_fifo";
 end system_axi_i2s_adi_1_0_dma_fifo;
 
 architecture STRUCTURE of system_axi_i2s_adi_1_0_dma_fifo is
+  signal \^addrd\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \empty_i_1__0_n_0\ : STD_LOGIC;
   signal \^empty_reg_0\ : STD_LOGIC;
-  signal \^fifo.free_cnt_reg[0]_0\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \fifo.free_cnt_reg_n_0_[1]\ : STD_LOGIC;
   signal \fifo.free_cnt_reg_n_0_[2]\ : STD_LOGIC;
   signal \fifo.free_cnt_reg_n_0_[3]\ : STD_LOGIC;
@@ -1260,9 +1260,9 @@ architecture STRUCTURE of system_axi_i2s_adi_1_0_dma_fifo is
   attribute SOFT_HLUTNM of \wr_addr[1]_i_1\ : label is "soft_lutpair31";
   attribute SOFT_HLUTNM of \wr_addr[2]_i_2\ : label is "soft_lutpair31";
 begin
+  ADDRD(0) <= \^addrd\(0);
   Q(0) <= \^q\(0);
   empty_reg_0 <= \^empty_reg_0\;
-  \fifo.free_cnt_reg[0]_0\(0) <= \^fifo.free_cnt_reg[0]_0\(0);
   full <= \^full\;
 data_fifo_reg_0_7_0_5: unisim.vcomponents.RAM32M
      port map (
@@ -1274,7 +1274,7 @@ data_fifo_reg_0_7_0_5: unisim.vcomponents.RAM32M
       ADDRC(2 downto 0) => rd_addr(2 downto 0),
       ADDRD(4 downto 3) => B"00",
       ADDRD(2 downto 1) => wr_addr(2 downto 1),
-      ADDRD(0) => \^q\(0),
+      ADDRD(0) => \^addrd\(0),
       DIA(1 downto 0) => s00_axi_wdata(1 downto 0),
       DIB(1 downto 0) => s00_axi_wdata(3 downto 2),
       DIC(1 downto 0) => s00_axi_wdata(5 downto 4),
@@ -1296,7 +1296,7 @@ data_fifo_reg_0_7_12_17: unisim.vcomponents.RAM32M
       ADDRC(2 downto 0) => rd_addr(2 downto 0),
       ADDRD(4 downto 3) => B"00",
       ADDRD(2 downto 1) => wr_addr(2 downto 1),
-      ADDRD(0) => \^q\(0),
+      ADDRD(0) => \^addrd\(0),
       DIA(1 downto 0) => s00_axi_wdata(13 downto 12),
       DIB(1 downto 0) => s00_axi_wdata(15 downto 14),
       DIC(1 downto 0) => s00_axi_wdata(17 downto 16),
@@ -1318,7 +1318,7 @@ data_fifo_reg_0_7_18_23: unisim.vcomponents.RAM32M
       ADDRC(2 downto 0) => rd_addr(2 downto 0),
       ADDRD(4 downto 3) => B"00",
       ADDRD(2 downto 1) => wr_addr(2 downto 1),
-      ADDRD(0) => \^q\(0),
+      ADDRD(0) => \^addrd\(0),
       DIA(1 downto 0) => s00_axi_wdata(19 downto 18),
       DIB(1 downto 0) => s00_axi_wdata(21 downto 20),
       DIC(1 downto 0) => s00_axi_wdata(23 downto 22),
@@ -1340,7 +1340,7 @@ data_fifo_reg_0_7_6_11: unisim.vcomponents.RAM32M
       ADDRC(2 downto 0) => rd_addr(2 downto 0),
       ADDRD(4 downto 3) => B"00",
       ADDRD(2 downto 1) => wr_addr(2 downto 1),
-      ADDRD(0) => \^q\(0),
+      ADDRD(0) => \^addrd\(0),
       DIA(1 downto 0) => s00_axi_wdata(7 downto 6),
       DIB(1 downto 0) => s00_axi_wdata(9 downto 8),
       DIC(1 downto 0) => s00_axi_wdata(11 downto 10),
@@ -1359,7 +1359,7 @@ data_fifo_reg_0_7_6_11: unisim.vcomponents.RAM32M
         port map (
       I0 => \fifo.free_cnt_reg[2]_0\,
       I1 => \fifo.free_cnt_reg[2]_1\,
-      I2 => \^fifo.free_cnt_reg[0]_0\(0),
+      I2 => \^q\(0),
       I3 => \fifo.free_cnt_reg_n_0_[1]\,
       I4 => \fifo.free_cnt_reg_n_0_[3]\,
       I5 => \fifo.free_cnt_reg_n_0_[2]\,
@@ -1378,7 +1378,7 @@ empty_reg: unisim.vcomponents.FDSE
       INIT => X"9C999999C6CCCCCC"
     )
         port map (
-      I0 => \^fifo.free_cnt_reg[0]_0\(0),
+      I0 => \^q\(0),
       I1 => \fifo.free_cnt_reg_n_0_[1]\,
       I2 => \^empty_reg_0\,
       I3 => channel_sync_int_d1,
@@ -1391,7 +1391,7 @@ empty_reg: unisim.vcomponents.FDSE
       INIT => X"F708EF10"
     )
         port map (
-      I0 => \^fifo.free_cnt_reg[0]_0\(0),
+      I0 => \^q\(0),
       I1 => \fifo.free_cnt_reg[2]_1\,
       I2 => \fifo.free_cnt_reg[2]_0\,
       I3 => \fifo.free_cnt_reg_n_0_[2]\,
@@ -1405,7 +1405,7 @@ empty_reg: unisim.vcomponents.FDSE
         port map (
       I0 => \fifo.free_cnt_reg[2]_0\,
       I1 => \fifo.free_cnt_reg[2]_1\,
-      I2 => \^fifo.free_cnt_reg[0]_0\(0),
+      I2 => \^q\(0),
       I3 => \fifo.free_cnt_reg_n_0_[1]\,
       I4 => \fifo.free_cnt_reg_n_0_[3]\,
       I5 => \fifo.free_cnt_reg_n_0_[2]\,
@@ -1419,7 +1419,7 @@ empty_reg: unisim.vcomponents.FDSE
       C => s00_axi_aclk,
       CE => '1',
       D => D(0),
-      Q => \^fifo.free_cnt_reg[0]_0\(0),
+      Q => \^q\(0),
       R => \wr_addr[2]_i_1_n_0\
     );
 \fifo.free_cnt_reg[1]\: unisim.vcomponents.FDRE
@@ -1462,7 +1462,7 @@ empty_reg: unisim.vcomponents.FDSE
         port map (
       I0 => \fifo.free_cnt_reg_n_0_[2]\,
       I1 => \fifo.free_cnt_reg_n_0_[3]\,
-      I2 => \^fifo.free_cnt_reg[0]_0\(0),
+      I2 => \^q\(0),
       I3 => \fifo.free_cnt_reg_n_0_[1]\,
       I4 => \fifo.free_cnt_reg[2]_1\,
       I5 => \fifo.free_cnt_reg[2]_0\,
@@ -1562,7 +1562,7 @@ full_reg: unisim.vcomponents.FDRE
       INIT => X"78"
     )
         port map (
-      I0 => \^q\(0),
+      I0 => \^addrd\(0),
       I1 => \fifo.free_cnt_reg[2]_0\,
       I2 => wr_addr(1),
       O => \wr_addr[1]_i_1_n_0\
@@ -1581,7 +1581,7 @@ full_reg: unisim.vcomponents.FDRE
       INIT => X"7F80"
     )
         port map (
-      I0 => \^q\(0),
+      I0 => \^addrd\(0),
       I1 => wr_addr(1),
       I2 => \fifo.free_cnt_reg[2]_0\,
       I3 => wr_addr(2),
@@ -1595,7 +1595,7 @@ full_reg: unisim.vcomponents.FDRE
       C => s00_axi_aclk,
       CE => '1',
       D => \wr_addr_reg[0]_0\,
-      Q => \^q\(0),
+      Q => \^addrd\(0),
       R => \wr_addr[2]_i_1_n_0\
     );
 \wr_addr_reg[1]\: unisim.vcomponents.FDRE
@@ -4987,12 +4987,14 @@ entity system_axi_i2s_adi_1_0_pl330_dma_fifo is
     \wr_addr_reg[0]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
+    out_data : out STD_LOGIC_VECTOR ( 23 downto 0 );
     DMA_REQ_TX_DRTYPE : out STD_LOGIC_VECTOR ( 0 to 0 );
     \state_reg[0]_0\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
-    out_data : out STD_LOGIC_VECTOR ( 23 downto 0 );
     s00_axi_aclk : in STD_LOGIC;
     \wr_addr_reg[0]_0\ : in STD_LOGIC;
+    \p_0_in__1\ : in STD_LOGIC;
+    s00_axi_wdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
     \fifo.free_cnt_reg[2]\ : in STD_LOGIC;
     \fifo.free_cnt_reg[2]_0\ : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -5005,16 +5007,14 @@ entity system_axi_i2s_adi_1_0_pl330_dma_fifo is
     \state[0]_i_2_0\ : in STD_LOGIC;
     DMA_REQ_TX_DRREADY : in STD_LOGIC;
     DMA_REQ_TX_RSTN : in STD_LOGIC;
-    DMA_REQ_TX_ACLK : in STD_LOGIC;
-    \p_0_in__1\ : in STD_LOGIC;
-    s00_axi_wdata : in STD_LOGIC_VECTOR ( 23 downto 0 )
+    DMA_REQ_TX_ACLK : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of system_axi_i2s_adi_1_0_pl330_dma_fifo : entity is "pl330_dma_fifo";
 end system_axi_i2s_adi_1_0_pl330_dma_fifo;
 
 architecture STRUCTURE of system_axi_i2s_adi_1_0_pl330_dma_fifo is
-  signal fifo_n_4 : STD_LOGIC;
+  signal fifo_n_28 : STD_LOGIC;
   signal state0 : STD_LOGIC;
   signal \state[0]_i_1_n_0\ : STD_LOGIC;
   signal \state[0]_i_2_n_0\ : STD_LOGIC;
@@ -5040,14 +5040,14 @@ begin
     );
 fifo: entity work.system_axi_i2s_adi_1_0_dma_fifo
      port map (
+      ADDRD(0) => \wr_addr_reg[0]\(0),
       D(0) => D(0),
       DMA_REQ_TX_DRREADY => DMA_REQ_TX_DRREADY,
-      \I2S_CONTROL_REG_reg[0]\ => fifo_n_4,
-      Q(0) => \wr_addr_reg[0]\(0),
+      \I2S_CONTROL_REG_reg[0]\ => fifo_n_28,
+      Q(0) => Q(0),
       channel_sync_int_d1 => channel_sync_int_d1,
       empty_reg_0 => empty,
       enable_int => enable_int,
-      \fifo.free_cnt_reg[0]_0\(0) => Q(0),
       \fifo.free_cnt_reg[2]_0\ => \fifo.free_cnt_reg[2]\,
       \fifo.free_cnt_reg[2]_1\ => \fifo.free_cnt_reg[2]_0\,
       full => full,
@@ -5082,7 +5082,7 @@ fifo: entity work.system_axi_i2s_adi_1_0_dma_fifo
       I1 => \^state_reg[0]_0\,
       I2 => \state_reg_n_0_[1]\,
       I3 => DMA_REQ_TX_DRREADY,
-      I4 => fifo_n_4,
+      I4 => fifo_n_28,
       I5 => state0,
       O => \state[0]_i_2_n_0\
     );
@@ -5192,9 +5192,9 @@ entity \system_axi_i2s_adi_1_0_pl330_dma_fifo__parameterized0\ is
     DMA_REQ_RX_DATYPE : in STD_LOGIC_VECTOR ( 1 downto 0 );
     rx_enable : in STD_LOGIC;
     DMA_REQ_RX_DRREADY : in STD_LOGIC;
+    \gen[0].data_latched_reg[0]\ : in STD_LOGIC_VECTOR ( 23 downto 0 );
     DMA_REQ_RX_RSTN : in STD_LOGIC;
-    DMA_REQ_RX_ACLK : in STD_LOGIC;
-    \gen[0].data_latched_reg[0]\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
+    DMA_REQ_RX_ACLK : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of \system_axi_i2s_adi_1_0_pl330_dma_fifo__parameterized0\ : entity is "pl330_dma_fifo";
@@ -5471,7 +5471,7 @@ architecture STRUCTURE of system_axi_i2s_adi_1_0_axi_i2s_adi_v1_2 is
   signal \pl330_dma_rx_gen.rx_fifo_n_7\ : STD_LOGIC;
   signal \pl330_dma_rx_gen.rx_fifo_n_8\ : STD_LOGIC;
   signal \pl330_dma_rx_gen.rx_fifo_n_9\ : STD_LOGIC;
-  signal \pl330_dma_tx_gen.tx_fifo_n_5\ : STD_LOGIC;
+  signal \pl330_dma_tx_gen.tx_fifo_n_29\ : STD_LOGIC;
   signal rx_enable : STD_LOGIC;
   signal rx_fifo_reset : STD_LOGIC;
   signal rx_stb : STD_LOGIC;
@@ -6092,7 +6092,7 @@ ctrl: entity work.system_axi_i2s_adi_1_0_i2s_controller
       D(0) => free_cnt(0),
       DATA_CLK_I => DATA_CLK_I,
       LRCLK_O(0) => LRCLK_O(0),
-      Q(0) => \pl330_dma_tx_gen.tx_fifo_n_5\,
+      Q(0) => \pl330_dma_tx_gen.tx_fifo_n_29\,
       SDATA_I(0) => SDATA_I(0),
       SDATA_O(0) => SDATA_O(0),
       channel_sync_int_d1 => \tx_gen.tx/channel_sync_int_d1\,
@@ -6168,7 +6168,7 @@ ctrl: entity work.system_axi_i2s_adi_1_0_i2s_controller
       DMA_REQ_TX_DRREADY => DMA_REQ_TX_DRREADY,
       DMA_REQ_TX_DRTYPE(0) => DMA_REQ_TX_DRTYPE(0),
       DMA_REQ_TX_RSTN => DMA_REQ_TX_RSTN,
-      Q(0) => \pl330_dma_tx_gen.tx_fifo_n_5\,
+      Q(0) => \pl330_dma_tx_gen.tx_fifo_n_29\,
       channel_sync_int_d1 => \tx_gen.tx/channel_sync_int_d1\,
       empty => empty,
       enable_int => \tx_gen.tx/enable_int\,
@@ -6246,7 +6246,7 @@ entity system_axi_i2s_adi_1_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of system_axi_i2s_adi_1_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of system_axi_i2s_adi_1_0 : entity is "axi_i2s_adi_v1_2,Vivado 2023.1";
+  attribute x_core_info of system_axi_i2s_adi_1_0 : entity is "axi_i2s_adi_v1_2,Vivado 2023.2.2";
 end system_axi_i2s_adi_1_0;
 
 architecture STRUCTURE of system_axi_i2s_adi_1_0 is

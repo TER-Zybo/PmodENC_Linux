@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Wed May 15 18:45:33 2024
-// Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+// Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+// Date        : Wed Jun 19 16:41:18 2024
+// Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_sim_netlist.v
+//               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0_sim_netlist.v
 // Design      : system_v_vid_in_axi4s_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_v_vid_in_axi4s_0_0,v_vid_in_axi4s_v5_0_2,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "v_vid_in_axi4s_v5_0_2,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "system_v_vid_in_axi4s_0_0,v_vid_in_axi4s_v5_0_3,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "v_vid_in_axi4s_v5_0_3,Vivado 2023.2.2" *) 
 (* NotValidForBitStream *)
 module system_v_vid_in_axi4s_0_0
    (vid_io_in_clk,
@@ -115,7 +115,7 @@ module system_v_vid_in_axi4s_0_0
   (* C_PIXELS_PER_CLOCK = "1" *) 
   (* C_VID_NATIVE_DE = "0" *) 
   (* DowngradeIPIdentifiedWarnings = "yes" *) 
-  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2 inst
+  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3 inst
        (.aclk(aclk),
         .aclken(aclken),
         .aresetn(1'b0),
@@ -158,8 +158,8 @@ endmodule
 (* C_FAMILY = "zynq" *) (* C_HAS_ASYNC_CLK = "1" *) (* C_INCLUDE_PIXEL_DROP = "0" *) 
 (* C_INCLUDE_PIXEL_REMAP_420 = "0" *) (* C_M_AXIS_COMPONENT_WIDTH = "8" *) (* C_M_AXIS_TDATA_WIDTH = "24" *) 
 (* C_NATIVE_COMPONENT_WIDTH = "8" *) (* C_NATIVE_DATA_WIDTH = "24" *) (* C_PIXELS_PER_CLOCK = "1" *) 
-(* C_VID_NATIVE_DE = "0" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_2" *) 
-module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2
+(* C_VID_NATIVE_DE = "0" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_3" *) 
+module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3
    (vid_io_in_clk,
     vid_io_in_ce,
     vid_io_in_reset,
@@ -298,12 +298,12 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2
   wire vtd_vblank;
   wire vtd_vsync;
 
-  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_cdc_single CDC_SINGLE_REMAP_OVERFLOW_INST
+  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_cdc_single CDC_SINGLE_REMAP_OVERFLOW_INST
        (.vid_io_in_clk(vid_io_in_clk));
-  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_cdc_single__xdcDup__1 CDC_SINGLE_RESET_PULSE_INST
+  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_cdc_single__xdcDup__1 CDC_SINGLE_RESET_PULSE_INST
        (.aclk(aclk),
         .src_in(\vid_reset_pulse_cnt_reg_n_0_[0] ));
-  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_coupler COUPLER_INST
+  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_coupler COUPLER_INST
        (.VID_RESET0(VID_RESET0),
         .aclk(aclk),
         .aclken(aclken),
@@ -352,7 +352,7 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2
         .\vid_reset_pulse_cnt_reg[9]_0 (\vid_reset_pulse_cnt_reg_n_0_[9] ),
         .vid_vsync(vid_vsync),
         .vid_vsync_dly(vid_vsync_dly));
-  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_formatter FORMATTER_INST
+  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_formatter FORMATTER_INST
        (.VID_RESET0(VID_RESET0),
         .axis_enable(axis_enable),
         .de_1_reg_0(vtd_active_video),
@@ -477,8 +477,8 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_2_cdc_single" *) 
-module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_cdc_single
+(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_3_cdc_single" *) 
+module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_cdc_single
    (vid_io_in_clk);
   input vid_io_in_clk;
 
@@ -499,8 +499,8 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_cdc_single
         .src_in(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_2_cdc_single" *) 
-module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_cdc_single__xdcDup__1
+(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_3_cdc_single" *) 
+module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_cdc_single__xdcDup__1
    (src_in,
     aclk);
   input src_in;
@@ -524,8 +524,8 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_cdc_single__xdcDup__1
         .src_in(src_in));
 endmodule
 
-(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_2_coupler" *) 
-module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_coupler
+(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_3_coupler" *) 
+module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_coupler
    (overflow,
     dout,
     underflow,
@@ -674,7 +674,7 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_coupler
   wire wr_en_i__0;
   wire wr_rst_busy_i;
 
-  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_fifo_async \generate_async_fifo.FIFO_INST 
+  system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_fifo_async \generate_async_fifo.FIFO_INST 
        (.VID_RESET0(VID_RESET0),
         .aclk(aclk),
         .aclken(aclken),
@@ -734,8 +734,8 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_coupler
         .O(wr_en_i__0));
 endmodule
 
-(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_2_fifo_async" *) 
-module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_fifo_async
+(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_3_fifo_async" *) 
+module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_fifo_async
    (overflow,
     wr_rst_busy,
     dout,
@@ -924,9 +924,9 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_fifo_async
   (* CASCADE_HEIGHT = "0" *) 
   (* CDC_SYNC_STAGES = "4" *) 
   (* DOUT_RESET_VALUE = "0" *) 
-  (* ECC_MODE = "no_ecc" *) 
+  (* ECC_MODE = "0" *) 
   (* EN_ADV_FEATURE_ASYNC = "16'b0000011100000111" *) 
-  (* FIFO_MEMORY_TYPE = "auto" *) 
+  (* FIFO_MEMORY_TYPE = "0" *) 
   (* FIFO_READ_LATENCY = "0" *) 
   (* FIFO_WRITE_DEPTH = "4096" *) 
   (* FULL_RESET_VALUE = "1" *) 
@@ -939,7 +939,7 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_fifo_async
   (* P_WAKEUP_TIME = "2" *) 
   (* RD_DATA_COUNT_WIDTH = "13" *) 
   (* READ_DATA_WIDTH = "27" *) 
-  (* READ_MODE = "fwft" *) 
+  (* READ_MODE = "0" *) 
   (* RELATED_CLOCKS = "0" *) 
   (* SIM_ASSERT_CHK = "0" *) 
   (* USE_ADV_FEATURES = "0707" *) 
@@ -1192,8 +1192,8 @@ module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_fifo_async
         .O(\vid_reset_pulse_cnt_reg[10] ));
 endmodule
 
-(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_2_formatter" *) 
-module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_2_formatter
+(* ORIG_REF_NAME = "v_vid_in_axi4s_v5_0_3_formatter" *) 
+module system_v_vid_in_axi4s_0_0_v_vid_in_axi4s_v5_0_3_formatter
    (de_1_reg_0,
     vtd_vblank,
     vtd_hblank,
@@ -9684,7 +9684,7 @@ endmodule
 (* MEMORY_INIT_FILE = "none" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "0" *) (* MEMORY_SIZE = "110592" *) (* MEMORY_TYPE = "1" *) 
 (* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
-(* P_ECC_MODE = "no_ecc" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
+(* P_ECC_MODE = "0" *) (* P_ENABLE_BYTE_WRITE_A = "0" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
 (* P_MAX_DEPTH_DATA = "4096" *) (* P_MEMORY_OPT = "yes" *) (* P_MEMORY_PRIMITIVE = "auto" *) 
 (* P_MIN_WIDTH_DATA = "27" *) (* P_MIN_WIDTH_DATA_A = "27" *) (* P_MIN_WIDTH_DATA_B = "27" *) 
 (* P_MIN_WIDTH_DATA_ECC = "27" *) (* P_MIN_WIDTH_DATA_LDW = "4" *) (* P_MIN_WIDTH_DATA_SHFT = "27" *) 

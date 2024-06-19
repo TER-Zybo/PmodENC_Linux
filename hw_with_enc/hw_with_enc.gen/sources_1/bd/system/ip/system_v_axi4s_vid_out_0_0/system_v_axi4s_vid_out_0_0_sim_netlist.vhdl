@@ -1,11 +1,11 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:44:59 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+-- Date        : Wed Jun 19 16:31:37 2024
+-- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_sim_netlist.vhdl
+--               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0_sim_netlist.vhdl
 -- Design      : system_v_axi4s_vid_out_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,7 +15,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_formatter is
+entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_formatter is
   port (
     vid_active_video : out STD_LOGIC;
     vid_vsync : out STD_LOGIC;
@@ -40,10 +40,10 @@ entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_formatter is
     D : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_formatter : entity is "v_axi4s_vid_out_v4_0_16_formatter";
-end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_formatter;
+  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_formatter : entity is "v_axi4s_vid_out_v4_0_17_formatter";
+end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_formatter;
 
-architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_formatter is
+architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_formatter is
   signal \^fivid_reset_full_frame\ : STD_LOGIC;
   signal fivid_reset_full_frame_i_1_n_0 : STD_LOGIC;
   signal vblank_rising : STD_LOGIC;
@@ -456,7 +456,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_sync is
+entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_sync is
   port (
     fifo_eol_dly : out STD_LOGIC;
     src_in : out STD_LOGIC;
@@ -479,10 +479,10 @@ entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_sync is
     \FSM_sequential_state[0]_i_2_2\ : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_sync : entity is "v_axi4s_vid_out_v4_0_16_sync";
-end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_sync;
+  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_sync : entity is "v_axi4s_vid_out_v4_0_17_sync";
+end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_sync;
 
-architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_sync is
+architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_sync is
   signal \FSM_sequential_state[0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_sequential_state[0]_i_2_n_0\ : STD_LOGIC;
   signal \FSM_sequential_state[0]_i_3_n_0\ : STD_LOGIC;
@@ -12429,8 +12429,8 @@ entity system_v_axi4s_vid_out_0_0_xpm_memory_base is
   attribute NUM_CHAR_LOC of system_v_axi4s_vid_out_0_0_xpm_memory_base : entity is 0;
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_xpm_memory_base : entity is "xpm_memory_base";
-  attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of system_v_axi4s_vid_out_0_0_xpm_memory_base : entity is "no_ecc";
+  attribute P_ECC_MODE : integer;
+  attribute P_ECC_MODE of system_v_axi4s_vid_out_0_0_xpm_memory_base : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_A : integer;
   attribute P_ENABLE_BYTE_WRITE_A of system_v_axi4s_vid_out_0_0_xpm_memory_base : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
@@ -13334,17 +13334,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single is
+entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single is
   port (
     dest_out : out STD_LOGIC;
     src_in : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single : entity is "v_axi4s_vid_out_v4_0_16_cdc_single";
-end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single;
+  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single : entity is "v_axi4s_vid_out_v4_0_17_cdc_single";
+end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single;
 
-architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single is
+architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single is
   attribute DEST_SYNC_FF : integer;
   attribute DEST_SYNC_FF of xpm_cdc_single_inst : label is 4;
   attribute INIT_SYNC_FF : integer;
@@ -13372,15 +13372,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single__xdcDup__1\ is
+entity \system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single__xdcDup__1\ is
   port (
     vid_io_out_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single__xdcDup__1\ : entity is "v_axi4s_vid_out_v4_0_16_cdc_single";
-end \system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single__xdcDup__1\;
+  attribute ORIG_REF_NAME of \system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single__xdcDup__1\ : entity is "v_axi4s_vid_out_v4_0_17_cdc_single";
+end \system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single__xdcDup__1\;
 
-architecture STRUCTURE of \system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single__xdcDup__1\ is
+architecture STRUCTURE of \system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single__xdcDup__1\ is
   signal NLW_xpm_cdc_single_inst_dest_out_UNCONNECTED : STD_LOGIC;
   attribute DEST_SYNC_FF : integer;
   attribute DEST_SYNC_FF of xpm_cdc_single_inst : label is 4;
@@ -15689,7 +15689,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_fifo_async is
+entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_fifo_async is
   port (
     overflow : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 26 downto 0 );
@@ -15719,10 +15719,10 @@ entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_fifo_async is
     aclken : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_fifo_async : entity is "v_axi4s_vid_out_v4_0_16_fifo_async";
-end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_fifo_async;
+  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_fifo_async : entity is "v_axi4s_vid_out_v4_0_17_fifo_async";
+end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_fifo_async;
 
-architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_fifo_async is
+architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_fifo_async is
   signal XPM_FIFO_ASYNC_INST_i_1_n_0 : STD_LOGIC;
   signal XPM_FIFO_ASYNC_INST_n_10 : STD_LOGIC;
   signal XPM_FIFO_ASYNC_INST_n_11 : STD_LOGIC;
@@ -15760,12 +15760,12 @@ architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_fif
   attribute CDC_SYNC_STAGES of XPM_FIFO_ASYNC_INST : label is 4;
   attribute DOUT_RESET_VALUE : string;
   attribute DOUT_RESET_VALUE of XPM_FIFO_ASYNC_INST : label is "0";
-  attribute ECC_MODE : string;
-  attribute ECC_MODE of XPM_FIFO_ASYNC_INST : label is "no_ecc";
+  attribute ECC_MODE : integer;
+  attribute ECC_MODE of XPM_FIFO_ASYNC_INST : label is 0;
   attribute EN_ADV_FEATURE_ASYNC : string;
   attribute EN_ADV_FEATURE_ASYNC of XPM_FIFO_ASYNC_INST : label is "16'b0000011100000111";
-  attribute FIFO_MEMORY_TYPE : string;
-  attribute FIFO_MEMORY_TYPE of XPM_FIFO_ASYNC_INST : label is "auto";
+  attribute FIFO_MEMORY_TYPE : integer;
+  attribute FIFO_MEMORY_TYPE of XPM_FIFO_ASYNC_INST : label is 0;
   attribute FIFO_READ_LATENCY : integer;
   attribute FIFO_READ_LATENCY of XPM_FIFO_ASYNC_INST : label is 0;
   attribute FIFO_WRITE_DEPTH : integer;
@@ -15790,8 +15790,8 @@ architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_fif
   attribute RD_DATA_COUNT_WIDTH of XPM_FIFO_ASYNC_INST : label is 13;
   attribute READ_DATA_WIDTH : integer;
   attribute READ_DATA_WIDTH of XPM_FIFO_ASYNC_INST : label is 27;
-  attribute READ_MODE : string;
-  attribute READ_MODE of XPM_FIFO_ASYNC_INST : label is "fwft";
+  attribute READ_MODE : integer;
+  attribute READ_MODE of XPM_FIFO_ASYNC_INST : label is 0;
   attribute RELATED_CLOCKS : integer;
   attribute RELATED_CLOCKS of XPM_FIFO_ASYNC_INST : label is 0;
   attribute SIM_ASSERT_CHK : integer;
@@ -15978,7 +15978,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_coupler is
+entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_coupler is
   port (
     overflow : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 26 downto 0 );
@@ -16008,12 +16008,12 @@ entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_coupler is
     aclken : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_coupler : entity is "v_axi4s_vid_out_v4_0_16_coupler";
-end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_coupler;
+  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_coupler : entity is "v_axi4s_vid_out_v4_0_17_coupler";
+end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_coupler;
 
-architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_coupler is
+architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_coupler is
 begin
-\generate_async_fifo.FIFO_INST\: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_fifo_async
+\generate_async_fifo.FIFO_INST\: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_fifo_async
      port map (
       E(0) => E(0),
       aclk => aclk,
@@ -16047,7 +16047,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 is
+entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 is
   port (
     aclk : in STD_LOGIC;
     aclken : in STD_LOGIC;
@@ -16097,44 +16097,44 @@ entity system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 is
     remap_420_en : in STD_LOGIC
   );
   attribute C_ADDR_WIDTH : integer;
-  attribute C_ADDR_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 12;
+  attribute C_ADDR_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 12;
   attribute C_ADDR_WIDTH_PIXEL_REMAP_420 : integer;
-  attribute C_ADDR_WIDTH_PIXEL_REMAP_420 of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 10;
+  attribute C_ADDR_WIDTH_PIXEL_REMAP_420 of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 10;
   attribute C_ARBITRARY_RES_EN : integer;
-  attribute C_ARBITRARY_RES_EN of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 0;
+  attribute C_ARBITRARY_RES_EN of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 0;
   attribute C_COMPONENTS_PER_PIXEL : integer;
-  attribute C_COMPONENTS_PER_PIXEL of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 3;
+  attribute C_COMPONENTS_PER_PIXEL of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 3;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is "zynq";
+  attribute C_FAMILY of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is "zynq";
   attribute C_HAS_ASYNC_CLK : integer;
-  attribute C_HAS_ASYNC_CLK of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 1;
+  attribute C_HAS_ASYNC_CLK of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 1;
   attribute C_HYSTERESIS_LEVEL : integer;
-  attribute C_HYSTERESIS_LEVEL of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 12;
+  attribute C_HYSTERESIS_LEVEL of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 12;
   attribute C_INCLUDE_PIXEL_REMAP_420 : integer;
-  attribute C_INCLUDE_PIXEL_REMAP_420 of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 0;
+  attribute C_INCLUDE_PIXEL_REMAP_420 of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 0;
   attribute C_INCLUDE_PIXEL_REPEAT : integer;
-  attribute C_INCLUDE_PIXEL_REPEAT of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 0;
+  attribute C_INCLUDE_PIXEL_REPEAT of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 0;
   attribute C_NATIVE_COMPONENT_WIDTH : integer;
-  attribute C_NATIVE_COMPONENT_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 8;
+  attribute C_NATIVE_COMPONENT_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 8;
   attribute C_NATIVE_DATA_WIDTH : integer;
-  attribute C_NATIVE_DATA_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 24;
+  attribute C_NATIVE_DATA_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 24;
   attribute C_PIXELS_PER_CLOCK : integer;
-  attribute C_PIXELS_PER_CLOCK of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 1;
+  attribute C_PIXELS_PER_CLOCK of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 1;
   attribute C_SYNC_LOCK_THRESHOLD : integer;
-  attribute C_SYNC_LOCK_THRESHOLD of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 4;
+  attribute C_SYNC_LOCK_THRESHOLD of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 4;
   attribute C_S_AXIS_COMPONENT_WIDTH : integer;
-  attribute C_S_AXIS_COMPONENT_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 8;
+  attribute C_S_AXIS_COMPONENT_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 8;
   attribute C_S_AXIS_TDATA_WIDTH : integer;
-  attribute C_S_AXIS_TDATA_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 24;
+  attribute C_S_AXIS_TDATA_WIDTH of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 24;
   attribute C_VTG_MASTER_SLAVE : integer;
-  attribute C_VTG_MASTER_SLAVE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is 1;
+  attribute C_VTG_MASTER_SLAVE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is "yes";
+  attribute DowngradeIPIdentifiedWarnings of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is "yes";
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 : entity is "v_axi4s_vid_out_v4_0_16";
-end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16;
+  attribute ORIG_REF_NAME of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 : entity is "v_axi4s_vid_out_v4_0_17";
+end system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17;
 
-architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16 is
+architecture STRUCTURE of system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17 is
   signal \<const0>\ : STD_LOGIC;
   signal COUPLER_INST_n_43 : STD_LOGIC;
   signal COUPLER_INST_n_44 : STD_LOGIC;
@@ -16199,17 +16199,17 @@ begin
   vid_hsync_arb(0) <= \<const0>\;
   vid_vsync_arb(0) <= \<const0>\;
   vtg_ce <= \^vid_io_out_ce\;
-CDC_SINGLE_LOCKED_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single
+CDC_SINGLE_LOCKED_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single
      port map (
       aclk => aclk,
       dest_out => locked_from_sync,
       src_in => \^locked\
     );
-CDC_SINGLE_REMAP_UNDERFLOW_INST: entity work.\system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cdc_single__xdcDup__1\
+CDC_SINGLE_REMAP_UNDERFLOW_INST: entity work.\system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_cdc_single__xdcDup__1\
      port map (
       vid_io_out_clk => vid_io_out_clk
     );
-COUPLER_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_coupler
+COUPLER_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_coupler
      port map (
       E(0) => rd_en_i,
       aclk => aclk,
@@ -16244,7 +16244,7 @@ COUPLER_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_cou
       vid_io_out_ce => \^vid_io_out_ce\,
       vid_io_out_clk => vid_io_out_clk
     );
-FORMATTER_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_formatter
+FORMATTER_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_formatter
      port map (
       D(23 downto 0) => fifo_data(23 downto 0),
       E(0) => rd_en_i,
@@ -16272,7 +16272,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-SYNC_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16_sync
+SYNC_INST: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17_sync
      port map (
       E(0) => rd_en_i,
       \FSM_sequential_state[0]_i_2_0\ => COUPLER_INST_n_44,
@@ -16364,11 +16364,11 @@ entity system_v_axi4s_vid_out_0_0 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of system_v_axi4s_vid_out_0_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of system_v_axi4s_vid_out_0_0 : entity is "system_v_axi4s_vid_out_0_0,v_axi4s_vid_out_v4_0_16,{}";
+  attribute CHECK_LICENSE_TYPE of system_v_axi4s_vid_out_0_0 : entity is "system_v_axi4s_vid_out_0_0,v_axi4s_vid_out_v4_0_17,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of system_v_axi4s_vid_out_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of system_v_axi4s_vid_out_0_0 : entity is "v_axi4s_vid_out_v4_0_16,Vivado 2023.1";
+  attribute X_CORE_INFO of system_v_axi4s_vid_out_0_0 : entity is "v_axi4s_vid_out_v4_0_17,Vivado 2023.2.2";
 end system_v_axi4s_vid_out_0_0;
 
 architecture STRUCTURE of system_v_axi4s_vid_out_0_0 is
@@ -16458,7 +16458,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-inst: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_16
+inst: entity work.system_v_axi4s_vid_out_0_0_v_axi4s_vid_out_v4_0_17
      port map (
       aclk => aclk,
       aclken => aclken,

@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -47,13 +47,13 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:ip:v_frmbuf_wr:2.4
-// IP Revision: 0
+// IP VLNV: xilinx.com:ip:v_frmbuf_wr:2.5
+// IP Revision: 1
 
-(* X_CORE_INFO = "system_v_frmbuf_wr_0_0_v_frmbuf_wr,Vivado 2023.1" *)
+(* X_CORE_INFO = "system_v_frmbuf_wr_0_0_v_frmbuf_wr,Vivado 2023.2.2" *)
 (* CHECK_LICENSE_TYPE = "system_v_frmbuf_wr_0_0,system_v_frmbuf_wr_0_0_v_frmbuf_wr,{}" *)
-(* CORE_GENERATION_INFO = "system_v_frmbuf_wr_0_0,system_v_frmbuf_wr_0_0_v_frmbuf_wr,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=v_frmbuf_wr,x_ipVersion=2.4,x_ipCoreRevision=0,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=7,C_S_AXI_CTRL_DATA_WIDTH=32,C_M_AXI_MM_VIDEO_ID_WIDTH=1,C_M_AXI_MM_VIDEO_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO_DATA_WIDTH=64,C_M_AXI_MM_VIDEO_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO_RUSER_WIDTH=1,C_M_AXI_MM_VI\
-DEO_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO_CACHE_VALUE=0x3}" *)
+(* CORE_GENERATION_INFO = "system_v_frmbuf_wr_0_0,system_v_frmbuf_wr_0_0_v_frmbuf_wr,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=v_frmbuf_wr,x_ipVersion=2.5,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_CTRL_ADDR_WIDTH=7,C_S_AXI_CTRL_DATA_WIDTH=32,C_M_AXI_MM_VIDEO_ID_WIDTH=1,C_M_AXI_MM_VIDEO_ADDR_WIDTH=32,C_M_AXI_MM_VIDEO_DATA_WIDTH=64,C_M_AXI_MM_VIDEO_AWUSER_WIDTH=1,C_M_AXI_MM_VIDEO_ARUSER_WIDTH=1,C_M_AXI_MM_VIDEO_WUSER_WIDTH=1,C_M_AXI_MM_VIDEO_RUSER_WIDTH=1,C_M_AXI_MM_\
+VIDEO_BUSER_WIDTH=1,C_M_AXI_MM_VIDEO_USER_VALUE=0x00000000,C_M_AXI_MM_VIDEO_PROT_VALUE=0x0,C_M_AXI_MM_VIDEO_CACHE_VALUE=0x3}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_v_frmbuf_wr_0_0 (
   s_axi_CTRL_AWADDR,

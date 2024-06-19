@@ -7,47 +7,47 @@
 -- ** DISCLAIMER OF LIABILITY                                             **
 -- **                                                                     **
 -- ** This text/file contains proprietary, confidential                   **
--- ** information of Xilinx, Inc., is distributed under                   **
--- ** license from Xilinx, Inc., and may be used, copied                  **
+-- ** information of AMD, Inc., is distributed under                      **
+-- ** license from AMD, Inc., and may be used, copied                     **
 -- ** and/or disclosed only pursuant to the terms of a valid              **
--- ** license agreement with Xilinx, Inc. Xilinx hereby                   **
+-- ** license agreement with AMD, Inc. AMD hereby                         **
 -- ** grants you a license to use this text/file solely for               **
 -- ** design, simulation, implementation and creation of                  **
--- ** design files limited to Xilinx devices or technologies.             **
--- ** Use with non-Xilinx devices or technologies is expressly            **
+-- ** design files limited to AMD devices or technologies.                **
+-- ** Use with non-AMD devices or technologies is expressly               **
 -- ** prohibited and immediately terminates your license unless           **
 -- ** covered by a separate agreement.                                    **
 -- **                                                                     **
--- ** Xilinx is providing this design, code, or information               **
+-- ** AMD is providing this design, code, or information                  **
 -- ** "as-is" solely for use in developing programs and                   **
--- ** solutions for Xilinx devices, with no obligation on the             **
--- ** part of Xilinx to provide support. By providing this design,        **
+-- ** solutions for AMD devices, with no obligation on the                **
+-- ** part of AMD to provide support. By providing this design,           **
 -- ** code, or information as one possible implementation of              **
--- ** this feature, application or standard, Xilinx is making no          **
+-- ** this feature, application or standard, AMD is making no             **
 -- ** representation that this implementation is free from any            **
 -- ** claims of infringement. You are responsible for obtaining           **
 -- ** any rights you may require for your implementation.                 **
--- ** Xilinx expressly disclaims any warranty whatsoever with             **
+-- ** AMD expressly disclaims any warranty whatsoever with                **
 -- ** respect to the adequacy of the implementation, including            **
 -- ** but not limited to any warranties or representations that this      **
 -- ** implementation is free from claims of infringement, implied         **
 -- ** warranties of merchantability or fitness for a particular           **
 -- ** purpose.                                                            **
 -- **                                                                     **
--- ** Xilinx products are not intended for use in life support            **
+-- ** AMD products are not intended for use in life support               **
 -- ** appliances, devices, or systems. Use in such applications is        **
 -- ** expressly prohibited.                                               **
 -- **                                                                     **
 -- ** Any modifications that are made to the Source Code are              **
--- ** done at the users sole risk and will be unsupported.               **
--- ** The Xilinx Support Hotline does not have access to source           **
+-- ** done at the users sole risk and will be unsupported.            **
+-- ** The AMD Support Hotline does not have access to source              **
 -- ** code and therefore cannot answer specific questions related         **
--- ** to source HDL. The Xilinx Hotline support of original source        **
+-- ** to source HDL. The AMD Hotline support of original source           **
 -- ** code IP shall only address issues and questions related             **
 -- ** to the standard Netlist version of the core (and thus               **
 -- ** indirectly, the original core source).                              **
 -- **                                                                     **
--- ** Copyright (c) 2005-2010 Xilinx, Inc. All rights reserved.           **
+-- ** Copyright (c) 2005-2023 AMD, Inc. All rights reserved.              **
 -- **                                                                     **
 -- ** This copyright and support notice must be retained as part          **
 -- ** of this text at all times.                                          **

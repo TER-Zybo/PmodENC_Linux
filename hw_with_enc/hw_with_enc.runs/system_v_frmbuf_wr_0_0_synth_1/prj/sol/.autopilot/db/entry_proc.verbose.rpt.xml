@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'entry_proc'" level="0">
-<item name = "Date">Wed May 15 18:46:04 2024
+<item name = "Date">Wed Jun 19 16:40:54 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -51,7 +51,7 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 63, -</column>
+<column name="Multiplexer">-, -, -, 45, -</column>
 <column name="Register">-, -, 3, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
@@ -84,11 +84,9 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="HwReg_frm_buffer2_c_blk_n">9, 2, 1, 2</column>
 <column name="HwReg_frm_buffer_c_blk_n">9, 2, 1, 2</column>
-<column name="WidthInBytes_c9_blk_n">9, 2, 1, 2</column>
+<column name="WidthInBytes_val2_c9_blk_n">9, 2, 1, 2</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="real_start">9, 2, 1, 2</column>
-<column name="stride_c_blk_n">9, 2, 1, 2</column>
-<column name="video_format_c11_blk_n">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -127,24 +125,12 @@
 <column name="HwReg_frm_buffer2_c_fifo_cap">in, 3, ap_fifo, HwReg_frm_buffer2_c, pointer</column>
 <column name="HwReg_frm_buffer2_c_full_n">in, 1, ap_fifo, HwReg_frm_buffer2_c, pointer</column>
 <column name="HwReg_frm_buffer2_c_write">out, 1, ap_fifo, HwReg_frm_buffer2_c, pointer</column>
-<column name="p_read">in, 15, ap_none, p_read, scalar</column>
-<column name="WidthInBytes_c9_din">out, 15, ap_fifo, WidthInBytes_c9, pointer</column>
-<column name="WidthInBytes_c9_num_data_valid">in, 3, ap_fifo, WidthInBytes_c9, pointer</column>
-<column name="WidthInBytes_c9_fifo_cap">in, 3, ap_fifo, WidthInBytes_c9, pointer</column>
-<column name="WidthInBytes_c9_full_n">in, 1, ap_fifo, WidthInBytes_c9, pointer</column>
-<column name="WidthInBytes_c9_write">out, 1, ap_fifo, WidthInBytes_c9, pointer</column>
-<column name="p_read1">in, 16, ap_stable, p_read1, scalar</column>
-<column name="stride_c_din">out, 16, ap_fifo, stride_c, pointer</column>
-<column name="stride_c_num_data_valid">in, 3, ap_fifo, stride_c, pointer</column>
-<column name="stride_c_fifo_cap">in, 3, ap_fifo, stride_c, pointer</column>
-<column name="stride_c_full_n">in, 1, ap_fifo, stride_c, pointer</column>
-<column name="stride_c_write">out, 1, ap_fifo, stride_c, pointer</column>
-<column name="p_read2">in, 6, ap_none, p_read2, scalar</column>
-<column name="video_format_c11_din">out, 6, ap_fifo, video_format_c11, pointer</column>
-<column name="video_format_c11_num_data_valid">in, 3, ap_fifo, video_format_c11, pointer</column>
-<column name="video_format_c11_fifo_cap">in, 3, ap_fifo, video_format_c11, pointer</column>
-<column name="video_format_c11_full_n">in, 1, ap_fifo, video_format_c11, pointer</column>
-<column name="video_format_c11_write">out, 1, ap_fifo, video_format_c11, pointer</column>
+<column name="WidthInBytes_val2">in, 15, ap_none, WidthInBytes_val2, scalar</column>
+<column name="WidthInBytes_val2_c9_din">out, 15, ap_fifo, WidthInBytes_val2_c9, pointer</column>
+<column name="WidthInBytes_val2_c9_num_data_valid">in, 3, ap_fifo, WidthInBytes_val2_c9, pointer</column>
+<column name="WidthInBytes_val2_c9_fifo_cap">in, 3, ap_fifo, WidthInBytes_val2_c9, pointer</column>
+<column name="WidthInBytes_val2_c9_full_n">in, 1, ap_fifo, WidthInBytes_val2_c9, pointer</column>
+<column name="WidthInBytes_val2_c9_write">out, 1, ap_fifo, WidthInBytes_val2_c9, pointer</column>
 </table>
 </item>
 </section>

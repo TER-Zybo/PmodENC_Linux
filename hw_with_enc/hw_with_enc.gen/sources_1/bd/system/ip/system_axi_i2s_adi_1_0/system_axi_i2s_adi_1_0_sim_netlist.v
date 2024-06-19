@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Wed May 15 18:39:53 2024
-// Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+// Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+// Date        : Wed Jun 19 16:29:57 2024
+// Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_axi_i2s_adi_1_0/system_axi_i2s_adi_1_0_sim_netlist.v
+//               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_axi_i2s_adi_1_0/system_axi_i2s_adi_1_0_sim_netlist.v
 // Design      : system_axi_i2s_adi_1_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_axi_i2s_adi_1_0,axi_i2s_adi_v1_2,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_i2s_adi_v1_2,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "system_axi_i2s_adi_1_0,axi_i2s_adi_v1_2,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_i2s_adi_v1_2,Vivado 2023.2.2" *) 
 (* NotValidForBitStream *)
 module system_axi_i2s_adi_1_0
    (DATA_CLK_I,
@@ -1303,7 +1303,7 @@ module system_axi_i2s_adi_1_0_axi_i2s_adi_v1_2
   wire \pl330_dma_rx_gen.rx_fifo_n_7 ;
   wire \pl330_dma_rx_gen.rx_fifo_n_8 ;
   wire \pl330_dma_rx_gen.rx_fifo_n_9 ;
-  wire \pl330_dma_tx_gen.tx_fifo_n_5 ;
+  wire \pl330_dma_tx_gen.tx_fifo_n_29 ;
   wire rx_enable;
   wire rx_fifo_reset;
   wire rx_stb;
@@ -1762,7 +1762,7 @@ module system_axi_i2s_adi_1_0_axi_i2s_adi_v1_2
         .D(free_cnt),
         .DATA_CLK_I(DATA_CLK_I),
         .LRCLK_O(LRCLK_O),
-        .Q(\pl330_dma_tx_gen.tx_fifo_n_5 ),
+        .Q(\pl330_dma_tx_gen.tx_fifo_n_29 ),
         .SDATA_I(SDATA_I),
         .SDATA_O(SDATA_O),
         .channel_sync_int_d1(\tx_gen.tx/channel_sync_int_d1 ),
@@ -1810,7 +1810,7 @@ module system_axi_i2s_adi_1_0_axi_i2s_adi_v1_2
         .DMA_REQ_TX_DRREADY(DMA_REQ_TX_DRREADY),
         .DMA_REQ_TX_DRTYPE(DMA_REQ_TX_DRTYPE),
         .DMA_REQ_TX_RSTN(DMA_REQ_TX_RSTN),
-        .Q(\pl330_dma_tx_gen.tx_fifo_n_5 ),
+        .Q(\pl330_dma_tx_gen.tx_fifo_n_29 ),
         .channel_sync_int_d1(\tx_gen.tx/channel_sync_int_d1 ),
         .empty(empty),
         .enable_int(\tx_gen.tx/enable_int ),
@@ -1831,14 +1831,16 @@ endmodule
 
 (* ORIG_REF_NAME = "dma_fifo" *) 
 module system_axi_i2s_adi_1_0_dma_fifo
-   (Q,
+   (ADDRD,
     empty_reg_0,
     full,
-    \fifo.free_cnt_reg[0]_0 ,
-    \I2S_CONTROL_REG_reg[0] ,
     out_data,
+    Q,
+    \I2S_CONTROL_REG_reg[0] ,
     s00_axi_aclk,
     \wr_addr_reg[0]_0 ,
+    p_0_in__1,
+    s00_axi_wdata,
     \fifo.free_cnt_reg[2]_0 ,
     \fifo.free_cnt_reg[2]_1 ,
     channel_sync_int_d1,
@@ -1849,17 +1851,17 @@ module system_axi_i2s_adi_1_0_dma_fifo
     \state[0]_i_2_0 ,
     \state[0]_i_2_1 ,
     DMA_REQ_TX_DRREADY,
-    D,
-    p_0_in__1,
-    s00_axi_wdata);
-  output [0:0]Q;
+    D);
+  output [0:0]ADDRD;
   output empty_reg_0;
   output full;
-  output [0:0]\fifo.free_cnt_reg[0]_0 ;
-  output \I2S_CONTROL_REG_reg[0] ;
   output [23:0]out_data;
+  output [0:0]Q;
+  output \I2S_CONTROL_REG_reg[0] ;
   input s00_axi_aclk;
   input \wr_addr_reg[0]_0 ;
+  input p_0_in__1;
+  input [23:0]s00_axi_wdata;
   input \fifo.free_cnt_reg[2]_0 ;
   input \fifo.free_cnt_reg[2]_1 ;
   input channel_sync_int_d1;
@@ -1871,9 +1873,8 @@ module system_axi_i2s_adi_1_0_dma_fifo
   input \state[0]_i_2_1 ;
   input DMA_REQ_TX_DRREADY;
   input [0:0]D;
-  input p_0_in__1;
-  input [23:0]s00_axi_wdata;
 
+  wire [0:0]ADDRD;
   wire [0:0]D;
   wire DMA_REQ_TX_DRREADY;
   wire \I2S_CONTROL_REG_reg[0] ;
@@ -1882,7 +1883,6 @@ module system_axi_i2s_adi_1_0_dma_fifo
   wire empty_i_1__0_n_0;
   wire empty_reg_0;
   wire enable_int;
-  wire [0:0]\fifo.free_cnt_reg[0]_0 ;
   wire \fifo.free_cnt_reg[2]_0 ;
   wire \fifo.free_cnt_reg[2]_1 ;
   wire \fifo.free_cnt_reg_n_0_[1] ;
@@ -1927,7 +1927,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
        (.ADDRA({1'b0,1'b0,rd_addr}),
         .ADDRB({1'b0,1'b0,rd_addr}),
         .ADDRC({1'b0,1'b0,rd_addr}),
-        .ADDRD({1'b0,1'b0,wr_addr,Q}),
+        .ADDRD({1'b0,1'b0,wr_addr,ADDRD}),
         .DIA(s00_axi_wdata[1:0]),
         .DIB(s00_axi_wdata[3:2]),
         .DIC(s00_axi_wdata[5:4]),
@@ -1951,7 +1951,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
        (.ADDRA({1'b0,1'b0,rd_addr}),
         .ADDRB({1'b0,1'b0,rd_addr}),
         .ADDRC({1'b0,1'b0,rd_addr}),
-        .ADDRD({1'b0,1'b0,wr_addr,Q}),
+        .ADDRD({1'b0,1'b0,wr_addr,ADDRD}),
         .DIA(s00_axi_wdata[13:12]),
         .DIB(s00_axi_wdata[15:14]),
         .DIC(s00_axi_wdata[17:16]),
@@ -1975,7 +1975,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
        (.ADDRA({1'b0,1'b0,rd_addr}),
         .ADDRB({1'b0,1'b0,rd_addr}),
         .ADDRC({1'b0,1'b0,rd_addr}),
-        .ADDRD({1'b0,1'b0,wr_addr,Q}),
+        .ADDRD({1'b0,1'b0,wr_addr,ADDRD}),
         .DIA(s00_axi_wdata[19:18]),
         .DIB(s00_axi_wdata[21:20]),
         .DIC(s00_axi_wdata[23:22]),
@@ -1999,7 +1999,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
        (.ADDRA({1'b0,1'b0,rd_addr}),
         .ADDRB({1'b0,1'b0,rd_addr}),
         .ADDRC({1'b0,1'b0,rd_addr}),
-        .ADDRD({1'b0,1'b0,wr_addr,Q}),
+        .ADDRD({1'b0,1'b0,wr_addr,ADDRD}),
         .DIA(s00_axi_wdata[7:6]),
         .DIB(s00_axi_wdata[9:8]),
         .DIC(s00_axi_wdata[11:10]),
@@ -2015,7 +2015,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
     empty_i_1__0
        (.I0(\fifo.free_cnt_reg[2]_0 ),
         .I1(\fifo.free_cnt_reg[2]_1 ),
-        .I2(\fifo.free_cnt_reg[0]_0 ),
+        .I2(Q),
         .I3(\fifo.free_cnt_reg_n_0_[1] ),
         .I4(\fifo.free_cnt_reg_n_0_[3] ),
         .I5(\fifo.free_cnt_reg_n_0_[2] ),
@@ -2029,7 +2029,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
   LUT6 #(
     .INIT(64'h9C999999C6CCCCCC)) 
     \fifo.free_cnt[1]_i_1__0 
-       (.I0(\fifo.free_cnt_reg[0]_0 ),
+       (.I0(Q),
         .I1(\fifo.free_cnt_reg_n_0_[1] ),
         .I2(empty_reg_0),
         .I3(channel_sync_int_d1),
@@ -2039,7 +2039,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
   LUT5 #(
     .INIT(32'hF708EF10)) 
     \fifo.free_cnt[2]_i_1__0 
-       (.I0(\fifo.free_cnt_reg[0]_0 ),
+       (.I0(Q),
         .I1(\fifo.free_cnt_reg[2]_1 ),
         .I2(\fifo.free_cnt_reg[2]_0 ),
         .I3(\fifo.free_cnt_reg_n_0_[2] ),
@@ -2050,7 +2050,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
     \fifo.free_cnt[3]_i_1__0 
        (.I0(\fifo.free_cnt_reg[2]_0 ),
         .I1(\fifo.free_cnt_reg[2]_1 ),
-        .I2(\fifo.free_cnt_reg[0]_0 ),
+        .I2(Q),
         .I3(\fifo.free_cnt_reg_n_0_[1] ),
         .I4(\fifo.free_cnt_reg_n_0_[3] ),
         .I5(\fifo.free_cnt_reg_n_0_[2] ),
@@ -2061,7 +2061,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
        (.C(s00_axi_aclk),
         .CE(1'b1),
         .D(D),
-        .Q(\fifo.free_cnt_reg[0]_0 ),
+        .Q(Q),
         .R(\wr_addr[2]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -2092,7 +2092,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
     full_i_1__0
        (.I0(\fifo.free_cnt_reg_n_0_[2] ),
         .I1(\fifo.free_cnt_reg_n_0_[3] ),
-        .I2(\fifo.free_cnt_reg[0]_0 ),
+        .I2(Q),
         .I3(\fifo.free_cnt_reg_n_0_[1] ),
         .I4(\fifo.free_cnt_reg[2]_1 ),
         .I5(\fifo.free_cnt_reg[2]_0 ),
@@ -2169,7 +2169,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
   LUT3 #(
     .INIT(8'h78)) 
     \wr_addr[1]_i_1 
-       (.I0(Q),
+       (.I0(ADDRD),
         .I1(\fifo.free_cnt_reg[2]_0 ),
         .I2(wr_addr[1]),
         .O(\wr_addr[1]_i_1_n_0 ));
@@ -2183,7 +2183,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
   LUT4 #(
     .INIT(16'h7F80)) 
     \wr_addr[2]_i_2 
-       (.I0(Q),
+       (.I0(ADDRD),
         .I1(wr_addr[1]),
         .I2(\fifo.free_cnt_reg[2]_0 ),
         .I3(wr_addr[2]),
@@ -2194,7 +2194,7 @@ module system_axi_i2s_adi_1_0_dma_fifo
        (.C(s00_axi_aclk),
         .CE(1'b1),
         .D(\wr_addr_reg[0]_0 ),
-        .Q(Q),
+        .Q(ADDRD),
         .R(\wr_addr[2]_i_1_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
@@ -4841,12 +4841,14 @@ module system_axi_i2s_adi_1_0_pl330_dma_fifo
    (\wr_addr_reg[0] ,
     empty,
     full,
+    out_data,
     DMA_REQ_TX_DRTYPE,
     \state_reg[0]_0 ,
     Q,
-    out_data,
     s00_axi_aclk,
     \wr_addr_reg[0]_0 ,
+    p_0_in__1,
+    s00_axi_wdata,
     \fifo.free_cnt_reg[2] ,
     \fifo.free_cnt_reg[2]_0 ,
     D,
@@ -4859,18 +4861,18 @@ module system_axi_i2s_adi_1_0_pl330_dma_fifo
     \state[0]_i_2_0 ,
     DMA_REQ_TX_DRREADY,
     DMA_REQ_TX_RSTN,
-    DMA_REQ_TX_ACLK,
-    p_0_in__1,
-    s00_axi_wdata);
+    DMA_REQ_TX_ACLK);
   output [0:0]\wr_addr_reg[0] ;
   output empty;
   output full;
+  output [23:0]out_data;
   output [0:0]DMA_REQ_TX_DRTYPE;
   output \state_reg[0]_0 ;
   output [0:0]Q;
-  output [23:0]out_data;
   input s00_axi_aclk;
   input \wr_addr_reg[0]_0 ;
+  input p_0_in__1;
+  input [23:0]s00_axi_wdata;
   input \fifo.free_cnt_reg[2] ;
   input \fifo.free_cnt_reg[2]_0 ;
   input [0:0]D;
@@ -4884,8 +4886,6 @@ module system_axi_i2s_adi_1_0_pl330_dma_fifo
   input DMA_REQ_TX_DRREADY;
   input DMA_REQ_TX_RSTN;
   input DMA_REQ_TX_ACLK;
-  input p_0_in__1;
-  input [23:0]s00_axi_wdata;
 
   wire [0:0]D;
   wire DMA_REQ_TX_ACLK;
@@ -4900,7 +4900,7 @@ module system_axi_i2s_adi_1_0_pl330_dma_fifo
   wire enable_int;
   wire \fifo.free_cnt_reg[2] ;
   wire \fifo.free_cnt_reg[2]_0 ;
-  wire fifo_n_4;
+  wire fifo_n_28;
   wire full;
   wire [23:0]out_data;
   wire p_0_in__1;
@@ -4929,14 +4929,14 @@ module system_axi_i2s_adi_1_0_pl330_dma_fifo
         .I1(\state_reg[0]_0 ),
         .O(DMA_REQ_TX_DRTYPE));
   system_axi_i2s_adi_1_0_dma_fifo fifo
-       (.D(D),
+       (.ADDRD(\wr_addr_reg[0] ),
+        .D(D),
         .DMA_REQ_TX_DRREADY(DMA_REQ_TX_DRREADY),
-        .\I2S_CONTROL_REG_reg[0] (fifo_n_4),
-        .Q(\wr_addr_reg[0] ),
+        .\I2S_CONTROL_REG_reg[0] (fifo_n_28),
+        .Q(Q),
         .channel_sync_int_d1(channel_sync_int_d1),
         .empty_reg_0(empty),
         .enable_int(enable_int),
-        .\fifo.free_cnt_reg[0]_0 (Q),
         .\fifo.free_cnt_reg[2]_0 (\fifo.free_cnt_reg[2] ),
         .\fifo.free_cnt_reg[2]_1 (\fifo.free_cnt_reg[2]_0 ),
         .full(full),
@@ -4966,7 +4966,7 @@ module system_axi_i2s_adi_1_0_pl330_dma_fifo
         .I1(\state_reg[0]_0 ),
         .I2(\state_reg_n_0_[1] ),
         .I3(DMA_REQ_TX_DRREADY),
-        .I4(fifo_n_4),
+        .I4(fifo_n_28),
         .I5(state0),
         .O(\state[0]_i_2_n_0 ));
   LUT6 #(
@@ -5051,9 +5051,9 @@ module system_axi_i2s_adi_1_0_pl330_dma_fifo__parameterized0
     DMA_REQ_RX_DATYPE,
     rx_enable,
     DMA_REQ_RX_DRREADY,
+    \gen[0].data_latched_reg[0] ,
     DMA_REQ_RX_RSTN,
-    DMA_REQ_RX_ACLK,
-    \gen[0].data_latched_reg[0] );
+    DMA_REQ_RX_ACLK);
   output [0:0]\rd_addr_reg[0] ;
   output empty_reg;
   output full_reg;
@@ -5071,9 +5071,9 @@ module system_axi_i2s_adi_1_0_pl330_dma_fifo__parameterized0
   input [1:0]DMA_REQ_RX_DATYPE;
   input rx_enable;
   input DMA_REQ_RX_DRREADY;
+  input [23:0]\gen[0].data_latched_reg[0] ;
   input DMA_REQ_RX_RSTN;
   input DMA_REQ_RX_ACLK;
-  input [23:0]\gen[0].data_latched_reg[0] ;
 
   wire DMA_REQ_RX_ACLK;
   wire [1:0]DMA_REQ_RX_DATYPE;

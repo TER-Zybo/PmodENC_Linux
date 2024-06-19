@@ -1,3 +1,48 @@
+// (c) Copyright 2023 Advanced Micro Devices, Inc. All rights reserved.
+//
+// This file contains confidential and proprietary information
+// of AMD and is protected under U.S. and international copyright
+// and other intellectual property laws.
+//
+// DISCLAIMER
+// This disclaimer is not a license and does not grant any
+// rights to the materials distributed herewith. Except as
+// otherwise provided in a valid license issued to you by
+// AMD, and to the maximum extent permitted by applicable
+// law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
+// AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
+// BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
+// INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
+// (2) AMD shall not be liable (whether in contract or tort,
+// including negligence, or under any other theory of
+// liability) for any loss or damage of any kind or nature
+// related to, arising under or in connection with these
+// materials, including for any direct, or any indirect,
+// special, incidental, or consequential loss or damage
+// (including loss of data, profits, goodwill, or any type of
+// loss or damage suffered as a result of any action brought
+// by a third party) even if such damage or loss was
+// reasonably foreseeable or AMD had been advised of the
+// possibility of the same.
+//
+// CRITICAL APPLICATIONS
+// AMD products are not designed or intended to be fail-
+// safe, or for use in any application requiring fail-safe
+// performance, such as life-support or safety devices or
+// systems, Class III medical devices, nuclear facilities,
+// applications related to the deployment of airbags, or any
+// other applications that could lead to death, personal
+// injury, or severe property or environmental damage
+// (individually and collectively, "Critical
+// Applications"). Customer assumes the sole risk and
+// liability of any use of AMD products in Critical
+// Applications, subject only to applicable laws and
+// regulations governing limitations on product liability.
+//
+// THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
+// PART OF THIS FILE AT ALL TIMES.
+////////////////////////////////////////////////////////////
 #ifndef _V_FRMBUF_WR_TOP_H_
 #define _V_FRMBUF_WR_TOP_H_
 #define AP_INT_MAX_W 4096
@@ -55,6 +100,7 @@ typedef signed int I32;
 #define Y_UV16                  37  // [31:0] Y:Y 16:16, [31:0] V:U 16:16
 #define Y_UV16_420              38  // [31:0] Y:Y 16:16, [31:0] V:U 16:16
 #define Y16                     39  // [47:0] Y2:Y1:Y0 16:16:16
+#define Y_U_V8_420              41  // [7:0] Y, [7:0] U, [7:0] V
 #define Y_U_V8                  42  // [7:0] Y, [7:0] U, [7:0] V
 #define Y_U_V10                 43  // [9:0] Y, [9:0] U, [9:0] V
 
@@ -64,17 +110,22 @@ typedef signed int I32;
 								 (a)==YUV16 || (a)==Y_UV16 || (a)==Y_UV16_420 || (a)==Y16)
 #define IS_444(a)               ((a)==YUV444 || (a)==YUVA444 || (a)==YUVX8 || (a)==YUVA8 || (a)==YUVX10 || (a)==YUV8 || (a)==Y8 || (a)==Y10 || (a)==YUVX12 || (a)==Y12 || (a)==YUV16 || (a)==Y16)
 #define IS_422(a)               ((a)==YUV422 || (a)==YUYV8 || (a)==Y_UV8 || (a)==Y_UV10 || (a)==UYVY8 || (a)==Y_UV12 || (a)==Y_UV16 )
-#define NR_PLANES(a)            (((a)==Y_UV8 || (a)==Y_UV8_420 || (a)==Y_UV10 || (a)==Y_UV10_420 || (a)==Y_UV12 || (a)==Y_UV12_420 || (a)==Y_UV16 || (a)==Y_UV16_420) ? 2 :1)
-#define IS_420(a)               ((a)==YUV420 || (a)==Y_UV8_420 || (a)==Y_UV10_420 || (a)==Y_UV12_420 || (a)==Y_UV16_420)
-inline U8 DEPTH(U16 a) {
-	if ((a) == RGBX10 || (a) == YUVX10 || (a) == Y_UV10 || (a) == Y_UV10_420
-			|| (a) == Y10 || (a) == Y_U_V10) {
+#define NR_PLANES_ONE_OR_TWO(a)	(((a)==Y_UV8 || (a)==Y_UV8_420 || (a)==Y_UV10 || (a)==Y_UV10_420 || (a)==Y_UV12 || (a)==Y_UV12_420 || (a)==Y_UV16 || (a)==Y_UV16_420) ? 2 :1)
+#define NR_PLANES(a)			(((a)==Y_U_V8_420 || (a)==Y_U_V8 || (a)==Y_U_V10) ? 3 : NR_PLANES_ONE_OR_TWO(a))
+#define IS_420(a)               ((a)==YUV420 || (a)==Y_UV8_420 || (a)==Y_U_V8_420 || (a)==Y_UV10_420 || (a)==Y_UV12_420 || (a)==Y_UV16_420)
+inline U8 DEPTH(U16 a)
+{
+	if ((a) == RGBX10 || (a) == YUVX10 || (a) == Y_UV10 || (a) == Y_UV10_420 || (a) == Y10
+			|| (a) == Y_U_V10)
+	{
 		return 10;
-	} else if ((a) == RGBX12 || (a) == YUVX12 || (a) == Y_UV12
-			|| (a) == Y_UV12_420 || (a) == Y12) {
+	}
+	else if ((a) == RGBX12 || (a) == YUVX12 || (a) == Y_UV12 || (a) == Y_UV12_420 || (a) == Y12)
+	{
 		return 12;
-	} else if ((a) == RGB16 || (a) == YUV16 || (a) == Y_UV16
-			|| (a) == Y_UV16_420 || (a) == Y16) {
+	}
+	else if ((a) == RGB16 || (a) == YUV16 || (a) == Y_UV16 || (a) == Y_UV16_420 || (a) == Y16)
+	{
 		return 16;
 	}
 	return 8;
@@ -82,7 +133,8 @@ inline U8 DEPTH(U16 a) {
 
 const int MAX_BYTES_PER_PIXEL = 4;
 
-const int BYTES_PER_PIXEL[] = {
+const int BYTES_PER_PIXEL[] =
+{
 // Streaming video formats
 		0,// RGB444
 		0, // YUV444
@@ -127,12 +179,13 @@ const int BYTES_PER_PIXEL[] = {
 		2, // Y_UV16_420     2 bytes per pixel
 		2,  // Y16            2 bytes per pixel
 		0, // unused
-		0, // unused
+		1, // Y_U_V8_420
 		1,  // Y_U_V8
 		4   //Y_U_V10
 		};
 
-const int MEMORY2LIVE[] = {
+const int MEMORY2LIVE[] =
+{
 // Streaming video formats
 		0,// RGB444
 		1, // YUV444
@@ -177,7 +230,7 @@ const int MEMORY2LIVE[] = {
 		3, // Y_UV16_420
 		1,  // Y16
 		0, //unused
-		0, //unused
+		3,	//Y_U_V8_420
 		1,  // Y_U_V8
 		1,  // Y_U_V10
 		};
@@ -194,7 +247,8 @@ typedef ap_uint<AXIMM_DATA_WIDTH> *AXIMM;
 
 typedef hls::stream<ap_uint<AXIMM_DATA_WIDTH> > STREAM_BYTES;
 #define AXIMM_DATA_WIDTH8           (AXIMM_DATA_WIDTH/8)
-typedef struct {
+typedef struct
+{
 	STREAM_BYTES plane0;
 #if (MAX_NR_PLANES==2)
     STREAM_BYTES plane1;
@@ -206,7 +260,8 @@ typedef struct {
 } STREAM_PLANES;
 
 //HW Registers
-typedef struct {
+typedef struct
+{
 	U16 width;          //width in pixels
 	U16 height;         //height in lines
 	U16 stride;         //stride in bytes
@@ -217,9 +272,8 @@ typedef struct {
 } HW_STRUCT_REG;
 
 // top level function for HW synthesis
-void v_frmbuf_wr(U16 width, U16 height, U16 stride, U16 video_format,
-		AXIMM frm_buffer, AXIMM frm_buffer2, AXIMM frm_buffer3,
-		AXI_STREAM_IN &s_axis_video
+void v_frmbuf_wr(U16 width, U16 height, U16 stride, U16 video_format, AXIMM frm_buffer,
+		AXIMM frm_buffer2, AXIMM frm_buffer3, AXI_STREAM_IN &s_axis_video
 #if HAS_INTERLACED
 					 ,
 					 bool& HwReg_field_id,

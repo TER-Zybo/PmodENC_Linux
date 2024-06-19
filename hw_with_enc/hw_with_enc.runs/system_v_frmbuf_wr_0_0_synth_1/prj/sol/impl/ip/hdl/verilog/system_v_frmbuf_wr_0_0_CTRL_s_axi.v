@@ -1,8 +1,8 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.1 (64-bit)
-// Tool Version Limit: 2023.05
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2.2 (64-bit)
+// Tool Version Limit: 2024.02
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
 `timescale 1ns/1ps
@@ -47,6 +47,8 @@ module system_v_frmbuf_wr_0_0_CTRL_s_axi
     input  wire                          ap_idle
 );
 //------------------------Address Info-------------------
+// Protocol Used: ap_ctrl_hs
+//
 // 0x00 : Control signals
 //        bit 0  - ap_start (Read/Write/COH)
 //        bit 1  - ap_done (Read/COR)

@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1629888613</coreId>
+						<coreId>1852793695</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>24</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>862938734</coreId>
+						<coreId>1635147636</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853286944</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>3</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853286944</coreId>
+						<coreId>544433525</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853422392</coreId>
+						<coreId>1717920800</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1509433412</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853159456</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -269,14 +269,28 @@
 						<type>1</type>
 						<id>8</id>
 						<name>axi_data_out</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>226</lineNumber>
+						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
+						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
-							<count>0</count>
+							<count>1</count>
 							<item_version>0</item_version>
+							<item class_id="8" tracking_level="0" version="0">
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
+								<second class_id="9" tracking_level="0" version="0">
+									<count>1</count>
+									<item_version>0</item_version>
+									<item class_id="10" tracking_level="0" version="0">
+										<first class_id="11" tracking_level="0" version="0">
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<second>AXIvideo2MultiPixStream</second>
+										</first>
+										<second>226</second>
+									</item>
+								</second>
+							</item>
 						</inlineStackInfo>
 						<originalName>axi.data</originalName>
 						<rtlName></rtlName>
@@ -286,7 +300,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853158400</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>24</bitwidth>
@@ -322,7 +336,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853428176</coreId>
+						<coreId>1635147636</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -336,10 +350,10 @@
 				</bit_vecs>
 			</item>
 		</ports>
-		<nodes class_id="8" tracking_level="0" version="0">
+		<nodes class_id="12" tracking_level="0" version="0">
 			<count>15</count>
 			<item_version>0</item_version>
-			<item class_id="9" tracking_level="1" version="0" object_id="_10">
+			<item class_id="13" tracking_level="1" version="0" object_id="_10">
 				<Value>
 					<Obj>
 						<type>0</type>
@@ -362,7 +376,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>544433524</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -381,20 +395,34 @@
 				<m_topoIndex>1</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_11">
+			<item class_id_reference="13" object_id="_11">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>axi_data_out_write_ln0</name>
-						<fileName></fileName>
-						<fileDirectory></fileDirectory>
-						<lineNumber>0</lineNumber>
-						<contextFuncName></contextFuncName>
-						<contextNormFuncName></contextNormFuncName>
+						<name>axi_data_out_write_ln226</name>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>226</lineNumber>
+						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
+						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
-							<count>0</count>
+							<count>1</count>
 							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
+								<second>
+									<count>1</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<second>AXIvideo2MultiPixStream</second>
+										</first>
+										<second>226</second>
+									</item>
+								</second>
+							</item>
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
@@ -404,7 +432,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1891063135</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -424,7 +452,7 @@
 				<m_topoIndex>2</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_12">
+			<item class_id_reference="13" object_id="_12">
 				<Value>
 					<Obj>
 						<type>0</type>
@@ -447,7 +475,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853428176</coreId>
+						<coreId>1891063135</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -466,7 +494,7 @@
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_13">
+			<item class_id_reference="13" object_id="_13">
 				<Value>
 					<Obj>
 						<type>0</type>
@@ -489,7 +517,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853301808</coreId>
+						<coreId>1383479880</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -497,8 +525,8 @@
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>51</item>
 					<item>52</item>
+					<item>53</item>
 					<item>54</item>
 					<item>55</item>
 				</oprand_edges>
@@ -511,31 +539,31 @@
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_14">
+			<item class_id_reference="13" object_id="_14">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>br_ln195</name>
-						<fileName>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<name>br_ln241</name>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>241</lineNumber>
 						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
 						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
-							<item class_id="11" tracking_level="0" version="0">
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
-								<second class_id="12" tracking_level="0" version="0">
+							<item>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
+								<second>
 									<count>1</count>
 									<item_version>0</item_version>
-									<item class_id="13" tracking_level="0" version="0">
-										<first class_id="14" tracking_level="0" version="0">
-											<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+									<item>
+										<first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
 											<second>AXIvideo2MultiPixStream</second>
 										</first>
-										<second>195</second>
+										<second>241</second>
 									</item>
 								</second>
 							</item>
@@ -548,7 +576,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1346395318</coreId>
+						<coreId>1797268061</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -569,31 +597,31 @@
 				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_15">
+			<item class_id_reference="13" object_id="_15">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>28</id>
 						<name>empty</name>
-						<fileName>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>245</lineNumber>
 						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
 						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
 											<second>AXIvideo2MultiPixStream</second>
 										</first>
-										<second>198</second>
+										<second>245</second>
 									</item>
 								</second>
 							</item>
@@ -632,31 +660,31 @@
 				<m_topoIndex>6</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_16">
+			<item class_id_reference="13" object_id="_16">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>29</id>
 						<name>axi_data</name>
-						<fileName>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>245</lineNumber>
 						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
 						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
 											<second>AXIvideo2MultiPixStream</second>
 										</first>
-										<second>198</second>
+										<second>245</second>
 									</item>
 								</second>
 							</item>
@@ -669,7 +697,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2745854480</coreId>
+						<coreId>3006814281</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>24</bitwidth>
@@ -688,31 +716,31 @@
 				<m_topoIndex>7</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_17">
+			<item class_id_reference="13" object_id="_17">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>30</id>
 						<name>axi_user</name>
-						<fileName>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>245</lineNumber>
 						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
 						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
 											<second>AXIvideo2MultiPixStream</second>
 										</first>
-										<second>198</second>
+										<second>245</second>
 									</item>
 								</second>
 							</item>
@@ -744,31 +772,31 @@
 				<m_topoIndex>8</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_18">
+			<item class_id_reference="13" object_id="_18">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>31</id>
 						<name>axi_last_6</name>
-						<fileName>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>198</lineNumber>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>245</lineNumber>
 						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
 						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
 											<second>AXIvideo2MultiPixStream</second>
 										</first>
-										<second>198</second>
+										<second>245</second>
 									</item>
 								</second>
 							</item>
@@ -781,7 +809,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>1075921072</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -800,31 +828,31 @@
 				<m_topoIndex>9</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_19">
+			<item class_id_reference="13" object_id="_19">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>axi_data_out_write_ln195</name>
-						<fileName>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<name>axi_data_out_write_ln226</name>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>226</lineNumber>
 						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
 						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
 											<second>AXIvideo2MultiPixStream</second>
 										</first>
-										<second>195</second>
+										<second>226</second>
 									</item>
 								</second>
 							</item>
@@ -837,7 +865,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853428176</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -858,31 +886,31 @@
 				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_20">
+			<item class_id_reference="13" object_id="_20">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>axi_last_write_ln195</name>
-						<fileName>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<name>axi_last_write_ln241</name>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>241</lineNumber>
 						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
 						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
 											<second>AXIvideo2MultiPixStream</second>
 										</first>
-										<second>195</second>
+										<second>241</second>
 									</item>
 								</second>
 							</item>
@@ -895,7 +923,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1717924464</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -915,31 +943,31 @@
 				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_21">
+			<item class_id_reference="13" object_id="_21">
 				<Value>
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>br_ln195</name>
-						<fileName>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
-						<fileDirectory>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
-						<lineNumber>195</lineNumber>
+						<name>br_ln241</name>
+						<fileName>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</fileName>
+						<fileDirectory>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</fileDirectory>
+						<lineNumber>241</lineNumber>
 						<contextFuncName>AXIvideo2MultiPixStream</contextFuncName>
 						<contextNormFuncName>AXIvideo2MultiPixStream</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1</first>
+								<first>C:\Users\hdway\Documents\vivado\TER\PmodENC_Linux\hw_with_enc\hw_with_enc.runs\system_v_frmbuf_wr_0_0_synth_1</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
+											<first>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp</first>
 											<second>AXIvideo2MultiPixStream</second>
 										</first>
-										<second>195</second>
+										<second>241</second>
 									</item>
 								</second>
 							</item>
@@ -952,7 +980,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853160704</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -971,7 +999,7 @@
 				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_22">
+			<item class_id_reference="13" object_id="_22">
 				<Value>
 					<Obj>
 						<type>0</type>
@@ -994,7 +1022,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853291936</coreId>
+						<coreId>61</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1013,7 +1041,7 @@
 				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_23">
+			<item class_id_reference="13" object_id="_23">
 				<Value>
 					<Obj>
 						<type>0</type>
@@ -1036,7 +1064,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853007000</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1057,7 +1085,7 @@
 				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_24">
+			<item class_id_reference="13" object_id="_24">
 				<Value>
 					<Obj>
 						<type>0</type>
@@ -1080,7 +1108,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853170176</coreId>
+						<coreId>1521778823</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -1125,7 +1153,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853161856</coreId>
+						<coreId>1702129263</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>32</bitwidth>
@@ -1156,7 +1184,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853162360</coreId>
+						<coreId>1885414944</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>24</bitwidth>
@@ -1168,7 +1196,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>53</id>
+						<id>51</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -1187,7 +1215,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2853162992</coreId>
+						<coreId>1164210029</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1221,7 +1249,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1395295824</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1254,7 +1282,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1200364976</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1323,7 +1351,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>0</coreId>
+					<coreId>1402076048</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -1388,32 +1416,32 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_39">
-				<id>51</id>
+				<id>52</id>
+				<edge_type>1</edge_type>
+				<source_obj>51</source_obj>
+				<sink_obj>22</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_40">
+				<id>53</id>
+				<edge_type>2</edge_type>
+				<source_obj>21</source_obj>
+				<sink_obj>22</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_41">
+				<id>54</id>
 				<edge_type>1</edge_type>
 				<source_obj>30</source_obj>
 				<sink_obj>22</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_40">
-				<id>52</id>
+			<item class_id_reference="20" object_id="_42">
+				<id>55</id>
 				<edge_type>2</edge_type>
 				<source_obj>35</source_obj>
 				<sink_obj>22</sink_obj>
 				<is_back_edge>1</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_41">
-				<id>54</id>
-				<edge_type>1</edge_type>
-				<source_obj>53</source_obj>
-				<sink_obj>22</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_42">
-				<id>55</id>
-				<edge_type>2</edge_type>
-				<source_obj>21</source_obj>
-				<sink_obj>22</sink_obj>
-				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_43">
 				<id>56</id>
@@ -2151,15 +2179,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln0_store_fu_93</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>19</item>
-			</second>
-		</item>
-		<item>
-			<first>store_ln195_store_fu_111</first>
+			<first>store_ln226_store_fu_111</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -2167,7 +2187,15 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln195_store_fu_117</first>
+			<first>store_ln226_store_fu_93</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>19</item>
+			</second>
+		</item>
+		<item>
+			<first>store_ln241_store_fu_117</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -122,10 +122,6 @@ system_processing_system7_0_0_sc::system_processing_system7_0_0_sc(const sc_core
   mp_impl = new processing_system7_v5_5_tlm("inst", model_param_props);
 
   // initialize AXI sockets
-  DMA0_REQ_socket = mp_impl->DMA0_REQ_socket;
-  DMA0_ACK_socket = mp_impl->DMA0_ACK_socket;
-  DMA1_REQ_socket = mp_impl->DMA1_REQ_socket;
-  DMA1_ACK_socket = mp_impl->DMA1_ACK_socket;
   M_AXI_GP0_rd_socket = mp_impl->M_AXI_GP0_rd_socket;
   M_AXI_GP0_wr_socket = mp_impl->M_AXI_GP0_wr_socket;
   S_AXI_HP0_rd_socket = mp_impl->S_AXI_HP0_rd_socket;

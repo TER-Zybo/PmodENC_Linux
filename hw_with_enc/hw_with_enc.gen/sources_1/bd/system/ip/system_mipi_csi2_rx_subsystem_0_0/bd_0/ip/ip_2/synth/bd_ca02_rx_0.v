@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,14 +48,15 @@
 
 
 // IP VLNV: xilinx.com:ip:mipi_csi2_rx_ctrl:1.0
-// IP Revision: 8
+// IP Revision: 9
 
-(* X_CORE_INFO = "mipi_csi2_rx_ctrl_v1_0_8_top,Vivado 2023.1" *)
-(* CHECK_LICENSE_TYPE = "bd_ca02_rx_0,mipi_csi2_rx_ctrl_v1_0_8_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_ca02_rx_0,mipi_csi2_rx_ctrl_v1_0_8_top,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=mipi_csi2_rx_ctrl,x_ipVersion=1.0,x_ipCoreRevision=8,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_HS_LINE_RATE=800,C_RCVE_DESKEW_SEQ=false,C_FAMILY=zynq,CMN_INC_VFB=true,C_S_AXI_ADDR_WIDTH=8,C_S_AXI_DATA_WIDTH=32,C_CSI_OPT1_REGS=0,C_CSI_OPT2_CRC=0,C_CSI_OPT3_FIXEDLANES=1,CSI_LANES=2,CSI_OFFLOAD_NONIMAGE=0,CSI_EN_VC_SUPPORT=1,C_SPRT_ISP_BRIDGE=false,CSI_FIXED_VC=0,C_CSI_FILTER_USERDATAT\
-YPE=0,C_EN_VCX=false,C_EN_CSI_V2_0=false,CSI_VC_OFF_0=1,CSI_VC_OFF_1=2,CSI_VC_OFF_2=3,CSI_VC_OFF_3=4,CSI_VC_OFF_4=5,CSI_VC_OFF_5=6,CSI_VC_OFF_6=7,CSI_VC_OFF_7=8,CSI_VC_OFF_8=9,CSI_VC_OFF_9=10,CSI_VC_OFF_10=11,CSI_VC_OFF_11=12,CSI_VC_OFF_12=13,CSI_VC_OFF_13=14,CSI_VC_OFF_14=15,CSI_INV_SHUTDOWN=1,C_MIPI_SLV_INT=0,C_CSI2RX_DBG=0,AXIS_FIFO_DCNT_WIDTH=12,C_DISABLE_LITE=0,AXIS_FIFO_DEPTH=4096,AXIS_TDATA_WIDTH=64,AXIS_TUSER_WIDTH=96,AXIS_TDEST_WIDTH=4}" *)
+(* X_CORE_INFO = "mipi_csi2_rx_ctrl_v1_0_9_top,Vivado 2023.2.2" *)
+(* CHECK_LICENSE_TYPE = "bd_ca02_rx_0,mipi_csi2_rx_ctrl_v1_0_9_top,{}" *)
+(* CORE_GENERATION_INFO = "bd_ca02_rx_0,mipi_csi2_rx_ctrl_v1_0_9_top,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=mipi_csi2_rx_ctrl,x_ipVersion=1.0,x_ipCoreRevision=9,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_HS_LINE_RATE=800,C_RCVE_DESKEW_SEQ=false,C_FAMILY=zynq,CMN_INC_VFB=true,C_S_AXI_ADDR_WIDTH=8,C_S_AXI_DATA_WIDTH=32,C_CSI_OPT1_REGS=0,C_CSI_OPT2_CRC=0,C_CSI_OPT3_FIXEDLANES=1,CSI_LANES=2,CSI_OFFLOAD_NONIMAGE=0,CSI_EN_VC_SUPPORT=1,C_SPRT_ISP_BRIDGE=false,CSI_FIXED_VC=0,C_CSI_FILTER_USERDAT\
+ATYPE=0,C_EN_VCX=false,C_EN_CSI_V2_0=false,CSI_VC_OFF_0=1,CSI_VC_OFF_1=2,CSI_VC_OFF_2=3,CSI_VC_OFF_3=4,CSI_VC_OFF_4=5,CSI_VC_OFF_5=6,CSI_VC_OFF_6=7,CSI_VC_OFF_7=8,CSI_VC_OFF_8=9,CSI_VC_OFF_9=10,CSI_VC_OFF_10=11,CSI_VC_OFF_11=12,CSI_VC_OFF_12=13,CSI_VC_OFF_13=14,CSI_VC_OFF_14=15,CSI_INV_SHUTDOWN=1,C_MIPI_SLV_INT=0,C_CSI2RX_DBG=0,AXIS_FIFO_DCNT_WIDTH=12,C_DISABLE_LITE=0,AXIS_FIFO_DEPTH=4096,AXIS_TDATA_WIDTH=64,AXIS_TUSER_WIDTH=96,AXIS_TDEST_WIDTH=4}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_ca02_rx_0 (
+  core_clk,
   s_axi_aclk,
   s_axi_aresetn,
   s_axi_awaddr,
@@ -122,9 +123,13 @@ module bd_ca02_rx_0 (
   sdt_tr,
   vfb_tv,
   vfb_tr,
+  frame_rcvd_pulse_out,
   interrupt
 );
 
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME core_clk, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 core_clk CLK" *)
+input wire core_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axi_signal_clock, ASSOCIATED_BUSIF s_axi, ASSOCIATED_RESET s_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 s_axi_signal_clock CLK" *)
 input wire s_axi_aclk;
@@ -257,11 +262,12 @@ input wire sdt_tv;
 input wire sdt_tr;
 input wire vfb_tv;
 input wire vfb_tr;
+output wire frame_rcvd_pulse_out;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME signal_interrupt, SENSITIVITY LEVEL_HIGH, PortWidth 1" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 signal_interrupt INTERRUPT" *)
 output wire interrupt;
 
-  mipi_csi2_rx_ctrl_v1_0_8_top #(
+  mipi_csi2_rx_ctrl_v1_0_9_top #(
     .C_HS_LINE_RATE(800),
     .C_RCVE_DESKEW_SEQ("false"),
     .C_FAMILY("zynq"),
@@ -304,6 +310,7 @@ output wire interrupt;
     .AXIS_TUSER_WIDTH(96),
     .AXIS_TDEST_WIDTH(4)
   ) inst (
+    .core_clk(core_clk),
     .s_axi_aclk(s_axi_aclk),
     .s_axi_aresetn(s_axi_aresetn),
     .s_axi_awaddr(s_axi_awaddr),
@@ -412,7 +419,7 @@ output wire interrupt;
     .crc_status_intr(),
     .errsotsynchs_intr(),
     .errsoths_intr(),
-    .frame_rcvd_pulse_out(),
+    .frame_rcvd_pulse_out(frame_rcvd_pulse_out),
     .linebuffer_full(),
     .cl_stopstate_intr(),
     .dl0_stopstate_intr(),

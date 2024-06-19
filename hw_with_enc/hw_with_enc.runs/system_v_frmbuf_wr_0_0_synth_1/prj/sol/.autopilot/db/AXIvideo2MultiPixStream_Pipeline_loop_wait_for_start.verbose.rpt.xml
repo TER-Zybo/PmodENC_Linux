@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start'" level="0">
-<item name = "Date">Wed May 15 18:46:05 2024
+<item name = "Date">Wed Jun 19 16:40:55 2024
 </item>
-<item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
+<item name = "Version">2023.2.2 (Build 4101106 on Feb  9 2024)</item>
 <item name = "Project">prj</item>
 <item name = "Solution">sol (Vivado IP Flow Target)</item>
 <item name = "Product family">zynq</item>
@@ -52,7 +52,7 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 41, -</column>
+<column name="Multiplexer">-, -, -, 36, -</column>
 <column name="Register">-, -, 4, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
@@ -85,7 +85,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_phi_mux_sof_phi_fu_86_p4">9, 2, 1, 2</column>
-<column name="axi_data_out">14, 3, 24, 72</column>
+<column name="axi_data_out">9, 2, 24, 48</column>
 <column name="s_axis_video_TDATA_blk_n">9, 2, 1, 2</column>
 </table>
 </item>

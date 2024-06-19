@@ -26,6 +26,7 @@ set C_modelArgList {
 	{ axi_last_out int 1 regular {pointer 1}  }
 }
 set hasAXIMCache 0
+set AXIMCacheInstList { }
 set C_modelArgMapList {[ 
 	{ "Name" : "s_axis_video_V_data_V", "interface" : "axis", "bitwidth" : 24, "direction" : "READONLY"} , 
  	{ "Name" : "s_axis_video_V_keep_V", "interface" : "axis", "bitwidth" : 3, "direction" : "READONLY"} , 

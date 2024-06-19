@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:axis_dwidth_converter:1.1
-// IP Revision: 27
+// IP Revision: 29
 
-(* X_CORE_INFO = "axis_dwidth_converter_v1_1_27_axis_dwidth_converter,Vivado 2023.1" *)
-(* CHECK_LICENSE_TYPE = "bd_ca02_vfb_0_0_axis_converter,axis_dwidth_converter_v1_1_27_axis_dwidth_converter,{}" *)
-(* CORE_GENERATION_INFO = "bd_ca02_vfb_0_0_axis_converter,axis_dwidth_converter_v1_1_27_axis_dwidth_converter,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_dwidth_converter,x_ipVersion=1.1,x_ipCoreRevision=27,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXIS_TDATA_WIDTH=64,C_M_AXIS_TDATA_WIDTH=16,C_AXIS_TID_WIDTH=32,C_AXIS_TDEST_WIDTH=1,C_S_AXIS_TUSER_WIDTH=24,C_M_AXIS_TUSER_WIDTH=6,C_AXIS_SIGNAL_SET=0b00000000000000000000000010111011}" *)
+(* X_CORE_INFO = "axis_dwidth_converter_v1_1_29_axis_dwidth_converter,Vivado 2023.2.2" *)
+(* CHECK_LICENSE_TYPE = "bd_ca02_vfb_0_0_axis_converter,axis_dwidth_converter_v1_1_29_axis_dwidth_converter,{}" *)
+(* CORE_GENERATION_INFO = "bd_ca02_vfb_0_0_axis_converter,axis_dwidth_converter_v1_1_29_axis_dwidth_converter,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_dwidth_converter,x_ipVersion=1.1,x_ipCoreRevision=29,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_S_AXIS_TDATA_WIDTH=64,C_M_AXIS_TDATA_WIDTH=16,C_AXIS_TID_WIDTH=32,C_AXIS_TDEST_WIDTH=1,C_S_AXIS_TUSER_WIDTH=24,C_M_AXIS_TUSER_WIDTH=6,C_AXIS_SIGNAL_SET=0b00000000000000000000000010111011}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_ca02_vfb_0_0_axis_converter (
   aclk,
@@ -110,7 +110,7 @@ output wire [31 : 0] m_axis_tid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *)
 output wire [5 : 0] m_axis_tuser;
 
-  axis_dwidth_converter_v1_1_27_axis_dwidth_converter #(
+  axis_dwidth_converter_v1_1_29_axis_dwidth_converter #(
     .C_FAMILY("zynq"),
     .C_S_AXIS_TDATA_WIDTH(64),
     .C_M_AXIS_TDATA_WIDTH(16),

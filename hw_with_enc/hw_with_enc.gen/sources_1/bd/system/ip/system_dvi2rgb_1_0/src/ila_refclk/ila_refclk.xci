@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "ila_refclk",
     "component_reference": "xilinx.com:ip:ila:6.2",
-    "ip_revision": "13",
+    "ip_revision": "14",
     "gen_directory": ".",
     "parameters": {
       "component_parameters": {
@@ -3137,7 +3137,7 @@
         "C_NUM_OF_PROBES": [ { "value": "6", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_DATA_DEPTH": [ { "value": "1024", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_MAJOR_VERSION": [ { "value": "2023", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_MINOR_VERSION": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_MINOR_VERSION": [ { "value": "2", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_BUILD_REVISION": [ { "value": "0", "format": "long", "usage": "all" } ],
         "C_CORE_MAJOR_VER": [ { "value": "6", "resolve_type": "generated", "format": "long", "enabled": false, "usage": "all" } ],
         "C_CORE_MINOR_VER": [ { "value": "0", "format": "long", "usage": "all" } ],
@@ -6246,7 +6246,7 @@
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
-        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zybo-z7-20:part0:1.2" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:zybo-z7-20:part0:1.1" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7z020" } ],
         "PACKAGE": [ { "value": "clg400" } ],
@@ -6261,12 +6261,12 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "13" } ],
+        "IPREVISION": [ { "value": "14" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "." } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
-        "SWVERSION": [ { "value": "2023.1" } ],
+        "SWVERSION": [ { "value": "2023.2.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

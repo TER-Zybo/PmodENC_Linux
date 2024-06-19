@@ -14,7 +14,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -76,10 +76,6 @@ public:
 
   // module socket-to-socket AXI TLM interfaces
 
-  xtlm::xtlm_axis_target_socket* DMA0_REQ_socket;
-  xtlm::xtlm_axis_initiator_socket* DMA0_ACK_socket;
-  xtlm::xtlm_axis_target_socket* DMA1_REQ_socket;
-  xtlm::xtlm_axis_initiator_socket* DMA1_ACK_socket;
   xtlm::xtlm_aximm_initiator_socket* M_AXI_GP0_rd_socket;
   xtlm::xtlm_aximm_initiator_socket* M_AXI_GP0_wr_socket;
   xtlm::xtlm_aximm_target_socket* S_AXI_HP0_rd_socket;

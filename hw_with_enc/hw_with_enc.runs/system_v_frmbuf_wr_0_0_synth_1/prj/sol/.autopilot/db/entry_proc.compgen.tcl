@@ -71,14 +71,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 5 \
-    name p_read \
+    name WidthInBytes_val2 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_p_read \
+    corename dc_WidthInBytes_val2 \
     op interface \
-    ports { p_read { I 15 vector } } \
+    ports { WidthInBytes_val2 { I 15 vector } } \
 } "
 }
 
@@ -86,74 +86,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 6 \
-    name WidthInBytes_c9 \
+    name WidthInBytes_val2_c9 \
     type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_WidthInBytes_c9 \
+    corename dc_WidthInBytes_val2_c9 \
     op interface \
-    ports { WidthInBytes_c9_din { O 15 vector } WidthInBytes_c9_num_data_valid { I 3 vector } WidthInBytes_c9_fifo_cap { I 3 vector } WidthInBytes_c9_full_n { I 1 bit } WidthInBytes_c9_write { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 7 \
-    name p_read1 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_p_read1 \
-    op interface \
-    ports { p_read1 { I 16 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 8 \
-    name stride_c \
-    type fifo \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_stride_c \
-    op interface \
-    ports { stride_c_din { O 16 vector } stride_c_num_data_valid { I 3 vector } stride_c_fifo_cap { I 3 vector } stride_c_full_n { I 1 bit } stride_c_write { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 9 \
-    name p_read2 \
-    type other \
-    dir I \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_p_read2 \
-    op interface \
-    ports { p_read2 { I 6 vector } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 10 \
-    name video_format_c11 \
-    type fifo \
-    dir O \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_video_format_c11 \
-    op interface \
-    ports { video_format_c11_din { O 6 vector } video_format_c11_num_data_valid { I 3 vector } video_format_c11_fifo_cap { I 3 vector } video_format_c11_full_n { I 1 bit } video_format_c11_write { O 1 bit } } \
+    ports { WidthInBytes_val2_c9_din { O 15 vector } WidthInBytes_val2_c9_num_data_valid { I 3 vector } WidthInBytes_val2_c9_fifo_cap { I 3 vector } WidthInBytes_val2_c9_full_n { I 1 bit } WidthInBytes_val2_c9_write { O 1 bit } } \
 } "
 }
 

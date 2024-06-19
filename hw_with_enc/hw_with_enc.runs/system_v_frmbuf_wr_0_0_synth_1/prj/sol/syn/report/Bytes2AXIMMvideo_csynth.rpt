@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'Bytes2AXIMMvideo'
 ================================================================
-* Date:           Wed May 15 18:46:26 2024
+* Date:           Wed Jun 19 16:41:01 2024
 
-* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
 * Project:        prj
 * Solution:       sol (Vivado IP Flow Target)
 * Product family: zynq
@@ -29,7 +29,7 @@
     |  Latency (cycles)  |   Latency (absolute)  |    Interval    | Pipeline|
     |   min   |    max   |    min    |    max    | min |    max   |   Type  |
     +---------+----------+-----------+-----------+-----+----------+---------+
-    |        2|  71733602|  20.000 ns|  0.717 sec|    2|  71733602|       no|
+    |        1|  71733601|  10.000 ns|  0.717 sec|    1|  71733601|       no|
     +---------+----------+-----------+-----------+-----+----------+---------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                                        |                                             |  Latency (cycles) |   Latency (absolute)  |  Interval  | Pipeline|
         |                        Instance                        |                    Module                   |   min   |   max   |    min    |    max    | min |  max |   Type  |
         +--------------------------------------------------------+---------------------------------------------+---------+---------+-----------+-----------+-----+------+---------+
-        |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1117_1_fu_200  |Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1117_1  |        3|     8195|  30.000 ns|  81.950 us|    3|  8195|       no|
-        |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1127_2_fu_210  |Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1127_2  |        3|     8195|  30.000 ns|  81.950 us|    3|  8195|       no|
+        |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1_fu_202  |Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1  |        2|     8195|  20.000 ns|  81.950 us|    2|  8195|       no|
+        |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2_fu_212  |Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2  |        2|     8195|  20.000 ns|  81.950 us|    2|  8195|       no|
         +--------------------------------------------------------+---------------------------------------------+---------+---------+-----------+-----------+-----+------+---------+
 
         * Loop: 
@@ -47,7 +47,7 @@
         |                                 |  Latency (cycles)  |  Iteration  |  Initiation Interval  |   Trip   |          |
         |            Loop Name            |   min   |    max   |   Latency   |  achieved |   target  |   Count  | Pipelined|
         +---------------------------------+---------+----------+-------------+-----------+-----------+----------+----------+
-        |- loop_Bytes2AXIMMvideo_2planes  |        0|  71733600|  112 ~ 16605|          -|          -|  0 ~ 4320|        no|
+        |- loop_Bytes2AXIMMvideo_2planes  |        0|  71733600|  111 ~ 16605|          -|          -|  0 ~ 4320|        no|
         +---------------------------------+---------+----------+-------------+-----------+-----------+----------+----------+
 
 
@@ -60,18 +60,18 @@
 |       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
 +-----------------+---------+-----+--------+-------+-----+
 |DSP              |        -|    -|       -|      -|    -|
-|Expression       |        -|    -|       0|    402|    -|
+|Expression       |        -|    -|       0|    386|    -|
 |FIFO             |        -|    -|       -|      -|    -|
-|Instance         |        -|    -|     166|    180|    -|
+|Instance         |        -|    -|     164|    176|    -|
 |Memory           |        -|    -|       -|      -|    -|
-|Multiplexer      |        -|    -|       -|   1582|    -|
-|Register         |        -|    -|     535|      -|    -|
+|Multiplexer      |        -|    -|       -|   1549|    -|
+|Register         |        -|    -|     503|      -|    -|
 +-----------------+---------+-----+--------+-------+-----+
-|Total            |        0|    0|     701|   2164|    0|
+|Total            |        0|    0|     667|   2111|    0|
 +-----------------+---------+-----+--------+-------+-----+
 |Available        |      280|  220|  106400|  53200|    0|
 +-----------------+---------+-----+--------+-------+-----+
-|Utilization (%)  |        0|    0|      ~0|      4|    0|
+|Utilization (%)  |        0|    0|      ~0|      3|    0|
 +-----------------+---------+-----+--------+-------+-----+
 
 + Detail: 
@@ -79,10 +79,10 @@
     +--------------------------------------------------------+---------------------------------------------+---------+----+----+----+-----+
     |                        Instance                        |                    Module                   | BRAM_18K| DSP| FF | LUT| URAM|
     +--------------------------------------------------------+---------------------------------------------+---------+----+----+----+-----+
-    |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1117_1_fu_200  |Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1117_1  |        0|   0|  83|  90|    0|
-    |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1127_2_fu_210  |Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1127_2  |        0|   0|  83|  90|    0|
+    |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1_fu_202  |Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1  |        0|   0|  82|  88|    0|
+    |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2_fu_212  |Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2  |        0|   0|  82|  88|    0|
     +--------------------------------------------------------+---------------------------------------------+---------+----+----+----+-----+
-    |Total                                                   |                                             |        0|   0| 166| 180|    0|
+    |Total                                                   |                                             |        0|   0| 164| 176|    0|
     +--------------------------------------------------------+---------------------------------------------+---------+----+----+----+-----+
 
     * DSP: 
@@ -98,51 +98,48 @@
     +---------------------------------------+----------+----+---+----+------------+------------+
     |             Variable Name             | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------------------------+----------+----+---+----+------------+------------+
-    |add_ln1117_fu_332_p2                   |         +|   0|  0|  39|          32|          32|
-    |add_ln1123_fu_347_p2                   |         +|   0|  0|  32|          25|          25|
-    |add_ln1125_fu_277_p2                   |         +|   0|  0|  14|           7|           7|
-    |add_ln1127_fu_480_p2                   |         +|   0|  0|  39|          32|          32|
-    |offsetUV_1_fu_495_p2                   |         +|   0|  0|  39|          32|          32|
-    |sub_fu_224_p2                          |         +|   0|  0|  23|          16|           3|
-    |y_10_fu_311_p2                         |         +|   0|  0|  12|          12|           1|
-    |ap_block_state217                      |       and|   0|  0|   2|           1|           1|
-    |empty_157_fu_362_p2                    |      icmp|   0|  0|  14|           6|           6|
-    |empty_158_fu_367_p2                    |      icmp|   0|  0|  14|           6|           7|
-    |empty_160_fu_378_p2                    |      icmp|   0|  0|  14|           6|           5|
-    |empty_162_fu_389_p2                    |      icmp|   0|  0|  14|           6|           5|
-    |empty_164_fu_400_p2                    |      icmp|   0|  0|  14|           6|           5|
-    |empty_166_fu_411_p2                    |      icmp|   0|  0|  14|           6|           5|
-    |empty_168_fu_422_p2                    |      icmp|   0|  0|  14|           6|           6|
-    |empty_169_fu_427_p2                    |      icmp|   0|  0|  14|           6|           6|
-    |empty_171_fu_438_p2                    |      icmp|   0|  0|  14|           6|           5|
-    |empty_173_fu_449_p2                    |      icmp|   0|  0|  14|           6|           5|
-    |empty_175_fu_460_p2                    |      icmp|   0|  0|  14|           6|           2|
-    |icmp_ln1113_fu_306_p2                  |      icmp|   0|  0|  12|          12|          12|
-    |icmp_ln1125_fu_293_p2                  |      icmp|   0|  0|  14|           6|           1|
+    |add_ln1316_fu_388_p2                   |         +|   0|  0|  39|          32|          32|
+    |add_ln1322_fu_403_p2                   |         +|   0|  0|  32|          25|          25|
+    |add_ln1326_fu_481_p2                   |         +|   0|  0|  39|          32|          32|
+    |offsetUV_1_fu_496_p2                   |         +|   0|  0|  39|          32|          32|
+    |p_off_fu_276_p2                        |         +|   0|  0|  14|           7|           7|
+    |sub_fu_230_p2                          |         +|   0|  0|  23|          16|           3|
+    |y_10_fu_363_p2                         |         +|   0|  0|  12|          12|           1|
+    |ap_block_state216                      |       and|   0|  0|   2|           1|           1|
+    |cmp40_fu_334_p2                        |       and|   0|  0|   2|           1|           1|
+    |cmp36_fu_270_p2                        |      icmp|   0|  0|  14|           6|           6|
+    |cmp58_fu_264_p2                        |      icmp|   0|  0|  14|           6|           6|
+    |empty_133_fu_294_p2                    |      icmp|   0|  0|  14|           6|           5|
+    |empty_134_fu_300_p2                    |      icmp|   0|  0|  14|           6|           6|
+    |empty_139_fu_418_p2                    |      icmp|   0|  0|  14|           6|           6|
+    |empty_141_fu_428_p2                    |      icmp|   0|  0|  14|           6|           6|
+    |empty_143_fu_439_p2                    |      icmp|   0|  0|  14|           6|           5|
+    |empty_145_fu_450_p2                    |      icmp|   0|  0|  14|           6|           5|
+    |empty_147_fu_461_p2                    |      icmp|   0|  0|  14|           6|           2|
+    |icmp_ln1312_fu_358_p2                  |      icmp|   0|  0|  12|          12|          12|
+    |not_switch_fu_328_p2                   |      icmp|   0|  0|  14|           7|           2|
     |ap_block_state1                        |        or|   0|  0|   2|           1|           1|
-    |ap_predicate_op517_writeresp_state217  |        or|   0|  0|   2|           1|           1|
-    |empty_159_fu_372_p2                    |        or|   0|  0|   2|           1|           1|
-    |empty_161_fu_383_p2                    |        or|   0|  0|   2|           1|           1|
-    |empty_163_fu_394_p2                    |        or|   0|  0|   2|           1|           1|
-    |empty_165_fu_405_p2                    |        or|   0|  0|   2|           1|           1|
-    |empty_167_fu_416_p2                    |        or|   0|  0|   2|           1|           1|
-    |empty_170_fu_432_p2                    |        or|   0|  0|   2|           1|           1|
-    |empty_172_fu_443_p2                    |        or|   0|  0|   2|           1|           1|
-    |empty_174_fu_454_p2                    |        or|   0|  0|   2|           1|           1|
-    |empty_176_fu_465_p2                    |        or|   0|  0|   2|           1|           1|
+    |ap_predicate_op514_writeresp_state216  |        or|   0|  0|   2|           1|           1|
+    |empty_132_fu_288_p2                    |        or|   0|  0|   6|           3|           6|
+    |empty_140_fu_423_p2                    |        or|   0|  0|   2|           1|           1|
+    |empty_142_fu_433_p2                    |        or|   0|  0|   2|           1|           1|
+    |empty_144_fu_444_p2                    |        or|   0|  0|   2|           1|           1|
+    |empty_146_fu_455_p2                    |        or|   0|  0|   2|           1|           1|
+    |empty_148_fu_466_p2                    |        or|   0|  0|   2|           1|           1|
+    |empty_fu_282_p2                        |        or|   0|  0|   6|           1|           6|
+    |spec_select21_fu_318_p2                |        or|   0|  0|   2|           1|           1|
+    |tmp1_fu_312_p2                         |        or|   0|  0|   2|           1|           1|
+    |tmp_fu_306_p2                          |        or|   0|  0|   2|           1|           1|
     +---------------------------------------+----------+----+---+----+------------+------------+
-    |Total                                  |          |   0|  0| 402|         252|         214|
+    |Total                                  |          |   0|  0| 386|         245|         217|
     +---------------------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
     +-------------------------+------+-----------+-----+-----------+
     |           Name          |  LUT | Input Size| Bits| Total Bits|
     +-------------------------+------+-----------+-----+-----------+
-    |Height_blk_n             |     9|          2|    1|          2|
-    |StrideInBytes_blk_n      |     9|          2|    1|          2|
-    |VideoFormat_blk_n        |     9|          2|    1|          2|
-    |WidthInBytes_blk_n       |     9|          2|    1|          2|
-    |ap_NS_fsm                |  1161|        218|    1|        218|
+    |WidthInBytes_val_blk_n   |     9|          2|    1|          2|
+    |ap_NS_fsm                |  1155|        217|    1|        217|
     |ap_done                  |     9|          2|    1|          2|
     |bytePlanes_plane0_read   |     9|          2|    1|          2|
     |bytePlanes_plane1_read   |     9|          2|    1|          2|
@@ -169,43 +166,40 @@
     |m_axi_mm_video_WVALID    |    14|          3|    1|          3|
     |mm_video_blk_n_AW        |     9|          2|    1|          2|
     |mm_video_blk_n_B         |     9|          2|    1|          2|
-    |offsetUV_fu_146          |     9|          2|   32|         64|
-    |offsetY_fu_142           |     9|          2|   25|         50|
-    |y_fu_138                 |     9|          2|   12|         24|
+    |offsetUV_fu_148          |     9|          2|   32|         64|
+    |offsetY_fu_144           |     9|          2|   25|         50|
+    |y_fu_140                 |     9|          2|   12|         24|
     +-------------------------+------+-----------+-----+-----------+
-    |Total                    |  1582|        308|  247|        974|
+    |Total                    |  1549|        301|  244|        967|
     +-------------------------+------+-----------+-----+-----------+
 
     * Register: 
     +---------------------------------------------------------------------+-----+----+-----+-----------+
     |                                 Name                                |  FF | LUT| Bits| Const Bits|
     +---------------------------------------------------------------------+-----+----+-----+-----------+
-    |Height_read_reg_560                                                  |   12|   0|   12|          0|
-    |VideoFormat_read_reg_544                                             |    6|   0|    6|          0|
-    |add_ln1123_reg_626                                                   |   25|   0|   25|          0|
-    |ap_CS_fsm                                                            |  217|   0|  217|          0|
+    |add_ln1322_reg_618                                                   |   25|   0|   25|          0|
+    |ap_CS_fsm                                                            |  216|   0|  216|          0|
     |ap_done_reg                                                          |    1|   0|    1|          0|
-    |div8_cast2_reg_594                                                   |   13|   0|   32|         19|
-    |div8_reg_582                                                         |   13|   0|   13|          0|
-    |div_cast1_reg_588                                                    |   13|   0|   32|         19|
-    |div_reg_575                                                          |   13|   0|   13|          0|
-    |dstImg2_read_reg_565                                                 |   32|   0|   32|          0|
-    |dstImg_read_reg_570                                                  |   32|   0|   32|          0|
-    |empty_167_reg_636                                                    |    1|   0|    1|          0|
-    |empty_176_reg_640                                                    |    1|   0|    1|          0|
-    |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1117_1_fu_200_ap_start_reg  |    1|   0|    1|          0|
-    |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1127_2_fu_210_ap_start_reg  |    1|   0|    1|          0|
-    |icmp_ln1125_reg_604                                                  |    1|   0|    1|          0|
-    |offsetUV_fu_146                                                      |   32|   0|   32|          0|
-    |offsetY_fu_142                                                       |   25|   0|   25|          0|
-    |trunc_ln1113_reg_608                                                 |    1|   0|    1|          0|
-    |trunc_ln5_reg_620                                                    |   29|   0|   29|          0|
-    |trunc_ln6_reg_644                                                    |   29|   0|   29|          0|
-    |y_10_reg_615                                                         |   12|   0|   12|          0|
-    |y_fu_138                                                             |   12|   0|   12|          0|
-    |zext_ln1125_reg_599                                                  |   13|   0|   25|         12|
+    |cmp40_reg_596                                                        |    1|   0|    1|          0|
+    |cmp58_reg_586                                                        |    1|   0|    1|          0|
+    |div8_cast2_reg_581                                                   |   13|   0|   32|         19|
+    |div8_cast6_reg_591                                                   |   13|   0|   25|         12|
+    |div_cast1_reg_575                                                    |   13|   0|   32|         19|
+    |div_reg_569                                                          |   13|   0|   13|          0|
+    |dstImg2_read_reg_559                                                 |   32|   0|   32|          0|
+    |dstImg_read_reg_564                                                  |   32|   0|   32|          0|
+    |empty_148_reg_628                                                    |    1|   0|    1|          0|
+    |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1_fu_202_ap_start_reg  |    1|   0|    1|          0|
+    |grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2_fu_212_ap_start_reg  |    1|   0|    1|          0|
+    |offsetUV_fu_148                                                      |   32|   0|   32|          0|
+    |offsetY_fu_144                                                       |   25|   0|   25|          0|
+    |trunc_ln1312_reg_608                                                 |    1|   0|    1|          0|
+    |trunc_ln4_reg_612                                                    |   29|   0|   29|          0|
+    |trunc_ln5_reg_632                                                    |   29|   0|   29|          0|
+    |y_10_reg_603                                                         |   12|   0|   12|          0|
+    |y_fu_140                                                             |   12|   0|   12|          0|
     +---------------------------------------------------------------------+-----+----+-----+-----------+
-    |Total                                                                |  535|   0|  585|         50|
+    |Total                                                                |  503|   0|  553|         50|
     +---------------------------------------------------------------------+-----+----+-----+-----------+
 
 
@@ -290,25 +284,13 @@
 |dstImg2_fifo_cap                  |   in|    3|     ap_fifo|            dstImg2|       pointer|
 |dstImg2_empty_n                   |   in|    1|     ap_fifo|            dstImg2|       pointer|
 |dstImg2_read                      |  out|    1|     ap_fifo|            dstImg2|       pointer|
-|Height_dout                       |   in|   12|     ap_fifo|             Height|       pointer|
-|Height_num_data_valid             |   in|    2|     ap_fifo|             Height|       pointer|
-|Height_fifo_cap                   |   in|    2|     ap_fifo|             Height|       pointer|
-|Height_empty_n                    |   in|    1|     ap_fifo|             Height|       pointer|
-|Height_read                       |  out|    1|     ap_fifo|             Height|       pointer|
-|WidthInBytes_dout                 |   in|   15|     ap_fifo|       WidthInBytes|       pointer|
-|WidthInBytes_num_data_valid       |   in|    2|     ap_fifo|       WidthInBytes|       pointer|
-|WidthInBytes_fifo_cap             |   in|    2|     ap_fifo|       WidthInBytes|       pointer|
-|WidthInBytes_empty_n              |   in|    1|     ap_fifo|       WidthInBytes|       pointer|
-|WidthInBytes_read                 |  out|    1|     ap_fifo|       WidthInBytes|       pointer|
-|StrideInBytes_dout                |   in|   16|     ap_fifo|      StrideInBytes|       pointer|
-|StrideInBytes_num_data_valid      |   in|    3|     ap_fifo|      StrideInBytes|       pointer|
-|StrideInBytes_fifo_cap            |   in|    3|     ap_fifo|      StrideInBytes|       pointer|
-|StrideInBytes_empty_n             |   in|    1|     ap_fifo|      StrideInBytes|       pointer|
-|StrideInBytes_read                |  out|    1|     ap_fifo|      StrideInBytes|       pointer|
-|VideoFormat_dout                  |   in|    6|     ap_fifo|        VideoFormat|       pointer|
-|VideoFormat_num_data_valid        |   in|    2|     ap_fifo|        VideoFormat|       pointer|
-|VideoFormat_fifo_cap              |   in|    2|     ap_fifo|        VideoFormat|       pointer|
-|VideoFormat_empty_n               |   in|    1|     ap_fifo|        VideoFormat|       pointer|
-|VideoFormat_read                  |  out|    1|     ap_fifo|        VideoFormat|       pointer|
+|Height_val                        |   in|   12|   ap_stable|         Height_val|        scalar|
+|WidthInBytes_val_dout             |   in|   15|     ap_fifo|   WidthInBytes_val|       pointer|
+|WidthInBytes_val_num_data_valid   |   in|    3|     ap_fifo|   WidthInBytes_val|       pointer|
+|WidthInBytes_val_fifo_cap         |   in|    3|     ap_fifo|   WidthInBytes_val|       pointer|
+|WidthInBytes_val_empty_n          |   in|    1|     ap_fifo|   WidthInBytes_val|       pointer|
+|WidthInBytes_val_read             |  out|    1|     ap_fifo|   WidthInBytes_val|       pointer|
+|StrideInBytes_val                 |   in|   16|   ap_stable|  StrideInBytes_val|        scalar|
+|VideoFormat_val                   |   in|    6|   ap_stable|    VideoFormat_val|        scalar|
 +----------------------------------+-----+-----+------------+-------------------+--------------+
 

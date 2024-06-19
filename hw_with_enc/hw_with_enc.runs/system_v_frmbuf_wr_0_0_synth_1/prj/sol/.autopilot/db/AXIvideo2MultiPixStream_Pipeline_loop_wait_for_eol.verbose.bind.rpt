@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol'
 ================================================================
-* Date:           Wed May 15 18:45:58 2024
+* Date:           Wed Jun 19 16:40:49 2024
 
-* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Version:        2023.2.2 (Build 4101106 on Feb  9 2024)
 * Project:        prj
 * Solution:       sol (Vivado IP Flow Target)
 * Product family: zynq
@@ -84,31 +84,31 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.17>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_8"   --->   Operation 4 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_dest_V, void @empty_6, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_id_V, void @empty_6, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_last_V, void @empty_6, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_user_V, void @empty_6, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %s_axis_video_V_strb_V, void @empty_6, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %s_axis_video_V_keep_V, void @empty_6, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %s_axis_video_V_data_V, void @empty_6, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_26, void @empty_26, void @empty_26, i32 0, i32 0, i32 0, i32 0, void @empty_26, void @empty_26, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%eol_0_lcssa_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %eol_0_lcssa"   --->   Operation 12 'read' 'eol_0_lcssa_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%axi_last_2_lcssa_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %axi_last_2_lcssa"   --->   Operation 13 'read' 'axi_last_2_lcssa_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%axi_data_2_lcssa_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %axi_data_2_lcssa"   --->   Operation 14 'read' 'axi_data_2_lcssa_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (1.58ns)   --->   "%store_ln0 = store i24 %axi_data_2_lcssa_read, i24 %axi_data_4_out"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_4"   --->   Operation 4 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_dest_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_id_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_last_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_user_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %s_axis_video_V_strb_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i3 %s_axis_video_V_keep_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %s_axis_video_V_data_V, void @empty_2, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_21, void @empty_21, void @empty_21, i32 0, i32 0, i32 0, i32 0, void @empty_21, void @empty_21, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%eol_reload_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %eol_reload"   --->   Operation 12 'read' 'eol_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%select_ln306_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %select_ln306"   --->   Operation 13 'read' 'select_ln306_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%axi_data_3_reload_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %axi_data_3_reload"   --->   Operation 14 'read' 'axi_data_3_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.58ns)   --->   "%store_ln226 = store i24 %axi_data_3_reload_read, i24 %axi_data_4_out" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:226]   --->   Operation 15 'store' 'store_ln226' <Predicate = true> <Delay = 1.58>
 ST_1 : Operation 16 [1/1] (1.58ns)   --->   "%br_ln0 = br void %while.cond61"   --->   Operation 16 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%axi_last_4 = phi i1 %axi_last_2_lcssa_read, void %newFuncRoot, i1 %axi_last, void %while.body63"   --->   Operation 17 'phi' 'axi_last_4' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%eol_1 = phi i1 %eol_0_lcssa_read, void %newFuncRoot, i1 %axi_last, void %while.body63"   --->   Operation 18 'phi' 'eol_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln249 = br i1 %eol_1, void %while.body63, void %for.inc69.exitStub" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:249]   --->   Operation 19 'br' 'br_ln249' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln250 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_26" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:250]   --->   Operation 20 'specpipeline' 'specpipeline_ln250' <Predicate = (!eol_1)> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln251 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 0, i64 0" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:251]   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln251' <Predicate = (!eol_1)> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln249 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:249]   --->   Operation 22 'specloopname' 'specloopname_ln249' <Predicate = (!eol_1)> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%empty = read i34 @_ssdm_op_Read.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:253]   --->   Operation 23 'read' 'empty' <Predicate = (!eol_1)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%axi_data = extractvalue i34 %empty" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:253]   --->   Operation 24 'extractvalue' 'axi_data' <Predicate = (!eol_1)> <Delay = 0.00>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%axi_last = extractvalue i34 %empty" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:253]   --->   Operation 25 'extractvalue' 'axi_last' <Predicate = (!eol_1)> <Delay = 0.00>
-ST_1 : Operation 26 [1/1] (1.58ns)   --->   "%store_ln249 = store i24 %axi_data, i24 %axi_data_4_out" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:249]   --->   Operation 26 'store' 'store_ln249' <Predicate = (!eol_1)> <Delay = 1.58>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln249 = br void %while.cond61" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:249]   --->   Operation 27 'br' 'br_ln249' <Predicate = (!eol_1)> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%write_ln253 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %axi_last_4_out, i1 %axi_last_4" [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:253]   --->   Operation 28 'write' 'write_ln253' <Predicate = (eol_1)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%axi_last_4 = phi i1 %select_ln306_read, void %newFuncRoot, i1 %axi_last, void %while.body63"   --->   Operation 17 'phi' 'axi_last_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%eol_1 = phi i1 %eol_reload_read, void %newFuncRoot, i1 %axi_last, void %while.body63"   --->   Operation 18 'phi' 'eol_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln306 = br i1 %eol_1, void %while.body63, void %for.inc69.exitStub" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:306]   --->   Operation 19 'br' 'br_ln306' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln308 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_21" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:308]   --->   Operation 20 'specpipeline' 'specpipeline_ln308' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln309 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 0, i64 0" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:309]   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln309' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln306 = specloopname void @_ssdm_op_SpecLoopName, void @empty_26" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:306]   --->   Operation 22 'specloopname' 'specloopname_ln306' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%empty = read i34 @_ssdm_op_Read.axis.volatile.i24P0A.i3P0A.i3P0A.i1P0A.i1P0A.i1P0A.i1P0A, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311]   --->   Operation 23 'read' 'empty' <Predicate = (!eol_1)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%axi_data = extractvalue i34 %empty" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311]   --->   Operation 24 'extractvalue' 'axi_data' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%axi_last = extractvalue i34 %empty" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311]   --->   Operation 25 'extractvalue' 'axi_last' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (1.58ns)   --->   "%store_ln226 = store i24 %axi_data, i24 %axi_data_4_out" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:226]   --->   Operation 26 'store' 'store_ln226' <Predicate = (!eol_1)> <Delay = 1.58>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln306 = br void %while.cond61" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:306]   --->   Operation 27 'br' 'br_ln306' <Predicate = (!eol_1)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%write_ln311 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %axi_last_4_out, i1 %axi_last_4" [C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:311]   --->   Operation 28 'write' 'write_ln311' <Predicate = (eol_1)> <Delay = 0.00>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 29 'ret' 'ret_ln0' <Predicate = (eol_1)> <Delay = 0.00>
 
 
@@ -123,9 +123,9 @@ STG Binding:
 - Is pipelined: 0
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ axi_data_2_lcssa]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ axi_last_2_lcssa]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ eol_0_lcssa]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ axi_data_3_reload]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ select_ln306]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ eol_reload]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ s_axis_video_V_data_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
 Port [ s_axis_video_V_keep_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
 Port [ s_axis_video_V_strb_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
@@ -149,53 +149,53 @@ specinterface_ln0       (specinterface      ) [ 00]
 specinterface_ln0       (specinterface      ) [ 00]
 specinterface_ln0       (specinterface      ) [ 00]
 specinterface_ln0       (specinterface      ) [ 00]
-eol_0_lcssa_read        (read               ) [ 00]
-axi_last_2_lcssa_read   (read               ) [ 00]
-axi_data_2_lcssa_read   (read               ) [ 00]
-store_ln0               (store              ) [ 00]
+eol_reload_read         (read               ) [ 00]
+select_ln306_read       (read               ) [ 00]
+axi_data_3_reload_read  (read               ) [ 00]
+store_ln226             (store              ) [ 00]
 br_ln0                  (br                 ) [ 00]
 axi_last_4              (phi                ) [ 01]
 eol_1                   (phi                ) [ 01]
-br_ln249                (br                 ) [ 00]
-specpipeline_ln250      (specpipeline       ) [ 00]
-speclooptripcount_ln251 (speclooptripcount  ) [ 00]
-specloopname_ln249      (specloopname       ) [ 00]
+br_ln306                (br                 ) [ 00]
+specpipeline_ln308      (specpipeline       ) [ 00]
+speclooptripcount_ln309 (speclooptripcount  ) [ 00]
+specloopname_ln306      (specloopname       ) [ 00]
 empty                   (read               ) [ 00]
 axi_data                (extractvalue       ) [ 00]
 axi_last                (extractvalue       ) [ 01]
-store_ln249             (store              ) [ 00]
-br_ln249                (br                 ) [ 01]
-write_ln253             (write              ) [ 00]
+store_ln226             (store              ) [ 00]
+br_ln306                (br                 ) [ 01]
+write_ln311             (write              ) [ 00]
 ret_ln0                 (ret                ) [ 00]
 </LifeTime>
 
 <model>
 
 <comp_list>
-<comp id="0" class="1000" name="axi_data_2_lcssa">
+<comp id="0" class="1000" name="axi_data_3_reload">
 <pin_list>
 <pin id="1" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="axi_data_2_lcssa"/></StgValue>
+<StgValue><ssdm name="axi_data_3_reload"/></StgValue>
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="axi_last_2_lcssa">
+<comp id="2" class="1000" name="select_ln306">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="axi_last_2_lcssa"/></StgValue>
+<StgValue><ssdm name="select_ln306"/></StgValue>
 </bind>
 </comp>
 
-<comp id="4" class="1000" name="eol_0_lcssa">
+<comp id="4" class="1000" name="eol_reload">
 <pin_list>
 <pin id="5" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="eol_0_lcssa"/></StgValue>
+<StgValue><ssdm name="eol_reload"/></StgValue>
 </bind>
 </comp>
 
@@ -294,7 +294,7 @@ ret_ln0                 (ret                ) [ 00]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_4"/></StgValue>
 </bind>
 </comp>
 
@@ -312,7 +312,7 @@ ret_ln0                 (ret                ) [ 00]
 <pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_6"/></StgValue>
+<StgValue><ssdm name="empty_2"/></StgValue>
 </bind>
 </comp>
 
@@ -330,7 +330,7 @@ ret_ln0                 (ret                ) [ 00]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_20"/></StgValue>
+<StgValue><ssdm name="empty_3"/></StgValue>
 </bind>
 </comp>
 
@@ -339,7 +339,7 @@ ret_ln0                 (ret                ) [ 00]
 <pin id="37" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_26"/></StgValue>
+<StgValue><ssdm name="empty_21"/></StgValue>
 </bind>
 </comp>
 
@@ -420,7 +420,7 @@ ret_ln0                 (ret                ) [ 00]
 <pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_12"/></StgValue>
+<StgValue><ssdm name="empty_26"/></StgValue>
 </bind>
 </comp>
 
@@ -442,7 +442,7 @@ ret_ln0                 (ret                ) [ 00]
 </bind>
 </comp>
 
-<comp id="60" class="1004" name="eol_0_lcssa_read_read_fu_60">
+<comp id="60" class="1004" name="eol_reload_read_read_fu_60">
 <pin_list>
 <pin id="61" dir="0" index="0" bw="1" slack="0"/>
 <pin id="62" dir="0" index="1" bw="1" slack="0"/>
@@ -450,11 +450,11 @@ ret_ln0                 (ret                ) [ 00]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="eol_0_lcssa_read/1 "/>
+<opset="eol_reload_read/1 "/>
 </bind>
 </comp>
 
-<comp id="66" class="1004" name="axi_last_2_lcssa_read_read_fu_66">
+<comp id="66" class="1004" name="select_ln306_read_read_fu_66">
 <pin_list>
 <pin id="67" dir="0" index="0" bw="1" slack="0"/>
 <pin id="68" dir="0" index="1" bw="1" slack="0"/>
@@ -462,11 +462,11 @@ ret_ln0                 (ret                ) [ 00]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="axi_last_2_lcssa_read/1 "/>
+<opset="select_ln306_read/1 "/>
 </bind>
 </comp>
 
-<comp id="72" class="1004" name="axi_data_2_lcssa_read_read_fu_72">
+<comp id="72" class="1004" name="axi_data_3_reload_read_read_fu_72">
 <pin_list>
 <pin id="73" dir="0" index="0" bw="24" slack="0"/>
 <pin id="74" dir="0" index="1" bw="24" slack="0"/>
@@ -474,7 +474,7 @@ ret_ln0                 (ret                ) [ 00]
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="axi_data_2_lcssa_read/1 "/>
+<opset="axi_data_3_reload_read/1 "/>
 </bind>
 </comp>
 
@@ -496,7 +496,7 @@ ret_ln0                 (ret                ) [ 00]
 </bind>
 </comp>
 
-<comp id="96" class="1004" name="write_ln253_write_fu_96">
+<comp id="96" class="1004" name="write_ln311_write_fu_96">
 <pin_list>
 <pin id="97" dir="0" index="0" bw="0" slack="0"/>
 <pin id="98" dir="0" index="1" bw="1" slack="0"/>
@@ -505,7 +505,7 @@ ret_ln0                 (ret                ) [ 00]
 </pin_list>
 <bind>
 <opcode="write(1151) " fcode="write"/>
-<opset="write_ln253/1 "/>
+<opset="write_ln311/1 "/>
 </bind>
 </comp>
 
@@ -557,7 +557,7 @@ ret_ln0                 (ret                ) [ 00]
 </bind>
 </comp>
 
-<comp id="124" class="1004" name="store_ln0_store_fu_124">
+<comp id="124" class="1004" name="store_ln226_store_fu_124">
 <pin_list>
 <pin id="125" dir="0" index="0" bw="24" slack="0"/>
 <pin id="126" dir="0" index="1" bw="24" slack="0"/>
@@ -565,7 +565,7 @@ ret_ln0                 (ret                ) [ 00]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln0/1 "/>
+<opset="store_ln226/1 "/>
 </bind>
 </comp>
 
@@ -591,7 +591,7 @@ ret_ln0                 (ret                ) [ 00]
 </bind>
 </comp>
 
-<comp id="138" class="1004" name="store_ln249_store_fu_138">
+<comp id="138" class="1004" name="store_ln226_store_fu_138">
 <pin_list>
 <pin id="139" dir="0" index="0" bw="24" slack="0"/>
 <pin id="140" dir="0" index="1" bw="24" slack="0"/>
@@ -599,7 +599,7 @@ ret_ln0                 (ret                ) [ 00]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln249/1 "/>
+<opset="store_ln226/1 "/>
 </bind>
 </comp>
 
@@ -682,9 +682,9 @@ ret_ln0                 (ret                ) [ 00]
 	Port: axi_data_4_out | {1 }
 	Port: axi_last_4_out | {1 }
  - Input state : 
-	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : axi_data_2_lcssa | {1 }
-	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : axi_last_2_lcssa | {1 }
-	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : eol_0_lcssa | {1 }
+	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : axi_data_3_reload | {1 }
+	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : select_ln306 | {1 }
+	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : eol_reload | {1 }
 	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : s_axis_video_V_data_V | {1 }
 	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : s_axis_video_V_keep_V | {1 }
 	Port: AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol : s_axis_video_V_strb_V | {1 }
@@ -696,9 +696,9 @@ ret_ln0                 (ret                ) [ 00]
 	State 1
 		axi_last_4 : 1
 		eol_1 : 1
-		br_ln249 : 2
-		store_ln249 : 1
-		write_ln253 : 2
+		br_ln306 : 2
+		store_ln226 : 1
+		write_ln311 : 2
 
 
 ============================================================
@@ -706,21 +706,21 @@ ret_ln0                 (ret                ) [ 00]
 ============================================================
 
 * Functional unit list:
-|----------|----------------------------------|
-| Operation|          Functional Unit         |
-|----------|----------------------------------|
-|          |    eol_0_lcssa_read_read_fu_60   |
-|   read   | axi_last_2_lcssa_read_read_fu_66 |
-|          | axi_data_2_lcssa_read_read_fu_72 |
-|          |         empty_read_fu_78         |
-|----------|----------------------------------|
-|   write  |      write_ln253_write_fu_96     |
-|----------|----------------------------------|
-|extractvalue|          axi_data_fu_130         |
-|          |          axi_last_fu_134         |
-|----------|----------------------------------|
-|   Total  |                                  |
-|----------|----------------------------------|
+|----------|-----------------------------------|
+| Operation|          Functional Unit          |
+|----------|-----------------------------------|
+|          |     eol_reload_read_read_fu_60    |
+|   read   |    select_ln306_read_read_fu_66   |
+|          | axi_data_3_reload_read_read_fu_72 |
+|          |          empty_read_fu_78         |
+|----------|-----------------------------------|
+|   write  |      write_ln311_write_fu_96      |
+|----------|-----------------------------------|
+|extractvalue|          axi_data_fu_130          |
+|          |          axi_last_fu_134          |
+|----------|-----------------------------------|
+|   Total  |                                   |
+|----------|-----------------------------------|
 
 Memories:
 N/A

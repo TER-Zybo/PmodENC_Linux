@@ -1,11 +1,11 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-// Date        : Wed May 15 18:43:10 2024
-// Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+// Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+// Date        : Wed Jun 19 16:36:30 2024
+// Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/system_mipi_csi2_rx_subsystem_0_0_sim_netlist.v
+//               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_mipi_csi2_rx_subsystem_0_0/system_mipi_csi2_rx_subsystem_0_0_sim_netlist.v
 // Design      : system_mipi_csi2_rx_subsystem_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "system_mipi_csi2_rx_subsystem_0_0,bd_ca02,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "bd_ca02,Vivado 2023.1" *) 
+(* CHECK_LICENSE_TYPE = "system_mipi_csi2_rx_subsystem_0_0,bd_ca02,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "bd_ca02,Vivado 2023.2.2" *) 
 (* NotValidForBitStream *)
 module system_mipi_csi2_rx_subsystem_0_0
    (lite_aclk,
@@ -25,6 +25,7 @@ module system_mipi_csi2_rx_subsystem_0_0
     csirxss_csi_irq,
     video_aclk,
     video_aresetn,
+    frame_rcvd_pulse_out,
     csirxss_s_axi_awaddr,
     csirxss_s_axi_awprot,
     csirxss_s_axi_awvalid,
@@ -67,6 +68,7 @@ module system_mipi_csi2_rx_subsystem_0_0
   (* x_interface_info = "xilinx.com:signal:interrupt:1.0 INTR.csirxss_csi_irq INTERRUPT" *) (* x_interface_parameter = "XIL_INTERFACENAME INTR.csirxss_csi_irq, SENSITIVITY LEVEL_HIGH, PORTWIDTH 1" *) output csirxss_csi_irq;
   (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK.video_aclk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK.video_aclk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, ASSOCIATED_BUSIF video_out, ASSOCIATED_RESET video_aresetn, INSERT_VIP 0" *) input video_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 RST.video_aresetn RST" *) (* x_interface_parameter = "XIL_INTERFACENAME RST.video_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input video_aresetn;
+  output frame_rcvd_pulse_out;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 csirxss_s_axi AWADDR" *) (* x_interface_parameter = "XIL_INTERFACENAME csirxss_s_axi, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [12:0]csirxss_s_axi_awaddr;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 csirxss_s_axi AWPROT" *) input [2:0]csirxss_s_axi_awprot;
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 csirxss_s_axi AWVALID" *) input [0:0]csirxss_s_axi_awvalid;
@@ -123,6 +125,7 @@ module system_mipi_csi2_rx_subsystem_0_0
   wire [0:0]csirxss_s_axi_wvalid;
   wire dlyctrl_rdy_out;
   wire dphy_clk_200M;
+  wire frame_rcvd_pulse_out;
   wire lite_aclk;
   wire lite_aresetn;
   wire mipi_phy_if_clk_hs_n;
@@ -168,6 +171,7 @@ module system_mipi_csi2_rx_subsystem_0_0
         .csirxss_s_axi_wvalid(csirxss_s_axi_wvalid),
         .dlyctrl_rdy_out(dlyctrl_rdy_out),
         .dphy_clk_200M(dphy_clk_200M),
+        .frame_rcvd_pulse_out(frame_rcvd_pulse_out),
         .lite_aclk(lite_aclk),
         .lite_aresetn(lite_aresetn),
         .mipi_phy_if_clk_hs_n(mipi_phy_if_clk_hs_n),
@@ -214,6 +218,7 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02
     csirxss_s_axi_wvalid,
     dlyctrl_rdy_out,
     dphy_clk_200M,
+    frame_rcvd_pulse_out,
     lite_aclk,
     lite_aresetn,
     mipi_phy_if_clk_hs_n,
@@ -256,6 +261,7 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02
   (* x_interface_info = "xilinx.com:interface:aximm:1.0 csirxss_s_axi WVALID" *) input [0:0]csirxss_s_axi_wvalid;
   output dlyctrl_rdy_out;
   (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK.DPHY_CLK_200M CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK.DPHY_CLK_200M, CLK_DOMAIN /clk_wiz_0_clk_out1, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input dphy_clk_200M;
+  output frame_rcvd_pulse_out;
   (* x_interface_info = "xilinx.com:signal:clock:1.0 CLK.LITE_ACLK CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME CLK.LITE_ACLK, ASSOCIATED_BUSIF csirxss_s_axi, ASSOCIATED_RESET lite_aresetn, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input lite_aclk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 RST.LITE_ARESETN RST" *) (* x_interface_parameter = "XIL_INTERFACENAME RST.LITE_ARESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW, TYPE INTERCONNECT" *) input lite_aresetn;
   (* x_interface_info = "xilinx.com:interface:mipi_phy:1.0 mipi_phy_if CLK_HS_N" *) input mipi_phy_if_clk_hs_n;
@@ -299,6 +305,7 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02
   wire [0:0]csirxss_s_axi_wvalid;
   wire dlyctrl_rdy_out;
   wire dphy_clk_200M;
+  wire frame_rcvd_pulse_out;
   wire lite_aclk;
   wire lite_aresetn;
   wire mipi_phy_if_clk_hs_n;
@@ -501,7 +508,7 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02
         .s_axi_wvalid(xbar_M01_AXI_WVALID),
         .system_rst_out(system_rst_out));
   (* syn_black_box = "TRUE" *) 
-  (* x_core_info = "proc_sys_reset,Vivado 2023.1" *) 
+  (* x_core_info = "proc_sys_reset,Vivado 2023.2.2" *) 
   system_mipi_csi2_rx_subsystem_0_0_bd_ca02_r_sync_0 r_sync
        (.aux_reset_in(1'b1),
         .bus_struct_reset(NLW_r_sync_bus_struct_reset_UNCONNECTED[0]),
@@ -514,11 +521,12 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02
         .peripheral_reset(r_sync_peripheral_reset),
         .slowest_sync_clk(dphy_clk_200M));
   (* syn_black_box = "TRUE" *) 
-  (* x_core_info = "mipi_csi2_rx_ctrl_v1_0_8_top,Vivado 2023.1" *) 
+  (* x_core_info = "mipi_csi2_rx_ctrl_v1_0_9_top,Vivado 2023.2.2" *) 
   system_mipi_csi2_rx_subsystem_0_0_bd_ca02_rx_0 rx
        (.cl_enable(phy_rx_mipi_ppi_if_CL_ENABLE),
         .cl_rxulpsclknot(phy_rx_mipi_ppi_if_CL_RXULPSCLKNOT),
         .cl_stopstate(phy_rx_mipi_ppi_if_CL_STOPSTATE),
+        .core_clk(dphy_clk_200M),
         .core_men_ack_vfb(vfb_0_core_men_ack_vfb),
         .core_men_vfb(rx_core_men_vfb),
         .dl0_errcontrol(phy_rx_mipi_ppi_if_DL0_ERRCONTROL),
@@ -545,6 +553,7 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02
         .dl1_rxvalidhs(phy_rx_mipi_ppi_if_DL1_RXVALIDHS),
         .dl1_shutdown(phy_rx_mipi_ppi_if_DL1_ENABLE),
         .dl1_stopstate(phy_rx_mipi_ppi_if_DL1_STOPSTATE),
+        .frame_rcvd_pulse_out(frame_rcvd_pulse_out),
         .interrupt(csirxss_csi_irq),
         .m_axis_aclk(video_aclk),
         .m_axis_aresetn(video_aresetn),
@@ -613,7 +622,7 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02
         .vfb_vcdt(video_out_tdest),
         .vfb_wc_full(vfb_0_vfb_wc_full));
   (* syn_black_box = "TRUE" *) 
-  (* x_core_info = "axi_crossbar_v2_1_29_axi_crossbar,Vivado 2023.1" *) 
+  (* x_core_info = "axi_crossbar_v2_1_31_axi_crossbar,Vivado 2023.2.2" *) 
   system_mipi_csi2_rx_subsystem_0_0_bd_ca02_xbar_0 xbar
        (.aclk(lite_aclk),
         .aresetn(lite_aresetn),
@@ -843,7 +852,8 @@ endmodule
 
 (* ORIG_REF_NAME = "bd_ca02_rx_0" *) 
 module system_mipi_csi2_rx_subsystem_0_0_bd_ca02_rx_0
-   (s_axi_aclk,
+   (core_clk,
+    s_axi_aclk,
     s_axi_aresetn,
     s_axi_awaddr,
     s_axi_awvalid,
@@ -909,7 +919,9 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02_rx_0
     sdt_tr,
     vfb_tv,
     vfb_tr,
+    frame_rcvd_pulse_out,
     interrupt);
+  input core_clk;
   input s_axi_aclk;
   input s_axi_aresetn;
   input [7:0]s_axi_awaddr;
@@ -976,6 +988,7 @@ module system_mipi_csi2_rx_subsystem_0_0_bd_ca02_rx_0
   input sdt_tr;
   input vfb_tv;
   input vfb_tr;
+  output frame_rcvd_pulse_out;
   output interrupt;
 
 

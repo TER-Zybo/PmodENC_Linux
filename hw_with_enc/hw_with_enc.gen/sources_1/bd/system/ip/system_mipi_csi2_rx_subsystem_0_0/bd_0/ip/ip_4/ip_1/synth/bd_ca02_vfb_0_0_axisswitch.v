@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,12 +48,12 @@
 
 
 // IP VLNV: xilinx.com:ip:axis_switch:1.1
-// IP Revision: 28
+// IP Revision: 30
 
-(* X_CORE_INFO = "axis_switch_v1_1_28_axis_switch,Vivado 2023.1" *)
-(* CHECK_LICENSE_TYPE = "bd_ca02_vfb_0_0_axisswitch,axis_switch_v1_1_28_axis_switch,{}" *)
-(* CORE_GENERATION_INFO = "bd_ca02_vfb_0_0_axisswitch,axis_switch_v1_1_28_axis_switch,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_switch,x_ipVersion=1.1,x_ipCoreRevision=28,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_NUM_SI_SLOTS=1,C_LOG_SI_SLOTS=1,C_NUM_MI_SLOTS=4,C_AXIS_TDATA_WIDTH=64,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=4,C_AXIS_TUSER_WIDTH=96,C_AXIS_SIGNAL_SET=0b00000000000000000000000011011011,C_ARB_ON_MAX_XFERS=1,C_ARB_ON_NUM_CYCLES=0,C_ARB_ON_TLAST=0,C_INCLUDE_ARBITER=\
-1,C_ARB_ALGORITHM=0,C_OUTPUT_REG=0,C_DECODER_REG=1,C_M_AXIS_CONNECTIVITY_ARRAY=0b1111,C_M_AXIS_BASETDEST_ARRAY=0b0011001000010000,C_M_AXIS_HIGHTDEST_ARRAY=0b0011001000010000,C_ROUTING_MODE=0,C_S_AXI_CTRL_ADDR_WIDTH=7,C_S_AXI_CTRL_DATA_WIDTH=32,C_COMMON_CLOCK=0}" *)
+(* X_CORE_INFO = "axis_switch_v1_1_30_axis_switch,Vivado 2023.2.2" *)
+(* CHECK_LICENSE_TYPE = "bd_ca02_vfb_0_0_axisswitch,axis_switch_v1_1_30_axis_switch,{}" *)
+(* CORE_GENERATION_INFO = "bd_ca02_vfb_0_0_axisswitch,axis_switch_v1_1_30_axis_switch,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_switch,x_ipVersion=1.1,x_ipCoreRevision=30,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_NUM_SI_SLOTS=1,C_LOG_SI_SLOTS=1,C_NUM_MI_SLOTS=4,C_AXIS_TDATA_WIDTH=64,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=4,C_AXIS_TUSER_WIDTH=96,C_AXIS_SIGNAL_SET=0b00000000000000000000000011011011,C_ARB_ON_MAX_XFERS=1,C_ARB_ON_NUM_CYCLES=0,C_ARB_ON_TLAST=0,C_INCLUDE_ARBITE\
+R=1,C_ARB_ALGORITHM=0,C_OUTPUT_REG=0,C_DECODER_REG=1,C_M_AXIS_CONNECTIVITY_ARRAY=0b1111,C_M_AXIS_BASETDEST_ARRAY=0b0011001000010000,C_M_AXIS_HIGHTDEST_ARRAY=0b0011001000010000,C_ROUTING_MODE=0,C_S_AXI_CTRL_ADDR_WIDTH=7,C_S_AXI_CTRL_DATA_WIDTH=32,C_COMMON_CLOCK=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_ca02_vfb_0_0_axisswitch (
   aclk,
@@ -114,7 +114,7 @@ ER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 1000000
 output wire [383 : 0] m_axis_tuser;
 output wire [0 : 0] s_decode_err;
 
-  axis_switch_v1_1_28_axis_switch #(
+  axis_switch_v1_1_30_axis_switch #(
     .C_FAMILY("zynq"),
     .C_NUM_SI_SLOTS(1),
     .C_LOG_SI_SLOTS(1),

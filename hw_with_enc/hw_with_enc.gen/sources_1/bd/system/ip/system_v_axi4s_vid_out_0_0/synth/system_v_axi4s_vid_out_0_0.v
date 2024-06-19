@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,12 +48,12 @@
 
 
 // IP VLNV: xilinx.com:ip:v_axi4s_vid_out:4.0
-// IP Revision: 16
+// IP Revision: 17
 
-(* X_CORE_INFO = "v_axi4s_vid_out_v4_0_16,Vivado 2023.1" *)
-(* CHECK_LICENSE_TYPE = "system_v_axi4s_vid_out_0_0,v_axi4s_vid_out_v4_0_16,{}" *)
-(* CORE_GENERATION_INFO = "system_v_axi4s_vid_out_0_0,v_axi4s_vid_out_v4_0_16,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=v_axi4s_vid_out,x_ipVersion=4.0,x_ipCoreRevision=16,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_PIXELS_PER_CLOCK=1,C_COMPONENTS_PER_PIXEL=3,C_S_AXIS_COMPONENT_WIDTH=8,C_NATIVE_COMPONENT_WIDTH=8,C_NATIVE_DATA_WIDTH=24,C_S_AXIS_TDATA_WIDTH=24,C_HAS_ASYNC_CLK=1,C_ADDR_WIDTH=12,C_VTG_MASTER_SLAVE=1,C_HYSTERESIS_LEVEL=12,C_SYNC_LOCK_THRESHOLD=4,C_INCLUDE_PIXEL_REPEAT\
-=0,C_INCLUDE_PIXEL_REMAP_420=0,C_ADDR_WIDTH_PIXEL_REMAP_420=10,C_ARBITRARY_RES_EN=0}" *)
+(* X_CORE_INFO = "v_axi4s_vid_out_v4_0_17,Vivado 2023.2.2" *)
+(* CHECK_LICENSE_TYPE = "system_v_axi4s_vid_out_0_0,v_axi4s_vid_out_v4_0_17,{}" *)
+(* CORE_GENERATION_INFO = "system_v_axi4s_vid_out_0_0,v_axi4s_vid_out_v4_0_17,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=v_axi4s_vid_out,x_ipVersion=4.0,x_ipCoreRevision=17,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_PIXELS_PER_CLOCK=1,C_COMPONENTS_PER_PIXEL=3,C_S_AXIS_COMPONENT_WIDTH=8,C_NATIVE_COMPONENT_WIDTH=8,C_NATIVE_DATA_WIDTH=24,C_S_AXIS_TDATA_WIDTH=24,C_HAS_ASYNC_CLK=1,C_ADDR_WIDTH=12,C_VTG_MASTER_SLAVE=1,C_HYSTERESIS_LEVEL=12,C_SYNC_LOCK_THRESHOLD=4,C_INCLUDE_PIXEL_REPE\
+AT=0,C_INCLUDE_PIXEL_REMAP_420=0,C_ADDR_WIDTH_PIXEL_REMAP_420=10,C_ARBITRARY_RES_EN=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_v_axi4s_vid_out_0_0 (
   aclk,
@@ -154,7 +154,7 @@ output wire [12 : 0] fifo_read_level;
 output wire [31 : 0] status;
 output wire sof_state_out;
 
-  v_axi4s_vid_out_v4_0_16 #(
+  v_axi4s_vid_out_v4_0_17 #(
     .C_FAMILY("zynq"),
     .C_PIXELS_PER_CLOCK(1),
     .C_COMPONENTS_PER_PIXEL(3),

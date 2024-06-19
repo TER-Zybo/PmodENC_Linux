@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:v_vid_in_axi4s:5.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
@@ -151,7 +151,7 @@ output wire overflow;
 output wire underflow;
 input wire axis_enable;
 
-  v_vid_in_axi4s_v5_0_2 #(
+  v_vid_in_axi4s_v5_0_3 #(
     .C_FAMILY("zynq"),
     .C_PIXELS_PER_CLOCK(1),
     .C_COMPONENTS_PER_PIXEL(3),

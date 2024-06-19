@@ -1,8 +1,8 @@
 //-----------------------------------------------------------------------------
-// (c) Copyright 2014 - 2015 Xilinx, Inc. All rights reserved.
+// (c) Copyright 2014 - 2023 Advanced Micro Devices, Inc. All rights reserved.
 //
 //  This file contains confidential and proprietary information
-//  of Xilinx, Inc. and is protected under U.S. and 
+//  of Advanced Micro Devices, Inc. and is protected under U.S. and 
 //  international copyright and other intellectual property
 //  laws.
 //  
@@ -10,13 +10,13 @@
 //  This disclaimer is not a license and does not grant any
 //  rights to the materials distributed herewith. Except as
 //  otherwise provided in a valid license issued to you by
-//  Xilinx, and to the maximum extent permitted by applicable
+//  AMD, and to the maximum extent permitted by applicable
 //  law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-//  WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+//  WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 //  AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 //  BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 //  INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
-//  (2) Xilinx shall not be liable (whether in contract or tort,
+//  (2) AMD shall not be liable (whether in contract or tort,
 //  including negligence, or under any other theory of
 //  liability) for any loss or damage of any kind or nature
 //  related to, arising under or in connection with these
@@ -25,11 +25,11 @@
 //  (including loss of data, profits, goodwill, or any type of
 //  loss or damage suffered as a result of any action brought
 //  by a third party) even if such damage or loss was
-//  reasonably foreseeable or Xilinx had been advised of the
+//  reasonably foreseeable or AMD had been advised of the
 //  possibility of the same.
 //  
 //  CRITICAL APPLICATIONS
-//  Xilinx products are not designed or intended to be fail-
+//  AMD products are not designed or intended to be fail-
 //  safe, or for use in any application requiring fail-safe
 //  performance, such as life-support or safety devices or
 //  systems, Class III medical devices, nuclear facilities,
@@ -38,7 +38,7 @@
 //  injury, or severe property or environmental damage
 //  (individually and collectively, "Critical
 //  Applications"). Customer assumes the sole risk and
-//  liability of any use of Xilinx products in Critical
+//  liability of any use of AMD products in Critical
 //  Applications, subject only to applicable laws and
 //  regulations governing limitations on product liability.
 //  
@@ -830,20 +830,28 @@ wire		               s14_line_prgs;
 wire		               s15_line_prgs;
 
 //xpmcdc for s_axis_aresetn
-wire saxis_aresetn;
+wire saxis_aresetn_t;
+reg  saxis_aresetn;
 generate if(C_HS_LINE_RATE > 1500) begin : VFB_ARESET0
+//Modifying xpm_cdc_async_rst to xpm_cdc_sync_rst to fix REQP-1839 DRC in
+//2023.2 TODO cdc issue
  xpm_cdc_async_rst #(
-   .RST_ACTIVE_HIGH(0                ),
+   .RST_ACTIVE_HIGH(0),
    .DEST_SYNC_FF   (2)
  ) xpm_arst_vfb1500 (
    .src_arst(s_axis_aresetn), 
    .dest_clk(s_axis_aclk),
-   .dest_arst(saxis_aresetn  ) 
+   .dest_arst(saxis_aresetn_t  ) 
  );
+ always @ (posedge s_axis_aclk)  begin
+   saxis_aresetn  <=  saxis_aresetn_t; 
+ end
  end
 endgenerate
 generate if(C_HS_LINE_RATE <= 1500) begin : VFB_ARESET1
- assign saxis_aresetn = s_axis_aresetn;
+ always @ (*) begin
+   saxis_aresetn = s_axis_aresetn;
+ end
  end
 endgenerate
 
@@ -879,7 +887,7 @@ bd_ca02_vfb_0_0_YUV420_DT_Demux YUV420_DT_demux (
   .m1_axis_tl      (s2_fil_axis_tlast)
 );
 //reset generator
-vfb_v1_0_22_rst_gen reset_gen (
+vfb_v1_0_24_rst_gen reset_gen (
   .s_axis_aclk     ( s_axis_aclk     ),
   .s_axis_aresetn  ( saxis_aresetn  ),
   .s_axis_tv     ( s1_fil_axis_tvalid),
@@ -1091,7 +1099,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc15 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1177,7 +1185,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc14 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1263,7 +1271,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc13 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1348,7 +1356,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc12 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1434,7 +1442,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc11 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1520,7 +1528,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc10 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1606,7 +1614,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc9 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1691,7 +1699,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc8 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1776,7 +1784,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc7 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1862,7 +1870,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc6 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -1948,7 +1956,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc5 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2033,7 +2041,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc4 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2117,7 +2125,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc3 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2203,7 +2211,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc2 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2289,7 +2297,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc1 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2374,7 +2382,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc0 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2647,7 +2655,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc3 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2733,7 +2741,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc2 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2819,7 +2827,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc1 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -2904,7 +2912,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd_vc0 (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -3040,7 +3048,7 @@ bd_ca02_vfb_0_0_fifo_ycomp ycomp_odd (
 );
 
 
-vfb_v1_0_22_line_selector #(
+vfb_v1_0_24_line_selector #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -3129,7 +3137,7 @@ endgenerate
 
  generate if(C_HS_LINE_RATE <= 1500) begin: VFB_MIN
 //reorder block
-vfb_v1_0_22_reorder #(
+vfb_v1_0_24_reorder #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -3180,7 +3188,7 @@ endgenerate
                                              
 generate if(C_HS_LINE_RATE > 1500) begin: VFB_MAX
 //reorder block
-vfb_v1_0_22_reorder #(
+vfb_v1_0_24_reorder #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
 .AXIS_TUSER_WIDTH(AXIS_TUSER_WIDTH),
 .AXIS_TDEST_WIDTH(AXIS_TDEST_WIDTH),
@@ -3297,7 +3305,7 @@ bd_ca02_vfb_0_0_axis_dconverter axis_dconverter (
     .m_axis_tlast (m_axis_tlast ) 
   );
 //op interface
-vfb_v1_0_22_op_inf #(
+vfb_v1_0_24_op_inf #(
 .AXIS_TDATA_WIDTH(AXIS_TDATA_WIDTH),
   .VFB_TU_WIDTH     (VFB_TU_WIDTH       ),
   .VFB_TSB0_WIDTH    (VFB_TSB0_WIDTH    ),

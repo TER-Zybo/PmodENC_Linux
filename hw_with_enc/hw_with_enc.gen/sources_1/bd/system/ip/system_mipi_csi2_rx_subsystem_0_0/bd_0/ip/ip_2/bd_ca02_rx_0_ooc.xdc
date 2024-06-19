@@ -11,7 +11,7 @@
 # otherwise provided in a valid license issued to you by
 # AMD, and to the maximum extent permitted by applicable
 # law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-# WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+# WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 # AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 # BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 # INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -57,6 +57,8 @@ create_clock -period 10 -name video_aclk [get_ports video_aclk]
 create_clock -period 10 -name m_axis_aclk [get_ports m_axis_aclk]
 
 create_clock -period 10 -name s_axi_aclk [get_ports s_axi_aclk]
+
+create_clock -period 5 -name core_clk [get_ports core_clk]
 
 create_clock -period 10 -name dl0_rxbyteclkhs [get_ports dl0_rxbyteclkhs]
 

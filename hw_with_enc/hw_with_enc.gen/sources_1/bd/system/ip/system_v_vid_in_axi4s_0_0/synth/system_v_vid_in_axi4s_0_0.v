@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,12 +48,12 @@
 
 
 // IP VLNV: xilinx.com:ip:v_vid_in_axi4s:5.0
-// IP Revision: 2
+// IP Revision: 3
 
-(* X_CORE_INFO = "v_vid_in_axi4s_v5_0_2,Vivado 2023.1" *)
-(* CHECK_LICENSE_TYPE = "system_v_vid_in_axi4s_0_0,v_vid_in_axi4s_v5_0_2,{}" *)
-(* CORE_GENERATION_INFO = "system_v_vid_in_axi4s_0_0,v_vid_in_axi4s_v5_0_2,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=v_vid_in_axi4s,x_ipVersion=5.0,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_PIXELS_PER_CLOCK=1,C_COMPONENTS_PER_PIXEL=3,C_M_AXIS_COMPONENT_WIDTH=8,C_NATIVE_COMPONENT_WIDTH=8,C_NATIVE_DATA_WIDTH=24,C_M_AXIS_TDATA_WIDTH=24,C_HAS_ASYNC_CLK=1,C_ADDR_WIDTH=12,C_INCLUDE_PIXEL_DROP=0,C_INCLUDE_PIXEL_REMAP_420=0,C_ADDR_WIDTH_PIXEL_REMAP_420=10,C_VID_NATIV\
-E_DE=0}" *)
+(* X_CORE_INFO = "v_vid_in_axi4s_v5_0_3,Vivado 2023.2.2" *)
+(* CHECK_LICENSE_TYPE = "system_v_vid_in_axi4s_0_0,v_vid_in_axi4s_v5_0_3,{}" *)
+(* CORE_GENERATION_INFO = "system_v_vid_in_axi4s_0_0,v_vid_in_axi4s_v5_0_3,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=v_vid_in_axi4s,x_ipVersion=5.0,x_ipCoreRevision=3,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_PIXELS_PER_CLOCK=1,C_COMPONENTS_PER_PIXEL=3,C_M_AXIS_COMPONENT_WIDTH=8,C_NATIVE_COMPONENT_WIDTH=8,C_NATIVE_DATA_WIDTH=24,C_M_AXIS_TDATA_WIDTH=24,C_HAS_ASYNC_CLK=1,C_ADDR_WIDTH=12,C_INCLUDE_PIXEL_DROP=0,C_INCLUDE_PIXEL_REMAP_420=0,C_ADDR_WIDTH_PIXEL_REMAP_420=10,C_VID_NAT\
+IVE_DE=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_v_vid_in_axi4s_0_0 (
   vid_io_in_clk,
@@ -153,7 +153,7 @@ output wire overflow;
 output wire underflow;
 input wire axis_enable;
 
-  v_vid_in_axi4s_v5_0_2 #(
+  v_vid_in_axi4s_v5_0_3 #(
     .C_FAMILY("zynq"),
     .C_PIXELS_PER_CLOCK(1),
     .C_COMPONENTS_PER_PIXEL(3),

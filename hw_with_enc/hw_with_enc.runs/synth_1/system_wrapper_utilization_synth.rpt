@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Tue Jun 11 12:40:46 2024
-| Host         : secil10.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+| Tool Version : Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
+| Date         : Wed Jun 19 17:03:03 2024
+| Host         : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
 | Device       : xc7z020clg400-1
@@ -160,8 +160,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------------------------------+------+
 |              Ref Name              | Used |
 +------------------------------------+------+
-| system_xbar_1                      |    1 |
-| system_xbar_0                      |    1 |
+| system_xbar_3                      |    1 |
+| system_xbar_2                      |    1 |
 | system_xadc_wiz_0_0                |    1 |
 | system_v_vid_in_axi4s_0_0          |    1 |
 | system_v_tc_out_0                  |    1 |
@@ -196,7 +196,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | system_auto_pc_2                   |    1 |
 | system_auto_pc_1                   |    1 |
 | system_auto_pc_0                   |    1 |
-| system_PetaENC_0_0                 |    1 |
+| system_PetaENC_1_0                 |    1 |
 +------------------------------------+------+
 
 

@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:axis_register_slice:1.1
-// IP Revision: 28
+// IP Revision: 30
 
-(* X_CORE_INFO = "axis_register_slice_v1_1_28_axis_register_slice,Vivado 2023.1" *)
-(* CHECK_LICENSE_TYPE = "bd_ca02_vfb_0_0_slo,axis_register_slice_v1_1_28_axis_register_slice,{}" *)
-(* CORE_GENERATION_INFO = "bd_ca02_vfb_0_0_slo,axis_register_slice_v1_1_28_axis_register_slice,{x_ipProduct=Vivado 2023.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_register_slice,x_ipVersion=1.1,x_ipCoreRevision=28,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_AXIS_TDATA_WIDTH=64,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=4,C_AXIS_TUSER_WIDTH=96,C_AXIS_SIGNAL_SET=0b00000000000000000000000011011011,C_REG_CONFIG=8,C_NUM_SLR_CROSSINGS=0,C_PIPELINES_MASTER=0,C_PIPELINES_SLAVE=0,C_PIPELINES_MIDDLE=0}" *)
+(* X_CORE_INFO = "axis_register_slice_v1_1_30_axis_register_slice,Vivado 2023.2.2" *)
+(* CHECK_LICENSE_TYPE = "bd_ca02_vfb_0_0_slo,axis_register_slice_v1_1_30_axis_register_slice,{}" *)
+(* CORE_GENERATION_INFO = "bd_ca02_vfb_0_0_slo,axis_register_slice_v1_1_30_axis_register_slice,{x_ipProduct=Vivado 2023.2.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axis_register_slice,x_ipVersion=1.1,x_ipCoreRevision=30,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=zynq,C_AXIS_TDATA_WIDTH=64,C_AXIS_TID_WIDTH=1,C_AXIS_TDEST_WIDTH=4,C_AXIS_TUSER_WIDTH=96,C_AXIS_SIGNAL_SET=0b00000000000000000000000011011011,C_REG_CONFIG=8,C_NUM_SLR_CROSSINGS=0,C_PIPELINES_MASTER=0,C_PIPELINES_SLAVE=0,C_PIPELINES_MIDDLE=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_ca02_vfb_0_0_slo (
   aclk,
@@ -110,7 +110,7 @@ output wire [3 : 0] m_axis_tdest;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *)
 output wire [95 : 0] m_axis_tuser;
 
-  axis_register_slice_v1_1_28_axis_register_slice #(
+  axis_register_slice_v1_1_30_axis_register_slice #(
     .C_FAMILY("zynq"),
     .C_AXIS_TDATA_WIDTH(64),
     .C_AXIS_TID_WIDTH(1),

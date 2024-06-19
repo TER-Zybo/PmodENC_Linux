@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.1</Version>
+<Version>2023.2.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -24,26 +24,31 @@
 <unit>clock cycles</unit>
 <Best-caseLatency>12</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>283137125</Worst-caseLatency>
+<Worst-caseLatency>141588004</Worst-caseLatency>
 <Best-caseRealTimeLatency>0.120 us</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.831 sec</Worst-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>1.416 sec</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
 <min>7</min>
-<max>283137123</max>
+<max>141588003</max>
 </range>
 </DataflowPipelineThroughput>
 <Interval-min>7</Interval-min>
-<Interval-max>283137123</Interval-max>
+<Interval-max>141588003</Interval-max>
 </SummaryOfOverallLatency>
+<SummaryOfViolations>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_v_frmbuf_wr_0_0_synth_1/prj/sol/.autopilot/db/v_frmbuf_wr.cpp:78</SourceLocation>
+</SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>8</BRAM_18K>
-<FF>2953</FF>
-<LUT>5027</LUT>
+<FF>2535</FF>
+<LUT>4797</LUT>
 <DSP>0</DSP>
 <URAM>0</URAM>
 </Resources>
@@ -707,8 +712,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read</name>
-<Object>p_read</Object>
+<name>WidthInBytes_val2</name>
+<Object>WidthInBytes_val2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -718,8 +723,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read_ap_vld</name>
-<Object>p_read</Object>
+<name>WidthInBytes_val2_ap_vld</name>
+<Object>WidthInBytes_val2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -729,8 +734,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read1</name>
-<Object>p_read1</Object>
+<name>colorFormat_val3</name>
+<Object>colorFormat_val3</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -740,8 +745,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read1_ap_vld</name>
-<Object>p_read1</Object>
+<name>colorFormat_val3_ap_vld</name>
+<Object>colorFormat_val3</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -751,8 +756,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read2</name>
-<Object>p_read2</Object>
+<name>width_val4</name>
+<Object>width_val4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -762,8 +767,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read2_ap_vld</name>
-<Object>p_read2</Object>
+<name>width_val4_ap_vld</name>
+<Object>width_val4</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -773,8 +778,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read3</name>
-<Object>p_read3</Object>
+<name>height_val7</name>
+<Object>height_val7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -784,8 +789,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read3_ap_vld</name>
-<Object>p_read3</Object>
+<name>height_val7_ap_vld</name>
+<Object>height_val7</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -795,8 +800,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read14</name>
-<Object>p_read14</Object>
+<name>stride_val8</name>
+<Object>stride_val8</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -806,8 +811,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read14_ap_vld</name>
-<Object>p_read14</Object>
+<name>stride_val8_ap_vld</name>
+<Object>stride_val8</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -817,8 +822,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read25</name>
-<Object>p_read25</Object>
+<name>video_format_val10</name>
+<Object>video_format_val10</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -828,8 +833,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>p_read25_ap_vld</name>
-<Object>p_read25</Object>
+<name>video_format_val10_ap_vld</name>
+<Object>video_format_val10</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
