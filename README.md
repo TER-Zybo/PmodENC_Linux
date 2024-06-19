@@ -1,7 +1,5 @@
 # Linux C Application for Displaying Encoder Values
 
-> Project built with Vivado 2023.1
-
 ## Overview
 
 This project demonstrates how to create a Linux C application that reads encoder values from Digilent PmodENC rotary encoder and displays them. The process begins with a hardware block design in Vivado, followed by transitioning to writing the C application directly in the Linux user space.
