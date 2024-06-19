@@ -1,6 +1,6 @@
 # Linux C Application for Displaying Encoder Values
 
-> Project built with Vivado 2023.1
+> Project built with Vivado 2023.1. Please check branches to find updated versions.
 
 ## Overview
 
