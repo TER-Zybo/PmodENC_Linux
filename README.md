@@ -2,7 +2,7 @@
 
 > Project built with Vivado 2023.1. Please check branches to find updated versions.
 
-![design](design/png)
+![design](design.png)
 
 ## Overview
 
