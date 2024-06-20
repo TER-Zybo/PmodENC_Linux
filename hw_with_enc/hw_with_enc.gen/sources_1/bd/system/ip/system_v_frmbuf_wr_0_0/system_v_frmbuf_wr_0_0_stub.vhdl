@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
--- Date        : Wed Jun 19 16:43:41 2024
+-- Date        : Thu Jun 20 12:41:46 2024
 -- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top system_v_frmbuf_wr_0_0 -prefix
+--               system_v_frmbuf_wr_0_0_ system_v_frmbuf_wr_0_0_stub.vhdl
 -- Design      : system_v_frmbuf_wr_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

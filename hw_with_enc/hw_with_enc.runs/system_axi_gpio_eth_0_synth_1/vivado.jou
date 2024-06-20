@@ -3,8 +3,8 @@
 # SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Wed Jun 19 16:25:44 2024
-# Process ID: 8736
+# Start of session at: Thu Jun 20 12:22:23 2024
+# Process ID: 25592
 # Current directory: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_axi_gpio_eth_0_synth_1
 # Command line: vivado.exe -log system_axi_gpio_eth_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_gpio_eth_0.tcl
 # Log file: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_axi_gpio_eth_0_synth_1/system_axi_gpio_eth_0.vds

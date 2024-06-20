@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
--- Date        : Wed Jun 19 16:43:41 2024
+-- Date        : Thu Jun 20 12:41:47 2024
 -- Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top system_v_frmbuf_wr_0_0 -prefix
+--               system_v_frmbuf_wr_0_0_ system_v_frmbuf_wr_0_0_sim_netlist.vhdl
 -- Design      : system_v_frmbuf_wr_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -15,16 +15,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R is
   port (
     Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     \out\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R is
 begin
 \q0_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -55,7 +55,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_CTRL_s_axi is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_CTRL_s_axi is
   port (
     interrupt : out STD_LOGIC;
     m_axi_mm_video_BREADY : out STD_LOGIC;
@@ -95,9 +95,9 @@ entity system_v_frmbuf_wr_0_0_CTRL_s_axi is
     s_axi_CTRL_flush_done : in STD_LOGIC;
     s_axi_CTRL_AWADDR : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_CTRL_s_axi;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_CTRL_s_axi;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_CTRL_s_axi is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_CTRL_s_axi is
   signal \FSM_onehot_rstate[1]_i_1_n_3\ : STD_LOGIC;
   signal \FSM_onehot_rstate[2]_i_1_n_3\ : STD_LOGIC;
   signal \^fsm_onehot_rstate_reg[1]_0\ : STD_LOGIC;
@@ -6016,16 +6016,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R is
   port (
     Q : out STD_LOGIC_VECTOR ( 2 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     D : in STD_LOGIC_VECTOR ( 2 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R is
 begin
 \q0_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -6056,7 +6056,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_entry_proc is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_entry_proc is
   port (
     start_once_reg : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -6073,9 +6073,9 @@ entity system_v_frmbuf_wr_0_0_entry_proc is
     start_for_MultiPixStream2Bytes_U0_full_n : in STD_LOGIC;
     start_for_Bytes2AXIMMvideo_U0_full_n : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_entry_proc;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_entry_proc;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_entry_proc is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_entry_proc is
   signal \SRL_SIG_reg[3][2]_srl4_i_4_n_3\ : STD_LOGIC;
   signal \^push\ : STD_LOGIC;
   signal \^start_once_reg\ : STD_LOGIC;
@@ -6157,7 +6157,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg is
   port (
     D : out STD_LOGIC_VECTOR ( 9 downto 0 );
     WidthInBytes_val2_c_dout : out STD_LOGIC_VECTOR ( 14 downto 0 );
@@ -6168,9 +6168,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg is
     \SRL_SIG_reg[1][14]_0\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     mOutPtr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg is
   signal \^d\ : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal \SRL_SIG_reg[1]_3\ : STD_LOGIC_VECTOR ( 14 downto 0 );
 begin
@@ -6567,7 +6567,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 14 downto 0 );
     \widthInPix_reg_617_reg[0]\ : in STD_LOGIC;
@@ -6577,9 +6577,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg is
     \widthInPix_reg_617_reg[14]\ : in STD_LOGIC_VECTOR ( 14 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[2][0]_srl3\ : label is "inst/\grp_FrmbufWrHlsDataFlow_fu_166/WidthInBytes_val2_c9_U/U_system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg/SRL_SIG_reg[2] ";
@@ -6850,7 +6850,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg is
   port (
     \ap_phi_reg_pp0_iter0_in_pix_Y_3_reg_291_reg[7]\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
     \ap_phi_reg_pp0_iter0_in_pix_UV_3_reg_280_reg[7]\ : out STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -6900,9 +6900,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg is
     D : in STD_LOGIC_VECTOR ( 15 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg is
   signal \SRL_SIG_reg[0]_1\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal \SRL_SIG_reg[1]_2\ : STD_LOGIC_VECTOR ( 15 downto 0 );
   attribute SOFT_HLUTNM : string;
@@ -9392,7 +9392,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 29 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -9400,9 +9400,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg is
     \dstImg_read_reg_564_reg[31]\ : in STD_LOGIC_VECTOR ( 29 downto 0 );
     ap_clk : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[3][10]_srl4\ : label is "inst/\grp_FrmbufWrHlsDataFlow_fu_166/HwReg_frm_buffer_c_U/U_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg/SRL_SIG_reg[3] ";
@@ -9910,7 +9910,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9 is
   port (
     \out\ : out STD_LOGIC_VECTOR ( 29 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -9919,10 +9919,10 @@ entity system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9 : entity is "system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg";
-end system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9 : entity is "system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9 is
   signal addr : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute srl_bus_name : string;
   attribute srl_bus_name of \SRL_SIG_reg[3][10]_srl4\ : label is "inst/\grp_FrmbufWrHlsDataFlow_fu_166/HwReg_frm_buffer2_c_U/U_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg/SRL_SIG_reg[3] ";
@@ -10430,7 +10430,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram is
   port (
     mem_reg : out STD_LOGIC_VECTOR ( 63 downto 0 );
     ap_clk : in STD_LOGIC;
@@ -10442,9 +10442,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram is
     mem_reg_1_1 : in STD_LOGIC_VECTOR ( 9 downto 0 );
     din : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram is
   signal NLW_mem_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
   signal NLW_mem_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mem_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
@@ -10634,7 +10634,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6 is
   port (
     mem_reg : out STD_LOGIC_VECTOR ( 63 downto 0 );
     ap_clk : in STD_LOGIC;
@@ -10647,10 +10647,10 @@ entity system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6 is
     din : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6 : entity is "system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram";
-end system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6 : entity is "system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6 is
   signal NLW_mem_reg_0_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
   signal NLW_mem_reg_0_CASCADEOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mem_reg_0_DBITERR_UNCONNECTED : STD_LOGIC;
@@ -10840,7 +10840,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init is
   port (
     ap_done_reg1 : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -10875,9 +10875,9 @@ entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init is
     \icmp_ln757_reg_668_reg[0]_0\ : in STD_LOGIC_VECTOR ( 12 downto 0 );
     \cmp214_reg_672_reg[0]\ : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal ap_done_cache : STD_LOGIC;
   signal \ap_done_cache_i_1__2_n_3\ : STD_LOGIC;
@@ -11528,7 +11528,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10 is
   port (
     ap_rst_n_0 : out STD_LOGIC;
     ap_enable_reg_pp0_iter2_reg : out STD_LOGIC;
@@ -11556,10 +11556,10 @@ entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10 is
     div_reg_569 : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
-end system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10 is
   signal ap_done_cache : STD_LOGIC;
   signal \ap_done_cache_i_1__6_n_3\ : STD_LOGIC;
   signal \^ap_enable_reg_pp0_iter2_reg\ : STD_LOGIC;
@@ -11972,7 +11972,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11 is
   port (
     ap_rst_n_0 : out STD_LOGIC;
     ap_enable_reg_pp0_iter2_reg : out STD_LOGIC;
@@ -12000,10 +12000,10 @@ entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11 is
     div_reg_569 : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
-end system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11 is
   signal ap_done_cache : STD_LOGIC;
   signal \ap_done_cache_i_1__5_n_3\ : STD_LOGIC;
   signal \^ap_enable_reg_pp0_iter2_reg\ : STD_LOGIC;
@@ -12416,7 +12416,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13 is
   port (
     ap_loop_init_int_reg_0 : out STD_LOGIC;
     ap_rst_n_0 : out STD_LOGIC;
@@ -12457,10 +12457,10 @@ entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13 is
     B_V_data_1_sel_rd_reg_2 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
-end system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13 is
   signal ap_done_cache : STD_LOGIC;
   signal \ap_done_cache_i_1__0_n_3\ : STD_LOGIC;
   signal ap_done_reg1 : STD_LOGIC;
@@ -12968,7 +12968,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14 is
   port (
     \ap_CS_fsm_reg[5]\ : out STD_LOGIC;
     \ap_CS_fsm_reg[2]\ : out STD_LOGIC;
@@ -12988,10 +12988,10 @@ entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14 is
     grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_142_axi_last_out : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
-end system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14 is
   signal \B_V_data_1_state[1]_i_6_n_3\ : STD_LOGIC;
   signal ap_done_cache : STD_LOGIC;
   signal ap_done_cache_i_1_n_3 : STD_LOGIC;
@@ -13163,7 +13163,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15 is
   port (
     ap_loop_init_int_reg_0 : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -13186,10 +13186,10 @@ entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15 is
     axi_last_4_loc_fu_86 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
-end system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15 is
   signal ap_done_cache : STD_LOGIC;
   signal \ap_done_cache_i_1__1_n_3\ : STD_LOGIC;
   signal ap_done_reg1 : STD_LOGIC;
@@ -13376,7 +13376,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7 is
   port (
     ap_done_reg1 : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -13411,10 +13411,10 @@ entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7 is
     \cmp123_reg_417_reg[0]\ : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
-end system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7 is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal ap_done_cache : STD_LOGIC;
   signal \ap_done_cache_i_1__3_n_3\ : STD_LOGIC;
@@ -14062,7 +14062,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8 is
   port (
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ap_done_reg1 : out STD_LOGIC;
@@ -14097,10 +14097,10 @@ entity system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8 is
     \cmp45_reg_417_reg[0]\ : in STD_LOGIC_VECTOR ( 12 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
-end system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8 : entity is "system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8 is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal ap_done_cache : STD_LOGIC;
   signal \ap_done_cache_i_1__4_n_3\ : STD_LOGIC;
@@ -14751,7 +14751,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\ is
   port (
     dout_vld_reg_0 : out STD_LOGIC;
     m_axi_mm_video_flush_done : out STD_LOGIC;
@@ -14766,10 +14766,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\ is
     ap_rst_n : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\ is
   signal \dout_vld_i_1__9_n_3\ : STD_LOGIC;
   signal \^dout_vld_reg_0\ : STD_LOGIC;
   signal empty_n_i_1_n_3 : STD_LOGIC;
@@ -15011,7 +15011,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\ is
   port (
     dout_vld_reg_0 : out STD_LOGIC;
     full_n_reg_0 : out STD_LOGIC;
@@ -15031,10 +15031,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\ is
     mem_reg : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\ is
   signal \dout_vld_i_1__1_n_3\ : STD_LOGIC;
   signal \^dout_vld_reg_0\ : STD_LOGIC;
   signal empty_n_i_1_n_3 : STD_LOGIC;
@@ -15464,7 +15464,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\ is
   port (
     full_n_reg_0 : out STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -15473,10 +15473,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\ is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\ is
   signal \dout_vld_i_1__10_n_3\ : STD_LOGIC;
   signal dout_vld_reg_n_3 : STD_LOGIC;
   signal empty_n_i_1_n_3 : STD_LOGIC;
@@ -15919,7 +15919,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_mem is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_mem is
   port (
     rnext : out STD_LOGIC_VECTOR ( 3 downto 0 );
     dout : out STD_LOGIC_VECTOR ( 71 downto 0 );
@@ -15934,9 +15934,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_mem is
     din : in STD_LOGIC_VECTOR ( 63 downto 0 );
     push : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_mem;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_mem;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_mem is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_mem is
   signal raddr_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \^rnext\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_mem_reg_CASCADEOUTA_UNCONNECTED : STD_LOGIC;
@@ -16129,7 +16129,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice is
   port (
     s_ready_t_reg_0 : out STD_LOGIC;
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -16165,9 +16165,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice is
     \sect_total_reg[2]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \data_p2_reg[63]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice is
   signal \^q\ : STD_LOGIC_VECTOR ( 37 downto 0 );
   signal \^sr\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \data_p1[10]_i_1_n_3\ : STD_LOGIC;
@@ -18132,7 +18132,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\ is
   port (
     rs_req_ready : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -18147,10 +18147,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\ is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \data_p1[10]_i_1__0_n_3\ : STD_LOGIC;
   signal \data_p1[11]_i_1__0_n_3\ : STD_LOGIC;
@@ -19255,7 +19255,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\ is
   port (
     s_ready_t_reg_0 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -19265,10 +19265,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\ is
     m_axi_mm_video_BVALID : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \next__0\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \s_ready_t_i_1__1_n_3\ : STD_LOGIC;
@@ -19389,7 +19389,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\ is
   port (
     s_ready_t_reg_0 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -19399,10 +19399,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\ is
     m_axi_mm_video_RVALID : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \next__0\ : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal \s_ready_t_i_1__2_n_3\ : STD_LOGIC;
@@ -19523,7 +19523,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_srl is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl is
   port (
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     push : out STD_LOGIC;
@@ -19545,9 +19545,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_srl is
     ap_clk : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_srl;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_srl is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^dout_reg[44]_0\ : STD_LOGIC_VECTOR ( 41 downto 0 );
   signal \mem_reg[101][0]_mux__0_n_3\ : STD_LOGIC;
@@ -23774,7 +23774,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\ is
   port (
     \dout_reg[0]_0\ : out STD_LOGIC;
     pop_1 : out STD_LOGIC;
@@ -23806,10 +23806,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\ is
     need_wrsp : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\ is
   signal \^dout_reg[0]_0\ : STD_LOGIC;
   signal \mem_reg[2][0]_srl3_n_3\ : STD_LOGIC;
   signal \^pop_1\ : STD_LOGIC;
@@ -23936,7 +23936,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\ is
   port (
     last_resp : out STD_LOGIC;
     pop : out STD_LOGIC;
@@ -23959,10 +23959,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\ is
     dout_vld_reg_0 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\ is
   signal \^last_resp\ : STD_LOGIC;
   signal \mem_reg[2][0]_srl3_n_3\ : STD_LOGIC;
   signal \^pop\ : STD_LOGIC;
@@ -24038,7 +24038,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\ is
   port (
     ap_rst_n_0 : out STD_LOGIC;
     pop_0 : out STD_LOGIC;
@@ -24064,10 +24064,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\ is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\ is
   signal \dout[3]_i_3_n_3\ : STD_LOGIC;
   signal \dout[3]_i_4_n_3\ : STD_LOGIC;
   signal \dout_reg_n_3_[0]\ : STD_LOGIC;
@@ -24279,7 +24279,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\ is
   port (
     pop : out STD_LOGIC;
     \last_cnt_reg[4]\ : out STD_LOGIC;
@@ -24299,10 +24299,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\ is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\ is
   signal \mem_reg[2][10]_srl3_n_3\ : STD_LOGIC;
   signal \mem_reg[2][11]_srl3_n_3\ : STD_LOGIC;
   signal \mem_reg[2][12]_srl3_n_3\ : STD_LOGIC;
@@ -25169,7 +25169,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\ is
   port (
     D : out STD_LOGIC_VECTOR ( 3 downto 0 );
     s_ready_t_reg : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -25197,10 +25197,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\ is
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_srl";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\ is
   signal \^data_en__3\ : STD_LOGIC;
   signal \^dout_reg[72]_0\ : STD_LOGIC_VECTOR ( 72 downto 0 );
   signal \last_cnt[4]_i_4_n_3\ : STD_LOGIC;
@@ -27213,16 +27213,16 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mul_15s_3ns_15_1_1 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mul_15s_3ns_15_1_1 is
   port (
     D : out STD_LOGIC_VECTOR ( 14 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 2 downto 0 );
     \WidthInBytes_reg_279[13]_i_4_0\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
     empty_52_reg_249 : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_mul_15s_3ns_15_1_1;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mul_15s_3ns_15_1_1;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mul_15s_3ns_15_1_1 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mul_15s_3ns_15_1_1 is
   signal \WidthInBytes_reg_279[11]_i_10_n_3\ : STD_LOGIC;
   signal \WidthInBytes_reg_279[11]_i_11_n_3\ : STD_LOGIC;
   signal \WidthInBytes_reg_279[11]_i_12_n_3\ : STD_LOGIC;
@@ -27834,7 +27834,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_reg_unsigned_short_s is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s is
   port (
     ap_ce_reg : out STD_LOGIC;
     D : out STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -27842,9 +27842,9 @@ entity system_v_frmbuf_wr_0_0_reg_unsigned_short_s is
     ap_clk : in STD_LOGIC;
     \d_read_reg_26_reg[11]_0\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_reg_unsigned_short_s;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_reg_unsigned_short_s is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s is
   signal \^ap_ce_reg\ : STD_LOGIC;
   signal ap_return_int_reg : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal d_read_reg_26 : STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -28188,7 +28188,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12 is
   port (
     xor_ln306_fu_244_p2 : out STD_LOGIC;
     cmp10399_fu_238_p2 : out STD_LOGIC;
@@ -28198,10 +28198,10 @@ entity system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12 is
     ap_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12 : entity is "system_v_frmbuf_wr_0_0_reg_unsigned_short_s";
-end system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12 : entity is "system_v_frmbuf_wr_0_0_reg_unsigned_short_s";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12 is
   signal \ap_return_int_reg_reg_n_3_[0]\ : STD_LOGIC;
   signal \ap_return_int_reg_reg_n_3_[10]\ : STD_LOGIC;
   signal \ap_return_int_reg_reg_n_3_[11]\ : STD_LOGIC;
@@ -28667,7 +28667,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_regslice_both is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both is
   port (
     \B_V_data_1_state_reg[1]_0\ : out STD_LOGIC;
     s_axis_video_TVALID_int_regslice : out STD_LOGIC;
@@ -28684,9 +28684,9 @@ entity system_v_frmbuf_wr_0_0_regslice_both is
     B_V_data_1_sel_rd_reg_0 : in STD_LOGIC;
     s_axis_video_TDATA : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_regslice_both;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_regslice_both is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both is
   signal B_V_data_1_load_A : STD_LOGIC;
   signal B_V_data_1_load_B : STD_LOGIC;
   signal \B_V_data_1_payload_A_reg_n_3_[0]\ : STD_LOGIC;
@@ -29811,7 +29811,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_regslice_both__parameterized1\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1\ is
   port (
     \B_V_data_1_payload_B_reg[0]_0\ : out STD_LOGIC;
     s_axis_video_TLAST_int_regslice : out STD_LOGIC;
@@ -29825,10 +29825,10 @@ entity \system_v_frmbuf_wr_0_0_regslice_both__parameterized1\ is
     s_axis_video_TLAST : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_regslice_both__parameterized1\ : entity is "system_v_frmbuf_wr_0_0_regslice_both";
-end \system_v_frmbuf_wr_0_0_regslice_both__parameterized1\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1\ : entity is "system_v_frmbuf_wr_0_0_regslice_both";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_regslice_both__parameterized1\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1\ is
   signal B_V_data_1_payload_A : STD_LOGIC;
   signal \B_V_data_1_payload_A[0]_i_1__0_n_3\ : STD_LOGIC;
   signal B_V_data_1_payload_B : STD_LOGIC;
@@ -29989,7 +29989,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\ is
   port (
     \B_V_data_1_payload_B_reg[0]_0\ : out STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -30002,10 +30002,10 @@ entity \system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\ is
     s_axis_video_TUSER : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\ : entity is "system_v_frmbuf_wr_0_0_regslice_both";
-end \system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\ : entity is "system_v_frmbuf_wr_0_0_regslice_both";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\ is
   signal B_V_data_1_payload_A : STD_LOGIC;
   signal \B_V_data_1_payload_A[0]_i_1_n_3\ : STD_LOGIC;
   signal B_V_data_1_payload_B : STD_LOGIC;
@@ -30154,7 +30154,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0 is
   port (
     Bytes2AXIMMvideo_U0_ap_start : out STD_LOGIC;
     start_for_Bytes2AXIMMvideo_U0_full_n : out STD_LOGIC;
@@ -30170,9 +30170,9 @@ entity system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0 is
     CO : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0 is
   signal A : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal \^bytes2aximmvideo_u0_ap_start\ : STD_LOGIC;
   signal \empty_n_i_1__7_n_3\ : STD_LOGIC;
@@ -30313,7 +30313,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0 is
   port (
     MultiPixStream2Bytes_U0_ap_start : out STD_LOGIC;
     start_for_MultiPixStream2Bytes_U0_full_n : out STD_LOGIC;
@@ -30322,9 +30322,9 @@ entity system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0 is
     \mOutPtr_reg[1]_0\ : in STD_LOGIC;
     \mOutPtr_reg[1]_1\ : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0 is
   signal \^multipixstream2bytes_u0_ap_start\ : STD_LOGIC;
   signal \empty_n_i_1__6_n_3\ : STD_LOGIC;
   signal \full_n_i_1__6_n_3\ : STD_LOGIC;
@@ -30430,7 +30430,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol is
   port (
     ap_loop_init_int : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -30450,9 +30450,9 @@ entity system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol
     select_ln306_reg_390 : in STD_LOGIC;
     axi_last_4_loc_fu_86 : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol is
   signal eol_1_reg_114 : STD_LOGIC;
   signal flow_control_loop_pipe_sequential_init_U_n_9 : STD_LOGIC;
 begin
@@ -30464,7 +30464,7 @@ begin
       Q => eol_1_reg_114,
       R => '0'
     );
-flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15
+flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_15
      port map (
       \B_V_data_1_state_reg[0]\ => flow_control_loop_pipe_sequential_init_U_n_9,
       D(1 downto 0) => D(1 downto 0),
@@ -30491,7 +30491,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start is
   port (
     \sof_reg_83_reg[0]_0\ : out STD_LOGIC;
     \ap_CS_fsm_reg[5]\ : out STD_LOGIC;
@@ -30512,9 +30512,9 @@ entity system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_sta
     axi_last_2_reg_132 : in STD_LOGIC;
     s_axis_video_TLAST_int_regslice : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start is
   signal flow_control_loop_pipe_sequential_init_U_n_10 : STD_LOGIC;
   signal grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_142_axi_last_out : STD_LOGIC;
   signal \^sof_reg_83_reg[0]_0\ : STD_LOGIC;
@@ -30543,7 +30543,7 @@ begin
       Q => grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_142_axi_last_out,
       R => '0'
     );
-flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14
+flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_14
      port map (
       \B_V_data_1_state_reg[0]\ => flow_control_loop_pipe_sequential_init_U_n_10,
       D(1 downto 0) => D(1 downto 0),
@@ -30575,7 +30575,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width is
   port (
     grp_AXIvideo2MultiPixStream_Pipeline_loop_width_fu_162_eol_out : out STD_LOGIC;
     push : out STD_LOGIC;
@@ -30610,9 +30610,9 @@ entity system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width is
     B_V_data_1_sel_rd_reg_2 : in STD_LOGIC;
     \axi_data_fu_98_reg[23]_1\ : in STD_LOGIC_VECTOR ( 23 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width is
   signal ap_enable_reg_pp0_iter1 : STD_LOGIC;
   signal ap_sig_allocacmp_j_1 : STD_LOGIC_VECTOR ( 11 downto 1 );
   signal \^axi_data_fu_98_reg[23]_0\ : STD_LOGIC_VECTOR ( 23 downto 0 );
@@ -31173,7 +31173,7 @@ ap_enable_reg_pp0_iter1_reg: unisim.vcomponents.FDRE
       Q => \^grp_axivideo2multipixstream_pipeline_loop_width_fu_162_eol_out\,
       R => '0'
     );
-flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13
+flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_13
      port map (
       B_V_data_1_sel_rd_reg(0) => B_V_data_1_sel_rd_reg(0),
       B_V_data_1_sel_rd_reg_0 => B_V_data_1_sel_rd_reg_0,
@@ -31436,7 +31436,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1 is
   port (
     ap_enable_reg_pp0_iter2_reg_0 : out STD_LOGIC;
     empty_n_reg : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -31464,9 +31464,9 @@ entity system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1 is
     bytePlanes_plane0_full_n : in STD_LOGIC;
     \num_data_cnt_reg[4]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1 is
   signal add_ln1316_fu_118_p2 : STD_LOGIC_VECTOR ( 12 downto 0 );
   signal \add_ln1316_fu_118_p2_carry__0_n_3\ : STD_LOGIC;
   signal \add_ln1316_fu_118_p2_carry__0_n_4\ : STD_LOGIC;
@@ -31612,7 +31612,7 @@ dout_vld_i_1: unisim.vcomponents.LUT6
       I5 => Q(1),
       O => empty_n_reg_1
     );
-flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11
+flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_11
      port map (
       CO(0) => icmp_ln1316_fu_112_p2,
       D(1 downto 0) => D(1 downto 0),
@@ -31931,7 +31931,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2 is
   port (
     ap_enable_reg_pp0_iter2_reg_0 : out STD_LOGIC;
     empty_n_reg : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -31962,9 +31962,9 @@ entity system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2 is
     mem_reg_1 : in STD_LOGIC;
     \num_data_cnt_reg[4]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2 is
   signal add_ln1326_fu_118_p2 : STD_LOGIC_VECTOR ( 12 downto 0 );
   signal \add_ln1326_fu_118_p2_carry__0_n_3\ : STD_LOGIC;
   signal \add_ln1326_fu_118_p2_carry__0_n_4\ : STD_LOGIC;
@@ -32110,7 +32110,7 @@ ap_loop_exit_ready_pp0_iter1_reg_reg: unisim.vcomponents.FDRE
       I5 => Q(1),
       O => empty_n_reg_0
     );
-flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10
+flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_10
      port map (
       CO(0) => icmp_ln1326_fu_112_p2,
       D(1 downto 0) => D(1 downto 0),
@@ -32429,7 +32429,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1 is
   port (
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \ap_CS_fsm_reg[8]\ : out STD_LOGIC;
@@ -32495,9 +32495,9 @@ entity system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1 is
     \ap_phi_reg_pp0_iter1_empty_118_reg_195_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \ap_phi_reg_pp0_iter0_empty_122_reg_153_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1 is
   signal \ap_CS_fsm[0]_i_2__2_n_3\ : STD_LOGIC;
   signal \ap_CS_fsm[1]_i_2__1_n_3\ : STD_LOGIC;
   signal \ap_CS_fsm[1]_i_3__1_n_3\ : STD_LOGIC;
@@ -34048,7 +34048,7 @@ cmp45_fu_283_p2_carry: unisim.vcomponents.CARRY4
       Q => grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1_fu_252_bytePlanes_plane0_din(7),
       R => '0'
     );
-flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8
+flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_8
      port map (
       CO(0) => icmp_ln674_fu_267_p2,
       D(1 downto 0) => D(1 downto 0),
@@ -35444,7 +35444,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5 is
   port (
     \ap_CS_fsm_reg[4]\ : out STD_LOGIC;
     \or_ln721_2_reg_442_reg[0]_0\ : out STD_LOGIC;
@@ -35499,9 +35499,9 @@ entity system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5 is
     \ap_phi_reg_pp0_iter1_empty_110_reg_205_reg[7]_1\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \ap_phi_reg_pp0_iter0_empty_114_reg_163_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5 is
   signal \ap_CS_fsm[0]_i_2__1_n_3\ : STD_LOGIC;
   signal \ap_CS_fsm[1]_i_2__0_n_3\ : STD_LOGIC;
   signal \ap_CS_fsm[1]_i_3_n_3\ : STD_LOGIC;
@@ -37036,7 +37036,7 @@ cmp123_fu_283_p2_carry: unisim.vcomponents.CARRY4
       Q => \empty_114_reg_163_reg[7]_0\(7),
       R => '0'
     );
-flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7
+flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init_7
      port map (
       CO(0) => icmp_ln716_fu_267_p2,
       D(0) => D(0),
@@ -37613,7 +37613,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8 is
   port (
     \ap_CS_fsm_reg[7]_0\ : out STD_LOGIC;
     \or_ln762_4_reg_733_reg[0]_0\ : out STD_LOGIC;
@@ -37689,9 +37689,9 @@ entity system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8 is
     \ap_phi_reg_pp0_iter1_in_pix_Y_6_reg_356_reg[7]_1\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \ap_phi_reg_pp0_iter0_in_pix_Y_reg_226_reg[7]_1\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8 is
   signal and_ln778_fu_471_p2 : STD_LOGIC;
   signal and_ln778_reg_687 : STD_LOGIC;
   signal and_ln778_reg_687_pp0_iter1_reg : STD_LOGIC;
@@ -39766,7 +39766,7 @@ cmp214_fu_453_p2_carry: unisim.vcomponents.CARRY4
       Q => cmp214_reg_672,
       R => '0'
     );
-flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init
+flow_control_loop_pipe_sequential_init_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_flow_control_loop_pipe_sequential_init
      port map (
       CO(0) => icmp_ln757_fu_437_p2,
       D(0) => D(0),
@@ -41286,7 +41286,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w15_d2_S is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d2_S is
   port (
     D : out STD_LOGIC_VECTOR ( 9 downto 0 );
     WidthInBytes_val2_c_empty_n : out STD_LOGIC;
@@ -41303,9 +41303,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w15_d2_S is
     MultiPixStream2Bytes_U0_ap_start : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_fifo_w15_d2_S;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d2_S;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w15_d2_S is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d2_S is
   signal \^widthinbytes_val2_c_empty_n\ : STD_LOGIC;
   signal \^widthinbytes_val2_c_full_n\ : STD_LOGIC;
   signal \empty_n_i_1__2_n_3\ : STD_LOGIC;
@@ -41320,7 +41320,7 @@ architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w15_d2_S is
 begin
   WidthInBytes_val2_c_empty_n <= \^widthinbytes_val2_c_empty_n\;
   WidthInBytes_val2_c_full_n <= \^widthinbytes_val2_c_full_n\;
-U_system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg
+U_system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d2_S_ShiftReg
      port map (
       D(9 downto 0) => D(9 downto 0),
       S(1 downto 0) => S(1 downto 0),
@@ -41445,7 +41445,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w15_d3_S is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d3_S is
   port (
     WidthInBytes_val2_c9_empty_n : out STD_LOGIC;
     WidthInBytes_val2_c9_full_n : out STD_LOGIC;
@@ -41459,9 +41459,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w15_d3_S is
     push : in STD_LOGIC;
     \widthInPix_reg_617_reg[14]\ : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_fifo_w15_d3_S;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d3_S;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w15_d3_S is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d3_S is
   signal \^widthinbytes_val2_c9_empty_n\ : STD_LOGIC;
   signal \^widthinbytes_val2_c9_full_n\ : STD_LOGIC;
   signal \empty_n_i_1__5_n_3\ : STD_LOGIC;
@@ -41480,7 +41480,7 @@ begin
   WidthInBytes_val2_c9_empty_n <= \^widthinbytes_val2_c9_empty_n\;
   WidthInBytes_val2_c9_full_n <= \^widthinbytes_val2_c9_full_n\;
   empty_n_reg_0(0) <= \^empty_n_reg_0\(0);
-U_system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg
+U_system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d3_S_ShiftReg
      port map (
       ap_clk => ap_clk,
       \out\(14 downto 0) => \out\(14 downto 0),
@@ -41614,7 +41614,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w24_d2_S is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w24_d2_S is
   port (
     img_empty_n : out STD_LOGIC;
     img_full_n : out STD_LOGIC;
@@ -41668,9 +41668,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w24_d2_S is
     push : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_fifo_w24_d2_S;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w24_d2_S;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w24_d2_S is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w24_d2_S is
   signal empty_n_i_1_n_3 : STD_LOGIC;
   signal full_n_i_1_n_3 : STD_LOGIC;
   signal \^img_empty_n\ : STD_LOGIC;
@@ -41686,7 +41686,7 @@ begin
   img_empty_n <= \^img_empty_n\;
   img_full_n <= \^img_full_n\;
   \mOutPtr_reg[0]_0\(0) <= \^moutptr_reg[0]_0\(0);
-U_system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg
+U_system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w24_d2_S_ShiftReg
      port map (
       D(15 downto 0) => D(15 downto 0),
       \SRL_SIG_reg[0][15]_0\(7 downto 0) => \SRL_SIG_reg[0][15]\(7 downto 0),
@@ -41836,7 +41836,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w32_d4_S is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S is
   port (
     HwReg_frm_buffer2_c_empty_n : out STD_LOGIC;
     HwReg_frm_buffer2_c_full_n : out STD_LOGIC;
@@ -41848,9 +41848,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w32_d4_S is
     \dstImg2_read_reg_559_reg[31]\ : in STD_LOGIC_VECTOR ( 29 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_fifo_w32_d4_S;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w32_d4_S is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S is
   signal \^hwreg_frm_buffer2_c_empty_n\ : STD_LOGIC;
   signal \^hwreg_frm_buffer2_c_full_n\ : STD_LOGIC;
   signal \empty_n_i_1__4_n_3\ : STD_LOGIC;
@@ -41867,7 +41867,7 @@ architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w32_d4_S is
 begin
   HwReg_frm_buffer2_c_empty_n <= \^hwreg_frm_buffer2_c_empty_n\;
   HwReg_frm_buffer2_c_full_n <= \^hwreg_frm_buffer2_c_full_n\;
-U_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9
+U_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg_9
      port map (
       Q(2) => \mOutPtr_reg_n_3_[2]\,
       Q(1) => \mOutPtr_reg_n_3_[1]\,
@@ -41985,7 +41985,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4 is
   port (
     HwReg_frm_buffer_c_empty_n : out STD_LOGIC;
     HwReg_frm_buffer_c_full_n : out STD_LOGIC;
@@ -41998,10 +41998,10 @@ entity system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4 is
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4 : entity is "system_v_frmbuf_wr_0_0_fifo_w32_d4_S";
-end system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4 : entity is "system_v_frmbuf_wr_0_0_fifo_w32_d4_S";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4 is
   signal \^hwreg_frm_buffer_c_empty_n\ : STD_LOGIC;
   signal \^hwreg_frm_buffer_c_full_n\ : STD_LOGIC;
   signal \empty_n_i_1__3_n_3\ : STD_LOGIC;
@@ -42016,7 +42016,7 @@ architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4 is
 begin
   HwReg_frm_buffer_c_empty_n <= \^hwreg_frm_buffer_c_empty_n\;
   HwReg_frm_buffer_c_full_n <= \^hwreg_frm_buffer_c_full_n\;
-U_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg
+U_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_ShiftReg
      port map (
       Q(2 downto 0) => mOutPtr(2 downto 0),
       ap_clk => ap_clk,
@@ -42132,7 +42132,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w64_d960_B is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B is
   port (
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     empty_n : out STD_LOGIC;
@@ -42154,9 +42154,9 @@ entity system_v_frmbuf_wr_0_0_fifo_w64_d960_B is
     \mOutPtr_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \num_data_cnt_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_fifo_w64_d960_B;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w64_d960_B is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B is
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^empty_n\ : STD_LOGIC;
   signal \empty_n_i_1__0_n_3\ : STD_LOGIC;
@@ -42297,7 +42297,7 @@ architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w64_d960_B is
 begin
   Q(0) <= \^q\(0);
   empty_n <= \^empty_n\;
-U_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram: entity work.system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6
+U_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram_6
      port map (
       Q(9 downto 0) => waddr(9 downto 0),
       SR(0) => SR(0),
@@ -43425,7 +43425,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5 is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5 is
   port (
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
     empty_n : out STD_LOGIC;
@@ -43448,10 +43448,10 @@ entity system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5 is
     \num_data_cnt_reg[0]_1\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5 : entity is "system_v_frmbuf_wr_0_0_fifo_w64_d960_B";
-end system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5;
+  attribute ORIG_REF_NAME of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5 : entity is "system_v_frmbuf_wr_0_0_fifo_w64_d960_B";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5 is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5 is
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^empty_n\ : STD_LOGIC;
   signal \empty_n_i_1__1_n_3\ : STD_LOGIC;
@@ -43592,7 +43592,7 @@ architecture STRUCTURE of system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5 is
 begin
   Q(0) <= \^q\(0);
   empty_n <= \^empty_n\;
-U_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram: entity work.system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram
+U_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_ram
      port map (
       Q(9 downto 0) => waddr(9 downto 0),
       SR(0) => SR(0),
@@ -44720,7 +44720,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     \in\ : out STD_LOGIC_VECTOR ( 32 downto 0 );
@@ -44741,9 +44741,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter is
     D : in STD_LOGIC_VECTOR ( 42 downto 0 );
     \data_p2_reg[63]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter is
   signal \^awvalid_dummy_0\ : STD_LOGIC;
   signal \^sr\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal beat_len : STD_LOGIC_VECTOR ( 8 downto 0 );
@@ -46781,7 +46781,7 @@ req_handling_reg: unisim.vcomponents.FDRE
       Q => req_handling_reg_n_3,
       R => \^sr\(0)
     );
-rs_req: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice
+rs_req: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice
      port map (
       AWREADY_Dummy_1 => AWREADY_Dummy_1,
       AWVALID_Dummy => AWVALID_Dummy,
@@ -48777,7 +48777,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo is
   port (
     wreq_valid : out STD_LOGIC;
     mm_video_AWREADY : out STD_LOGIC;
@@ -48806,9 +48806,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo is
     \in\ : in STD_LOGIC_VECTOR ( 41 downto 0 );
     \raddr_reg[6]_0\ : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo is
   signal \^q\ : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal \dout_vld_i_1__2_n_3\ : STD_LOGIC;
   signal empty_n_i_1_n_3 : STD_LOGIC;
@@ -48871,7 +48871,7 @@ begin
   Q(4 downto 0) <= \^q\(4 downto 0);
   mm_video_AWREADY <= \^mm_video_awready\;
   wreq_valid <= \^wreq_valid\;
-U_fifo_srl: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_srl
+U_fifo_srl: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl
      port map (
       AWREADY_Dummy => AWREADY_Dummy,
       E(0) => pop,
@@ -49456,7 +49456,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\ is
   port (
     WVALID_Dummy : out STD_LOGIC;
     mm_video_WREADY : out STD_LOGIC;
@@ -49476,10 +49476,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\ is
     din : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\ is
   signal empty_n_i_1_n_3 : STD_LOGIC;
   signal \empty_n_i_2__5_n_3\ : STD_LOGIC;
   signal \^empty_n_reg_0\ : STD_LOGIC;
@@ -49520,7 +49520,7 @@ architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameter
 begin
   empty_n_reg_0 <= \^empty_n_reg_0\;
   mm_video_WREADY <= \^mm_video_wready\;
-U_fifo_mem: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_mem
+U_fifo_mem: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_mem
      port map (
       Q(3) => \waddr_reg_n_3_[3]\,
       Q(2) => \waddr_reg_n_3_[2]\,
@@ -49864,7 +49864,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\ is
   port (
     \dout_reg[0]\ : out STD_LOGIC;
     wrsp_valid : out STD_LOGIC;
@@ -49887,10 +49887,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\ is
     need_wrsp : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\ is
   signal U_fifo_srl_n_10 : STD_LOGIC;
   signal U_fifo_srl_n_6 : STD_LOGIC;
   signal empty_n_i_1_n_3 : STD_LOGIC;
@@ -49916,7 +49916,7 @@ begin
   next_wreq <= \^next_wreq\;
   wrsp_ready <= \^wrsp_ready\;
   wrsp_valid <= \^wrsp_valid\;
-U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\
+U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0\
      port map (
       AWREADY_Dummy => AWREADY_Dummy,
       Q(0) => Q(0),
@@ -50138,7 +50138,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\ is
   port (
     last_resp : out STD_LOGIC;
     dout_vld_reg_0 : out STD_LOGIC;
@@ -50158,10 +50158,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\ is
     AWREADY_Dummy_1 : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\ is
   signal U_fifo_srl_n_5 : STD_LOGIC;
   signal U_fifo_srl_n_6 : STD_LOGIC;
   signal \^dout_vld_reg_0\ : STD_LOGIC;
@@ -50185,7 +50185,7 @@ architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameter
 begin
   dout_vld_reg_0 <= \^dout_vld_reg_0\;
   ost_ctrl_ready <= \^ost_ctrl_ready\;
-U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\
+U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized0_3\
      port map (
       Q(0) => Q(0),
       SR(0) => SR(0),
@@ -50413,7 +50413,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\ is
   port (
     burst_valid : out STD_LOGIC;
     full_n_reg_0 : out STD_LOGIC;
@@ -50439,10 +50439,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\ is
     \in\ : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\ is
   signal U_fifo_srl_n_3 : STD_LOGIC;
   signal U_fifo_srl_n_5 : STD_LOGIC;
   signal \^burst_valid\ : STD_LOGIC;
@@ -50469,7 +50469,7 @@ architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameter
 begin
   burst_valid <= \^burst_valid\;
   full_n_reg_0 <= \^full_n_reg_0\;
-U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\
+U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized2\
      port map (
       Q(7 downto 0) => Q(7 downto 0),
       SR(0) => SR(0),
@@ -50732,7 +50732,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\ is
   port (
     req_fifo_valid : out STD_LOGIC;
     full_n_reg_0 : out STD_LOGIC;
@@ -50748,10 +50748,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\ is
     \in\ : in STD_LOGIC_VECTOR ( 32 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\ is
   signal \dout_vld_i_1__6_n_3\ : STD_LOGIC;
   signal empty_n_i_1_n_3 : STD_LOGIC;
   signal empty_n_reg_n_3 : STD_LOGIC;
@@ -50777,7 +50777,7 @@ architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameter
 begin
   full_n_reg_0 <= \^full_n_reg_0\;
   req_fifo_valid <= \^req_fifo_valid\;
-U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\
+U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized3\
      port map (
       AWVALID_Dummy_0 => AWVALID_Dummy_0,
       Q(1 downto 0) => Q(1 downto 0),
@@ -50997,7 +50997,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\ is
+entity \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\ is
   port (
     full_n_reg_0 : out STD_LOGIC;
     mOutPtr18_out : out STD_LOGIC;
@@ -51031,10 +51031,10 @@ entity \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\ is
     \in\ : in STD_LOGIC_VECTOR ( 72 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
-end \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\;
+  attribute ORIG_REF_NAME of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\ : entity is "system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo";
+end \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\;
 
-architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\ is
+architecture STRUCTURE of \system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\ is
   signal \data_en__3\ : STD_LOGIC;
   signal \dout_vld_i_1__7_n_3\ : STD_LOGIC;
   signal empty_n_i_1_n_3 : STD_LOGIC;
@@ -51079,7 +51079,7 @@ architecture STRUCTURE of \system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameter
   attribute SOFT_HLUTNM of \raddr[3]_i_4\ : label is "soft_lutpair265";
 begin
   full_n_reg_0 <= \^full_n_reg_0\;
-U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\
+U_fifo_srl: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_srl__parameterized4\
      port map (
       D(3 downto 0) => D(3 downto 0),
       Q(4 downto 0) => Q(4 downto 0),
@@ -51524,7 +51524,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager is
   port (
     WBurstEmpty_n : out STD_LOGIC;
     flushStart_reg_0 : out STD_LOGIC;
@@ -51538,15 +51538,15 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager is
     m_axi_mm_video_BVALID : in STD_LOGIC;
     ap_rst_n : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager is
   signal flushReg : STD_LOGIC;
   signal flushStart_i_1_n_3 : STD_LOGIC;
   signal \^flushstart_reg_0\ : STD_LOGIC;
 begin
   flushStart_reg_0 <= \^flushstart_reg_0\;
-WFlushManager: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\
+WFlushManager: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_1\
      port map (
       BREADYFromWriteUnit => BREADYFromWriteUnit,
       SR(0) => SR(0),
@@ -51591,7 +51591,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_load is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_load is
   port (
     RREADY_Dummy : out STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
@@ -51599,11 +51599,11 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_load is
     ap_rst_n : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_load;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_load;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_load is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_load is
 begin
-buff_rdata: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\
+buff_rdata: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized3\
      port map (
       Q(0) => Q(0),
       SR(0) => SR(0),
@@ -51616,7 +51616,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_read is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_read is
   port (
     s_ready_t_reg : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -51625,11 +51625,11 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_read is
     RREADY_Dummy : in STD_LOGIC;
     m_axi_mm_video_RVALID : in STD_LOGIC
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_read;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_read;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_read is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_read is
 begin
-rs_rdata: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\
+rs_rdata: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized2\
      port map (
       Q(0) => Q(0),
       RREADY_Dummy => RREADY_Dummy,
@@ -51643,7 +51643,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream is
   port (
     \sof_reg_83_reg[0]\ : out STD_LOGIC;
     axi_last_2_reg_132 : out STD_LOGIC;
@@ -51682,9 +51682,9 @@ entity system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream is
     \axi_data_fu_98_reg[23]_0\ : in STD_LOGIC_VECTOR ( 23 downto 0 );
     \d_read_reg_26_reg[11]\ : in STD_LOGIC_VECTOR ( 11 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream is
   signal \B_V_data_1_state[1]_i_4_n_3\ : STD_LOGIC;
   signal and_ln306_reg_379 : STD_LOGIC;
   signal \and_ln306_reg_379[0]_i_1_n_3\ : STD_LOGIC;
@@ -52337,7 +52337,7 @@ ap_sync_reg_grp_FrmbufWrHlsDataFlow_fu_166_ap_ready_i_2: unisim.vcomponents.LUT6
       Q => \cond_reg_345_reg_n_3_[0]\,
       R => '0'
     );
-grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_191: entity work.system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol
+grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_191: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol
      port map (
       D(1 downto 0) => ap_NS_fsm(9 downto 8),
       E(0) => grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_191_n_4,
@@ -52369,7 +52369,7 @@ grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_191_ap_start_reg_reg: 
       Q => grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_191_ap_start_reg,
       R => SR(0)
     );
-grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_142: entity work.system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start
+grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_142: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start
      port map (
       D(1 downto 0) => ap_NS_fsm(3 downto 2),
       Q(5) => ap_CS_fsm_state10,
@@ -52406,7 +52406,7 @@ grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_142_ap_start_reg_reg
       Q => grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_142_ap_start_reg,
       R => SR(0)
     );
-grp_AXIvideo2MultiPixStream_Pipeline_loop_width_fu_162: entity work.system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width
+grp_AXIvideo2MultiPixStream_Pipeline_loop_width_fu_162: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream_Pipeline_loop_width
      port map (
       B_V_data_1_sel_rd_reg(0) => grp_FrmbufWrHlsDataFlow_fu_166_ap_start_reg_reg_0(1),
       B_V_data_1_sel_rd_reg_0 => grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_191_n_5,
@@ -52479,7 +52479,7 @@ grp_FrmbufWrHlsDataFlow_fu_166_ap_start_reg_i_2: unisim.vcomponents.LUT5
       I4 => ap_sync_reg_grp_FrmbufWrHlsDataFlow_fu_166_ap_ready_reg,
       O => grp_FrmbufWrHlsDataFlow_fu_166_ap_ready
     );
-grp_reg_unsigned_short_s_fu_225: entity work.system_v_frmbuf_wr_0_0_reg_unsigned_short_s
+grp_reg_unsigned_short_s_fu_225: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s
      port map (
       D(11 downto 0) => grp_reg_unsigned_short_s_fu_225_ap_return(11 downto 0),
       ap_ce_reg => ap_ce_reg,
@@ -52487,7 +52487,7 @@ grp_reg_unsigned_short_s_fu_225: entity work.system_v_frmbuf_wr_0_0_reg_unsigned
       \d_read_reg_26_reg[11]_0\(11 downto 0) => \d_read_reg_26_reg[11]\(11 downto 0),
       grp_reg_unsigned_short_s_fu_225_ap_ce => grp_reg_unsigned_short_s_fu_225_ap_ce
     );
-grp_reg_unsigned_short_s_fu_230: entity work.system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12
+grp_reg_unsigned_short_s_fu_230: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_reg_unsigned_short_s_12
      port map (
       D(11 downto 0) => grp_reg_unsigned_short_s_fu_230_ap_return(11 downto 0),
       ap_ce_reg => ap_ce_reg,
@@ -52894,7 +52894,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo is
   port (
     ap_block_pp0_stage0_subdone : out STD_LOGIC;
     ap_block_pp0_stage0_subdone_0 : out STD_LOGIC;
@@ -52966,9 +52966,9 @@ entity system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo is
     \out\ : in STD_LOGIC_VECTOR ( 29 downto 0 );
     \dstImg2_read_reg_559_reg[31]_0\ : in STD_LOGIC_VECTOR ( 29 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo is
   signal \^bytes2aximmvideo_u0_widthinbytes_val_read\ : STD_LOGIC;
   signal \^co\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -58609,7 +58609,7 @@ full_n_i_2: unisim.vcomponents.LUT3
       I2 => \^co\(0),
       O => empty_n_reg_2
     );
-grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1_fu_202: entity work.system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1
+grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1_fu_202: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1
      port map (
       D(1 downto 0) => ap_NS_fsm(5 downto 4),
       Q(3) => ap_CS_fsm_state112,
@@ -58651,7 +58651,7 @@ grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1_fu_202_ap_start_reg_reg: unisim.
       Q => grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1316_1_fu_202_ap_start_reg,
       R => SR(0)
     );
-grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2_fu_212: entity work.system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2
+grp_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2_fu_212: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo_Pipeline_VITIS_LOOP_1326_2
      port map (
       D(1 downto 0) => ap_NS_fsm(112 downto 111),
       DI(0) => DI(0),
@@ -61993,7 +61993,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_MultiPixStream2Bytes is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes is
   port (
     D : out STD_LOGIC_VECTOR ( 4 downto 0 );
     \ap_CS_fsm_reg[4]_0\ : out STD_LOGIC;
@@ -62063,9 +62063,9 @@ entity system_v_frmbuf_wr_0_0_MultiPixStream2Bytes is
     \ap_phi_reg_pp0_iter0_empty_114_reg_163_reg[7]\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     \trunc_ln658_2_reg_775_reg[9]_0\ : in STD_LOGIC_VECTOR ( 9 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_MultiPixStream2Bytes;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_MultiPixStream2Bytes is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes is
   signal \^d\ : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \add_ln658_fu_471_p2_carry__0_n_3\ : STD_LOGIC;
@@ -62684,7 +62684,7 @@ cmp47_2_fu_527_p2: unisim.vcomponents.LUT2
       I1 => \^d\(1),
       O => \cmp47_2_fu_527_p2__0\
     );
-grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1_fu_252: entity work.system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1
+grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1_fu_252: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1
      port map (
       D(1) => ap_NS_fsm(8),
       D(0) => ap_NS_fsm(2),
@@ -62766,7 +62766,7 @@ grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1_fu_252_ap_start_reg_reg: unis
       Q => grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_674_1_fu_252_ap_start_reg,
       R => SR(0)
     );
-grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5_fu_234: entity work.system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5
+grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5_fu_234: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5
      port map (
       D(0) => ap_NS_fsm(6),
       Q(3) => ap_CS_fsm_state9,
@@ -62835,7 +62835,7 @@ grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5_fu_234_ap_start_reg_reg: unis
       Q => grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_716_5_fu_234_ap_start_reg,
       R => SR(0)
     );
-grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8_fu_208: entity work.system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8
+grp_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8_fu_208: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes_Pipeline_VITIS_LOOP_757_8
      port map (
       D(0) => ap_NS_fsm(4),
       Q(3) => ap_CS_fsm_state9,
@@ -64210,7 +64210,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_store is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_store is
   port (
     wrsp_type : out STD_LOGIC;
     mm_video_AWREADY : out STD_LOGIC;
@@ -64249,9 +64249,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_store is
     mem_reg_2 : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_store;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_store;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_store is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_store is
   signal \^awvalid_dummy\ : STD_LOGIC;
   signal fifo_wreq_n_26 : STD_LOGIC;
   signal fifo_wreq_n_27 : STD_LOGIC;
@@ -64360,7 +64360,7 @@ begin
   AWVALID_Dummy <= \^awvalid_dummy\;
   ursp_ready <= \^ursp_ready\;
   wrsp_type <= \^wrsp_type\;
-buff_wdata: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\
+buff_wdata: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized0\
      port map (
       SR(0) => SR(0),
       WVALID_Dummy => WVALID_Dummy,
@@ -64388,7 +64388,7 @@ buff_wdata: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameteriz
       I1 => AWREADY_Dummy,
       O => tmp_valid_reg_0(0)
     );
-fifo_wreq: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo
+fifo_wreq: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo
      port map (
       AWREADY_Dummy => AWREADY_Dummy,
       D(0) => D(0),
@@ -64464,7 +64464,7 @@ fifo_wreq: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo
       wreq_valid => wreq_valid,
       wrsp_ready => wrsp_ready
     );
-fifo_wrsp: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\
+fifo_wrsp: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1\
      port map (
       AWREADY_Dummy => AWREADY_Dummy,
       Q(0) => Q(0),
@@ -64935,7 +64935,7 @@ tmp_valid_reg: unisim.vcomponents.FDRE
       Q => \^awvalid_dummy\,
       R => SR(0)
     );
-user_resp: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\
+user_resp: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized2\
      port map (
       E(0) => E(0),
       Q(0) => Q(0),
@@ -64959,7 +64959,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is
   port (
     AWREADY_Dummy_1 : out STD_LOGIC;
     WREADY_Dummy : out STD_LOGIC;
@@ -64990,9 +64990,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is
     \in\ : in STD_LOGIC_VECTOR ( 32 downto 0 );
     dout : in STD_LOGIC_VECTOR ( 71 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is
   signal data_fifo_n_14 : STD_LOGIC;
   signal data_fifo_n_6 : STD_LOGIC;
   signal data_fifo_n_7 : STD_LOGIC;
@@ -65043,7 +65043,7 @@ architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle is
   signal rs_req_ready : STD_LOGIC;
   signal \rs_req_valid__0\ : STD_LOGIC;
 begin
-data_fifo: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\
+data_fifo: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized6\
      port map (
       D(3) => data_fifo_n_6,
       D(2) => data_fifo_n_7,
@@ -65137,7 +65137,7 @@ flying_req_reg: unisim.vcomponents.FDRE
       Q => last_cnt_reg(4),
       R => SR(0)
     );
-req_fifo: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\
+req_fifo: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized5\
      port map (
       AWVALID_Dummy_0 => AWVALID_Dummy_0,
       Q(1 downto 0) => last_cnt_reg(4 downto 3),
@@ -65184,7 +65184,7 @@ req_fifo: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized
       req_fifo_valid => req_fifo_valid,
       rs_req_ready => rs_req_ready
     );
-rs_req: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\
+rs_req: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized0\
      port map (
       D(32) => req_fifo_n_6,
       D(31) => req_fifo_n_7,
@@ -65235,7 +65235,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow is
   port (
     sof_reg_83 : out STD_LOGIC;
     axi_last_2_reg_132 : out STD_LOGIC;
@@ -65285,9 +65285,9 @@ entity system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow is
     \dstImg2_read_reg_559_reg[31]\ : in STD_LOGIC_VECTOR ( 29 downto 0 );
     \widthInPix_reg_617_reg[14]\ : in STD_LOGIC_VECTOR ( 14 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow is
   signal AXIvideo2MultiPixStream_U0_img_din : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal AXIvideo2MultiPixStream_U0_n_49 : STD_LOGIC;
   signal AXIvideo2MultiPixStream_U0_n_50 : STD_LOGIC;
@@ -65548,7 +65548,7 @@ architecture STRUCTURE of system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow is
   signal zext_ln702_fu_417_p1 : STD_LOGIC_VECTOR ( 1 downto 0 );
 begin
   ap_done <= \^ap_done\;
-AXIvideo2MultiPixStream_U0: entity work.system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream
+AXIvideo2MultiPixStream_U0: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_AXIvideo2MultiPixStream
      port map (
       D(15 downto 0) => AXIvideo2MultiPixStream_U0_img_din(15 downto 0),
       Q(2 downto 0) => Q(2 downto 0),
@@ -65587,7 +65587,7 @@ AXIvideo2MultiPixStream_U0: entity work.system_v_frmbuf_wr_0_0_AXIvideo2MultiPix
       \sof_reg_83_reg[0]\ => sof_reg_83,
       \sof_reg_83_reg[0]_0\ => \sof_reg_83_reg[0]\
     );
-Bytes2AXIMMvideo_U0: entity work.system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo
+Bytes2AXIMMvideo_U0: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo
      port map (
       Bytes2AXIMMvideo_U0_WidthInBytes_val_read => Bytes2AXIMMvideo_U0_WidthInBytes_val_read,
       Bytes2AXIMMvideo_U0_ap_start => Bytes2AXIMMvideo_U0_ap_start,
@@ -65661,7 +65661,7 @@ Bytes2AXIMMvideo_U0: entity work.system_v_frmbuf_wr_0_0_Bytes2AXIMMvideo
       push_1 => push_5,
       push_2 => push_4
     );
-HwReg_frm_buffer2_c_U: entity work.system_v_frmbuf_wr_0_0_fifo_w32_d4_S
+HwReg_frm_buffer2_c_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S
      port map (
       Bytes2AXIMMvideo_U0_WidthInBytes_val_read => Bytes2AXIMMvideo_U0_WidthInBytes_val_read,
       E(0) => entry_proc_U0_n_4,
@@ -65673,7 +65673,7 @@ HwReg_frm_buffer2_c_U: entity work.system_v_frmbuf_wr_0_0_fifo_w32_d4_S
       \out\(29 downto 0) => HwReg_frm_buffer2_c_dout(31 downto 2),
       push => push_8
     );
-HwReg_frm_buffer_c_U: entity work.system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4
+HwReg_frm_buffer_c_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4
      port map (
       Bytes2AXIMMvideo_U0_WidthInBytes_val_read => Bytes2AXIMMvideo_U0_WidthInBytes_val_read,
       E(0) => entry_proc_U0_n_4,
@@ -65685,7 +65685,7 @@ HwReg_frm_buffer_c_U: entity work.system_v_frmbuf_wr_0_0_fifo_w32_d4_S_4
       \out\(29 downto 0) => HwReg_frm_buffer_c_dout(31 downto 2),
       push => push_8
     );
-MultiPixStream2Bytes_U0: entity work.system_v_frmbuf_wr_0_0_MultiPixStream2Bytes
+MultiPixStream2Bytes_U0: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MultiPixStream2Bytes
      port map (
       D(4) => MultiPixStream2Bytes_U0_n_3,
       D(3) => MultiPixStream2Bytes_U0_n_4,
@@ -65892,7 +65892,7 @@ MultiPixStream2Bytes_U0: entity work.system_v_frmbuf_wr_0_0_MultiPixStream2Bytes
       \trunc_ln658_2_reg_775_reg[9]_0\(9 downto 0) => \SRL_SIG_reg[0]_0\(12 downto 3),
       \y_fu_170_reg[0]_0\(5 downto 0) => \y_fu_170_reg[0]\(5 downto 0)
     );
-WidthInBytes_val2_c9_U: entity work.system_v_frmbuf_wr_0_0_fifo_w15_d3_S
+WidthInBytes_val2_c9_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d3_S
      port map (
       MultiPixStream2Bytes_U0_ap_start => MultiPixStream2Bytes_U0_ap_start,
       Q(0) => MultiPixStream2Bytes_U0_n_16,
@@ -65906,7 +65906,7 @@ WidthInBytes_val2_c9_U: entity work.system_v_frmbuf_wr_0_0_fifo_w15_d3_S
       push => push_8,
       \widthInPix_reg_617_reg[14]\(14 downto 0) => \widthInPix_reg_617_reg[14]\(14 downto 0)
     );
-WidthInBytes_val2_c_U: entity work.system_v_frmbuf_wr_0_0_fifo_w15_d2_S
+WidthInBytes_val2_c_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w15_d2_S
      port map (
       Bytes2AXIMMvideo_U0_WidthInBytes_val_read => Bytes2AXIMMvideo_U0_WidthInBytes_val_read,
       D(9 downto 0) => \SRL_SIG_reg[0]_0\(12 downto 3),
@@ -65949,7 +65949,7 @@ ap_sync_reg_entry_proc_U0_ap_ready_reg: unisim.vcomponents.FDRE
       Q => ap_sync_reg_entry_proc_U0_ap_ready_reg_n_3,
       R => '0'
     );
-bytePlanes_plane0_U: entity work.system_v_frmbuf_wr_0_0_fifo_w64_d960_B
+bytePlanes_plane0_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B
      port map (
       E(0) => pop_2,
       Q(0) => num_data_cnt_reg(1),
@@ -65971,7 +65971,7 @@ bytePlanes_plane0_U: entity work.system_v_frmbuf_wr_0_0_fifo_w64_d960_B
       \num_data_cnt_reg[4]_0\(0) => Bytes2AXIMMvideo_U0_n_138,
       push => push_4
     );
-bytePlanes_plane1_U: entity work.system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5
+bytePlanes_plane1_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5
      port map (
       DI(0) => mOutPtr111_out_3,
       E(0) => pop,
@@ -65993,7 +65993,7 @@ bytePlanes_plane1_U: entity work.system_v_frmbuf_wr_0_0_fifo_w64_d960_B_5
       \num_data_cnt_reg[4]_0\(0) => Bytes2AXIMMvideo_U0_n_137,
       push => push_5
     );
-entry_proc_U0: entity work.system_v_frmbuf_wr_0_0_entry_proc
+entry_proc_U0: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_entry_proc
      port map (
       Bytes2AXIMMvideo_U0_WidthInBytes_val_read => Bytes2AXIMMvideo_U0_WidthInBytes_val_read,
       E(0) => entry_proc_U0_n_4,
@@ -66010,7 +66010,7 @@ entry_proc_U0: entity work.system_v_frmbuf_wr_0_0_entry_proc
       start_for_MultiPixStream2Bytes_U0_full_n => start_for_MultiPixStream2Bytes_U0_full_n,
       start_once_reg => start_once_reg
     );
-img_U: entity work.system_v_frmbuf_wr_0_0_fifo_w24_d2_S
+img_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_fifo_w24_d2_S
      port map (
       D(15 downto 0) => AXIvideo2MultiPixStream_U0_img_din(15 downto 0),
       SR(0) => SR(0),
@@ -66197,7 +66197,7 @@ img_U: entity work.system_v_frmbuf_wr_0_0_fifo_w24_d2_S
       \mOutPtr_reg[2]_0\ => MultiPixStream2Bytes_U0_n_8,
       push => push_1
     );
-start_for_Bytes2AXIMMvideo_U0_U: entity work.system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0
+start_for_Bytes2AXIMMvideo_U0_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_start_for_Bytes2AXIMMvideo_U0
      port map (
       Bytes2AXIMMvideo_U0_ap_start => Bytes2AXIMMvideo_U0_ap_start,
       CO(0) => icmp_ln1312_fu_358_p2,
@@ -66213,7 +66213,7 @@ start_for_Bytes2AXIMMvideo_U0_U: entity work.system_v_frmbuf_wr_0_0_start_for_By
       start_for_MultiPixStream2Bytes_U0_full_n => start_for_MultiPixStream2Bytes_U0_full_n,
       start_once_reg => start_once_reg
     );
-start_for_MultiPixStream2Bytes_U0_U: entity work.system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0
+start_for_MultiPixStream2Bytes_U0_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_start_for_MultiPixStream2Bytes_U0
      port map (
       MultiPixStream2Bytes_U0_ap_start => MultiPixStream2Bytes_U0_ap_start,
       SR(0) => SR(0),
@@ -66227,7 +66227,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi_write is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_write is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     last_resp : out STD_LOGIC;
@@ -66266,9 +66266,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi_write is
     dout : in STD_LOGIC_VECTOR ( 71 downto 0 );
     \data_p2_reg[63]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi_write;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_write;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi_write is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_write is
   signal AWADDR_Dummy : STD_LOGIC_VECTOR ( 31 downto 3 );
   signal AWLEN_Dummy : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal AWREADY_Dummy_1 : STD_LOGIC;
@@ -66320,7 +66320,7 @@ WVALID_Dummy_reg: unisim.vcomponents.FDRE
       Q => WVALID_Dummy_reg_n_3,
       R => \^sr\(0)
     );
-fifo_burst: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\
+fifo_burst: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized4\
      port map (
       E(0) => E(0),
       Q(7 downto 0) => len_cnt_reg(7 downto 0),
@@ -66345,7 +66345,7 @@ fifo_burst: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameteriz
       push => push,
       push_0 => push_1
     );
-fifo_resp: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\
+fifo_resp: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterized1_2\
      port map (
       AWREADY_Dummy_1 => AWREADY_Dummy_1,
       AWVALID_Dummy_0 => AWVALID_Dummy_0,
@@ -66523,7 +66523,7 @@ fifo_resp: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_fifo__parameterize
       Q => len_cnt_reg(7),
       R => fifo_burst_n_11
     );
-rs_resp: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\
+rs_resp: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameterized1\
      port map (
       Q(0) => \^q\(0),
       SR(0) => \^sr\(0),
@@ -66532,7 +66532,7 @@ rs_resp: entity work.\system_v_frmbuf_wr_0_0_mm_video_m_axi_reg_slice__parameter
       p_4_in => p_4_in,
       s_ready_t_reg_0 => s_ready_t_reg
     );
-wreq_burst_conv: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter
+wreq_burst_conv: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_converter
      port map (
       AWREADY_Dummy_1 => AWREADY_Dummy_1,
       AWVALID_Dummy => AWVALID_Dummy,
@@ -66554,7 +66554,7 @@ wreq_burst_conv: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_burst_convert
       s_ready_t_reg => AWREADY_Dummy,
       \sect_len_buf_reg[3]_0\(3 downto 0) => ost_ctrl_len(3 downto 0)
     );
-wreq_throttle: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle
+wreq_throttle: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_throttle
      port map (
       AWREADY_Dummy_1 => AWREADY_Dummy_1,
       AWVALID_Dummy_0 => AWVALID_Dummy_0,
@@ -66591,7 +66591,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_mm_video_m_axi is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     mm_video_AWREADY : out STD_LOGIC;
@@ -66622,9 +66622,9 @@ entity system_v_frmbuf_wr_0_0_mm_video_m_axi is
     \in\ : in STD_LOGIC_VECTOR ( 41 downto 0 );
     din : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
-end system_v_frmbuf_wr_0_0_mm_video_m_axi;
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi is
   signal AWADDR_Dummy : STD_LOGIC_VECTOR ( 31 downto 3 );
   signal AWLEN_Dummy : STD_LOGIC_VECTOR ( 17 downto 3 );
   signal AWREADY_Dummy : STD_LOGIC;
@@ -66657,7 +66657,7 @@ architecture STRUCTURE of system_v_frmbuf_wr_0_0_mm_video_m_axi is
 begin
   BREADYFromWriteUnit <= \^breadyfromwriteunit\;
   SR(0) <= \^sr\(0);
-bus_read: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_read
+bus_read: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_read
      port map (
       Q(0) => RVALID_Dummy,
       RREADY_Dummy => RREADY_Dummy,
@@ -66666,7 +66666,7 @@ bus_read: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_read
       m_axi_mm_video_RVALID => m_axi_mm_video_RVALID,
       s_ready_t_reg => RREADYFromReadUnit
     );
-bus_write: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_write
+bus_write: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_write
      port map (
       AWREADY_Dummy => AWREADY_Dummy,
       AWVALID_Dummy => AWVALID_Dummy,
@@ -66708,7 +66708,7 @@ bus_write: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_write
       ursp_ready => ursp_ready,
       wrsp_type => wrsp_type
     );
-flushManager: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager
+flushManager: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager
      port map (
       BREADYFromWriteUnit => \^breadyfromwriteunit\,
       SR(0) => \^sr\(0),
@@ -66722,7 +66722,7 @@ flushManager: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_flushManager
       m_axi_mm_video_BVALID => m_axi_mm_video_BVALID,
       m_axi_mm_video_flush_done => m_axi_mm_video_flush_done
     );
-load_unit: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_load
+load_unit: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_load
      port map (
       Q(0) => RVALID_Dummy,
       RREADY_Dummy => RREADY_Dummy,
@@ -66730,7 +66730,7 @@ load_unit: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_load
       ap_clk => ap_clk,
       ap_rst_n => ap_rst_n
     );
-store_unit: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi_store
+store_unit: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi_store
      port map (
       AWREADY_Dummy => AWREADY_Dummy,
       AWVALID_Dummy => AWVALID_Dummy,
@@ -66777,7 +66777,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity system_v_frmbuf_wr_0_0_v_frmbuf_wr is
+entity system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr is
   port (
     ap_clk : in STD_LOGIC;
     ap_rst_n : in STD_LOGIC;
@@ -66855,58 +66855,58 @@ entity system_v_frmbuf_wr_0_0_v_frmbuf_wr is
     interrupt : out STD_LOGIC
   );
   attribute C_M_AXI_DATA_WIDTH : integer;
-  attribute C_M_AXI_DATA_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 32;
+  attribute C_M_AXI_DATA_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 32;
   attribute C_M_AXI_MM_VIDEO_ADDR_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_ADDR_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 32;
+  attribute C_M_AXI_MM_VIDEO_ADDR_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 32;
   attribute C_M_AXI_MM_VIDEO_ARUSER_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_ARUSER_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
+  attribute C_M_AXI_MM_VIDEO_ARUSER_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
   attribute C_M_AXI_MM_VIDEO_AWUSER_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_AWUSER_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
+  attribute C_M_AXI_MM_VIDEO_AWUSER_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
   attribute C_M_AXI_MM_VIDEO_BUSER_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_BUSER_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
+  attribute C_M_AXI_MM_VIDEO_BUSER_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
   attribute C_M_AXI_MM_VIDEO_CACHE_VALUE : string;
-  attribute C_M_AXI_MM_VIDEO_CACHE_VALUE of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "4'b0011";
+  attribute C_M_AXI_MM_VIDEO_CACHE_VALUE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "4'b0011";
   attribute C_M_AXI_MM_VIDEO_DATA_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_DATA_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 64;
+  attribute C_M_AXI_MM_VIDEO_DATA_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 64;
   attribute C_M_AXI_MM_VIDEO_ID_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_ID_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
+  attribute C_M_AXI_MM_VIDEO_ID_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
   attribute C_M_AXI_MM_VIDEO_PROT_VALUE : string;
-  attribute C_M_AXI_MM_VIDEO_PROT_VALUE of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "3'b000";
+  attribute C_M_AXI_MM_VIDEO_PROT_VALUE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "3'b000";
   attribute C_M_AXI_MM_VIDEO_RUSER_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_RUSER_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
+  attribute C_M_AXI_MM_VIDEO_RUSER_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
   attribute C_M_AXI_MM_VIDEO_USER_VALUE : integer;
-  attribute C_M_AXI_MM_VIDEO_USER_VALUE of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 0;
+  attribute C_M_AXI_MM_VIDEO_USER_VALUE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 0;
   attribute C_M_AXI_MM_VIDEO_WSTRB_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_WSTRB_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 8;
+  attribute C_M_AXI_MM_VIDEO_WSTRB_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 8;
   attribute C_M_AXI_MM_VIDEO_WUSER_WIDTH : integer;
-  attribute C_M_AXI_MM_VIDEO_WUSER_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
+  attribute C_M_AXI_MM_VIDEO_WUSER_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 1;
   attribute C_M_AXI_WSTRB_WIDTH : integer;
-  attribute C_M_AXI_WSTRB_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 4;
+  attribute C_M_AXI_WSTRB_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 4;
   attribute C_S_AXI_CTRL_ADDR_WIDTH : integer;
-  attribute C_S_AXI_CTRL_ADDR_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 7;
+  attribute C_S_AXI_CTRL_ADDR_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 7;
   attribute C_S_AXI_CTRL_DATA_WIDTH : integer;
-  attribute C_S_AXI_CTRL_DATA_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 32;
+  attribute C_S_AXI_CTRL_DATA_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 32;
   attribute C_S_AXI_CTRL_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_CTRL_WSTRB_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 4;
+  attribute C_S_AXI_CTRL_WSTRB_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 4;
   attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 32;
+  attribute C_S_AXI_DATA_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 32;
   attribute C_S_AXI_WSTRB_WIDTH : integer;
-  attribute C_S_AXI_WSTRB_WIDTH of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 4;
+  attribute C_S_AXI_WSTRB_WIDTH of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is 4;
   attribute ap_ST_fsm_state1 : string;
-  attribute ap_ST_fsm_state1 of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b00001";
+  attribute ap_ST_fsm_state1 of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b00001";
   attribute ap_ST_fsm_state2 : string;
-  attribute ap_ST_fsm_state2 of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b00010";
+  attribute ap_ST_fsm_state2 of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b00010";
   attribute ap_ST_fsm_state3 : string;
-  attribute ap_ST_fsm_state3 of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b00100";
+  attribute ap_ST_fsm_state3 of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b00100";
   attribute ap_ST_fsm_state4 : string;
-  attribute ap_ST_fsm_state4 of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b01000";
+  attribute ap_ST_fsm_state4 of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b01000";
   attribute ap_ST_fsm_state5 : string;
-  attribute ap_ST_fsm_state5 of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b10000";
+  attribute ap_ST_fsm_state5 of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "5'b10000";
   attribute hls_module : string;
-  attribute hls_module of system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "yes";
-end system_v_frmbuf_wr_0_0_v_frmbuf_wr;
+  attribute hls_module of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr : entity is "yes";
+end system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr;
 
-architecture STRUCTURE of system_v_frmbuf_wr_0_0_v_frmbuf_wr is
+architecture STRUCTURE of system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr is
   signal \<const0>\ : STD_LOGIC;
   signal \AXIvideo2MultiPixStream_U0/axi_data_2_fu_78\ : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal \AXIvideo2MultiPixStream_U0/axi_last_2_reg_132\ : STD_LOGIC;
@@ -67107,7 +67107,7 @@ begin
   s_axi_CTRL_BRESP(0) <= \<const0>\;
   s_axi_CTRL_RRESP(1) <= \<const0>\;
   s_axi_CTRL_RRESP(0) <= \<const0>\;
-BYTES_PER_PIXEL_U: entity work.system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R
+BYTES_PER_PIXEL_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1R
      port map (
       E(0) => BYTES_PER_PIXEL_ce0,
       Q(2 downto 0) => q0(2 downto 0),
@@ -67140,7 +67140,7 @@ BYTES_PER_PIXEL_U: entity work.system_v_frmbuf_wr_0_0_BYTES_PER_PIXEL_ROM_AUTO_1
       Q => BYTES_PER_PIXEL_load_reg_269(2),
       R => '0'
     );
-CTRL_s_axi_U: entity work.system_v_frmbuf_wr_0_0_CTRL_s_axi
+CTRL_s_axi_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_CTRL_s_axi
      port map (
       BREADYFromWriteUnit => BREADYFromWriteUnit,
       D(0) => ap_NS_fsm(1),
@@ -67192,7 +67192,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-MEMORY2LIVE_U: entity work.system_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R
+MEMORY2LIVE_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_MEMORY2LIVE_ROM_AUTO_1R
      port map (
       D(2) => CTRL_s_axi_U_n_156,
       D(1) => CTRL_s_axi_U_n_157,
@@ -68168,7 +68168,7 @@ ap_sync_reg_grp_FrmbufWrHlsDataFlow_fu_166_ap_ready_reg: unisim.vcomponents.FDRE
       Q => frm_buffer_read_reg_229(9),
       R => '0'
     );
-grp_FrmbufWrHlsDataFlow_fu_166: entity work.system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow
+grp_FrmbufWrHlsDataFlow_fu_166: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_FrmbufWrHlsDataFlow
      port map (
       D(0) => \Bytes2AXIMMvideo_U0/ap_NS_fsm\(110),
       E(0) => \Bytes2AXIMMvideo_U0/ap_NS_fsm28_out\,
@@ -68243,7 +68243,7 @@ grp_FrmbufWrHlsDataFlow_fu_166_ap_start_reg_reg: unisim.vcomponents.FDRE
       Q => grp_FrmbufWrHlsDataFlow_fu_166_ap_start_reg,
       R => ap_rst_n_inv
     );
-mm_video_m_axi_U: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi
+mm_video_m_axi_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mm_video_m_axi
      port map (
       BREADYFromWriteUnit => BREADYFromWriteUnit,
       D(0) => \Bytes2AXIMMvideo_U0/ap_NS_fsm\(110),
@@ -68280,14 +68280,14 @@ mm_video_m_axi_U: entity work.system_v_frmbuf_wr_0_0_mm_video_m_axi
       push => \store_unit/buff_wdata/push\,
       push_0 => \store_unit/fifo_wreq/push\
     );
-mul_15s_3ns_15_1_1_U147: entity work.system_v_frmbuf_wr_0_0_mul_15s_3ns_15_1_1
+mul_15s_3ns_15_1_1_U147: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_mul_15s_3ns_15_1_1
      port map (
       D(14 downto 0) => dout(14 downto 0),
       Q(2 downto 0) => BYTES_PER_PIXEL_load_reg_269(2 downto 0),
       \WidthInBytes_reg_279[13]_i_4_0\(2 downto 0) => empty_53_reg_254(14 downto 12),
       empty_52_reg_249(11 downto 0) => empty_52_reg_249(11 downto 0)
     );
-regslice_both_s_axis_video_V_data_V_U: entity work.system_v_frmbuf_wr_0_0_regslice_both
+regslice_both_s_axis_video_V_data_V_U: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both
      port map (
       \B_V_data_1_payload_B_reg[23]_0\(23 downto 0) => \AXIvideo2MultiPixStream_U0/p_0_in\(23 downto 0),
       \B_V_data_1_payload_B_reg[23]_1\(23 downto 0) => \AXIvideo2MultiPixStream_U0/p_1_in\(23 downto 0),
@@ -68313,7 +68313,7 @@ regslice_both_s_axis_video_V_data_V_U: entity work.system_v_frmbuf_wr_0_0_regsli
       s_axis_video_TVALID => s_axis_video_TVALID,
       s_axis_video_TVALID_int_regslice => s_axis_video_TVALID_int_regslice
     );
-regslice_both_s_axis_video_V_last_V_U: entity work.\system_v_frmbuf_wr_0_0_regslice_both__parameterized1\
+regslice_both_s_axis_video_V_last_V_U: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1\
      port map (
       \B_V_data_1_payload_B_reg[0]_0\ => regslice_both_s_axis_video_V_last_V_U_n_3,
       B_V_data_1_sel_rd_reg_0 => grp_FrmbufWrHlsDataFlow_fu_166_n_147,
@@ -68326,7 +68326,7 @@ regslice_both_s_axis_video_V_last_V_U: entity work.\system_v_frmbuf_wr_0_0_regsl
       s_axis_video_TLAST_int_regslice => s_axis_video_TLAST_int_regslice,
       s_axis_video_TVALID => s_axis_video_TVALID
     );
-regslice_both_s_axis_video_V_user_V_U: entity work.\system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\
+regslice_both_s_axis_video_V_user_V_U: entity work.\system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_regslice_both__parameterized1_0\
      port map (
       \B_V_data_1_payload_B_reg[0]_0\ => regslice_both_s_axis_video_V_user_V_U_n_3,
       B_V_data_1_sel_rd_reg_0 => grp_FrmbufWrHlsDataFlow_fu_166_n_147,
@@ -68793,7 +68793,7 @@ VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
     );
-inst: entity work.system_v_frmbuf_wr_0_0_v_frmbuf_wr
+inst: entity work.system_v_frmbuf_wr_0_0_system_v_frmbuf_wr_0_0_v_frmbuf_wr
      port map (
       ap_clk => ap_clk,
       ap_rst_n => ap_rst_n,

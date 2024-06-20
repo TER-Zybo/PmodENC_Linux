@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
-| Date             : Wed Jun 19 17:09:11 2024
+| Date             : Thu Jun 20 14:25:47 2024
 | Host             : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.123 |       18 |       --- |             --- |
-| Slice Logic              |     0.018 |    42145 |       --- |             --- |
-|   LUT as Logic           |     0.015 |    13030 |     53200 |           24.49 |
-|   Register               |     0.002 |    22403 |    106400 |           21.06 |
+| Slice Logic              |     0.018 |    42215 |       --- |             --- |
+|   LUT as Logic           |     0.015 |    13071 |     53200 |           24.57 |
+|   Register               |     0.002 |    22440 |    106400 |           21.09 |
 |   CARRY4                 |     0.001 |      660 |     13300 |            4.96 |
 |   LUT as Distributed RAM |    <0.001 |      154 |     17400 |            0.89 |
 |   LUT as Shift Register  |    <0.001 |      535 |     17400 |            3.07 |
 |   F7/F8 Muxes            |    <0.001 |      469 |     53200 |            0.88 |
-|   Others                 |    <0.001 |     1605 |       --- |             --- |
-| Signals                  |     0.030 |    30567 |       --- |             --- |
+|   Others                 |    <0.001 |     1606 |       --- |             --- |
+| Signals                  |     0.030 |    30607 |       --- |             --- |
 | Block RAM                |     0.020 |       27 |       140 |           19.29 |
 | MMCM                     |     0.225 |        2 |         4 |           50.00 |
 | PLL                      |     0.117 |        1 |         4 |           25.00 |
@@ -184,7 +184,7 @@ Table of Contents
 |       U0                     |     0.002 |
 |     axi_mem_intercon         |     0.001 |
 |       s00_couplers           |     0.001 |
-|     axi_mem_intercon_HP0     |     0.010 |
+|     axi_mem_intercon_HP0     |     0.009 |
 |       m00_couplers           |     0.005 |
 |       s00_couplers           |     0.001 |
 |       s01_couplers           |     0.001 |
@@ -195,8 +195,8 @@ Table of Contents
 |       U0                     |     0.010 |
 |     clk_wiz_0                |     0.118 |
 |       inst                   |     0.118 |
-|     dvi2rgb_1                |     0.161 |
-|       U0                     |     0.161 |
+|     dvi2rgb_1                |     0.162 |
+|       U0                     |     0.162 |
 |     mipi_csi2_rx_subsystem_0 |     0.056 |
 |       U0                     |     0.056 |
 |     processing_system7_0     |     1.414 |
@@ -212,8 +212,8 @@ Table of Contents
 |       inst                   |     0.006 |
 |     v_frmbuf_wr_0            |     0.028 |
 |       inst                   |     0.028 |
-|     v_tc_in                  |     0.019 |
-|       U0                     |     0.019 |
+|     v_tc_in                  |     0.018 |
+|       U0                     |     0.018 |
 |     v_tc_out                 |     0.014 |
 |       U0                     |     0.014 |
 |     v_vid_in_axi4s_0         |     0.005 |

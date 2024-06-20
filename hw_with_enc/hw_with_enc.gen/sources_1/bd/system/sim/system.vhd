@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.2.2 (win64) Build 4081461 Thu Dec 14 12:24:51 MST 2023
---Date        : Wed Jun 19 17:00:08 2024
+--Date        : Thu Jun 20 12:52:21 2024
 --Host        : LAPTOP-DWAYNE running 64-bit major release  (build 9200)
 --Command     : generate_target system.bd
 --Design      : system
@@ -3742,7 +3742,7 @@ entity system_axi_mem_intercon_HP0_0 is
 end system_axi_mem_intercon_HP0_0;
 
 architecture STRUCTURE of system_axi_mem_intercon_HP0_0 is
-  component system_xbar_2 is
+  component system_xbar_0 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -3823,7 +3823,7 @@ architecture STRUCTURE of system_axi_mem_intercon_HP0_0 is
     m_axi_rvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axi_rready : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  end component system_xbar_2;
+  end component system_xbar_0;
   signal M00_ACLK_1 : STD_LOGIC;
   signal M00_ARESETN_1 : STD_LOGIC;
   signal S00_ACLK_1 : STD_LOGIC;
@@ -4218,7 +4218,7 @@ s01_couplers: entity work.s01_couplers_imp_1J3S6TC
       S_AXI_wstrb(7 downto 0) => axi_mem_intercon_HP0_to_s01_couplers_WSTRB(7 downto 0),
       S_AXI_wvalid => axi_mem_intercon_HP0_to_s01_couplers_WVALID
     );
-xbar: component system_xbar_2
+xbar: component system_xbar_0
      port map (
       aclk => axi_mem_intercon_HP0_ACLK_net,
       aresetn => axi_mem_intercon_HP0_ARESETN_net,
@@ -4695,7 +4695,7 @@ entity system_ps7_0_axi_periph_GP0_0 is
 end system_ps7_0_axi_periph_GP0_0;
 
 architecture STRUCTURE of system_ps7_0_axi_periph_GP0_0 is
-  component system_xbar_3 is
+  component system_xbar_1 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -4738,7 +4738,7 @@ architecture STRUCTURE of system_ps7_0_axi_periph_GP0_0 is
     m_axi_rvalid : in STD_LOGIC_VECTOR ( 15 downto 0 );
     m_axi_rready : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  end component system_xbar_3;
+  end component system_xbar_1;
   signal M00_ACLK_1 : STD_LOGIC;
   signal M00_ARESETN_1 : STD_LOGIC;
   signal M01_ACLK_1 : STD_LOGIC;
@@ -6476,7 +6476,7 @@ s00_couplers: entity work.s00_couplers_imp_4WZP47
       S_AXI_wstrb(3 downto 0) => ps7_0_axi_periph_GP0_to_s00_couplers_WSTRB(3 downto 0),
       S_AXI_wvalid => ps7_0_axi_periph_GP0_to_s00_couplers_WVALID
     );
-xbar: component system_xbar_3
+xbar: component system_xbar_1
      port map (
       aclk => ps7_0_axi_periph_GP0_ACLK_net,
       aresetn => ps7_0_axi_periph_GP0_ARESETN_net,
@@ -7534,7 +7534,7 @@ architecture STRUCTURE of system is
     S_AXI_HP1_WID : in STD_LOGIC_VECTOR ( 5 downto 0 );
     S_AXI_HP1_WDATA : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S_AXI_HP1_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DMA0_DATYPE : out STD_LOGIC_VECTOR ( 1 downto 0 );
     DMA0_DAVALID : out STD_LOGIC;
     DMA0_DRREADY : out STD_LOGIC;
@@ -7910,7 +7910,8 @@ architecture STRUCTURE of system is
     In6 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In7 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In8 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 8 downto 0 )
+    In9 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 9 downto 0 )
   );
   end component system_xlconcat_0_0;
   component system_xlconstant_0_0 is
@@ -7966,6 +7967,7 @@ architecture STRUCTURE of system is
     S_AXI_wready : out STD_LOGIC;
     S_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S_AXI_wvalid : in STD_LOGIC;
+    ip2intc_irpt_0 : out STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC
   );
@@ -7996,6 +7998,7 @@ architecture STRUCTURE of system is
   signal PetaENC_1_Pmod_out_0_PIN9_I : STD_LOGIC;
   signal PetaENC_1_Pmod_out_0_PIN9_O : STD_LOGIC;
   signal PetaENC_1_Pmod_out_0_PIN9_T : STD_LOGIC;
+  signal PetaENC_1_ip2intc_irpt_0 : STD_LOGIC;
   signal SDATA_I_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal Vaux14_1_V_N : STD_LOGIC;
   signal Vaux14_1_V_P : STD_LOGIC;
@@ -8624,7 +8627,7 @@ architecture STRUCTURE of system is
   signal v_vid_in_axi4s_0_vtiming_out_HSYNC : STD_LOGIC;
   signal v_vid_in_axi4s_0_vtiming_out_VSYNC : STD_LOGIC;
   signal xadc_wiz_0_ip2intc_irpt : STD_LOGIC;
-  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconstant_1_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_i2s_adi_1_MUTEN_O_UNCONNECTED : STD_LOGIC;
@@ -8943,6 +8946,7 @@ PetaENC_1: component system_PetaENC_1_0
       S_AXI_wready => ps7_0_axi_periph_GP0_M15_AXI_WREADY,
       S_AXI_wstrb(3 downto 0) => ps7_0_axi_periph_GP0_M15_AXI_WSTRB(3 downto 0),
       S_AXI_wvalid => ps7_0_axi_periph_GP0_M15_AXI_WVALID,
+      ip2intc_irpt_0 => PetaENC_1_ip2intc_irpt_0,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0)
     );
@@ -9588,7 +9592,7 @@ processing_system7_0: component system_processing_system7_0_0
       I2C1_SDA_I => processing_system7_0_IIC_1_SDA_I,
       I2C1_SDA_O => processing_system7_0_IIC_1_SDA_O,
       I2C1_SDA_T => processing_system7_0_IIC_1_SDA_T,
-      IRQ_F2P(8 downto 0) => xlconcat_0_dout(8 downto 0),
+      IRQ_F2P(9 downto 0) => xlconcat_0_dout(9 downto 0),
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
@@ -10409,7 +10413,8 @@ xlconcat_0: component system_xlconcat_0_0
       In6(0) => mipi_csi2_rx_subsystem_0_csirxss_csi_irq,
       In7(0) => v_frmbuf_wr_1_interrupt,
       In8(0) => axi_iic_0_iic2intc_irpt,
-      dout(8 downto 0) => xlconcat_0_dout(8 downto 0)
+      In9(0) => PetaENC_1_ip2intc_irpt_0,
+      dout(9 downto 0) => xlconcat_0_dout(9 downto 0)
     );
 xlconstant_0: component system_xlconstant_0_0
      port map (

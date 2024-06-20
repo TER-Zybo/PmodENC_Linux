@@ -1326,8 +1326,8 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "ip_revision": "31",
-            "xci_name": "system_xbar_2",
-            "xci_path": "ip\\system_xbar_2\\system_xbar_2.xci",
+            "xci_name": "system_xbar_0",
+            "xci_path": "ip\\system_xbar_0\\system_xbar_0.xci",
             "inst_hier_path": "axi_mem_intercon_HP0/xbar",
             "parameters": {
               "DATA_WIDTH": {
@@ -3565,6 +3565,12 @@
           "PCW_S_AXI_HP1_ID_WIDTH": {
             "value": "6"
           },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP3_DATA_WIDTH": {
+            "value": "64"
+          },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
           },
@@ -4491,8 +4497,8 @@
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
             "ip_revision": "31",
-            "xci_name": "system_xbar_3",
-            "xci_path": "ip\\system_xbar_3\\system_xbar_3.xci",
+            "xci_name": "system_xbar_1",
+            "xci_path": "ip\\system_xbar_1\\system_xbar_1.xci",
             "inst_hier_path": "ps7_0_axi_periph_GP0/xbar",
             "parameters": {
               "NUM_MI": {
@@ -6267,10 +6273,10 @@
         "inst_hier_path": "xlconcat_0",
         "parameters": {
           "NUM_PORTS": {
-            "value": "9"
+            "value": "10"
           },
           "dout_width": {
-            "value": "9"
+            "value": "10"
           }
         }
       },
@@ -6646,6 +6652,12 @@
         "ports": [
           "pwm_rgb/pwm",
           "pwm_rgb"
+        ]
+      },
+      "PetaENC_1_ip2intc_irpt_0": {
+        "ports": [
+          "PetaENC_1/ip2intc_irpt_0",
+          "xlconcat_0/In9"
         ]
       },
       "SDATA_I_1": {

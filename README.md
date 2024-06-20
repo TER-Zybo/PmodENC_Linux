@@ -1,5 +1,9 @@
 # Linux C Application for Displaying Encoder Values
 
+> This branch is dedicated to the implementation of PmodENC rotary encoder with GPIO and interrupt. This project was built with vivado v2023.2.
+
+![design](design.png)
+
 ## Overview
 
 This project demonstrates how to create a Linux C application that reads encoder values from Digilent PmodENC rotary encoder and displays them. The process begins with a hardware block design in Vivado, followed by transitioning to writing the C application directly in the Linux user space.

@@ -117,11 +117,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlco
 # IP: bd/system/ip/system_xlconstant_1_0/system_xlconstant_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xlconstant_1_0 || ORIG_REF_NAME==system_xlconstant_1_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_xbar_2/system_xbar_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xbar_2 || ORIG_REF_NAME==system_xbar_2} -quiet] -quiet
+# IP: bd/system/ip/system_xbar_0/system_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xbar_0 || ORIG_REF_NAME==system_xbar_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_xbar_3/system_xbar_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xbar_3 || ORIG_REF_NAME==system_xbar_3} -quiet] -quiet
+# IP: bd/system/ip/system_xbar_1/system_xbar_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xbar_1 || ORIG_REF_NAME==system_xbar_1} -quiet] -quiet
 
 # IP: bd/system/ip/system_PetaENC_1_0/system_PetaENC_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_PetaENC_1_0 || ORIG_REF_NAME==system_PetaENC_1_0} -quiet] -quiet

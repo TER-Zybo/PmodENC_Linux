@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun 19 17:00:14 2024" VIVADOVERSION="2023.2.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 20 12:52:26 2024" VIVADOVERSION="2023.2.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="system" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -1212,6 +1212,11 @@
         <PORT DIR="I" NAME="S_AXI_wvalid" SIGIS="undef" SIGNAME="PetaENC_1_S_AXI_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ip2intc_irpt_0" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="PetaENC_1_ip2intc_irpt_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In9"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -10888,7 +10893,7 @@
     </MODULE>
     <MODULE COREREVISION="8" FULLNAME="/dvi2rgb_1" HWVERSION="2.0" INSTANCE="dvi2rgb_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dvi2rgb" VLNV="digilentinc.com:ip:dvi2rgb:2.0">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/dvi2rgb/docs/dvi2rgb.pdf"/>
+        <DOCUMENT SOURCE="c:/Users/hdway/Documents/vivado/vivado-library/ip/dvi2rgb/docs/dvi2rgb.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="kAddBUFG" VALUE="true"/>
@@ -11529,7 +11534,7 @@
         <PARAMETER NAME="C_M_AXI_GP1_ENABLE_STATIC_REMAP" VALUE="0"/>
         <PARAMETER NAME="C_M_AXI_GP1_ID_WIDTH" VALUE="12"/>
         <PARAMETER NAME="C_M_AXI_GP1_THREAD_ID_WIDTH" VALUE="12"/>
-        <PARAMETER NAME="C_NUM_F2P_INTR_INPUTS" VALUE="9"/>
+        <PARAMETER NAME="C_NUM_F2P_INTR_INPUTS" VALUE="10"/>
         <PARAMETER NAME="C_PACKAGE_NAME" VALUE="clg400"/>
         <PARAMETER NAME="C_PS7_SI_REV" VALUE="PRODUCTION"/>
         <PARAMETER NAME="C_S_AXI_ACP_ARUSER_VAL" VALUE="31"/>
@@ -12106,7 +12111,7 @@
         <PARAMETER NAME="PCW_NOR_SRAM_CS1_T_WC" VALUE="11"/>
         <PARAMETER NAME="PCW_NOR_SRAM_CS1_T_WP" VALUE="1"/>
         <PARAMETER NAME="PCW_NOR_SRAM_CS1_WE_TIME" VALUE="0"/>
-        <PARAMETER NAME="PCW_NUM_F2P_INTR_INPUTS" VALUE="9"/>
+        <PARAMETER NAME="PCW_NUM_F2P_INTR_INPUTS" VALUE="10"/>
         <PARAMETER NAME="PCW_OVERRIDE_BASIC_CLOCK" VALUE="0"/>
         <PARAMETER NAME="PCW_P2F_CAN0_INTR" VALUE="0"/>
         <PARAMETER NAME="PCW_P2F_CAN1_INTR" VALUE="0"/>
@@ -12746,7 +12751,7 @@
             <CONNECTION INSTANCE="system_imp" PORT="ac_iic_sda_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="8" NAME="IRQ_F2P" RIGHT="0" SENSITIVITY="LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="xlconcat_0_dout">
+        <PORT DIR="I" LEFT="9" NAME="IRQ_F2P" RIGHT="0" SENSITIVITY="LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="xlconcat_0_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
           </CONNECTIONS>
@@ -16442,7 +16447,7 @@
     </MODULE>
     <MODULE COREREVISION="8" FULLNAME="/rgb2dvi_1" HWVERSION="1.4" INSTANCE="rgb2dvi_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="rgb2dvi" VLNV="digilentinc.com:ip:rgb2dvi:1.4">
       <DOCUMENTS>
-        <DOCUMENT SOURCE="c:/Users/hdway/Documents/vivado/TER/Zybo-Z7/hw/repo/vivado-library/ip/rgb2dvi/docs/rgb2dvi.pdf"/>
+        <DOCUMENT SOURCE="c:/Users/hdway/Documents/vivado/vivado-library/ip/rgb2dvi/docs/rgb2dvi.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
         <PARAMETER NAME="kClkPrimitive" VALUE="PLL"/>
@@ -18959,8 +18964,8 @@
         <PARAMETER NAME="IN98_WIDTH" VALUE="1"/>
         <PARAMETER NAME="IN99_WIDTH" VALUE="1"/>
         <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="NUM_PORTS" VALUE="9"/>
-        <PARAMETER NAME="dout_width" VALUE="9"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="10"/>
+        <PARAMETER NAME="dout_width" VALUE="10"/>
         <PARAMETER NAME="Component_Name" VALUE="system_xlconcat_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -19010,7 +19015,12 @@
             <CONNECTION INSTANCE="axi_iic_0" PORT="iic2intc_irpt"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="8" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+        <PORT DIR="I" LEFT="0" NAME="In9" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_1_ip2intc_irpt_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PetaENC_1" PORT="ip2intc_irpt_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="IRQ_F2P"/>
           </CONNECTIONS>

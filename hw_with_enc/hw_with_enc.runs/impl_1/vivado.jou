@@ -3,8 +3,8 @@
 # SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
 # IP Build 4126054 on Fri Feb  9 11:39:09 MST 2024
 # SharedData Build 4115275 on Tue Jan 30 00:40:57 MST 2024
-# Start of session at: Wed Jun 19 17:09:49 2024
-# Process ID: 16468
+# Start of session at: Thu Jun 20 14:27:08 2024
+# Process ID: 15008
 # Current directory: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/impl_1
 # Command line: vivado.exe -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
 # Log file: C:/Users/hdway/Documents/vivado/TER/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/impl_1/system_wrapper.vdi
