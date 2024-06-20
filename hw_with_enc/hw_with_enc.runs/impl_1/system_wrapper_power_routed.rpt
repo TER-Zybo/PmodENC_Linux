@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date             : Tue Jun 11 12:44:14 2024
+| Date             : Thu Jun 20 14:47:21 2024
 | Host             : secil10.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.221        |
+| Total On-Chip Power (W)  | 2.217        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.058        |
+| Dynamic (W)              | 2.055        |
 | Device Static (W)        | 0.163        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 59.4         |
@@ -52,16 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.127 |       18 |       --- |             --- |
-| Slice Logic              |     0.018 |    42291 |       --- |             --- |
-|   LUT as Logic           |     0.015 |    13017 |     53200 |           24.47 |
-|   Register               |     0.002 |    22548 |    106400 |           21.19 |
+| Clocks                   |     0.123 |       18 |       --- |             --- |
+| Slice Logic              |     0.018 |    42376 |       --- |             --- |
+|   LUT as Logic           |     0.015 |    13050 |     53200 |           24.53 |
+|   Register               |     0.002 |    22590 |    106400 |           21.23 |
 |   CARRY4                 |     0.001 |      651 |     13300 |            4.89 |
 |   LUT as Distributed RAM |    <0.001 |      154 |     17400 |            0.89 |
 |   LUT as Shift Register  |    <0.001 |      547 |     17400 |            3.14 |
 |   F7/F8 Muxes            |    <0.001 |      469 |     53200 |            0.88 |
-|   Others                 |    <0.001 |     1612 |       --- |             --- |
-| Signals                  |     0.032 |    30740 |       --- |             --- |
+|   Others                 |    <0.001 |     1613 |       --- |             --- |
+| Signals                  |     0.032 |    30793 |       --- |             --- |
 | Block RAM                |     0.021 |       27 |       140 |           19.29 |
 | MMCM                     |     0.225 |        2 |         4 |           50.00 |
 | PLL                      |     0.117 |        1 |         4 |           25.00 |
@@ -69,7 +69,7 @@ Table of Contents
 | XADC                     |     0.002 |        1 |       --- |             --- |
 | PS7                      |     1.410 |        1 |       --- |             --- |
 | Static Power             |     0.163 |          |           |                 |
-| Total                    |     2.221 |          |           |                 |
+| Total                    |     2.217 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.241 |       0.221 |      0.020 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.237 |       0.217 |      0.020 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.229 |       0.212 |      0.017 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.014 |       0.013 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -170,12 +170,12 @@ Table of Contents
 +------------------------------+-----------+
 | Name                         | Power (W) |
 +------------------------------+-----------+
-| system_wrapper               |     2.058 |
+| system_wrapper               |     2.055 |
 |   ac_iic_scl_iobuf           |     0.004 |
 |   ac_iic_sda_iobuf           |     0.004 |
 |   hdmi_out_ddc_scl_iobuf     |     0.004 |
 |   hdmi_out_ddc_sda_iobuf     |     0.004 |
-|   system_i                   |     2.022 |
+|   system_i                   |     2.018 |
 |     axi_dynclk_0             |     0.110 |
 |       U0                     |     0.110 |
 |     axi_i2s_adi_1            |     0.002 |
@@ -188,17 +188,17 @@ Table of Contents
 |       m00_couplers           |     0.005 |
 |       s00_couplers           |     0.001 |
 |       s01_couplers           |     0.001 |
-|       xbar                   |     0.003 |
+|       xbar                   |     0.002 |
 |     axi_vdma_0               |     0.019 |
 |       U0                     |     0.019 |
 |     axi_vdma_1               |     0.010 |
 |       U0                     |     0.010 |
 |     clk_wiz_0                |     0.118 |
 |       inst                   |     0.118 |
-|     dvi2rgb_1                |     0.162 |
-|       U0                     |     0.162 |
-|     mipi_csi2_rx_subsystem_0 |     0.057 |
-|       U0                     |     0.057 |
+|     dvi2rgb_1                |     0.161 |
+|       U0                     |     0.161 |
+|     mipi_csi2_rx_subsystem_0 |     0.056 |
+|       U0                     |     0.056 |
 |     processing_system7_0     |     1.415 |
 |       inst                   |     1.415 |
 |     ps7_0_axi_periph_GP0     |     0.006 |
@@ -210,8 +210,8 @@ Table of Contents
 |       U0                     |     0.026 |
 |     v_axi4s_vid_out_0        |     0.006 |
 |       inst                   |     0.006 |
-|     v_frmbuf_wr_0            |     0.030 |
-|       inst                   |     0.030 |
+|     v_frmbuf_wr_0            |     0.031 |
+|       inst                   |     0.031 |
 |     v_tc_in                  |     0.019 |
 |       U0                     |     0.019 |
 |     v_tc_out                 |     0.015 |

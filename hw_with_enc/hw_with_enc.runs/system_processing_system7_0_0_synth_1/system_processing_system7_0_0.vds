@@ -3,19 +3,20 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed May 15 18:41:45 2024
-# Process ID: 127152
-# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_processing_system7_0_0_synth_1
+# Start of session at: Thu Jun 20 14:42:54 2024
+# Process ID: 283398
+# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_processing_system7_0_0_synth_1
 # Command line: vivado -log system_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_processing_system7_0_0.tcl
-# Log file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.vds
-# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_processing_system7_0_0_synth_1/vivado.jou
-# Running On: secil7.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 3799.505 MHz, CPU Physical cores: 8, Host memory: 16464 MB
+# Log file: /nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.vds
+# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_processing_system7_0_0_synth_1/vivado.jou
+# Running On: secil10.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 3788.810 MHz, CPU Physical cores: 8, Host memory: 16464 MB
 #-----------------------------------------------------------
 Sourcing tcl script '/nfs/xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
 source system_processing_system7_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:24 . Memory (MB): peak = 1536.629 ; gain = 47.023 ; free physical = 6343 ; free virtual = 18220
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1528.367 ; gain = 37.023 ; free physical = 242 ; free virtual = 24230
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/home/m1info3/Documents/TER_FPGA/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2023.1/data/ip'.
 Command: synth_design -top system_processing_system7_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -24,34 +25,34 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 127852
+INFO: [Synth 8-7075] Helper process launched with PID 283531
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2312.754 ; gain = 378.645 ; free physical = 296 ; free virtual = 12078
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2301.648 ; gain = 376.676 ; free physical = 262 ; free virtual = 20729
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [/nfs/xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/nfs/xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
 INFO: [Synth 8-6157] synthesizing module 'BIBUF' [/nfs/xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1166]
 INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [/nfs/xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1166]
 INFO: [Synth 8-6157] synthesizing module 'PS7' [/nfs/xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:109921]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [/nfs/xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:109921]
-INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
-WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
-INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:716]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:53]
 WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -132,55 +133,55 @@ WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2387.691 ; gain = 453.582 ; free physical = 323 ; free virtual = 11859
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2379.523 ; gain = 454.551 ; free physical = 173 ; free virtual = 20429
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2402.535 ; gain = 468.426 ; free physical = 315 ; free virtual = 11852
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2394.367 ; gain = 469.395 ; free physical = 167 ; free virtual = 20424
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2402.535 ; gain = 468.426 ; free physical = 315 ; free virtual = 11852
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2394.367 ; gain = 469.395 ; free physical = 167 ; free virtual = 20424
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2405.504 ; gain = 0.000 ; free physical = 305 ; free virtual = 11844
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2397.336 ; gain = 0.000 ; free physical = 221 ; free virtual = 20374
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_processing_system7_0_0_propImpl.xdc].
+Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_processing_system7_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_processing_system7_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2475.473 ; gain = 0.000 ; free physical = 378 ; free virtual = 11602
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2467.305 ; gain = 0.000 ; free physical = 171 ; free virtual = 20340
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2475.473 ; gain = 0.000 ; free physical = 361 ; free virtual = 11586
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2467.305 ; gain = 0.000 ; free physical = 171 ; free virtual = 20340
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2475.473 ; gain = 541.363 ; free physical = 194 ; free virtual = 10272
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2467.305 ; gain = 542.332 ; free physical = 213 ; free virtual = 20288
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2475.473 ; gain = 541.363 ; free physical = 194 ; free virtual = 10271
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2467.305 ; gain = 542.332 ; free physical = 213 ; free virtual = 20288
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2475.473 ; gain = 541.363 ; free physical = 216 ; free virtual = 10126
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2467.305 ; gain = 542.332 ; free physical = 211 ; free virtual = 20284
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2475.473 ; gain = 541.363 ; free physical = 302 ; free virtual = 9880
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2467.305 ; gain = 542.332 ; free physical = 212 ; free virtual = 20285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -225,25 +226,25 @@ WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5
 WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 2475.473 ; gain = 541.363 ; free physical = 763 ; free virtual = 10279
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2467.305 ; gain = 542.332 ; free physical = 185 ; free virtual = 20260
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2539.457 ; gain = 605.348 ; free physical = 171 ; free virtual = 9813
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2529.289 ; gain = 604.316 ; free physical = 220 ; free virtual = 20122
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2558.465 ; gain = 624.355 ; free physical = 158 ; free virtual = 9794
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2549.297 ; gain = 624.324 ; free physical = 200 ; free virtual = 20102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2566.473 ; gain = 632.363 ; free physical = 217 ; free virtual = 9765
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2557.305 ; gain = 632.332 ; free physical = 188 ; free virtual = 20090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -261,37 +262,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 2577.379 ; gain = 643.270 ; free physical = 2125 ; free virtual = 12408
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.211 ; gain = 643.238 ; free physical = 471 ; free virtual = 20362
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 2577.379 ; gain = 643.270 ; free physical = 2125 ; free virtual = 12408
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.211 ; gain = 643.238 ; free physical = 471 ; free virtual = 20362
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 2577.379 ; gain = 643.270 ; free physical = 2125 ; free virtual = 12408
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.211 ; gain = 643.238 ; free physical = 471 ; free virtual = 20362
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 2577.379 ; gain = 643.270 ; free physical = 2124 ; free virtual = 12408
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.211 ; gain = 643.238 ; free physical = 471 ; free virtual = 20362
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 2577.379 ; gain = 643.270 ; free physical = 2124 ; free virtual = 12408
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.211 ; gain = 643.238 ; free physical = 471 ; free virtual = 20362
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 2577.379 ; gain = 643.270 ; free physical = 2124 ; free virtual = 12407
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.211 ; gain = 643.238 ; free physical = 471 ; free virtual = 20362
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -313,27 +314,26 @@ Report Cell Usage:
 |4     |PS7   |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 2577.379 ; gain = 643.270 ; free physical = 2124 ; free virtual = 12407
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.211 ; gain = 643.238 ; free physical = 471 ; free virtual = 20361
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 80 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:36 . Memory (MB): peak = 2577.379 ; gain = 570.332 ; free physical = 2110 ; free virtual = 12405
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 2577.387 ; gain = 643.270 ; free physical = 2108 ; free virtual = 12402
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2568.211 ; gain = 570.301 ; free physical = 468 ; free virtual = 20359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.219 ; gain = 643.238 ; free physical = 468 ; free virtual = 20359
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2577.387 ; gain = 0.000 ; free physical = 2383 ; free virtual = 12677
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2568.219 ; gain = 0.000 ; free physical = 753 ; free virtual = 20643
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2597.191 ; gain = 0.000 ; free physical = 2299 ; free virtual = 12609
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2589.023 ; gain = 0.000 ; free physical = 740 ; free virtual = 20632
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 29c46045
+Synth Design complete | Checksum: 1dedb220
 INFO: [Common 17-83] Releasing license: Synthesis
-28 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 2597.191 ; gain = 1009.000 ; free physical = 2127 ; free virtual = 12491
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1606.235; main = 1318.802; forked = 290.565
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4033.395; main = 2597.195; forked = 1589.934
-INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:06 . Memory (MB): peak = 2661.223 ; gain = 64.031 ; free physical = 3892 ; free virtual = 14852
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2589.023 ; gain = 1009.094 ; free physical = 740 ; free virtual = 20631
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1899.415; main = 1572.485; forked = 360.561
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4163.117; main = 2589.027; forked = 1605.809
+INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_processing_system7_0_0_utilization_synth.rpt -pb system_processing_system7_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 15 18:43:27 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 20 14:43:34 2024...

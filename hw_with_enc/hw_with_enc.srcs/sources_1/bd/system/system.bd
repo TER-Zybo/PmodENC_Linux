@@ -85,7 +85,7 @@
       "xlconcat_0": "",
       "xlconstant_0": "",
       "xlconstant_1": "",
-      "PetaENC_0": ""
+      "PetaENC_INT_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -3511,6 +3511,12 @@
           "PCW_S_AXI_HP1_ID_WIDTH": {
             "value": "6"
           },
+          "PCW_S_AXI_HP2_DATA_WIDTH": {
+            "value": "64"
+          },
+          "PCW_S_AXI_HP3_DATA_WIDTH": {
+            "value": "64"
+          },
           "PCW_TPIU_PERIPHERAL_CLKSRC": {
             "value": "External"
           },
@@ -6199,7 +6205,7 @@
         "inst_hier_path": "xlconcat_0",
         "parameters": {
           "NUM_PORTS": {
-            "value": "9"
+            "value": "10"
           }
         }
       },
@@ -6215,11 +6221,11 @@
         "xci_path": "ip/system_xlconstant_1_0/system_xlconstant_1_0.xci",
         "inst_hier_path": "xlconstant_1"
       },
-      "PetaENC_0": {
-        "vlnv": "user.org:user:PetaENC:1.0",
-        "xci_name": "system_PetaENC_0_0",
-        "xci_path": "ip/system_PetaENC_0_0/system_PetaENC_0_0.xci",
-        "inst_hier_path": "PetaENC_0",
+      "PetaENC_INT_0": {
+        "vlnv": "user.org:user:PetaENC_INT:1.0",
+        "xci_name": "system_PetaENC_INT_0_0",
+        "xci_path": "ip/system_PetaENC_INT_0_0/system_PetaENC_INT_0_0.xci",
+        "inst_hier_path": "PetaENC_INT_0",
         "interface_ports": {
           "S_AXI": {
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -6230,10 +6236,10 @@
       }
     },
     "interface_nets": {
-      "PetaENC_0_Pmod_ENC": {
+      "PetaENC_INT_0_Pmod_ENC": {
         "interface_ports": [
           "Pmod_out_0",
-          "PetaENC_0/Pmod_ENC"
+          "PetaENC_INT_0/Pmod_ENC"
         ]
       },
       "Vaux14_1": {
@@ -6497,7 +6503,7 @@
       "ps7_0_axi_periph_GP0_M15_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph_GP0/M15_AXI",
-          "PetaENC_0/S_AXI"
+          "PetaENC_INT_0/S_AXI"
         ]
       },
       "ps7_0_axi_periph_M00_AXI": {
@@ -6572,6 +6578,12 @@
         "ports": [
           "pwm_rgb/pwm",
           "pwm_rgb"
+        ]
+      },
+      "PetaENC_INT_0_ip2intc_irpt_0": {
+        "ports": [
+          "PetaENC_INT_0/ip2intc_irpt_0",
+          "xlconcat_0/In9"
         ]
       },
       "SDATA_I_1": {
@@ -6750,7 +6762,7 @@
           "v_tc_out/s_axi_aclk",
           "xadc_wiz_0/s_axi_aclk",
           "ps7_0_axi_periph_GP0/M15_ACLK",
-          "PetaENC_0/s_axi_aclk"
+          "PetaENC_INT_0/s_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_CLK1": {
@@ -6847,7 +6859,7 @@
           "v_tc_out/s_axi_aresetn",
           "xadc_wiz_0/s_axi_aresetn",
           "ps7_0_axi_periph_GP0/M15_ARESETN",
-          "PetaENC_0/s_axi_aresetn"
+          "PetaENC_INT_0/s_axi_aresetn"
         ]
       },
       "rst_ps7_0_133M_interconnect_aresetn": {
@@ -6959,8 +6971,8 @@
         "address_spaces": {
           "Data": {
             "segments": {
-              "SEG_PetaENC_0_Reg0": {
-                "address_block": "/PetaENC_0/S_AXI/Reg0",
+              "SEG_PetaENC_INT_0_Reg0": {
+                "address_block": "/PetaENC_INT_0/S_AXI/Reg0",
                 "offset": "0x40000000",
                 "range": "4K"
               },

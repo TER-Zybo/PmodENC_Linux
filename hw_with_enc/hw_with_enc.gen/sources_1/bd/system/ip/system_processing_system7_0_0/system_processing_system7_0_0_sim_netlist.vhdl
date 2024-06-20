@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
--- Date        : Wed May 15 18:43:27 2024
--- Host        : secil7.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
+-- Date        : Thu Jun 20 14:43:34 2024
+-- Host        : secil10.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
 -- Command     : write_vhdl -force -mode funcsim
---               /nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/proj/hw.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_sim_netlist.vhdl
+--               /nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_sim_netlist.vhdl
 -- Design      : system_processing_system7_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -600,7 +600,7 @@ entity system_processing_system7_0_0_processing_system7_v5_5_processing_system7 
     IRQ_P2F_SPI1 : out STD_LOGIC;
     IRQ_P2F_UART1 : out STD_LOGIC;
     IRQ_P2F_CAN1 : out STD_LOGIC;
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 9 downto 0 );
     Core0_nFIQ : in STD_LOGIC;
     Core0_nIRQ : in STD_LOGIC;
     Core1_nFIQ : in STD_LOGIC;
@@ -752,7 +752,7 @@ entity system_processing_system7_0_0_processing_system7_v5_5_processing_system7 
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH : integer;
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH of system_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
   attribute C_NUM_F2P_INTR_INPUTS : integer;
-  attribute C_NUM_F2P_INTR_INPUTS of system_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 9;
+  attribute C_NUM_F2P_INTR_INPUTS of system_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 10;
   attribute C_PACKAGE_NAME : string;
   attribute C_PACKAGE_NAME of system_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "clg400";
   attribute C_PS7_SI_REV : string;
@@ -3526,8 +3526,8 @@ PS7_i: unisim.vcomponents.PS7
       FTMTP2FTRIG(1) => PS7_i_n_719,
       FTMTP2FTRIG(0) => PS7_i_n_720,
       FTMTP2FTRIGACK(3 downto 0) => B"0000",
-      IRQF2P(19 downto 9) => B"00000000000",
-      IRQF2P(8 downto 0) => IRQ_F2P(8 downto 0),
+      IRQF2P(19 downto 10) => B"0000000000",
+      IRQF2P(9 downto 0) => IRQ_F2P(9 downto 0),
       IRQP2F(28) => PS7_i_n_292,
       IRQP2F(27) => PS7_i_n_293,
       IRQP2F(26) => PS7_i_n_294,
@@ -5401,7 +5401,7 @@ entity system_processing_system7_0_0 is
     S_AXI_HP1_WID : in STD_LOGIC_VECTOR ( 5 downto 0 );
     S_AXI_HP1_WDATA : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S_AXI_HP1_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DMA0_DATYPE : out STD_LOGIC_VECTOR ( 1 downto 0 );
     DMA0_DAVALID : out STD_LOGIC;
     DMA0_DRREADY : out STD_LOGIC;
@@ -5749,7 +5749,7 @@ architecture STRUCTURE of system_processing_system7_0_0 is
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH : integer;
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH of inst : label is 12;
   attribute C_NUM_F2P_INTR_INPUTS : integer;
-  attribute C_NUM_F2P_INTR_INPUTS of inst : label is 9;
+  attribute C_NUM_F2P_INTR_INPUTS of inst : label is 10;
   attribute C_PACKAGE_NAME : string;
   attribute C_PACKAGE_NAME of inst : label is "clg400";
   attribute C_PS7_SI_REV : string;
@@ -5846,11 +5846,11 @@ architecture STRUCTURE of system_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of DMA1_DRREADY : signal is "xilinx.com:interface:axis:1.0 DMA1_REQ TREADY";
   attribute X_INTERFACE_INFO of DMA1_DRVALID : signal is "xilinx.com:interface:axis:1.0 DMA1_REQ TVALID";
   attribute X_INTERFACE_INFO of FCLK_CLK0 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK";
-  attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of FCLK_CLK0 : signal is "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_CLK1 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK1 CLK";
-  attribute X_INTERFACE_PARAMETER of FCLK_CLK1 : signal is "XIL_INTERFACENAME FCLK_CLK1, FREQ_HZ 133333344, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of FCLK_CLK1 : signal is "XIL_INTERFACENAME FCLK_CLK1, FREQ_HZ 1.33333e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK1, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_CLK2 : signal is "xilinx.com:signal:clock:1.0 FCLK_CLK2 CLK";
-  attribute X_INTERFACE_PARAMETER of FCLK_CLK2 : signal is "XIL_INTERFACENAME FCLK_CLK2, FREQ_HZ 200000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK2, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of FCLK_CLK2 : signal is "XIL_INTERFACENAME FCLK_CLK2, FREQ_HZ 2e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN system_processing_system7_0_0_FCLK_CLK2, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of FCLK_RESET0_N : signal is "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST";
   attribute X_INTERFACE_PARAMETER of FCLK_RESET0_N : signal is "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of I2C0_SCL_I : signal is "xilinx.com:interface:iic:1.0 IIC_0 SCL_I";
@@ -5934,7 +5934,7 @@ architecture STRUCTURE of system_processing_system7_0_0 is
   attribute X_INTERFACE_INFO of GPIO_O : signal is "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O";
   attribute X_INTERFACE_INFO of GPIO_T : signal is "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T";
   attribute X_INTERFACE_INFO of IRQ_F2P : signal is "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT";
-  attribute X_INTERFACE_PARAMETER of IRQ_F2P : signal is "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH, PortWidth 9";
+  attribute X_INTERFACE_PARAMETER of IRQ_F2P : signal is "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH, PortWidth 10";
   attribute X_INTERFACE_INFO of MIO : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ARADDR : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARADDR";
   attribute X_INTERFACE_INFO of M_AXI_GP0_ARBURST : signal is "xilinx.com:interface:aximm:1.0 M_AXI_GP0 ARBURST";
@@ -6203,7 +6203,7 @@ inst: entity work.system_processing_system7_0_0_processing_system7_v5_5_processi
       I2C1_SDA_I => I2C1_SDA_I,
       I2C1_SDA_O => I2C1_SDA_O,
       I2C1_SDA_T => I2C1_SDA_T,
-      IRQ_F2P(8 downto 0) => IRQ_F2P(8 downto 0),
+      IRQ_F2P(9 downto 0) => IRQ_F2P(9 downto 0),
       IRQ_P2F_CAN0 => NLW_inst_IRQ_P2F_CAN0_UNCONNECTED,
       IRQ_P2F_CAN1 => NLW_inst_IRQ_P2F_CAN1_UNCONNECTED,
       IRQ_P2F_CTI => NLW_inst_IRQ_P2F_CTI_UNCONNECTED,

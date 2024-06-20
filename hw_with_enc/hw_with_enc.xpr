@@ -104,68 +104,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_tc_out_0/system_v_tc_out_0.xci">
-          <Proxy FileSetName="system_v_tc_out_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0.xci">
-          <Proxy FileSetName="system_v_vid_in_axi4s_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.xci">
-          <Proxy FileSetName="system_xadc_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_PetaENC_0_0/system_PetaENC_0_0.xci">
-          <Proxy FileSetName="system_PetaENC_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci">
-          <Proxy FileSetName="system_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0.xci">
-          <Proxy FileSetName="system_dvi2rgb_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_mipi_csi2_rx_subsystem_0_0/system_mipi_csi2_rx_subsystem_0_0.xci">
-          <Proxy FileSetName="system_mipi_csi2_rx_subsystem_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xci">
-          <Proxy FileSetName="system_proc_sys_reset_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_processing_system7_0_0/system_processing_system7_0_0.xci">
-          <Proxy FileSetName="system_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_1/system_xbar_1.xci">
-          <Proxy FileSetName="system_xbar_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_pwm_rgb_0/system_pwm_rgb_0.xci">
-          <Proxy FileSetName="system_pwm_rgb_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0.xci">
-          <Proxy FileSetName="system_rgb2dvi_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xci">
-          <Proxy FileSetName="system_rst_ps7_0_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rst_ps7_0_133M_0/system_rst_ps7_0_133M_0.xci">
-          <Proxy FileSetName="system_rst_ps7_0_133M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_util_ds_buf_fclk1_0/system_util_ds_buf_fclk1_0.xci">
-          <Proxy FileSetName="system_util_ds_buf_fclk1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.xci">
-          <Proxy FileSetName="system_v_axi4s_vid_out_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.xci">
-          <Proxy FileSetName="system_v_frmbuf_wr_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_tc_in_0/system_v_tc_in_0.xci">
-          <Proxy FileSetName="system_v_tc_in_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_video_0/system_axi_gpio_video_0.xci">
-          <Proxy FileSetName="system_axi_gpio_video_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_i2s_adi_1_0/system_axi_i2s_adi_1_0.xci">
-          <Proxy FileSetName="system_axi_i2s_adi_1_0"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_dynclk_0_0/system_axi_dynclk_0_0.xci">
+          <Proxy FileSetName="system_axi_dynclk_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_iic_0_0/system_axi_iic_0_0.xci">
           <Proxy FileSetName="system_axi_iic_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_i2s_adi_1_0/system_axi_i2s_adi_1_0.xci">
+          <Proxy FileSetName="system_axi_i2s_adi_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_0/system_xbar_0.xci">
           <Proxy FileSetName="system_xbar_0"/>
@@ -173,8 +119,65 @@
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xci">
           <Proxy FileSetName="system_axi_vdma_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_vdma_1_0/system_axi_vdma_1_0.xci">
-          <Proxy FileSetName="system_axi_vdma_1_0"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_sw_btn_0/system_axi_gpio_sw_btn_0.xci">
+          <Proxy FileSetName="system_axi_gpio_sw_btn_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_eth_0/system_axi_gpio_eth_0.xci">
+          <Proxy FileSetName="system_axi_gpio_eth_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_video_0/system_axi_gpio_video_0.xci">
+          <Proxy FileSetName="system_axi_gpio_video_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_led_0/system_axi_gpio_led_0.xci">
+          <Proxy FileSetName="system_axi_gpio_led_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rgb2dvi_1_0/system_rgb2dvi_1_0.xci">
+          <Proxy FileSetName="system_rgb2dvi_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_proc_sys_reset_0_0/system_proc_sys_reset_0_0.xci">
+          <Proxy FileSetName="system_proc_sys_reset_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci">
+          <Proxy FileSetName="system_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_tc_out_0/system_v_tc_out_0.xci">
+          <Proxy FileSetName="system_v_tc_out_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.xci">
+          <Proxy FileSetName="system_xadc_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.xci">
+          <Proxy FileSetName="system_v_axi4s_vid_out_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_tc_in_0/system_v_tc_in_0.xci">
+          <Proxy FileSetName="system_v_tc_in_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_pwm_rgb_0/system_pwm_rgb_0.xci">
+          <Proxy FileSetName="system_pwm_rgb_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_util_ds_buf_fclk1_0/system_util_ds_buf_fclk1_0.xci">
+          <Proxy FileSetName="system_util_ds_buf_fclk1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_1/system_xbar_1.xci">
+          <Proxy FileSetName="system_xbar_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_frmbuf_wr_0_0/system_v_frmbuf_wr_0_0.xci">
+          <Proxy FileSetName="system_v_frmbuf_wr_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rst_ps7_0_133M_0/system_rst_ps7_0_133M_0.xci">
+          <Proxy FileSetName="system_rst_ps7_0_133M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_processing_system7_0_0/system_processing_system7_0_0.xci">
+          <Proxy FileSetName="system_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xci">
+          <Proxy FileSetName="system_rst_ps7_0_100M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_dvi2rgb_1_0/system_dvi2rgb_1_0.xci">
+          <Proxy FileSetName="system_dvi2rgb_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_mipi_csi2_rx_subsystem_0_0/system_mipi_csi2_rx_subsystem_0_0.xci">
+          <Proxy FileSetName="system_mipi_csi2_rx_subsystem_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axis_subset_converter_0_0/system_axis_subset_converter_0_0.xci">
           <Proxy FileSetName="system_axis_subset_converter_0_0"/>
@@ -185,17 +188,11 @@
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axis_subset_converter_out_0/system_axis_subset_converter_out_0.xci">
           <Proxy FileSetName="system_axis_subset_converter_out_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_dynclk_0_0/system_axi_dynclk_0_0.xci">
-          <Proxy FileSetName="system_axi_dynclk_0_0"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_vdma_1_0/system_axi_vdma_1_0.xci">
+          <Proxy FileSetName="system_axi_vdma_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_eth_0/system_axi_gpio_eth_0.xci">
-          <Proxy FileSetName="system_axi_gpio_eth_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_led_0/system_axi_gpio_led_0.xci">
-          <Proxy FileSetName="system_axi_gpio_led_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_sw_btn_0/system_axi_gpio_sw_btn_0.xci">
-          <Proxy FileSetName="system_axi_gpio_sw_btn_0"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0.xci">
+          <Proxy FileSetName="system_v_vid_in_axi4s_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/ip_0/bd_ca02_xbar_0.xci">
           <Proxy FileSetName="bd_ca02_xbar_0"/>
@@ -211,6 +208,9 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/ip_4/bd_ca02_vfb_0_0.xci">
           <Proxy FileSetName="bd_ca02_vfb_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_PetaENC_INT_0_0/system_PetaENC_INT_0_0.xci">
+          <Proxy FileSetName="system_PetaENC_INT_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/system/hdl/system_wrapper.vhd">
@@ -475,9 +475,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="system_PetaENC_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/system_PetaENC_0_0" RelGenDir="$PGENDIR/system_PetaENC_0_0">
+    <FileSet Name="system_PetaENC_INT_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/system_PetaENC_INT_0_0" RelGenDir="$PGENDIR/system_PetaENC_INT_0_0">
       <Config>
-        <Option Name="TopModule" Val="system_PetaENC_0_0"/>
+        <Option Name="TopModule" Val="system_PetaENC_INT_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -864,9 +864,11 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="system_PetaENC_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_PetaENC_0_0" Part="xc7z020clg400-1" ConstrsSet="system_PetaENC_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_PetaENC_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/system_PetaENC_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/system_PetaENC_0_0_synth_1">
+    <Run Id="system_PetaENC_INT_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_PetaENC_INT_0_0" Part="xc7z020clg400-1" ConstrsSet="system_PetaENC_INT_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_PetaENC_INT_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/system_PetaENC_INT_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/system_PetaENC_INT_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -1493,9 +1495,11 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="system_PetaENC_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="system_PetaENC_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="system_PetaENC_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/system_PetaENC_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/system_PetaENC_0_0_impl_1">
+    <Run Id="system_PetaENC_INT_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg400-1" ConstrsSet="system_PetaENC_INT_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="system_PetaENC_INT_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/system_PetaENC_INT_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/system_PetaENC_INT_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

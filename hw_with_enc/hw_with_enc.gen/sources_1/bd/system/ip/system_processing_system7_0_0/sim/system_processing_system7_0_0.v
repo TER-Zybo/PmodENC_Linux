@@ -399,7 +399,7 @@ input [5 : 0] S_AXI_HP1_AWID;
 input [5 : 0] S_AXI_HP1_WID;
 input [63 : 0] S_AXI_HP1_WDATA;
 input [7 : 0] S_AXI_HP1_WSTRB;
-input [8 : 0] IRQ_F2P;
+input [9 : 0] IRQ_F2P;
 output [1 : 0] DMA0_DATYPE;
 output DMA0_DAVALID;
 output DMA0_DRREADY;

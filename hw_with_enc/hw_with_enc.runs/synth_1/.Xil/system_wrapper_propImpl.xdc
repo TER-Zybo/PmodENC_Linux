@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/nfs/home/m1info3/Documents/TER_FPGA/Zybo-Z7/hw/src/constraints/Zybo-Z7-Master.xdc rfile:../../../../Zybo-Z7/hw/src/constraints/Zybo-Z7-Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.srcs/constrs_1/Zybo-Z7-Master.xdc rfile:../../../hw_with_enc.srcs/constrs_1/Zybo-Z7-Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN Y11   IOSTANDARD LVCMOS33 } [get_ports { pwm_rgb[2] }]; #IO_L18N_T2_13 Sch=led5_r
 set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]

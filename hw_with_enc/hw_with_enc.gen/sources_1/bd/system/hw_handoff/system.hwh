@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jun 11 12:21:50 2024" VIVADOVERSION="2023.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jun 20 14:42:45 2024" VIVADOVERSION="2023.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.2" DEVICE="7z020" NAME="system" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -389,124 +389,124 @@
         <CONNECTION INSTANCE="axi_gpio_sw_btn" PORT="gpio_io_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin1_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin1_o">
+    <PORT DIR="O" NAME="Pmod_out_0_pin1_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin1_o">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin1_o"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin1_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Pmod_out_0_pin7_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin7_i">
+    <PORT DIR="I" NAME="Pmod_out_0_pin7_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin7_i">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin7_i"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin7_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin2_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin2_o">
+    <PORT DIR="O" NAME="Pmod_out_0_pin2_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin2_o">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin2_o"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin2_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Pmod_out_0_pin8_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin8_i">
+    <PORT DIR="I" NAME="Pmod_out_0_pin8_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin8_i">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin8_i"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin8_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin3_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin3_o">
+    <PORT DIR="O" NAME="Pmod_out_0_pin3_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin3_o">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin3_o"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin3_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Pmod_out_0_pin9_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin9_i">
+    <PORT DIR="I" NAME="Pmod_out_0_pin9_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin9_i">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin9_i"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin9_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin10_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin10_o">
+    <PORT DIR="O" NAME="Pmod_out_0_pin10_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin10_o">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin10_o"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin10_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin4_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin4_o">
+    <PORT DIR="O" NAME="Pmod_out_0_pin4_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin4_o">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin4_o"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin4_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Pmod_out_0_pin3_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin3_i">
+    <PORT DIR="I" NAME="Pmod_out_0_pin3_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin3_i">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin3_i"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin3_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Pmod_out_0_pin4_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin4_i">
+    <PORT DIR="I" NAME="Pmod_out_0_pin4_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin4_i">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin4_i"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin4_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Pmod_out_0_pin1_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin1_i">
+    <PORT DIR="I" NAME="Pmod_out_0_pin1_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin1_i">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin1_i"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin1_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Pmod_out_0_pin2_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin2_i">
+    <PORT DIR="I" NAME="Pmod_out_0_pin2_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin2_i">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin2_i"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin2_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin10_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin10_t">
+    <PORT DIR="O" NAME="Pmod_out_0_pin10_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin10_t">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin10_t"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin10_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin8_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin8_t">
+    <PORT DIR="O" NAME="Pmod_out_0_pin8_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin8_t">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin8_t"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin8_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin9_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin9_t">
+    <PORT DIR="O" NAME="Pmod_out_0_pin9_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin9_t">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin9_t"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin9_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin4_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin4_t">
+    <PORT DIR="O" NAME="Pmod_out_0_pin4_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin4_t">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin4_t"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin4_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin9_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin9_o">
+    <PORT DIR="O" NAME="Pmod_out_0_pin9_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin9_o">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin9_o"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin9_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="Pmod_out_0_pin10_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin10_i">
+    <PORT DIR="I" NAME="Pmod_out_0_pin10_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin10_i">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin10_i"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin10_i"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin7_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin7_t">
+    <PORT DIR="O" NAME="Pmod_out_0_pin7_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin7_t">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin7_t"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin7_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin1_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin1_t">
+    <PORT DIR="O" NAME="Pmod_out_0_pin1_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin1_t">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin1_t"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin1_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin2_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin2_t">
+    <PORT DIR="O" NAME="Pmod_out_0_pin2_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin2_t">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin2_t"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin2_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin7_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin7_o">
+    <PORT DIR="O" NAME="Pmod_out_0_pin7_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin7_o">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin7_o"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin7_o"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin3_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin3_t">
+    <PORT DIR="O" NAME="Pmod_out_0_pin3_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin3_t">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin3_t"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin3_t"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="Pmod_out_0_pin8_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin8_o">
+    <PORT DIR="O" NAME="Pmod_out_0_pin8_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin8_o">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="PetaENC_0" PORT="Pmod_ENC_pin8_o"/>
+        <CONNECTION INSTANCE="PetaENC_INT_0" PORT="Pmod_ENC_pin8_o"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" LEFT="0" NAME="ac_bclk" RIGHT="0" SIGIS="undef" SIGNAME="axi_i2s_adi_1_BCLK_O">
@@ -731,7 +731,7 @@
         <PORTMAP LOGICAL="TRI_I" PHYSICAL="sws_4bits_tri_i"/>
       </PORTMAPS>
     </BUSINTERFACE>
-    <BUSINTERFACE BUSNAME="PetaENC_0_Pmod_ENC" NAME="Pmod_out_0" TYPE="INITIATOR">
+    <BUSINTERFACE BUSNAME="PetaENC_INT_0_Pmod_ENC" NAME="Pmod_out_0" TYPE="INITIATOR">
       <PORTMAPS>
         <PORTMAP LOGICAL="PIN1_O" PHYSICAL="Pmod_out_0_pin1_o"/>
         <PORTMAP LOGICAL="PIN7_I" PHYSICAL="Pmod_out_0_pin7_i"/>
@@ -834,7 +834,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="1" FULLNAME="/PetaENC_0" HWVERSION="1.0" INSTANCE="PetaENC_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PetaENC" VLNV="user.org:user:PetaENC:1.0">
+    <MODULE COREREVISION="1" FULLNAME="/PetaENC_INT_0" HWVERSION="1.0" INSTANCE="PetaENC_INT_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PetaENC_INT" VLNV="user.org:user:PetaENC_INT:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S_AXI" NAME="Reg0" RANGE="0x00001000" USAGE="register">
@@ -1003,215 +1003,220 @@
         </ADDRESSBLOCK>
       </ADDRESSBLOCKS>
       <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="system_PetaENC_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="system_PetaENC_INT_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x40000000"/>
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x40000FFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="Pmod_ENC_pin10_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin10_i">
+        <PORT DIR="I" NAME="Pmod_ENC_pin10_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin10_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin10_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin10_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin10_o">
+        <PORT DIR="O" NAME="Pmod_ENC_pin10_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin10_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin10_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin10_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin10_t">
+        <PORT DIR="O" NAME="Pmod_ENC_pin10_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin10_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin10_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Pmod_ENC_pin1_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin1_i">
+        <PORT DIR="I" NAME="Pmod_ENC_pin1_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin1_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin1_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin1_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin1_o">
+        <PORT DIR="O" NAME="Pmod_ENC_pin1_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin1_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin1_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin1_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin1_t">
+        <PORT DIR="O" NAME="Pmod_ENC_pin1_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin1_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin1_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Pmod_ENC_pin2_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin2_i">
+        <PORT DIR="I" NAME="Pmod_ENC_pin2_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin2_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin2_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin2_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin2_o">
+        <PORT DIR="O" NAME="Pmod_ENC_pin2_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin2_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin2_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin2_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin2_t">
+        <PORT DIR="O" NAME="Pmod_ENC_pin2_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin2_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin2_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Pmod_ENC_pin3_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin3_i">
+        <PORT DIR="I" NAME="Pmod_ENC_pin3_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin3_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin3_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin3_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin3_o">
+        <PORT DIR="O" NAME="Pmod_ENC_pin3_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin3_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin3_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin3_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin3_t">
+        <PORT DIR="O" NAME="Pmod_ENC_pin3_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin3_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin3_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Pmod_ENC_pin4_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin4_i">
+        <PORT DIR="I" NAME="Pmod_ENC_pin4_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin4_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin4_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin4_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin4_o">
+        <PORT DIR="O" NAME="Pmod_ENC_pin4_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin4_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin4_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin4_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin4_t">
+        <PORT DIR="O" NAME="Pmod_ENC_pin4_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin4_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin4_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Pmod_ENC_pin7_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin7_i">
+        <PORT DIR="I" NAME="Pmod_ENC_pin7_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin7_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin7_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin7_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin7_o">
+        <PORT DIR="O" NAME="Pmod_ENC_pin7_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin7_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin7_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin7_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin7_t">
+        <PORT DIR="O" NAME="Pmod_ENC_pin7_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin7_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin7_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Pmod_ENC_pin8_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin8_i">
+        <PORT DIR="I" NAME="Pmod_ENC_pin8_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin8_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin8_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin8_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin8_o">
+        <PORT DIR="O" NAME="Pmod_ENC_pin8_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin8_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin8_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin8_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin8_t">
+        <PORT DIR="O" NAME="Pmod_ENC_pin8_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin8_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin8_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Pmod_ENC_pin9_i" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin9_i">
+        <PORT DIR="I" NAME="Pmod_ENC_pin9_i" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin9_i">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin9_i"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin9_o" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin9_o">
+        <PORT DIR="O" NAME="Pmod_ENC_pin9_o" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin9_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin9_o"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="Pmod_ENC_pin9_t" SIGIS="undef" SIGNAME="PetaENC_0_Pmod_ENC_pin9_t">
+        <PORT DIR="O" NAME="Pmod_ENC_pin9_t" SIGIS="undef" SIGNAME="PetaENC_INT_0_Pmod_ENC_pin9_t">
           <CONNECTIONS>
             <CONNECTION INSTANCE="system_imp" PORT="Pmod_out_0_pin9_t"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="8" NAME="S_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_araddr">
+        <PORT DIR="I" LEFT="8" NAME="S_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_araddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_araddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S_AXI_arready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_arready">
+        <PORT DIR="O" NAME="S_AXI_arready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S_AXI_arvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_arvalid">
+        <PORT DIR="I" NAME="S_AXI_arvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="8" NAME="S_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_awaddr">
+        <PORT DIR="I" LEFT="8" NAME="S_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_awaddr">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_awaddr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S_AXI_awready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_awready">
+        <PORT DIR="O" NAME="S_AXI_awready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S_AXI_awvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_awvalid">
+        <PORT DIR="I" NAME="S_AXI_awvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S_AXI_bready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_bready">
+        <PORT DIR="I" NAME="S_AXI_bready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_bresp">
+        <PORT DIR="O" LEFT="1" NAME="S_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_bresp">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S_AXI_bvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_bvalid">
+        <PORT DIR="O" NAME="S_AXI_bvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_bvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="S_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_rdata">
+        <PORT DIR="O" LEFT="31" NAME="S_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S_AXI_rready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_rready">
+        <PORT DIR="I" NAME="S_AXI_rready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="1" NAME="S_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_rresp">
+        <PORT DIR="O" LEFT="1" NAME="S_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_rresp">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S_AXI_rvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_rvalid">
+        <PORT DIR="O" NAME="S_AXI_rvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_wdata">
+        <PORT DIR="I" LEFT="31" NAME="S_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S_AXI_wready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_wready">
+        <PORT DIR="O" NAME="S_AXI_wready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_wready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="S_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_wstrb">
+        <PORT DIR="I" LEFT="3" NAME="S_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_wstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S_AXI_wvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_wvalid">
+        <PORT DIR="I" NAME="S_AXI_wvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ip2intc_irpt_0" SENSITIVITY="LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="PetaENC_INT_0_ip2intc_irpt_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In9"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -1226,7 +1231,7 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="PetaENC_0_Pmod_ENC" NAME="Pmod_ENC" TYPE="INITIATOR" VLNV="digilentinc.com:interface:pmod:1.0">
+        <BUSINTERFACE BUSNAME="PetaENC_INT_0_Pmod_ENC" NAME="Pmod_ENC" TYPE="INITIATOR" VLNV="digilentinc.com:interface:pmod:1.0">
           <PORTMAPS>
             <PORTMAP LOGICAL="PIN1_O" PHYSICAL="Pmod_ENC_pin1_o"/>
             <PORTMAP LOGICAL="PIN7_I" PHYSICAL="Pmod_ENC_pin7_i"/>
@@ -11551,7 +11556,7 @@
         <PARAMETER NAME="C_S_AXI_HP3_DATA_WIDTH" VALUE="64"/>
         <PARAMETER NAME="C_M_AXI_GP0_THREAD_ID_WIDTH" VALUE="12"/>
         <PARAMETER NAME="C_M_AXI_GP1_THREAD_ID_WIDTH" VALUE="12"/>
-        <PARAMETER NAME="C_NUM_F2P_INTR_INPUTS" VALUE="9"/>
+        <PARAMETER NAME="C_NUM_F2P_INTR_INPUTS" VALUE="10"/>
         <PARAMETER NAME="C_IRQ_F2P_MODE" VALUE="DIRECT"/>
         <PARAMETER NAME="C_DQ_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_DQS_WIDTH" VALUE="4"/>
@@ -11894,7 +11899,7 @@
         <PARAMETER NAME="PCW_S_AXI_HP2_DATA_WIDTH" VALUE="64"/>
         <PARAMETER NAME="PCW_S_AXI_HP3_ID_WIDTH" VALUE="6"/>
         <PARAMETER NAME="PCW_S_AXI_HP3_DATA_WIDTH" VALUE="64"/>
-        <PARAMETER NAME="PCW_NUM_F2P_INTR_INPUTS" VALUE="9"/>
+        <PARAMETER NAME="PCW_NUM_F2P_INTR_INPUTS" VALUE="10"/>
         <PARAMETER NAME="PCW_EN_DDR" VALUE="1"/>
         <PARAMETER NAME="PCW_EN_SMC" VALUE="0"/>
         <PARAMETER NAME="PCW_EN_QSPI" VALUE="1"/>
@@ -13111,7 +13116,7 @@
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="8" NAME="IRQ_F2P" RIGHT="0" SENSITIVITY="LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="xlconcat_0_dout">
+        <PORT DIR="I" LEFT="9" NAME="IRQ_F2P" RIGHT="0" SENSITIVITY="LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH:LEVEL_HIGH" SIGIS="INTERRUPT" SIGNAME="xlconcat_0_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
           </CONNECTIONS>
@@ -13244,7 +13249,7 @@
             <CONNECTION INSTANCE="v_tc_out" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="xadc_wiz_0" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_ACLK"/>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="s_axi_aclk"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="s_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="133333344" DIR="O" NAME="FCLK_CLK1" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
@@ -13772,7 +13777,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
       <MEMORYMAP>
-        <MEMRANGE ADDRESSBLOCK="Reg0" BASENAME="C_BASEADDR" BASEVALUE="0x40000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x40000FFF" INSTANCE="PetaENC_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
+        <MEMRANGE ADDRESSBLOCK="Reg0" BASENAME="C_BASEADDR" BASEVALUE="0x40000000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x40000FFF" INSTANCE="PetaENC_INT_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41200000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4120FFFF" INSTANCE="axi_gpio_video" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41210000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4121FFFF" INSTANCE="axi_gpio_sw_btn" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_BASEADDR" BASEVALUE="0x41220000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x4122FFFF" INSTANCE="axi_gpio_led" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="S_AXI"/>
@@ -13790,7 +13795,7 @@
         <MEMRANGE ADDRESSBLOCK="Reg" BASENAME="C_S_AXI_CTRL_BASEADDR" BASEVALUE="0x43C80000" HIGHNAME="C_S_AXI_CTRL_HIGHADDR" HIGHVALUE="0x43C8FFFF" INSTANCE="v_frmbuf_wr_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MASTERBUSINTERFACE="M_AXI_GP0" MEMTYPE="REGISTER" SLAVEBUSINTERFACE="s_axi_CTRL"/>
       </MEMORYMAP>
       <PERIPHERALS>
-        <PERIPHERAL INSTANCE="PetaENC_0"/>
+        <PERIPHERAL INSTANCE="PetaENC_INT_0"/>
         <PERIPHERAL INSTANCE="axi_gpio_video"/>
         <PERIPHERAL INSTANCE="axi_gpio_sw_btn"/>
         <PERIPHERAL INSTANCE="axi_gpio_led"/>
@@ -15830,91 +15835,91 @@
             <CONNECTION INSTANCE="axi_iic_0" PORT="s_axi_rready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M15_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_awaddr">
+        <PORT DIR="O" LEFT="31" NAME="M15_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_awaddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_awaddr"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_awaddr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M15_AXI_awprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M15_AXI_awvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_awvalid">
+        <PORT DIR="O" NAME="M15_AXI_awvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_awvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_awvalid"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M15_AXI_awready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_awready">
+        <PORT DIR="I" NAME="M15_AXI_awready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_awready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_awready"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M15_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_wdata">
+        <PORT DIR="O" LEFT="31" NAME="M15_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_wdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_wdata"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M15_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_wstrb">
+        <PORT DIR="O" LEFT="3" NAME="M15_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_wstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_wstrb"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M15_AXI_wvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_wvalid">
+        <PORT DIR="O" NAME="M15_AXI_wvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_wvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_wvalid"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M15_AXI_wready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_wready">
+        <PORT DIR="I" NAME="M15_AXI_wready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_wready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_wready"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_wready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M15_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_bresp">
+        <PORT DIR="I" LEFT="1" NAME="M15_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_bresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_bresp"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M15_AXI_bvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_bvalid">
+        <PORT DIR="I" NAME="M15_AXI_bvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_bvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_bvalid"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M15_AXI_bready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_bready">
+        <PORT DIR="O" NAME="M15_AXI_bready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_bready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_bready"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_bready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M15_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_araddr">
+        <PORT DIR="O" LEFT="31" NAME="M15_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_araddr">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_araddr"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_araddr"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="M15_AXI_arprot" SIGIS="undef"/>
-        <PORT DIR="O" NAME="M15_AXI_arvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_arvalid">
+        <PORT DIR="O" NAME="M15_AXI_arvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_arvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_arvalid"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M15_AXI_arready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_arready">
+        <PORT DIR="I" NAME="M15_AXI_arready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_arready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_arready"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M15_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_rdata">
+        <PORT DIR="I" LEFT="31" NAME="M15_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_rdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_rdata"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_rdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M15_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_rresp">
+        <PORT DIR="I" LEFT="1" NAME="M15_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_rresp">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_rresp"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M15_AXI_rvalid" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_rvalid">
+        <PORT DIR="I" NAME="M15_AXI_rvalid" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_rvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_rvalid"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M15_AXI_rready" SIGIS="undef" SIGNAME="PetaENC_0_S_AXI_rready">
+        <PORT DIR="O" NAME="M15_AXI_rready" SIGIS="undef" SIGNAME="PetaENC_INT_0_S_AXI_rready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="S_AXI_rready"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="S_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -16691,7 +16696,7 @@
             <CONNECTION INSTANCE="v_tc_out" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="xadc_wiz_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph_GP0" PORT="M15_ARESETN"/>
-            <CONNECTION INSTANCE="PetaENC_0" PORT="s_axi_aresetn"/>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="s_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -19061,8 +19066,8 @@
         <PARAMETER NAME="IN125_WIDTH" VALUE="1"/>
         <PARAMETER NAME="IN126_WIDTH" VALUE="1"/>
         <PARAMETER NAME="IN127_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="dout_width" VALUE="9"/>
-        <PARAMETER NAME="NUM_PORTS" VALUE="9"/>
+        <PARAMETER NAME="dout_width" VALUE="10"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="10"/>
         <PARAMETER NAME="Component_Name" VALUE="system_xlconcat_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -19112,7 +19117,12 @@
             <CONNECTION INSTANCE="axi_iic_0" PORT="iic2intc_irpt"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="8" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+        <PORT DIR="I" LEFT="0" NAME="In9" RIGHT="0" SIGIS="undef" SIGNAME="PetaENC_INT_0_ip2intc_irpt_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PetaENC_INT_0" PORT="ip2intc_irpt_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="IRQ_F2P"/>
           </CONNECTIONS>

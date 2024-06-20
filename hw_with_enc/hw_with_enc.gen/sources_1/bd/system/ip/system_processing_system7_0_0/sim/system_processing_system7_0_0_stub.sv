@@ -216,7 +216,7 @@ module system_processing_system7_0_0 (
   input bit [5 : 0] S_AXI_HP1_WID,
   input bit [63 : 0] S_AXI_HP1_WDATA,
   input bit [7 : 0] S_AXI_HP1_WSTRB,
-  input bit [8 : 0] IRQ_F2P,
+  input bit [9 : 0] IRQ_F2P,
   output bit [1 : 0] DMA0_DATYPE,
   output bit_as_bool DMA0_DAVALID,
   output bit_as_bool DMA0_DRREADY,
@@ -417,7 +417,7 @@ module system_processing_system7_0_0 (GPIO_I,GPIO_O,GPIO_T,I2C0_SDA_I,I2C0_SDA_O
   input bit [5 : 0] S_AXI_HP1_WID;
   input bit [63 : 0] S_AXI_HP1_WDATA;
   input bit [7 : 0] S_AXI_HP1_WSTRB;
-  input bit [8 : 0] IRQ_F2P;
+  input bit [9 : 0] IRQ_F2P;
   output wire [1 : 0] DMA0_DATYPE;
   output wire DMA0_DAVALID;
   output wire DMA0_DRREADY;

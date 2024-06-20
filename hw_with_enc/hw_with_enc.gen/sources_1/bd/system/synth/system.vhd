@@ -2,7 +2,7 @@
 --Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
---Date        : Tue Jun 11 12:21:41 2024
+--Date        : Thu Jun 20 14:42:24 2024
 --Host        : secil10.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
 --Command     : generate_target system.bd
 --Design      : system
@@ -6909,7 +6909,7 @@ entity system is
     sys_clock : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=67,numReposBlks=43,numNonXlnxBlks=6,numHierBlks=24,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=2,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of system : entity is "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=67,numReposBlks=43,numNonXlnxBlks=6,numHierBlks=24,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=1,bdsource=USER,da_axi4_cnt=3,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of system : entity is "system.hwdef";
 end system;
@@ -7533,7 +7533,7 @@ architecture STRUCTURE of system is
     S_AXI_HP1_WID : in STD_LOGIC_VECTOR ( 5 downto 0 );
     S_AXI_HP1_WDATA : in STD_LOGIC_VECTOR ( 63 downto 0 );
     S_AXI_HP1_WSTRB : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 8 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 9 downto 0 );
     DMA0_DATYPE : out STD_LOGIC_VECTOR ( 1 downto 0 );
     DMA0_DAVALID : out STD_LOGIC;
     DMA0_DRREADY : out STD_LOGIC;
@@ -7909,7 +7909,8 @@ architecture STRUCTURE of system is
     In6 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In7 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In8 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 8 downto 0 )
+    In9 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 9 downto 0 )
   );
   end component system_xlconcat_0_0;
   component system_xlconstant_0_0 is
@@ -7922,7 +7923,7 @@ architecture STRUCTURE of system is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component system_xlconstant_1_0;
-  component system_PetaENC_0_0 is
+  component system_PetaENC_INT_0_0 is
   port (
     Pmod_ENC_pin10_i : in STD_LOGIC;
     Pmod_ENC_pin10_o : out STD_LOGIC;
@@ -7965,36 +7966,38 @@ architecture STRUCTURE of system is
     S_AXI_wready : out STD_LOGIC;
     S_AXI_wstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
     S_AXI_wvalid : in STD_LOGIC;
+    ip2intc_irpt_0 : out STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC
   );
-  end component system_PetaENC_0_0;
+  end component system_PetaENC_INT_0_0;
   signal PS_GPIO_0_Dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal PWM_0_pwm : STD_LOGIC_VECTOR ( 5 downto 0 );
-  signal PetaENC_0_Pmod_ENC_PIN10_I : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN10_O : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN10_T : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN1_I : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN1_O : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN1_T : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN2_I : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN2_O : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN2_T : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN3_I : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN3_O : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN3_T : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN4_I : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN4_O : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN4_T : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN7_I : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN7_O : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN7_T : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN8_I : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN8_O : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN8_T : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN9_I : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN9_O : STD_LOGIC;
-  signal PetaENC_0_Pmod_ENC_PIN9_T : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN10_I : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN10_O : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN10_T : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN1_I : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN1_O : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN1_T : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN2_I : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN2_O : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN2_T : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN3_I : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN3_O : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN3_T : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN4_I : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN4_O : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN4_T : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN7_I : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN7_O : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN7_T : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN8_I : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN8_O : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN8_T : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN9_I : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN9_O : STD_LOGIC;
+  signal PetaENC_INT_0_Pmod_ENC_PIN9_T : STD_LOGIC;
+  signal PetaENC_INT_0_ip2intc_irpt_0 : STD_LOGIC;
   signal SDATA_I_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal Vaux14_1_V_N : STD_LOGIC;
   signal Vaux14_1_V_P : STD_LOGIC;
@@ -8623,7 +8626,7 @@ architecture STRUCTURE of system is
   signal v_vid_in_axi4s_0_vtiming_out_HSYNC : STD_LOGIC;
   signal v_vid_in_axi4s_0_vtiming_out_VSYNC : STD_LOGIC;
   signal xadc_wiz_0_ip2intc_irpt : STD_LOGIC;
-  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 8 downto 0 );
+  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal xlconstant_1_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_i2s_adi_1_MUTEN_O_UNCONNECTED : STD_LOGIC;
@@ -8792,30 +8795,30 @@ architecture STRUCTURE of system is
   attribute X_INTERFACE_INFO of leds_4bits_tri_o : signal is "xilinx.com:interface:gpio:1.0 leds_4bits TRI_O";
   attribute X_INTERFACE_INFO of sws_4bits_tri_i : signal is "xilinx.com:interface:gpio:1.0 sws_4bits TRI_I";
 begin
-  PetaENC_0_Pmod_ENC_PIN10_I <= Pmod_out_0_pin10_i;
-  PetaENC_0_Pmod_ENC_PIN1_I <= Pmod_out_0_pin1_i;
-  PetaENC_0_Pmod_ENC_PIN2_I <= Pmod_out_0_pin2_i;
-  PetaENC_0_Pmod_ENC_PIN3_I <= Pmod_out_0_pin3_i;
-  PetaENC_0_Pmod_ENC_PIN4_I <= Pmod_out_0_pin4_i;
-  PetaENC_0_Pmod_ENC_PIN7_I <= Pmod_out_0_pin7_i;
-  PetaENC_0_Pmod_ENC_PIN8_I <= Pmod_out_0_pin8_i;
-  PetaENC_0_Pmod_ENC_PIN9_I <= Pmod_out_0_pin9_i;
-  Pmod_out_0_pin10_o <= PetaENC_0_Pmod_ENC_PIN10_O;
-  Pmod_out_0_pin10_t <= PetaENC_0_Pmod_ENC_PIN10_T;
-  Pmod_out_0_pin1_o <= PetaENC_0_Pmod_ENC_PIN1_O;
-  Pmod_out_0_pin1_t <= PetaENC_0_Pmod_ENC_PIN1_T;
-  Pmod_out_0_pin2_o <= PetaENC_0_Pmod_ENC_PIN2_O;
-  Pmod_out_0_pin2_t <= PetaENC_0_Pmod_ENC_PIN2_T;
-  Pmod_out_0_pin3_o <= PetaENC_0_Pmod_ENC_PIN3_O;
-  Pmod_out_0_pin3_t <= PetaENC_0_Pmod_ENC_PIN3_T;
-  Pmod_out_0_pin4_o <= PetaENC_0_Pmod_ENC_PIN4_O;
-  Pmod_out_0_pin4_t <= PetaENC_0_Pmod_ENC_PIN4_T;
-  Pmod_out_0_pin7_o <= PetaENC_0_Pmod_ENC_PIN7_O;
-  Pmod_out_0_pin7_t <= PetaENC_0_Pmod_ENC_PIN7_T;
-  Pmod_out_0_pin8_o <= PetaENC_0_Pmod_ENC_PIN8_O;
-  Pmod_out_0_pin8_t <= PetaENC_0_Pmod_ENC_PIN8_T;
-  Pmod_out_0_pin9_o <= PetaENC_0_Pmod_ENC_PIN9_O;
-  Pmod_out_0_pin9_t <= PetaENC_0_Pmod_ENC_PIN9_T;
+  PetaENC_INT_0_Pmod_ENC_PIN10_I <= Pmod_out_0_pin10_i;
+  PetaENC_INT_0_Pmod_ENC_PIN1_I <= Pmod_out_0_pin1_i;
+  PetaENC_INT_0_Pmod_ENC_PIN2_I <= Pmod_out_0_pin2_i;
+  PetaENC_INT_0_Pmod_ENC_PIN3_I <= Pmod_out_0_pin3_i;
+  PetaENC_INT_0_Pmod_ENC_PIN4_I <= Pmod_out_0_pin4_i;
+  PetaENC_INT_0_Pmod_ENC_PIN7_I <= Pmod_out_0_pin7_i;
+  PetaENC_INT_0_Pmod_ENC_PIN8_I <= Pmod_out_0_pin8_i;
+  PetaENC_INT_0_Pmod_ENC_PIN9_I <= Pmod_out_0_pin9_i;
+  Pmod_out_0_pin10_o <= PetaENC_INT_0_Pmod_ENC_PIN10_O;
+  Pmod_out_0_pin10_t <= PetaENC_INT_0_Pmod_ENC_PIN10_T;
+  Pmod_out_0_pin1_o <= PetaENC_INT_0_Pmod_ENC_PIN1_O;
+  Pmod_out_0_pin1_t <= PetaENC_INT_0_Pmod_ENC_PIN1_T;
+  Pmod_out_0_pin2_o <= PetaENC_INT_0_Pmod_ENC_PIN2_O;
+  Pmod_out_0_pin2_t <= PetaENC_INT_0_Pmod_ENC_PIN2_T;
+  Pmod_out_0_pin3_o <= PetaENC_INT_0_Pmod_ENC_PIN3_O;
+  Pmod_out_0_pin3_t <= PetaENC_INT_0_Pmod_ENC_PIN3_T;
+  Pmod_out_0_pin4_o <= PetaENC_INT_0_Pmod_ENC_PIN4_O;
+  Pmod_out_0_pin4_t <= PetaENC_INT_0_Pmod_ENC_PIN4_T;
+  Pmod_out_0_pin7_o <= PetaENC_INT_0_Pmod_ENC_PIN7_O;
+  Pmod_out_0_pin7_t <= PetaENC_INT_0_Pmod_ENC_PIN7_T;
+  Pmod_out_0_pin8_o <= PetaENC_INT_0_Pmod_ENC_PIN8_O;
+  Pmod_out_0_pin8_t <= PetaENC_INT_0_Pmod_ENC_PIN8_T;
+  Pmod_out_0_pin9_o <= PetaENC_INT_0_Pmod_ENC_PIN9_O;
+  Pmod_out_0_pin9_t <= PetaENC_INT_0_Pmod_ENC_PIN9_T;
   SDATA_I_1(0) <= ac_recdat(0);
   Vaux14_1_V_N <= Vaux14_v_n;
   Vaux14_1_V_P <= Vaux14_v_p;
@@ -8898,32 +8901,32 @@ PS_GPIO_3: component system_PS_GPIO_3_0
       Din(63 downto 0) => processing_system7_0_GPIO_O(63 downto 0),
       Dout(0) => csi2_rst_gpio(0)
     );
-PetaENC_0: component system_PetaENC_0_0
+PetaENC_INT_0: component system_PetaENC_INT_0_0
      port map (
-      Pmod_ENC_pin10_i => PetaENC_0_Pmod_ENC_PIN10_I,
-      Pmod_ENC_pin10_o => PetaENC_0_Pmod_ENC_PIN10_O,
-      Pmod_ENC_pin10_t => PetaENC_0_Pmod_ENC_PIN10_T,
-      Pmod_ENC_pin1_i => PetaENC_0_Pmod_ENC_PIN1_I,
-      Pmod_ENC_pin1_o => PetaENC_0_Pmod_ENC_PIN1_O,
-      Pmod_ENC_pin1_t => PetaENC_0_Pmod_ENC_PIN1_T,
-      Pmod_ENC_pin2_i => PetaENC_0_Pmod_ENC_PIN2_I,
-      Pmod_ENC_pin2_o => PetaENC_0_Pmod_ENC_PIN2_O,
-      Pmod_ENC_pin2_t => PetaENC_0_Pmod_ENC_PIN2_T,
-      Pmod_ENC_pin3_i => PetaENC_0_Pmod_ENC_PIN3_I,
-      Pmod_ENC_pin3_o => PetaENC_0_Pmod_ENC_PIN3_O,
-      Pmod_ENC_pin3_t => PetaENC_0_Pmod_ENC_PIN3_T,
-      Pmod_ENC_pin4_i => PetaENC_0_Pmod_ENC_PIN4_I,
-      Pmod_ENC_pin4_o => PetaENC_0_Pmod_ENC_PIN4_O,
-      Pmod_ENC_pin4_t => PetaENC_0_Pmod_ENC_PIN4_T,
-      Pmod_ENC_pin7_i => PetaENC_0_Pmod_ENC_PIN7_I,
-      Pmod_ENC_pin7_o => PetaENC_0_Pmod_ENC_PIN7_O,
-      Pmod_ENC_pin7_t => PetaENC_0_Pmod_ENC_PIN7_T,
-      Pmod_ENC_pin8_i => PetaENC_0_Pmod_ENC_PIN8_I,
-      Pmod_ENC_pin8_o => PetaENC_0_Pmod_ENC_PIN8_O,
-      Pmod_ENC_pin8_t => PetaENC_0_Pmod_ENC_PIN8_T,
-      Pmod_ENC_pin9_i => PetaENC_0_Pmod_ENC_PIN9_I,
-      Pmod_ENC_pin9_o => PetaENC_0_Pmod_ENC_PIN9_O,
-      Pmod_ENC_pin9_t => PetaENC_0_Pmod_ENC_PIN9_T,
+      Pmod_ENC_pin10_i => PetaENC_INT_0_Pmod_ENC_PIN10_I,
+      Pmod_ENC_pin10_o => PetaENC_INT_0_Pmod_ENC_PIN10_O,
+      Pmod_ENC_pin10_t => PetaENC_INT_0_Pmod_ENC_PIN10_T,
+      Pmod_ENC_pin1_i => PetaENC_INT_0_Pmod_ENC_PIN1_I,
+      Pmod_ENC_pin1_o => PetaENC_INT_0_Pmod_ENC_PIN1_O,
+      Pmod_ENC_pin1_t => PetaENC_INT_0_Pmod_ENC_PIN1_T,
+      Pmod_ENC_pin2_i => PetaENC_INT_0_Pmod_ENC_PIN2_I,
+      Pmod_ENC_pin2_o => PetaENC_INT_0_Pmod_ENC_PIN2_O,
+      Pmod_ENC_pin2_t => PetaENC_INT_0_Pmod_ENC_PIN2_T,
+      Pmod_ENC_pin3_i => PetaENC_INT_0_Pmod_ENC_PIN3_I,
+      Pmod_ENC_pin3_o => PetaENC_INT_0_Pmod_ENC_PIN3_O,
+      Pmod_ENC_pin3_t => PetaENC_INT_0_Pmod_ENC_PIN3_T,
+      Pmod_ENC_pin4_i => PetaENC_INT_0_Pmod_ENC_PIN4_I,
+      Pmod_ENC_pin4_o => PetaENC_INT_0_Pmod_ENC_PIN4_O,
+      Pmod_ENC_pin4_t => PetaENC_INT_0_Pmod_ENC_PIN4_T,
+      Pmod_ENC_pin7_i => PetaENC_INT_0_Pmod_ENC_PIN7_I,
+      Pmod_ENC_pin7_o => PetaENC_INT_0_Pmod_ENC_PIN7_O,
+      Pmod_ENC_pin7_t => PetaENC_INT_0_Pmod_ENC_PIN7_T,
+      Pmod_ENC_pin8_i => PetaENC_INT_0_Pmod_ENC_PIN8_I,
+      Pmod_ENC_pin8_o => PetaENC_INT_0_Pmod_ENC_PIN8_O,
+      Pmod_ENC_pin8_t => PetaENC_INT_0_Pmod_ENC_PIN8_T,
+      Pmod_ENC_pin9_i => PetaENC_INT_0_Pmod_ENC_PIN9_I,
+      Pmod_ENC_pin9_o => PetaENC_INT_0_Pmod_ENC_PIN9_O,
+      Pmod_ENC_pin9_t => PetaENC_INT_0_Pmod_ENC_PIN9_T,
       S_AXI_araddr(8 downto 0) => ps7_0_axi_periph_GP0_M15_AXI_ARADDR(8 downto 0),
       S_AXI_arready => ps7_0_axi_periph_GP0_M15_AXI_ARREADY,
       S_AXI_arvalid => ps7_0_axi_periph_GP0_M15_AXI_ARVALID,
@@ -8941,6 +8944,7 @@ PetaENC_0: component system_PetaENC_0_0
       S_AXI_wready => ps7_0_axi_periph_GP0_M15_AXI_WREADY,
       S_AXI_wstrb(3 downto 0) => ps7_0_axi_periph_GP0_M15_AXI_WSTRB(3 downto 0),
       S_AXI_wvalid => ps7_0_axi_periph_GP0_M15_AXI_WVALID,
+      ip2intc_irpt_0 => PetaENC_INT_0_ip2intc_irpt_0,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0)
     );
@@ -9585,7 +9589,7 @@ processing_system7_0: component system_processing_system7_0_0
       I2C1_SDA_I => processing_system7_0_IIC_1_SDA_I,
       I2C1_SDA_O => processing_system7_0_IIC_1_SDA_O,
       I2C1_SDA_T => processing_system7_0_IIC_1_SDA_T,
-      IRQ_F2P(8 downto 0) => xlconcat_0_dout(8 downto 0),
+      IRQ_F2P(9 downto 0) => xlconcat_0_dout(9 downto 0),
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
@@ -10406,7 +10410,8 @@ xlconcat_0: component system_xlconcat_0_0
       In6(0) => mipi_csi2_rx_subsystem_0_csirxss_csi_irq,
       In7(0) => v_frmbuf_wr_1_interrupt,
       In8(0) => axi_iic_0_iic2intc_irpt,
-      dout(8 downto 0) => xlconcat_0_dout(8 downto 0)
+      In9(0) => PetaENC_INT_0_ip2intc_irpt_0,
+      dout(9 downto 0) => xlconcat_0_dout(9 downto 0)
     );
 xlconstant_0: component system_xlconstant_0_0
      port map (

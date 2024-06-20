@@ -3,7 +3,7 @@
 	"modules": {
 		"system": {
 			"proto_instances": {
-				"/PetaENC_0/S_AXI": {
+				"/PetaENC_INT_0/S_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ACLK": { "actual": "s_axi_aclk"},

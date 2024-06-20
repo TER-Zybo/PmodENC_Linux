@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/nfs/home/m1info3/Documents/TER_FPGA/hw_with_enc/hw_with_enc.runs/synth_1'
+HD_PWD='/nfs/home/m1info3/Documents/TER_FPGA/PmodENC_Linux/hw_with_enc/hw_with_enc.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
-| Date         : Tue Jun 11 12:40:46 2024
+| Date         : Thu Jun 20 14:44:24 2024
 | Host         : secil10.siame.univ-tlse3.fr running 64-bit Fedora Linux 38 (Thirty Eight)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
@@ -196,7 +196,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | system_auto_pc_2                   |    1 |
 | system_auto_pc_1                   |    1 |
 | system_auto_pc_0                   |    1 |
-| system_PetaENC_0_0                 |    1 |
+| system_PetaENC_INT_0_0             |    1 |
 +------------------------------------+------+
 
 
