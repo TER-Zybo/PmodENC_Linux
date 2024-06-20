@@ -18,6 +18,9 @@
                 clocks = <&clkc 15>;
                 compatible = "generic-uio";
                 reg = <0x40000000 0x1000>;
+                interrupt-names = "ip2intc_irpt_0";
+    		interrupt-parent = <&intc>;
+    		interrupts = <0 53 4>;
             };
         };
     };

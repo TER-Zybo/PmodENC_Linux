@@ -7,10 +7,15 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <string.h>
+#include <poll.h>
 
-void print_usage(const char *program_name) {
-    printf("Usage: %s <uio_device_number> <address_offset> <map_size_in_hex> [polling]\n", program_name);
-}
+#define GPIO_DATA_OFFSET   0x00
+#define GPIO_TRI_OFFSET    0x04
+// #define GPIO_DATA2_OFFSET  0x08
+// #define GPIO_TRI2_OFFSET   0x0C
+#define GPIO_GLOBAL_IRQ    0x11C
+#define GPIO_IRQ_CONTROL   0x128
+#define GPIO_IRQ_STATUS    0x120
 
 volatile bool keep_running = true;
 
@@ -18,58 +23,106 @@ void int_handler(int dummy) {
     keep_running = false;
 }
 
+unsigned int get_memory_size(char *sysfs_path_file) {
+    FILE *size_fp;
+    unsigned int size;
+    size_fp = fopen(sysfs_path_file, "r");
+    if (size_fp == NULL) {
+        printf("unable to open the uio size file\n");
+        exit(-1);
+    }
+    fscanf(size_fp, "0x%08X", &size);
+    fclose(size_fp);
+    return size;
+}
+
+void reg_write(void *reg_base, unsigned long offset, unsigned long value) {
+    *((volatile unsigned long *)(reg_base + offset)) = value;
+}
+
+unsigned long reg_read(void *reg_base, unsigned long offset) {
+    return *((volatile unsigned long *)(reg_base + offset));
+}
+
+uint8_t wait_for_interrupt(int fd_int, void *gpio_ptr) {
+    static unsigned int count = 0;
+    int reenable = 1;
+    unsigned int reg;
+    unsigned int value;
+    
+    struct pollfd fds = {
+        .fd = fd_int,
+        .events = POLLIN,
+    };
+
+    int ret = poll(&fds, 1, 100);
+    printf("ret is : %d\n", ret);
+    if (ret >= 1) {
+        read(fd_int, (void *)&reenable, sizeof(int));
+        value = reg_read(gpio_ptr, GPIO_DATA_OFFSET);
+        printf("Interrupt received, GPIO value: 0x%x\n", value);
+
+        count++;
+        usleep(50000); // debounce
+
+        reg = reg_read(gpio_ptr, GPIO_IRQ_STATUS);
+        if (reg != 0) {
+            reg_write(gpio_ptr, GPIO_IRQ_STATUS, 1);
+        }
+        write(fd_int, (void *)&reenable, sizeof(int));
+    }
+    return ret;
+}
+
 int main(int argc, char *argv[]) {
-    if (argc < 4 || argc > 5) {
-        print_usage(argv[0]);
+    if (argc < 2) {
+        printf("Usage: %s <uio_device_number>\n", argv[0]);
         return EXIT_FAILURE;
     }
 
     int uio_device_number = atoi(argv[1]);
-    off_t address_offset = strtoul(argv[2], NULL, 0);
-    size_t map_size = strtoul(argv[3], NULL, 16);
-    bool polling = (argc == 5 && strcmp(argv[4], "polling") == 0);
-
-    if (address_offset % sizeof(uint32_t) != 0) {
-        fprintf(stderr, "Address offset must be aligned to 4 bytes.\n");
-        return EXIT_FAILURE;
-    }
 
     char uio_device_path[64];
     snprintf(uio_device_path, sizeof(uio_device_path), "/dev/uio%d", uio_device_number);
 
-    int uio_fd = open(uio_device_path, O_RDONLY);
-    if (uio_fd < 0) {
+    char size_path[64];
+    snprintf(size_path, sizeof(size_path), "/sys/class/uio/uio%d/maps/map0/size", uio_device_number);
+
+    unsigned int gpio_size = get_memory_size(size_path);
+    
+    int fd_int = open(uio_device_path, O_RDWR);
+    if (fd_int < 0) {
         perror("Failed to open UIO device");
         return EXIT_FAILURE;
     }
 
-    void *map_base = mmap(NULL, map_size, PROT_READ, MAP_SHARED, uio_fd, 0);
-    if (map_base == MAP_FAILED) {
+    void *ptr_axi_gpio = mmap(NULL, gpio_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd_int, 0);
+    if (ptr_axi_gpio == MAP_FAILED) {
         perror("Failed to mmap");
-        close(uio_fd);
+        close(fd_int);
         return EXIT_FAILURE;
     }
 
-    volatile uint32_t *addr = (volatile uint32_t *)((char *)map_base + address_offset);
+    // Configure GPIO
+    reg_write(ptr_axi_gpio, GPIO_TRI_OFFSET, 0xFFFFFFFF); // channel1 = input
+    reg_write(ptr_axi_gpio, GPIO_GLOBAL_IRQ, 0x80000000); // Global interrupt enable, Bit 31 = 1
+    reg_write(ptr_axi_gpio, GPIO_IRQ_CONTROL, 1);         // Channel 1 Interrupt enable
 
-    if (polling) {
-        signal(SIGINT, int_handler);
-        printf("Polling value at address offset 0x%lx. Press Ctrl+C to stop.\n", address_offset);
-        while (keep_running) {
-            uint32_t value = *addr;
-            printf("Value: 0x%x\n", value);
-            sleep(1);
-        }
-    } else {
-        uint32_t value = *addr;
-        printf("Value at address offset 0x%lx: 0x%x\n", address_offset, value);
+    int reenable = 1;
+    write(fd_int, (void *)&reenable, sizeof(int));        // enable the interrupt controller thru the UIO subsystem
+
+    signal(SIGINT, int_handler);
+    printf("Waiting for interrupts. Press Ctrl+C to stop.\n");
+
+    while (keep_running) {
+        wait_for_interrupt(fd_int, ptr_axi_gpio);
     }
 
-    if (munmap(map_base, map_size) < 0) {
+    if (munmap(ptr_axi_gpio, gpio_size) < 0) {
         perror("Failed to munmap");
     }
 
-    close(uio_fd);
+    close(fd_int);
 
     return EXIT_SUCCESS;
 }
